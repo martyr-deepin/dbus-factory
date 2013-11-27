@@ -1,0 +1,16 @@
+{
+    "Config": {
+	"OutputDir": ".",
+	"InputDir": "../xml",
+	"BusType": "session",
+	"DestName": "com.deepin.daemon.Power"
+    },
+    "Interfaces": [
+    {
+	"Interface": "com.deepin.daemon.Power",
+	"OutFile": "nm",
+	"XMLFile": "power.xml",
+	"ObjectName": "Power"
+    }
+    ]
+}

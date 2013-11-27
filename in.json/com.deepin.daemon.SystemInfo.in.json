@@ -1,0 +1,16 @@
+{
+	"Config": {
+		"OutputDir": ".",
+		"InputDir": "../xml",
+		"BusType": "Session",
+		"DestName": "com.deepin.daemon.SystemInfo"
+	},
+	"Interfaces": [
+		{
+			"Interface": "com.deepin.daemon.SystemInfo",
+			"OutFile": "dbus-system-info",
+			"XMLFile": "system-info.xml",
+			"ObjectName": "SystemInfo"
+		}
+	]
+}

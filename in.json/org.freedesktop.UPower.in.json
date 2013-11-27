@@ -1,0 +1,35 @@
+{
+    "Config": {
+	"OutputDir": ".",
+	"InputDir": "../xml",
+	"BusType": "System",
+	"DestName": "org.freedesktop.UPower"
+    },
+    "Interfaces": [
+    {
+	"Interface": "org.freedesktop.UPower",
+	"OutFile": "upower",
+	"XMLFile": "org.freedesktop.UPower.xml",
+	"ObjectName": "Upower",
+	"TestPath": "/org/freedesktop/UPower"
+    },
+	{
+	"Interface": "org.freedesktop.UPower.QoS",
+	"OutFile": "upower-qos",
+	"XMLFile": "org.freedesktop.UPower.QoS.xml",
+	"ObjectName": "QoS"
+	},
+	{
+	"Interface": "org.freedesktop.UPower.Wakeups",
+	"OutFile": "upower-wakeups",
+	"XMLFile": "wakeups.xml",
+	"ObjectName": "Wakeups"
+	},
+	{
+	"Interface": "org.freedesktop.UPower.Device",
+	"OutFile": "upower-device",
+	"XMLFile": "org.freedesktop.UPower.Device.xml",
+	"ObjectName": "Device"
+	}
+	]
+}

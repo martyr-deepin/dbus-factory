@@ -1,0 +1,16 @@
+{
+	"Config": {
+		"OutputDir": ".",
+		"InputDir": "../xml",
+		"BusType": "Session",
+		"DestName": "com.deepin.daemon.DateAndTime"
+	},
+	"Interfaces": [
+		{
+			"Interface": "com.deepin.daemon.DateAndTime",
+			"OutFile": "dbus-datetime",
+			"XMLFile": "date-time.xml",
+			"ObjectName": "DateAndTime"
+		}
+	]
+}

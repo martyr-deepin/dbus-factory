@@ -1,9 +1,9 @@
 {
 	"Config": {
-	    "OutputDir": ".",
-	    "InputDir": "../xml",
-	    "BusType": "System",
-	    "DestName": "org.gnome.SettingsDaemon.DateTimeMechanism"
+		"OutputDir": ".",
+		"InputDir": "../xml",
+		"BusType": "System",
+		"DestName": "org.gnome.SettingsDaemon.DateTimeMechanism"
 	},
 	"Interfaces": [
 		{

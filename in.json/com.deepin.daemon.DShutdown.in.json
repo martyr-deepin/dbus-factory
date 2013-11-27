@@ -1,0 +1,16 @@
+{
+	"Config": {
+		"OutputDir": ".",
+		"InputDir": "../xml",
+		"BusType": "Session",
+		"DestName": "com.deepin.daemon.DShutdown"
+	},
+	"Interfaces": [
+		{
+			"Interface": "com.deepin.daemon.DShutdown",
+			"OutFile": "dbus-dshutdown",
+			"XMLFile": "dshutdown.xml",
+			"ObjectName": "DShutdown"
+		}
+	]
+}

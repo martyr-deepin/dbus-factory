@@ -1,6 +1,5 @@
 {
     "Config": {
-	"NotExportBus": true,
 	"OutputDir": ".",
 	"InputDir": "../xml",
 	"BusType": "System",

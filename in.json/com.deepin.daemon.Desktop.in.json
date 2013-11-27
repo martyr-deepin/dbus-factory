@@ -7,10 +7,10 @@
 	},
 	"Interfaces": [
 		{
-		"Interface": "com.deepin.daemon.Desktop",
-		"OutFile": "dbus-desktop",
-		"XMLFile": "desktop.xml",
-		"ObjectName": "Desktop"
+			"Interface": "com.deepin.daemon.Desktop",
+			"OutFile": "dbus-desktop",
+			"XMLFile": "desktop.xml",
+			"ObjectName": "Desktop"
 		}
 	]
 }
