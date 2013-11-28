@@ -1,0 +1,22 @@
+{
+	"Config":{
+		"OutputDir": ".",
+		"InputDir": "../xml",
+		"BusType": "Session",
+		"DestName": "com.deepin.daemon.DefaultApps"
+	},
+	"Interfaces":[
+		{
+			"Interface": "com.deepin.daemon.DefaultApps",
+			"OutFile": "dbus-default-apps",
+			"XMLFile": "com.deepin.daemon.DefaultApps.xml",
+			"ObjectName": "DefaultApps"
+		},
+		{
+			"Interface": "com.deepin.daemon.MediaMount",
+			"OutFile": "dbus-media-mount",
+			"XMLFile": "com.deepin.daemon.MediaMount.xml",
+			"ObjectName": "MediaMount"
+		}
+	]
+}
