@@ -19,7 +19,7 @@
                <arg type="b" direction="out"></arg>
           </method>
           <property name="AutoSetTime" type="b" access="read"></property>
-          <property name="TimeShowFormat" type="b" access="readwrite"></property>
+          <property name="Use24HourDisplay" type="b" access="readwrite"></property>
           <property name="CurrentTimeZone" type="s" access="read"></property>
      </interface>
 </node>
