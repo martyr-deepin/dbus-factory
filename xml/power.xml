@@ -1,11 +1,29 @@
 <node>
      <interface name="com.deepin.daemon.Power">
+          <method name="Refresh">
+               <arg type="i" direction="out"></arg>
+          </method>
+          <property name="ButtonHibernate" type="s" access="readwrite"></property>
+          <property name="ButtonPower" type="s" access="readwrite"></property>
+          <property name="ButtonSleep" type="s" access="readwrite"></property>
+          <property name="ButtonSuspend" type="s" access="readwrite"></property>
+          <property name="CriticalBatteryAction" type="s" access="readwrite"></property>
+          <property name="LidCloseAcAcAction" type="s" access="readwrite"></property>
+          <property name="LidCloseBatteryAction" type="s" access="readwrite"></property>
+          <property name="ShowTray" type="b" access="readwrite"></property>
+          <property name="SleepDisplayAc" type="i" access="readwrite"></property>
+          <property name="SleepDisplayBattery" type="i" access="readwrite"></property>
+          <property name="SleepInactiveAcTimeout" type="i" access="readwrite"></property>
+          <property name="SleepInactiveBatteryTimeout" type="i" access="readwrite"></property>
+          <property name="SleepInactiveAcType" type="s" access="readwrite"></property>
+          <property name="SleepInactiveBatteryType" type="s" access="readwrite"></property>
+          <property name="CurrentPlan" type="s" access="readwrite"></property>
           <property name="BatteryIsPresent" type="b" access="read"></property>
           <property name="BatteryPercentage" type="d" access="read"></property>
-          <property name="PluginedIn" type="i" access="read"></property>
+          <property name="PlugedIn" type="i" access="read"></property>
+          <property name="TimeToEmpty" type="x" access="read"></property>
+          <property name="TimeToFull" type="x" access="read"></property>
           <property name="SuspendTime" type="ai" access="readwrite"></property>
-          <property name="HandleLowPower" type="as" access="readwrite"></property>
-          <property name="HandleClosedLid" type="as" access="readwrite"></property>
      </interface>
      <interface name="org.freedesktop.DBus.Introspectable">
           <method name="Introspect">
