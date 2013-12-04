@@ -1,0 +1,43 @@
+<node>
+     <interface name="com.deepin.daemon.Network">
+          <property name="WiredEnabled" type="b" access="readwrite"></property>
+          <property name="WirelessEnabled" type="b" access="readwrite"></property>
+          <property name="VPNEnabled" type="b" access="readwrite"></property>
+          <property name="NetworkingEnabled" type="b" access="readwrite"></property>
+          <property name="APs" type="a(s)" access="read"></property>
+          <property name="HasWireless" type="b" access="read"></property>
+          <property name="HasWired" type="b" access="read"></property>
+          <property name="WiredConnections" type="a(sss)" access="read"></property>
+          <property name="WirelessConnections" type="a(sss)" access="read"></property>
+          <property name="VPNConnections" type="a(sss)" access="read"></property>
+     </interface>
+     <interface name="org.freedesktop.DBus.Introspectable">
+          <method name="Introspect">
+               <arg type="s" direction="out"></arg>
+          </method>
+          <method name="String">
+               <arg type="s" direction="out"></arg>
+          </method>
+     </interface>
+     <interface name="org.freedesktop.DBus.Properties">
+          <method name="Get">
+               <arg type="s" direction="in"></arg>
+               <arg type="s" direction="in"></arg>
+               <arg type="v" direction="out"></arg>
+          </method>
+          <method name="GetAll">
+               <arg type="s" direction="in"></arg>
+               <arg type="a{sv}" direction="out"></arg>
+          </method>
+          <method name="Set">
+               <arg type="s" direction="in"></arg>
+               <arg type="s" direction="in"></arg>
+               <arg type="v" direction="in"></arg>
+          </method>
+          <signal name="PropertiesChanged">
+               <arg type="s"></arg>
+               <arg type="a{sv}"></arg>
+               <arg type="as"></arg>
+          </signal>
+     </interface>
+</node>

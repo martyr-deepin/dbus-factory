@@ -1,0 +1,16 @@
+{
+    "Config": {
+	"InputDir": "../xml",
+	"PkgName": "Network",
+	"BusType": "Session",
+	"DestName": "com.deepin.daemon.Network"
+    },
+    "Interfaces": [
+    {
+	"Interface": "com.deepin.daemon.Network",
+	"OutFile": "network",
+	"XMLFile": "com.deepin.daemon.network.xml",
+	"ObjectName": "NetworkManager"
+    }
+    ]
+}
