@@ -1,4 +1,4 @@
-dbus-gen
+dbus-factory
 ========
 
 This repository is only save the dbus.in.json configure file and xml date file
