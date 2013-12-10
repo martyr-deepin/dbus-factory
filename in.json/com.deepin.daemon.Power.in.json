@@ -9,7 +9,7 @@
 		{
 			"Interface": "com.deepin.daemon.Power",
 			"OutFile": "dbus-power",
-			"XMLFile": "power.xml",
+			"XMLFile": "com.deepin.daemon.Power.xml",
 			"ObjectName": "Power"
 		}
 	]
