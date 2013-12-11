@@ -1,0 +1,59 @@
+<node>
+     <interface name="com.deepin.TestDBusGenerator">
+          <method name="TestObjectPath1">
+               <arg type="o" direction="out"></arg>
+          </method>
+          <method name="TestObjectPath2">
+               <arg type="ao" direction="out"></arg>
+          </method>
+          <method name="TestObjectPath3">
+               <arg type="a{so}" direction="out"></arg>
+          </method>
+          <method name="TestObjectPath4">
+               <arg type="o" direction="in"></arg>
+               <arg type="s" direction="out"></arg>
+          </method>
+          <method name="TestObjectPath5">
+               <arg type="ao" direction="in"></arg>
+               <arg type="s" direction="out"></arg>
+          </method>
+          <method name="TestObjectPath6">
+               <arg type="a{so}" direction="in"></arg>
+               <arg type="s" direction="out"></arg>
+          </method>
+          <method name="TestObjectPath7">
+               <arg type="a{sao}" direction="in"></arg>
+               <arg type="s" direction="out"></arg>
+          </method>
+          <property name="A" type="(siasbynqiuxtdo)" access="readwrite"></property>
+     </interface>
+     <interface name="org.freedesktop.DBus.Introspectable">
+          <method name="Introspect">
+               <arg type="s" direction="out"></arg>
+          </method>
+          <method name="String">
+               <arg type="s" direction="out"></arg>
+          </method>
+     </interface>
+     <interface name="org.freedesktop.DBus.Properties">
+          <method name="Get">
+               <arg type="s" direction="in"></arg>
+               <arg type="s" direction="in"></arg>
+               <arg type="v" direction="out"></arg>
+          </method>
+          <method name="GetAll">
+               <arg type="s" direction="in"></arg>
+               <arg type="a{sv}" direction="out"></arg>
+          </method>
+          <method name="Set">
+               <arg type="s" direction="in"></arg>
+               <arg type="s" direction="in"></arg>
+               <arg type="v" direction="in"></arg>
+          </method>
+          <signal name="PropertiesChanged">
+               <arg type="s"></arg>
+               <arg type="a{sv}"></arg>
+               <arg type="as"></arg>
+          </signal>
+     </interface>
+</node>
