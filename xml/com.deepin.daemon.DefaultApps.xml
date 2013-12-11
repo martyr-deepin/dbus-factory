@@ -6,14 +6,12 @@
           </method>
           <method name="GetDefaultAppViaType">
                <arg type="s" direction="in"></arg>
-               <arg type="b" direction="in"></arg>
                <arg type="(ssssss)" direction="out"></arg>
           </method>
           <method name="SetDefaultAppViaType">
                <arg type="s" direction="in"></arg>
                <arg type="s" direction="in"></arg>
                <arg type="b" direction="out"></arg>
-               <arg type="o" direction="out"></arg>
           </method>
      </interface>
 </node>
