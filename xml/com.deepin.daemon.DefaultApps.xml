@@ -1,10 +1,10 @@
 <node>
      <interface name="com.deepin.daemon.DefaultApps">
-          <method name="GetAppsListViaType">
+          <method name="AppsListViaType">
                <arg type="s" direction="in"></arg>
                <arg type="a(ssssss)" direction="out"></arg>
           </method>
-          <method name="GetDefaultAppViaType">
+          <method name="DefaultAppViaType">
                <arg type="s" direction="in"></arg>
                <arg type="(ssssss)" direction="out"></arg>
           </method>
