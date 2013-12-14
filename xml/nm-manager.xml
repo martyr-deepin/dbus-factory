@@ -340,7 +340,7 @@
       <tp:docstring>
         A device was added to the system
       </tp:docstring>
-      <arg name="device_path" type="s">
+      <arg name="device_path" type="o">
         <tp:docstring>
           The object path of the newly added device.
         </tp:docstring>
