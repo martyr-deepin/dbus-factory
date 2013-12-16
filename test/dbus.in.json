@@ -1,0 +1,17 @@
+{
+    "Config": {
+	"OutputDir": "out",
+	"Target": "QML",
+	"InputDir": ".",
+	"BusType": "Session",
+	"DestName": "com.deepin.TestDBusGenerator"
+    },
+    "Interfaces": [
+    {
+	"Interface": "com.deepin.TestDBusGenerator",
+	"OutFile": "testGenerator",
+	"XMLFile": "test-dbus-generator.xml",
+	"ObjectName": "Tester"
+    }
+    ]
+}

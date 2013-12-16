@@ -5,6 +5,6 @@
           <property name="CursorBlink" type="i" access="readwrite"></property>
           <property name="DisableTPad" type="b" access="readwrite"></property>
           <property name="KeyboardLayout" type="as" access="readwrite"></property>
-          <property name="DeviceID" type="s" access="readwrite"></property>
+          <property name="DeviceID" type="s" access="read"></property>
      </interface>
 </node>

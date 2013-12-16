@@ -1,10 +1,11 @@
 <node>
      <interface name="com.deepin.daemon.ExtDevManager.TouchPad">
+          <property name="TPadEnable" type="b" access="readwrite"></property>
           <property name="UseHabit" type="s" access="readwrite"></property>
           <property name="MoveSpeed" type="d" access="readwrite"></property>
-          <property name="MoveAccuracy" type="x" access="readwrite"></property>
-          <property name="ClickFrequency" type="x" access="readwrite"></property>
-          <property name="DragDelay" type="x" access="readwrite"></property>
-          <property name="DeviceID" type="s" access="readwrite"></property>
+          <property name="MoveAccuracy" type="d" access="readwrite"></property>
+          <property name="ClickFrequency" type="i" access="readwrite"></property>
+          <property name="DragDelay" type="i" access="readwrite"></property>
+          <property name="DeviceID" type="s" access="read"></property>
      </interface>
 </node>
