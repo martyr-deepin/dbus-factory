@@ -3,22 +3,31 @@
           <method name="EnumerateDevices">
                <arg type="ao" direction="out"></arg>
           </method>
-          <property name="ButtonHibernate" type="s" access="read"></property>
-          <property name="ButtonPower" type="s" access="read"></property>
-          <property name="ButtonSleep" type="s" access="read"></property>
-          <property name="ButtonSuspend" type="s" access="read"></property>
-          <property name="CriticalBatteryAction" type="s" access="read"></property>
-          <property name="LidCloseAcAction" type="s" access="read"></property>
-          <property name="LidCloseBatteryAction" type="s" access="read"></property>
-          <property name="ShowTray" type="b" access="read"></property>
-          <property name="SleepDisplayAc" type="i" access="read"></property>
-          <property name="SleepDisplayBattery" type="i" access="read"></property>
-          <property name="SleepInactiveAcTimeout" type="i" access="read"></property>
-          <property name="SleepInactiveBatteryTimeout" type="i" access="read"></property>
-          <property name="SleepInactiveAcType" type="s" access="read"></property>
-          <property name="SleepInactiveBatteryType" type="s" access="read"></property>
-          <property name="CurrentPlan" type="s" access="read"></property>
-          <property name="LockEnabled" type="b" access="read"></property>
+          <property name="ButtonHibernate" type="s" access="readwrite"></property>
+          <property name="ButtonPower" type="s" access="readwrite"></property>
+          <property name="ButtonSleep" type="s" access="readwrite"></property>
+          <property name="ButtonSuspend" type="s" access="readwrite"></property>
+          <property name="CriticalBatteryAction" type="s" access="readwrite"></property>
+          <property name="LidCloseAcAction" type="s" access="readwrite"></property>
+          <property name="LidCloseBatteryAction" type="s" access="readwrite"></property>
+          <property name="ShowTray" type="b" access="readwrite"></property>
+          <property name="SleepDisplayAc" type="i" access="readwrite"></property>
+          <property name="SleepDisplayBattery" type="i" access="readwrite"></property>
+          <property name="SleepInactiveAcTimeout" type="i" access="readwrite"></property>
+          <property name="SleepInactiveBatteryTimeout" type="i" access="readwrite"></property>
+          <property name="SleepInactiveAcType" type="s" access="readwrite"></property>
+          <property name="SleepInactiveBatteryType" type="s" access="readwrite"></property>
+          <property name="CurrentPlan" type="s" access="readwrite"></property>
+          <property name="BatteryIsPresent" type="b" access="read"></property>
+          <property name="IsRechargable" type="b" access="read"></property>
+          <property name="BatteryPercentage" type="d" access="read"></property>
+          <property name="Model" type="s" access="read"></property>
+          <property name="Vendor" type="s" access="read"></property>
+          <property name="TimeToEmpty" type="x" access="read"></property>
+          <property name="TimeToFull" type="x" access="read"></property>
+          <property name="State" type="u" access="read"></property>
+          <property name="Type" type="u" access="read"></property>
+          <property name="LockEnabled" type="b" access="readwrite"></property>
      </interface>
      <interface name="org.freedesktop.DBus.Introspectable">
           <method name="Introspect">
