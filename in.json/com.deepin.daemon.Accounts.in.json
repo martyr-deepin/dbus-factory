@@ -11,6 +11,12 @@
 			"OutFile": "dbus-accounts",
 			"XMLFile": "com.deepin.daemon.Accounts.xml",
 			"ObjectName": "Accounts"
+		},
+		{
+			"Interface": "com.deepin.daemon.Accounts.User",
+			"OutFile": "dbus-account-users",
+			"XMLFile": "com.deepin.daemon.Accounts.User.xml",
+			"ObjectName": "User"
 		}
 	]
 }

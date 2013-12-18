@@ -1,0 +1,55 @@
+<node>
+     <interface name="com.deepin.daemon.Accounts.User">
+          <method name="AddIconToHistory">
+               <arg type="s" direction="in"></arg>
+               <arg type="b" direction="out"></arg>
+          </method>
+          <method name="AddIconToUserDir">
+               <arg type="s" direction="in"></arg>
+               <arg type="b" direction="out"></arg>
+          </method>
+          <method name="AllAccountsIcons">
+               <arg type="as" direction="out"></arg>
+          </method>
+          <method name="AllHistoryIcons">
+               <arg type="as" direction="out"></arg>
+          </method>
+          <method name="DeleteUserIcon">
+               <arg type="s" direction="in"></arg>
+               <arg type="b" direction="out"></arg>
+          </method>
+          <method name="SetAccountType">
+               <arg type="i" direction="in"></arg>
+          </method>
+          <method name="SetAutomaticLogin">
+               <arg type="b" direction="in"></arg>
+          </method>
+          <method name="SetIconFile">
+               <arg type="s" direction="in"></arg>
+          </method>
+          <method name="SetLocked">
+               <arg type="b" direction="in"></arg>
+          </method>
+          <method name="SetPassword">
+               <arg type="s" direction="in"></arg>
+               <arg type="s" direction="in"></arg>
+          </method>
+          <method name="SetPasswordMode">
+               <arg type="i" direction="in"></arg>
+          </method>
+          <method name="SetUserName">
+               <arg type="s" direction="in"></arg>
+          </method>
+          <signal name="PropertyChanged">
+               <arg type="s"></arg>
+          </signal>
+          <property name="AccountType" type="i" access="read"></property>
+          <property name="AutomaticLogin" type="b" access="read"></property>
+          <property name="IconFile" type="s" access="read"></property>
+          <property name="Locked" type="b" access="read"></property>
+          <property name="PasswordMode" type="i" access="read"></property>
+          <property name="UserName" type="s" access="read"></property>
+          <property name="LoginTime" type="x" access="read"></property>
+          <property name="ObjectPath" type="s" access="read"></property>
+     </interface>
+</node>
