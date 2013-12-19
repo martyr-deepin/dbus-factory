@@ -1,0 +1,28 @@
+{
+	"Config": {
+		"OutputDir": ".",
+		"InputDir": "../xml",
+		"BusType": "System",
+		"DestName": "org.freedesktop.ConsoleKit"
+	},
+	"Interfaces": [
+		{
+			"Interface": "org.freedesktop.ConsoleKit.Manager",
+			"OutFile": "dbus-consolekit-manager",
+			"XMLFile": "org.freedesktop.ConsoleKit.Manager.xml",
+			"ObjectName": "Manager"
+		},
+		{
+			"Interface": "org.freedesktop.ConsoleKit.Session",
+			"OutFile": "dbus-consolekit-session",
+			"XMLFile": "org.freedesktop.ConsoleKit.Session.xml",
+			"ObjectName": "Session"
+		},
+		{
+			"Interface": "org.freedesktop.ConsoleKit.Seat",
+			"OutFile": "dbus-consolekit-seat",
+			"XMLFile": "org.freedesktop.ConsoleKit.Seat.xml",
+			"ObjectName": "Seat"
+		}
+	]
+}
