@@ -1,12 +1,25 @@
-<node>
+   <node>
      <interface name="com.deepin.daemon.Network">
+          <method name="ActiveWiredDevice">
+               <arg type="b" direction="in"></arg>
+               <arg type="o" direction="in"></arg>
+          </method>
+          <method name="GetAccessPoints">
+               <arg type="o" direction="in"></arg>
+               <arg type="a(sby)" direction="out"></arg>
+          </method>
+          <method name="GetConnectionByAccessPoint">
+               <arg type="(sby)" direction="in"></arg>
+               <arg type="(sss)" direction="out"></arg>
+          </method>
           <property name="WiredEnabled" type="b" access="readwrite"></property>
-          <property name="WirelessEnabled" type="b" access="readwrite"></property>
           <property name="VPNEnabled" type="b" access="readwrite"></property>
+          <property name="WirelessEnabled" type="b" access="readwrite"></property>
           <property name="NetworkingEnabled" type="b" access="readwrite"></property>
-          <property name="APs" type="a(s)" access="read"></property>
-          <property name="HasWireless" type="b" access="read"></property>
-          <property name="HasWired" type="b" access="read"></property>
+          <property name="APs" type="a(sby)" access="read"></property>
+          <property name="WirelessDevices" type="a(ou)" access="read"></property>
+          <property name="WiredDevices" type="a(ou)" access="read"></property>
+          <property name="OtherDevices" type="a(ou)" access="read"></property>
           <property name="WiredConnections" type="a(sss)" access="read"></property>
           <property name="WirelessConnections" type="a(sss)" access="read"></property>
           <property name="VPNConnections" type="a(sss)" access="read"></property>

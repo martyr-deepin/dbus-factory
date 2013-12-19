@@ -1,0 +1,29 @@
+<node>
+     <interface name="com.deepin.daemon.Accounts.User">
+          <method name="AddIconToUserDir">
+               <arg type="s" direction="in"></arg>
+               <arg type="b" direction="out"></arg>
+          </method>
+          <method name="AllAccountsIcons">
+               <arg type="as" direction="out"></arg>
+          </method>
+          <method name="AllHistoryIcons">
+               <arg type="as" direction="out"></arg>
+          </method>
+          <method name="DeleteUserIcon">
+               <arg type="s" direction="in"></arg>
+               <arg type="b" direction="out"></arg>
+          </method>
+          <method name="SetPassword">
+               <arg type="s" direction="in"></arg>
+               <arg type="s" direction="in"></arg>
+          </method>
+          <property name="AccountType" type="i" access="readwrite"></property>
+          <property name="AutomaticLogin" type="b" access="readwrite"></property>
+          <property name="IconFile" type="s" access="readwrite"></property>
+          <property name="Locked" type="b" access="readwrite"></property>
+          <property name="PasswordMode" type="i" access="readwrite"></property>
+          <property name="UserName" type="s" access="readwrite"></property>
+          <property name="LoginTime" type="x" access="read"></property>
+     </interface>
+</node>
