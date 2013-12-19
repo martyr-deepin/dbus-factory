@@ -1,0 +1,34 @@
+{
+	"Config": {
+		"OutputDir": ".",
+		"InputDir": "../xml",
+		"BusType": "Session",
+		"DestName": "com.deepin.daemon.Audio"
+	},
+	"Interfaces": [
+		{
+			"Interface": "com.deepin.daemon.Audio",
+			"OutFile": "dbus-audio",
+			"XMLFile": "com.deepin.daemon.Audio.xml",
+			"ObjectName": "Audio"
+		},
+		{
+			"Interface":"com.deepin.daemon.Audio.Card",
+			"OutFile":"dbus-audio-card",
+			"XMLFile":"com.deepin.daemon.Audio.Card.xml",
+			"ObjectName":"Card"
+		},
+		{
+			"Interface":"com.deepin.daemon.Audio.Output",
+			"OutFile":"dbus-audio-output",
+			"XMLFile":"com.deepin.daemon.Audio.Sink.xml",
+			"Objectname":"Output"
+		},
+		{
+			"Interface":"com.deepin.daemon.Audio.Input",
+			"OutFile":"dbus-audio-input",
+			"XMLFile":"com.deepin.daemon.Audio.Source.xml",
+			"ObjectName":"Input"
+		}
+	]
+}

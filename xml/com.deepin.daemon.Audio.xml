@@ -1,0 +1,62 @@
+<node>
+     <interface name="com.deepin.daemon.Audio">
+          <method name="GetCards">
+               <arg type="ao" direction="out"></arg>
+          </method>
+          <method name="GetClients">
+               <arg type="ao" direction="out"></arg>
+          </method>
+          <method name="GetServerInfo">
+               <arg type="o" direction="out"></arg>
+          </method>
+          <method name="GetSinkInputs">
+               <arg type="ao" direction="out"></arg>
+          </method>
+          <method name="GetSinks">
+               <arg type="ao" direction="out"></arg>
+          </method>
+          <method name="GetSourceOutputs">
+               <arg type="ao" direction="out"></arg>
+          </method>
+          <method name="GetSources">
+               <arg type="ao" direction="out"></arg>
+          </method>
+          <property name="NumDevics" type="i" access="read"></property>
+          <property name="HostName" type="s" access="read"></property>
+          <property name="UserName" type="s" access="read"></property>
+     </interface>
+     <interface name="org.freedesktop.DBus.Introspectable">
+          <method name="Introspect">
+               <arg type="s" direction="out"></arg>
+          </method>
+          <method name="String">
+               <arg type="s" direction="out"></arg>
+          </method>
+     </interface>
+     <interface name="org.freedesktop.DBus.Properties">
+          <method name="Get">
+               <arg type="s" direction="in"></arg>
+               <arg type="s" direction="in"></arg>
+               <arg type="v" direction="out"></arg>
+          </method>
+          <method name="GetAll">
+               <arg type="s" direction="in"></arg>
+               <arg type="a{sv}" direction="out"></arg>
+          </method>
+          <method name="Set">
+               <arg type="s" direction="in"></arg>
+               <arg type="s" direction="in"></arg>
+               <arg type="v" direction="in"></arg>
+          </method>
+          <signal name="PropertiesChanged">
+               <arg type="s"></arg>
+               <arg type="a{sv}"></arg>
+               <arg type="as"></arg>
+          </signal>
+     </interface>
+     <node name="Output0"></node>
+     <node name="Application13"></node>
+     <node name="Input0"></node>
+     <node name="Input1"></node>
+     <node name="Card0"></node>
+</node>
