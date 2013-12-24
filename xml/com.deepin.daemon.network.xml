@@ -1,4 +1,4 @@
-<node>
+   <node>
      <interface name="com.deepin.daemon.Network">
           <method name="ActiveAccessPoint">
                <arg type="o" direction="in"></arg>
@@ -14,6 +14,10 @@
           <method name="GetAccessPoints">
                <arg type="o" direction="in"></arg>
                <arg type="a(sbyob)" direction="out"></arg>
+          </method>
+          <method name="GetActiveConnection">
+               <arg type="o" direction="in"></arg>
+               <arg type="(ssssss)" direction="out"></arg>
           </method>
           <method name="GetConnectionByAccessPoint">
                <arg type="o" direction="in"></arg>
@@ -31,7 +35,6 @@
           <property name="VPNEnabled" type="b" access="readwrite"></property>
           <property name="WirelessEnabled" type="b" access="readwrite"></property>
           <property name="NetworkingEnabled" type="b" access="readwrite"></property>
-          <property name="APs" type="a(sbyob)" access="read"></property>
           <property name="WirelessDevices" type="a(ou)" access="read"></property>
           <property name="WiredDevices" type="a(ou)" access="read"></property>
           <property name="OtherDevices" type="a(ou)" access="read"></property>
