@@ -1,0 +1,19 @@
+<node>
+     <interface name="com.deepin.daemon.GrabManager">
+          <method name="GrabKeyboard"></method>
+          <method name="GrabShortcut">
+               <arg type="u" direction="in"></arg>
+               <arg type="s" direction="in"></arg>
+               <arg type="s" direction="in"></arg>
+               <arg type="b" direction="out"></arg>
+          </method>
+          <method name="UngrabShortcut">
+               <arg type="u" direction="in"></arg>
+               <arg type="s" direction="in"></arg>
+               <arg type="b" direction="out"></arg>
+          </method>
+          <signal name="GrabKeyEvent">
+               <arg type="s"></arg>
+          </signal>
+     </interface>
+</node>

@@ -11,6 +11,12 @@
 			"OutFile": "dbus-keybinding",
 			"XMLFile": "com.deepin.daemon.KeyBinding.xml",
 			"ObjectName": "KeyBinding"
+		},
+		{
+			"Interface": "com.deepin.daemon.GrabManager",
+			"OutFile": "dbus-grab-manager",
+			"XMLFile": "com.deepin.daemon.GrabManager.xml",
+			"ObjectName": "GrabManager"
 		}
 	]
 }

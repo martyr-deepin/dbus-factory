@@ -11,6 +11,9 @@
                <arg type="s" direction="in"></arg>
                <arg type="(bi)" direction="out"></arg>
           </method>
+          <method name="CustomList">
+               <arg type="ai" direction="out"></arg>
+          </method>
           <method name="DeleteCustomBinding">
                <arg type="i" direction="in"></arg>
           </method>
@@ -26,12 +29,6 @@
                <arg type="i" direction="in"></arg>
                <arg type="s" direction="out"></arg>
           </method>
-          <method name="GetCustomList">
-               <arg type="ai" direction="out"></arg>
-          </method>
-          <method name="GetSystemList">
-               <arg type="ai" direction="out"></arg>
-          </method>
           <method name="HasOwnID">
                <arg type="i" direction="in"></arg>
                <arg type="b" direction="out"></arg>
@@ -40,6 +37,9 @@
                <arg type="s" direction="in"></arg>
                <arg type="(bi)" direction="out"></arg>
           </method>
-          <property name="KeyBindingCount" type="i" access="read"></property>
+          <method name="SystemList">
+               <arg type="ai" direction="out"></arg>
+          </method>
+          <property name="CustomBindList" type="ai" access="read"></property>
      </interface>
 </node>
