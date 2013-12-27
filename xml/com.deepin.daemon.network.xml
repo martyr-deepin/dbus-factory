@@ -21,11 +21,14 @@
           </method>
           <method name="GetConnectionByAccessPoint">
                <arg type="o" direction="in"></arg>
-               <arg type="(osss)" direction="out"></arg>
+               <arg type="(a{sa{sv}}osss)" direction="out"></arg>
           </method>
           <method name="SetKey">
                <arg type="s" direction="in"></arg>
                <arg type="s" direction="in"></arg>
+          </method>
+          <method name="UpdateConnection">
+               <arg type="a{sa{ss}}" direction="in"></arg>
           </method>
           <signal name="NeedMoreConfigure">
                <arg type="s"></arg>
@@ -38,9 +41,9 @@
           <property name="WirelessDevices" type="a(ou)" access="read"></property>
           <property name="WiredDevices" type="a(ou)" access="read"></property>
           <property name="OtherDevices" type="a(ou)" access="read"></property>
-          <property name="WiredConnections" type="a(osss)" access="read"></property>
-          <property name="WirelessConnections" type="a(osss)" access="read"></property>
-          <property name="VPNConnections" type="a(osss)" access="read"></property>
+          <property name="WiredConnections" type="a(a{sa{sv}}osss)" access="read"></property>
+          <property name="WirelessConnections" type="a(a{sa{sv}}osss)" access="read"></property>
+          <property name="VPNConnections" type="a(a{sa{sv}}osss)" access="read"></property>
      </interface>
      <interface name="org.freedesktop.DBus.Introspectable">
           <method name="Introspect">
