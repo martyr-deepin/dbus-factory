@@ -1,0 +1,22 @@
+{
+	"Config": {
+		"OutputDir": ".",
+		"InputDir": "../xml",
+		"BusType": "Session",
+		"DestName": "com.deepin.daemon.Display"
+	},
+	"Interfaces": [
+		{
+			"Interface": "com.deepin.daemon.Display",
+			"OutFile": "display",
+			"XMLFile": "com.deepin.daemon.Display.xml",
+			"ObjectName": "Display"
+		},
+		{
+			"Interface": "com.deepin.daemon.Display.Output",
+			"OutFile": "output",
+			"XMLFile": "com.deepin.daemon.Display.Output.xml",
+			"ObjectName": "Output"
+		}
+	]
+}
