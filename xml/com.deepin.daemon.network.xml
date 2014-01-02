@@ -5,7 +5,6 @@
                <arg type="o" direction="in"></arg>
           </method>
           <method name="ActiveWiredDevice">
-               <arg type="b" direction="in"></arg>
                <arg type="o" direction="in"></arg>
           </method>
           <method name="DisconnectDevice">
