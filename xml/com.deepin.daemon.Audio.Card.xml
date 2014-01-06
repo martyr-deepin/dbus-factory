@@ -1,9 +1,19 @@
 <node>
      <interface name="com.deepin.daemon.Audio.Card">
+          <method name="GetCardProfile">
+               <arg type="a(ss)" direction="out"></arg>
+          </method>
+          <method name="SetCardProfile">
+               <arg type="s" direction="in"></arg>
+               <arg type="i" direction="out"></arg>
+          </method>
           <property name="Index" type="i" access="read"></property>
           <property name="Name" type="s" access="read"></property>
           <property name="Owner_module" type="i" access="read"></property>
           <property name="Driver" type="s" access="read"></property>
+          <property name="NProfiles" type="i" access="read"></property>
+          <property name="Profiles" type="a(ss)" access="read"></property>
+          <property name="ActiveProfile" type="(ss)" access="read"></property>
      </interface>
      <interface name="org.freedesktop.DBus.Introspectable">
           <method name="Introspect">

@@ -1,17 +1,17 @@
 <node>
      <interface name="com.deepin.daemon.Audio.Output">
           <method name="GetSinkVolume">
-               <arg type="(uau)" direction="out"></arg>
+               <arg type="i" direction="out"></arg>
           </method>
           <method name="SetSinkMute">
                <arg type="i" direction="in"></arg>
                <arg type="i" direction="out"></arg>
           </method>
-          <method name="SetSinkVolume">
-               <arg type="(uau)" direction="in"></arg>
+          <method name="SetSinkPort">
+               <arg type="s" direction="in"></arg>
                <arg type="i" direction="out"></arg>
           </method>
-          <method name="SetSinkVolumeInt">
+          <method name="SetSinkVolume">
                <arg type="i" direction="in"></arg>
                <arg type="i" direction="out"></arg>
           </method>
@@ -19,10 +19,13 @@
           <property name="Name" type="s" access="read"></property>
           <property name="Description" type="s" access="read"></property>
           <property name="Driver" type="s" access="read"></property>
-          <property name="Mute" type="s" access="read"></property>
+          <property name="Mute" type="i" access="read"></property>
           <property name="NVolumeSteps" type="i" access="read"></property>
           <property name="Card" type="i" access="read"></property>
-          <property name="Cvolume" type="(uau)" access="read"></property>
+          <property name="Volume" type="i" access="read"></property>
+          <property name="NPorts" type="i" access="read"></property>
+          <property name="Ports" type="a(ssi)" access="read"></property>
+          <property name="ActivePort" type="(ssi)" access="read"></property>
      </interface>
      <interface name="org.freedesktop.DBus.Introspectable">
           <method name="Introspect">

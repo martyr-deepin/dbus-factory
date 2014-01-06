@@ -1,14 +1,18 @@
 <node>
      <interface name="com.deepin.daemon.Audio.Input">
           <method name="GetSourceVolume">
-               <arg type="(uau)" direction="out"></arg>
+               <arg type="i" direction="out"></arg>
           </method>
           <method name="SetSourceMute">
                <arg type="i" direction="in"></arg>
                <arg type="i" direction="out"></arg>
           </method>
+          <method name="SetSourcePort">
+               <arg type="s" direction="in"></arg>
+               <arg type="i" direction="out"></arg>
+          </method>
           <method name="SetSourceVolume">
-               <arg type="(uau)" direction="in"></arg>
+               <arg type="i" direction="in"></arg>
                <arg type="i" direction="out"></arg>
           </method>
           <property name="Index" type="i" access="read"></property>
@@ -20,7 +24,10 @@
           <property name="Card" type="i" access="read"></property>
           <property name="C_ports" type="i" access="read"></property>
           <property name="N_formates" type="i" access="read"></property>
-          <property name="Cvolume" type="(uau)" access="read"></property>
+          <property name="Volume" type="i" access="read"></property>
+          <property name="NPorts" type="i" access="read"></property>
+          <property name="Ports" type="a(ssi)" access="read"></property>
+          <property name="ActivePort" type="(ssi)" access="read"></property>
      </interface>
      <interface name="org.freedesktop.DBus.Introspectable">
           <method name="Introspect">
