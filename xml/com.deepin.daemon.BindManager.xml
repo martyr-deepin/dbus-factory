@@ -1,0 +1,25 @@
+<node>
+     <interface name="com.deepin.daemon.BindManager">
+          <method name="AddKeyBind">
+               <arg type="s" direction="in"></arg>
+               <arg type="s" direction="in"></arg>
+               <arg type="s" direction="in"></arg>
+               <arg type="(i(bai))" direction="out"></arg>
+          </method>
+          <method name="ChangeShortcut">
+               <arg type="i" direction="in"></arg>
+               <arg type="s" direction="in"></arg>
+               <arg type="(bai)" direction="out"></arg>
+          </method>
+          <method name="DeleteCustomBind">
+               <arg type="i" direction="in"></arg>
+          </method>
+          <property name="SystemList" type="a(iss)" access="read"></property>
+          <property name="MediaList" type="a(iss)" access="read"></property>
+          <property name="WindowList" type="a(iss)" access="read"></property>
+          <property name="WorkSpaceList" type="a(iss)" access="read"></property>
+          <property name="CustomList" type="a(iss)" access="read"></property>
+          <property name="ConflictValid" type="ai" access="read"></property>
+          <property name="ConflictInvalid" type="ai" access="read"></property>
+     </interface>
+</node>

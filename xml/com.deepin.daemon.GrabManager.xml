@@ -19,7 +19,7 @@
           <method name="UngrabSingleKey">
                <arg type="s" direction="in"></arg>
           </method>
-          <signal name="GrabKeyEvent">
+          <signal name="KeyReleaseEvent">
                <arg type="s"></arg>
           </signal>
      </interface>
