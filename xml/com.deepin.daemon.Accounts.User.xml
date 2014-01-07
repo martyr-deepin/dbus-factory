@@ -24,6 +24,7 @@
           <property name="Locked" type="b" access="readwrite"></property>
           <property name="PasswordMode" type="i" access="readwrite"></property>
           <property name="UserName" type="s" access="readwrite"></property>
+          <property name="BackgroundFile" type="s" access="readwrite"></property>
           <property name="LoginTime" type="x" access="read"></property>
           <property name="Uid" type="t" access="read"></property>
      </interface>
