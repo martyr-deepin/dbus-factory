@@ -1,11 +1,21 @@
 <node>
      <interface name="com.deepin.daemon.Display">
-          <method name="GetOutpus">
-               <arg type="ao" direction="out"></arg>
+          <method name="ListRotations">
+               <arg type="ay" direction="out"></arg>
           </method>
-          <property name="SupportRotations" type="au" access="read"></property>
-          <property name="CurrentRotation" type="u" access="read"></property>
-          <property name="CurrentMode" type="(qqq)" access="read"></property>
+          <method name="SetPrimary">
+               <arg type="u" direction="in"></arg>
+          </method>
+          <method name="ShowInfoOnScreen"></method>
+          <signal name="PrimaryChanged">
+               <arg type="(nnqq)"></arg>
+          </signal>
+          <property name="Outputs" type="ao" access="read"></property>
+          <property name="Width" type="q" access="read"></property>
+          <property name="Height" type="q" access="read"></property>
+          <property name="Rotation" type="q" access="read"></property>
+          <property name="PrimaryOutput" type="o" access="read"></property>
+          <property name="PrimaryRect" type="(nnqq)" access="read"></property>
      </interface>
      <interface name="org.freedesktop.DBus.Introspectable">
           <method name="Introspect">
@@ -36,5 +46,5 @@
                <arg type="as"></arg>
           </signal>
      </interface>
-     <node name="OutputSMB1920NW"></node>
+     <node name="Output66"></node>
 </node>
