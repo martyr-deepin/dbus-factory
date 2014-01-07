@@ -1,5 +1,5 @@
 <node>
-     <interface name="com.deepin.daemon.CityPinyin">
+     <interface name="com.deepin.dde.api.CityPinyin">
           <method name="GetValuesByKey">
                <arg type="s" direction="in"></arg>
                <arg type="a{sas}" direction="out"></arg>
