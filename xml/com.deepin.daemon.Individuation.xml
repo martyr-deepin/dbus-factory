@@ -1,0 +1,21 @@
+<node>
+     <interface name="com.deepin.daemon.Individuation">
+          <method name="DeletePictureFromURIS">
+               <arg type="s" direction="in"></arg>
+          </method>
+          <property name="GtkTheme" type="s" access="readwrite"></property>
+          <property name="IconTheme" type="s" access="readwrite"></property>
+          <property name="FontTheme" type="s" access="readwrite"></property>
+          <property name="CursorTheme" type="s" access="readwrite"></property>
+          <property name="BackgroundFile" type="s" access="readwrite"></property>
+          <property name="AutoSwitch" type="b" access="readwrite"></property>
+          <property name="SwitchDuration" type="i" access="readwrite"></property>
+          <property name="CrossFadeMode" type="s" access="readwrite"></property>
+          <property name="CrossInterval" type="i" access="readwrite"></property>
+          <property name="AvailableGtkTheme" type="a(ss)" access="read"></property>
+          <property name="AvailableIconTheme" type="a(ss)" access="read"></property>
+          <property name="AvailableFontTheme" type="a(ss)" access="read"></property>
+          <property name="AvailableCursorTheme" type="a(ss)" access="read"></property>
+          <property name="AvailableBackground" type="a(ss)" access="read"></property>
+     </interface>
+</node>
