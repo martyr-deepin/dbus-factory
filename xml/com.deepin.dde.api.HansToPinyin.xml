@@ -1,0 +1,8 @@
+<node>
+     <interface name="com.deepin.dde.api.HansToPinyin">
+          <method name="GetPinyinByHans">
+               <arg type="s" direction="in"></arg>
+               <arg type="as" direction="out"></arg>
+          </method>
+     </interface>
+</node>
