@@ -17,6 +17,7 @@
           <property name="Width" type="q" access="read"></property>
           <property name="Height" type="q" access="read"></property>
           <property name="Rotation" type="q" access="read"></property>
+          <property name="Reflect" type="q" access="read"></property>
           <property name="PrimaryOutput" type="o" access="read"></property>
           <property name="PrimaryRect" type="(nnqq)" access="read"></property>
      </interface>
