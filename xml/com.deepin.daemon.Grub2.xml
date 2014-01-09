@@ -1,0 +1,44 @@
+<node>
+     <interface name="com.deepin.daemon.Grub2">
+          <method name="GetEntryTitles">
+               <arg type="as" direction="out"></arg>
+          </method>
+          <method name="Load"></method>
+          <method name="Save"></method>
+          <property name="DefaultEntry" type="s" access="readwrite"></property>
+          <property name="Timeout" type="i" access="readwrite"></property>
+          <property name="Gfxmode" type="s" access="readwrite"></property>
+          <property name="Background" type="s" access="readwrite"></property>
+          <property name="Theme" type="s" access="readwrite"></property>
+          <property name="InUpdate" type="b" access="read"></property>
+     </interface>
+     <interface name="org.freedesktop.DBus.Introspectable">
+          <method name="Introspect">
+               <arg type="s" direction="out"></arg>
+          </method>
+          <method name="String">
+               <arg type="s" direction="out"></arg>
+          </method>
+     </interface>
+     <interface name="org.freedesktop.DBus.Properties">
+          <method name="Get">
+               <arg type="s" direction="in"></arg>
+               <arg type="s" direction="in"></arg>
+               <arg type="v" direction="out"></arg>
+          </method>
+          <method name="GetAll">
+               <arg type="s" direction="in"></arg>
+               <arg type="a{sv}" direction="out"></arg>
+          </method>
+          <method name="Set">
+               <arg type="s" direction="in"></arg>
+               <arg type="s" direction="in"></arg>
+               <arg type="v" direction="in"></arg>
+          </method>
+          <signal name="PropertiesChanged">
+               <arg type="s"></arg>
+               <arg type="a{sv}"></arg>
+               <arg type="as"></arg>
+          </signal>
+     </interface>
+</node>

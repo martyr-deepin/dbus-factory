@@ -1,0 +1,16 @@
+{
+	"Config": {
+		"OutputDir": ".",
+		"InputDir": "../xml",
+		"BusType": "System",
+		"DestName": "com.deepin.daemon.Grub2"
+	},
+	"Interfaces": [
+		{
+			"Interface": "com.deepin.daemon.Grub2",
+			"OutFile": "dbus_grub2",
+			"XMLFile": "com.deepin.daemon.Grub2.xml",
+			"ObjectName": "Grub2"
+		}
+	]
+}
