@@ -1,5 +1,5 @@
 <node>
-     <interface name="com.deepin.Accounts">
+     <interface name="com.deepin.dde.api.Accounts">
           <method name="BackgroundBlurPictPath">
                <arg type="s" direction="in"></arg>
                <arg type="s" direction="in"></arg>

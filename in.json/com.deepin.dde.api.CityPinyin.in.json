@@ -3,13 +3,13 @@
 		"OutputDir": ".",
 		"InputDir": "../xml",
 		"BusType": "Session",
-		"DestName": "com.deepin.daemon.CityPinyin"
+		"DestName": "com.deepin.dde.api.CityPinyin"
 	},
 	"Interfaces": [
 		{
-			"Interface": "com.deepin.daemon.CityPinyin",
+			"Interface": "com.deepin.dde.api.CityPinyin",
 			"OutFile": "dbus-city-pinyin",
-			"XMLFile": "com.deepin.daemon.CityPinyin.xml",
+			"XMLFile": "com.deepin.dde.api.CityPinyin.xml",
 			"ObjectName": "CityPinyin"
 		}
 	]

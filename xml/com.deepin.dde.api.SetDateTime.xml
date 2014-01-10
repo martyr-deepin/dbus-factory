@@ -1,5 +1,5 @@
 <node>
-     <interface name="com.deepin.daemon.SetDateTime">
+     <interface name="com.deepin.dde.api.SetDateTime">
           <method name="SetCurrentDate">
                <arg type="s" direction="in"></arg>
                <arg type="b" direction="out"></arg>
@@ -15,6 +15,5 @@
           <method name="SyncNtpTime">
                <arg type="b" direction="out"></arg>
           </method>
-          <property name="NtpRunFlag" type="b" access="read"></property>
      </interface>
 </node>
