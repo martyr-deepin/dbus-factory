@@ -12,11 +12,11 @@
           <property name="SwitchDuration" type="i" access="readwrite"></property>
           <property name="CrossFadeMode" type="s" access="readwrite"></property>
           <property name="CrossInterval" type="i" access="readwrite"></property>
-          <property name="EnableGtkTheme" type="a(ss)" access="read"></property>
-          <property name="EnableIconTheme" type="a(ss)" access="read"></property>
-          <property name="EnableFontTheme" type="a(ss)" access="read"></property>
-          <property name="EnableCursorTheme" type="a(ss)" access="read"></property>
-          <property name="EnableWindowTheme" type="a(ss)" access="read"></property>
-          <property name="EnableBackground" type="a(ss)" access="read"></property>
+          <property name="AvailableGtkTheme" type="a(ss)" access="read"></property>
+          <property name="AvailableIconTheme" type="a(ss)" access="read"></property>
+          <property name="AvailableFontTheme" type="a(ss)" access="read"></property>
+          <property name="AvailableCursorTheme" type="a(ss)" access="read"></property>
+          <property name="AvailableWindowTheme" type="a(ss)" access="read"></property>
+          <property name="AvailableBackground" type="a(ss)" access="read"></property>
      </interface>
 </node>
