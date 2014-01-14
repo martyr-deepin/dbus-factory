@@ -1,0 +1,16 @@
+{
+	"Config": {
+		"OutputDir": ".",
+		"InputDir": "../xml",
+		"BusType": "Session",
+		"DestName": "com.deepin.daemon.DiskMount"
+	},
+	"Interfaces": [
+		{
+			"Interface": "com.deepin.daemon.DiskMount",
+			"OutFile": "dbus-mount",
+			"XMLFile": "com.deepin.daemon.DiskMount.xml",
+			"ObjectName": "DiskMount"
+		}
+	]
+}
