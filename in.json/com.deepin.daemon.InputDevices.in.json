@@ -1,0 +1,34 @@
+{
+	"Config": {
+		"OutputDir": ".",
+		"InputDir": "../xml",
+		"BusType": "Session",
+		"DestName": "com.deepin.daemon.InputDevices"
+	},
+	"Interfaces": [
+		{
+			"Interface": "com.deepin.daemon.InputDevices",
+			"OutFile": "dbus-ext-manager",
+			"XMLFile": "com.deepin.daemon.InputDevices.xml",
+			"ObjectName": "InputDevices"
+		},
+		{
+			"Interface": "com.deepin.daemon.InputDevice.Keyboard",
+			"OutFile": "dbus-ext-keyboard",
+			"XMLFile": "com.deepin.daemon.InputDevice.Keyboard.xml",
+			"ObjectName": "Keyboard"
+		},
+		{
+			"Interface": "com.deepin.daemon.InputDevice.Mouse",
+			"OutFile": "dbus-ext-mouse",
+			"XMLFile": "com.deepin.daemon.InputDevice.Mouse.xml",
+			"ObjectName": "Mouse"
+		},
+		{
+			"Interface": "com.deepin.daemon.InputDevice.TouchPad",
+			"OutFile": "dbus-ext-tpad",
+			"XMLFile": "com.deepin.daemon.InputDevice.TouchPad.xml",
+			"ObjectName": "TouchPad"
+		}
+	]
+}

@@ -1,5 +1,5 @@
 <node>
-     <interface name="com.deepin.daemon.ExtDevManager.Mouse">
+     <interface name="com.deepin.daemon.InputDevice.Mouse">
           <property name="UseHabit" type="b" access="readwrite"></property>
           <property name="MoveSpeed" type="d" access="readwrite"></property>
           <property name="MoveAccuracy" type="d" access="readwrite"></property>
