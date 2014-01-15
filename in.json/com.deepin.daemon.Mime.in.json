@@ -3,7 +3,7 @@
 		"OutputDir": ".",
 		"InputDir": "../xml",
 		"BusType": "Session",
-		"DestName": "com.deepin.daemon.DefaultApps"
+		"DestName": "com.deepin.daemon.Mime"
 	},
 	"Interfaces":[
 		{
