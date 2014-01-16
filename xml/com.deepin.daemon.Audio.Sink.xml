@@ -18,9 +18,7 @@
           <property name="Index" type="i" access="read"></property>
           <property name="Name" type="s" access="read"></property>
           <property name="Description" type="s" access="read"></property>
-          <property name="Driver" type="s" access="read"></property>
           <property name="Mute" type="i" access="read"></property>
-          <property name="NVolumeSteps" type="i" access="read"></property>
           <property name="Card" type="i" access="read"></property>
           <property name="Volume" type="i" access="read"></property>
           <property name="NPorts" type="i" access="read"></property>

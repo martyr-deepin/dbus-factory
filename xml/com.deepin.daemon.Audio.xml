@@ -1,5 +1,8 @@
 <node>
      <interface name="com.deepin.daemon.Audio">
+          <method name="GetCards">
+               <arg type="ao" direction="out"></arg>
+          </method>
           <method name="GetClients">
                <arg type="ao" direction="out"></arg>
           </method>
@@ -9,7 +12,25 @@
           <method name="GetSinkInputs">
                <arg type="ao" direction="out"></arg>
           </method>
-          <property name="NumDevics" type="i" access="read"></property>
+          <method name="GetSinks">
+               <arg type="ao" direction="out"></arg>
+          </method>
+          <method name="GetSources">
+               <arg type="ao" direction="out"></arg>
+          </method>
+          <signal name="Changed">
+               <arg type="s"></arg>
+          </signal>
+          <signal name="DeviceAdded">
+               <arg type="s"></arg>
+          </signal>
+          <signal name="DeviceChanged">
+               <arg type="s"></arg>
+               <arg type="o"></arg>
+          </signal>
+          <signal name="DeviceRemoved">
+               <arg type="s"></arg>
+          </signal>
           <property name="HostName" type="s" access="read"></property>
           <property name="UserName" type="s" access="read"></property>
      </interface>
@@ -43,9 +64,9 @@
           </signal>
      </interface>
      <node name="Card0"></node>
-     <node name="Output0"></node>
-     <node name="Input0"></node>
-     <node name="Input2"></node>
-     <node name="Application230"></node>
-     <node name="Application412"></node>
+     <node name="Output2"></node>
+     <node name="Input3"></node>
+     <node name="Input6"></node>
+     <node name="Application84"></node>
+     <node name="Application416"></node>
 </node>
