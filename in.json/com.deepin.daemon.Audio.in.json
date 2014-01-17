@@ -19,13 +19,13 @@
 			"ObjectName":"Card"
 		},
 		{
-			"Interface":"com.deepin.daemon.Audio.Output",
+			"Interface":"com.deepin.daemon.Audio.Sink",
 			"OutFile":"dbus-audio-output",
 			"XMLFile":"com.deepin.daemon.Audio.Sink.xml",
 			"Objectname":"Output"
 		},
 		{
-			"Interface":"com.deepin.daemon.Audio.Input",
+			"Interface":"com.deepin.daemon.Audio.Source",
 			"OutFile":"dbus-audio-input",
 			"XMLFile":"com.deepin.daemon.Audio.Source.xml",
 			"ObjectName":"Input"

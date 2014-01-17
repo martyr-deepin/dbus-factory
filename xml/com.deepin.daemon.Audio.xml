@@ -1,72 +1,75 @@
-<node>
-     <interface name="com.deepin.daemon.Audio">
-          <method name="GetCards">
-               <arg type="ao" direction="out"></arg>
-          </method>
-          <method name="GetClients">
-               <arg type="ao" direction="out"></arg>
-          </method>
-          <method name="GetServerInfo">
-               <arg type="o" direction="out"></arg>
-          </method>
-          <method name="GetSinkInputs">
-               <arg type="ao" direction="out"></arg>
-          </method>
-          <method name="GetSinks">
-               <arg type="ao" direction="out"></arg>
-          </method>
-          <method name="GetSources">
-               <arg type="ao" direction="out"></arg>
-          </method>
-          <signal name="Changed">
-               <arg type="s"></arg>
-          </signal>
-          <signal name="DeviceAdded">
-               <arg type="s"></arg>
-          </signal>
-          <signal name="DeviceChanged">
-               <arg type="s"></arg>
-               <arg type="o"></arg>
-          </signal>
-          <signal name="DeviceRemoved">
-               <arg type="s"></arg>
-          </signal>
-          <property name="HostName" type="s" access="read"></property>
-          <property name="UserName" type="s" access="read"></property>
-     </interface>
-     <interface name="org.freedesktop.DBus.Introspectable">
-          <method name="Introspect">
-               <arg type="s" direction="out"></arg>
-          </method>
-          <method name="String">
-               <arg type="s" direction="out"></arg>
-          </method>
-     </interface>
-     <interface name="org.freedesktop.DBus.Properties">
-          <method name="Get">
-               <arg type="s" direction="in"></arg>
-               <arg type="s" direction="in"></arg>
-               <arg type="v" direction="out"></arg>
-          </method>
-          <method name="GetAll">
-               <arg type="s" direction="in"></arg>
-               <arg type="a{sv}" direction="out"></arg>
-          </method>
-          <method name="Set">
-               <arg type="s" direction="in"></arg>
-               <arg type="s" direction="in"></arg>
-               <arg type="v" direction="in"></arg>
-          </method>
-          <signal name="PropertiesChanged">
-               <arg type="s"></arg>
-               <arg type="a{sv}"></arg>
-               <arg type="as"></arg>
-          </signal>
-     </interface>
-     <node name="Card0"></node>
-     <node name="Output2"></node>
-     <node name="Input3"></node>
-     <node name="Input6"></node>
-     <node name="Application84"></node>
-     <node name="Application416"></node>
-</node>
+   <node>
+        <interface name="com.deepin.daemon.Audio">
+             <method name="GetCards">
+                  <arg type="ao" direction="out"></arg>
+             </method>
+             <method name="GetClients">
+                  <arg type="ao" direction="out"></arg>
+             </method>
+             <method name="GetServerInfo">
+                  <arg type="o" direction="out"></arg>
+             </method>
+             <method name="GetSinkInputs">
+                  <arg type="ao" direction="out"></arg>
+             </method>
+             <method name="GetSinks">
+                  <arg type="ao" direction="out"></arg>
+             </method>
+             <method name="GetSources">
+                  <arg type="ao" direction="out"></arg>
+             </method>
+             <signal name="DeviceAdded">
+                  <arg type="s"></arg>
+             </signal>
+             <signal name="DeviceChanged">
+                  <arg type="s"></arg>
+                  <arg type="o"></arg>
+             </signal>
+             <signal name="DeviceRemoved">
+                  <arg type="s"></arg>
+             </signal>
+             <property name="HostName" type="s" access="read"></property>
+             <property name="UserName" type="s" access="read"></property>
+        </interface>
+        <interface name="org.freedesktop.DBus.Introspectable">
+             <method name="Introspect">
+                  <arg type="s" direction="out"></arg>
+             </method>
+             <method name="String">
+                  <arg type="s" direction="out"></arg>
+             </method>
+        </interface>
+        <interface name="org.freedesktop.DBus.Properties">
+             <method name="Get">
+                  <arg type="s" direction="in"></arg>
+                  <arg type="s" direction="in"></arg>
+                  <arg type="v" direction="out"></arg>
+             </method>
+             <method name="GetAll">
+                  <arg type="s" direction="in"></arg>
+                  <arg type="a{sv}" direction="out"></arg>
+             </method>
+             <method name="Set">
+                  <arg type="s" direction="in"></arg>
+                  <arg type="s" direction="in"></arg>
+                  <arg type="v" direction="in"></arg>
+             </method>
+             <signal name="PropertiesChanged">
+                  <arg type="s"></arg>
+                  <arg type="a{sv}"></arg>
+                  <arg type="as"></arg>
+             </signal>
+        </interface>
+        <node name="Card0"></node>
+        <node name="Sink0"></node>
+        <node name="Source1"></node>
+        <node name="Application12"></node>
+        <node name="Application50"></node>
+        <node name="Application51"></node>
+        <node name="Application54"></node>
+        <node name="Application55"></node>
+        <node name="Application56"></node>
+        <node name="Source0"></node>
+        <node name="Application52"></node>
+        <node name="Application53"></node>
+   </node>
