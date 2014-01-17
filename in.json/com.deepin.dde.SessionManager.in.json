@@ -1,0 +1,16 @@
+{
+	"Config": {
+		"OutputDir": ".",
+		"InputDir": "../xml",
+		"BusType": "Session",
+		"DestName": "com.deepin.dde.SessionManager"
+	},
+	"Interfaces": [
+		{
+			"Interface": "com.deepin.dde.SessionManager",
+			"OutFile": "dbus-accounts",
+			"XMLFile": "com.deepin.dde.SessionManager.xml",
+			"ObjectName": "SessionManager"
+		}
+	]
+}

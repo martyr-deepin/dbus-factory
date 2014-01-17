@@ -1,0 +1,32 @@
+<node>
+     <interface name="com.deepin.dde.SessionManager">
+          <method name="CanHibernate">
+               <arg type="b" direction="out"></arg>
+          </method>
+          <method name="CanLogout">
+               <arg type="b" direction="out"></arg>
+          </method>
+          <method name="CanReboot">
+               <arg type="b" direction="out"></arg>
+          </method>
+          <method name="CanShutdown">
+               <arg type="b" direction="out"></arg>
+          </method>
+          <method name="CanSuspend">
+               <arg type="b" direction="out"></arg>
+          </method>
+          <method name="ForceLogout"></method>
+          <method name="ForceReboot"></method>
+          <method name="ForceShutdown"></method>
+          <method name="Logout"></method>
+          <method name="PowerOffChoose"></method>
+          <method name="Reboot"></method>
+          <method name="RequestHibernate"></method>
+          <method name="RequestLock"></method>
+          <method name="RequestLogout"></method>
+          <method name="RequestReboot"></method>
+          <method name="RequestShutdown"></method>
+          <method name="RequestSuspend"></method>
+          <method name="Shutdown"></method>
+     </interface>
+</node>
