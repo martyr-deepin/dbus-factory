@@ -3,14 +3,14 @@
 		"OutputDir": ".",
 		"InputDir": "../xml",
 		"BusType": "Session",
-		"DestName": "org.freedesktop.DBus",
+		"DestName": "org.freedesktop.DBus"
     },
     "Interfaces": [
 		{
 			"Interface": "org.freedesktop.DBus",
 			"OutFile": "dbus",
 			"XMLFile": "org.freedesktop.DBus.xml",
-			"ObjectName": "DBusDaemon",
+			"ObjectName": "DBusDaemon"
 		}
 	]
 }
