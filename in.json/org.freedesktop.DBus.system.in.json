@@ -1,0 +1,17 @@
+{
+    "Config": {
+		"OutputDir": ".",
+		"InputDir": "../xml",
+		"BusType": "System",
+		"DestName": "org.freedesktop.DBus",
+		"PkgName": "system.org.freedesktop.DBus"
+    },
+    "Interfaces": [
+		{
+			"Interface": "org.freedesktop.DBus",
+			"OutFile": "dbus",
+			"XMLFile": "org.freedesktop.DBus.xml",
+			"ObjectName": "DBusDaemon",
+		}
+	]
+}
