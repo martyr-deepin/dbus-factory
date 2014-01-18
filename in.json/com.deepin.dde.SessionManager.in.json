@@ -3,7 +3,7 @@
 		"OutputDir": ".",
 		"InputDir": "../xml",
 		"BusType": "Session",
-		"DestName": "com.deepin.dde.SessionManager"
+		"DestName": "com.deepin.StartManager"
 	},
 	"Interfaces": [
 		{
