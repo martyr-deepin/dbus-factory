@@ -1,0 +1,37 @@
+{
+	"Config": {
+		"OutputDir": ".",
+		"InputDir": "../xml",
+		"BusType": "System",
+		"DestName": "org.freedesktop.login1"
+	},
+	"Interfaces": [
+		{
+			"Interface": "org.freedesktop.login1.Manager",
+			"OutFile": "dbus-login1-manager",
+			"XMLFile": "org.freedesktop.login1.Manager.xml",
+			"ObjectName": "Manager"
+		},
+		{
+		
+			"Interface": "org.freedesktop.login1.Seat",
+			"OutFile": "dbus-login1-seat",
+			"XMLFile": "org.freedesktop.login1.Seat.xml",
+			"ObjectName": "Seat"
+		},
+		{
+		
+			"Interface": "org.freedesktop.login1.Session",
+			"OutFile": "dbus-login1-session",
+			"XMLFile": "org.freedesktop.login1.Session.xml",
+			"ObjectName": "Session"
+		},
+		{
+		
+			"Interface": "org.freedesktop.login1.User",
+			"OutFile": "dbus-login1-user",
+			"XMLFile": "org.freedesktop.login1.User.xml",
+			"ObjectName": "User"
+		}
+	]
+}
