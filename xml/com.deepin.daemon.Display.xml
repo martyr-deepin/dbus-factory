@@ -1,10 +1,17 @@
 <node>
      <interface name="com.deepin.daemon.Display">
+          <method name="ApplyChanged"></method>
           <method name="ListReflect">
                <arg type="aq" direction="out"></arg>
           </method>
           <method name="ListRotations">
                <arg type="aq" direction="out"></arg>
+          </method>
+          <method name="SetMirrorMode">
+               <arg type="b" direction="in"></arg>
+          </method>
+          <method name="SetMirrorOutput">
+               <arg type="o" direction="in"></arg>
           </method>
           <method name="SetPrimary">
                <arg type="u" direction="in"></arg>
@@ -20,6 +27,8 @@
           <property name="Reflect" type="q" access="read"></property>
           <property name="PrimaryOutput" type="o" access="read"></property>
           <property name="PrimaryRect" type="(nnqq)" access="read"></property>
+          <property name="MirrorMode" type="b" access="read"></property>
+          <property name="MirrorOutput" type="o" access="read"></property>
      </interface>
      <interface name="org.freedesktop.DBus.Introspectable">
           <method name="Introspect">

@@ -3,6 +3,11 @@
           <method name="Debug">
                <arg type="s" direction="out"></arg>
           </method>
+          <method name="EnsureSize">
+               <arg type="q" direction="in"></arg>
+               <arg type="q" direction="in"></arg>
+               <arg type="y" direction="in"></arg>
+          </method>
           <method name="ListModes">
                <arg type="a(uqqd)" direction="out"></arg>
           </method>
@@ -12,15 +17,12 @@
           <method name="ListRotations">
                <arg type="aq" direction="out"></arg>
           </method>
-          <method name="SetAllocation">
-               <arg type="n" direction="in"></arg>
-               <arg type="n" direction="in"></arg>
-               <arg type="n" direction="in"></arg>
-               <arg type="n" direction="in"></arg>
-               <arg type="n" direction="in"></arg>
-          </method>
           <method name="SetMode">
                <arg type="u" direction="in"></arg>
+          </method>
+          <method name="SetPos">
+               <arg type="n" direction="in"></arg>
+               <arg type="n" direction="in"></arg>
           </method>
           <property name="Identify" type="u" access="read"></property>
           <property name="Name" type="s" access="read"></property>
