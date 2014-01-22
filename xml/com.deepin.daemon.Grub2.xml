@@ -5,12 +5,14 @@
           </method>
           <method name="Load"></method>
           <method name="Save"></method>
+          <signal name="GrubConfGenerated">
+               <arg type="i"></arg>
+               <arg type="b"></arg>
+          </signal>
           <property name="DefaultEntry" type="s" access="readwrite"></property>
           <property name="Timeout" type="i" access="readwrite"></property>
           <property name="Gfxmode" type="s" access="readwrite"></property>
           <property name="Background" type="s" access="readwrite"></property>
-          <property name="Theme" type="s" access="readwrite"></property>
-          <property name="InUpdate" type="b" access="read"></property>
      </interface>
      <interface name="org.freedesktop.DBus.Introspectable">
           <method name="Introspect">
@@ -41,4 +43,5 @@
                <arg type="as"></arg>
           </signal>
      </interface>
+     <node name="ThemeManager"></node>
 </node>

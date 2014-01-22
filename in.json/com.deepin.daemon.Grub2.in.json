@@ -8,9 +8,15 @@
 	"Interfaces": [
 		{
 			"Interface": "com.deepin.daemon.Grub2",
-			"OutFile": "dbus_grub2",
+			"OutFile": "grub2",
 			"XMLFile": "com.deepin.daemon.Grub2.xml",
 			"ObjectName": "Grub2"
+		},
+		{
+			"Interface": "com.deepin.daemon.Grub2.ThemeManager",
+			"OutFile": "thememanager",
+			"XMLFile": "com.deepin.daemon.Grub2.ThemeManager.xml",
+			"ObjectName": "ThemeManager"
 		}
 	]
 }
