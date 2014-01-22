@@ -7,10 +7,10 @@
 	},
 	"Interfaces": [
 		{
-			"Interface": "com.deepin.dde.api.Idle",
+			"Interface": "com.deepin.dde.api.MouseArea",
 			"OutFile": "dbus-idle",
-			"XMLFile": "com.deepin.dde.api.Idle.xml",
-			"ObjectName": "Idle"
+			"XMLFile": "com.deepin.dde.api.MouseArea.xml",
+			"ObjectName": "com.deepin.dde.api.MouseArea"
 		}
 	]
 }
