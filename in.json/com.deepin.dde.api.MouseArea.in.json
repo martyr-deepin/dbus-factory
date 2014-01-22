@@ -8,9 +8,9 @@
 	"Interfaces": [
 		{
 			"Interface": "com.deepin.dde.api.MouseArea",
-			"OutFile": "dbus-idle",
+			"OutFile": "dbus-mouse-area",
 			"XMLFile": "com.deepin.dde.api.MouseArea.xml",
-			"ObjectName": "com.deepin.dde.api.MouseArea"
+			"ObjectName": "MouseArea"
 		}
 	]
 }
