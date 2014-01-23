@@ -3,7 +3,7 @@
 		"OutputDir": ".",
 		"InputDir": "../xml",
 		"BusType": "Session",
-		"DestName": "com.deepin.dde.api.HansToPinyin"
+		"DestName": "com.deepin.dde.api.Pinyin"
 	},
 	"Interfaces": [
 		{
@@ -11,6 +11,12 @@
 			"OutFile": "dbus-hans-pinyin",
 			"XMLFile": "com.deepin.dde.api.HansToPinyin.xml",
 			"ObjectName": "HansToPinyin"
+		},
+		{
+			"Interface": "com.deepin.dde.api.PinyinTrie",
+			"OutFile": "dbus-pinyin-trie",
+			"XMLFile": "com.deepin.dde.api.PinyinTrie.xml",
+			"ObjectName": "PinyinTrie"
 		}
 	]
 }
