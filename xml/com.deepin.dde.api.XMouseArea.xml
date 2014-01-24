@@ -1,5 +1,5 @@
 <node>
-     <interface name="com.deepin.dde.api.MouseArea">
+     <interface name="com.deepin.dde.api.XMouseArea">
           <method name="RegisterArea">
                <arg type="a(iiii)" direction="in"></arg>
                <arg type="i" direction="out"></arg>
