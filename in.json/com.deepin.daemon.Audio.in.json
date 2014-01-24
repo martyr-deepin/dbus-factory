@@ -29,12 +29,6 @@
 			"OutFile":"dbus-audio-input",
 			"XMLFile":"com.deepin.daemon.Audio.Source.xml",
 			"ObjectName":"Input"
-		},
-        {
-            "interface":"com.deepin.daemon.Audio.Application",
-            "OutFile":"dbus-audio-application",
-            "XMLFile":"com.deepin.daemon.Audio.Application.xml",
-            "ObjectName":"Application"
-        }
-	]
+		}
+    ]
 }

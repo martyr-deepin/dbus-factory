@@ -30,6 +30,9 @@
              </signal>
              <property name="HostName" type="s" access="read"></property>
              <property name="UserName" type="s" access="read"></property>
+             <property name="Cards" type="ao" access="read"></property>
+             <property name="Sinks" type="ao" access="read"></property>
+             <property name="Sources" type="ao" access="read"></property>
         </interface>
         <interface name="org.freedesktop.DBus.Introspectable">
              <method name="Introspect">
@@ -61,15 +64,14 @@
              </signal>
         </interface>
         <node name="Card0"></node>
-        <node name="Sink0"></node>
-        <node name="Source1"></node>
-        <node name="Application12"></node>
-        <node name="Application50"></node>
-        <node name="Application51"></node>
-        <node name="Application54"></node>
-        <node name="Application55"></node>
-        <node name="Application56"></node>
-        <node name="Source0"></node>
-        <node name="Application52"></node>
-        <node name="Application53"></node>
+        <node name="Sink35"></node>
+        <node name="Source45"></node>
+        <node name="Sink39"></node>
+        <node name="Source49"></node>
+        <node name="Source50"></node>
+        <node name="Sink34"></node>
+        <node name="Source42"></node>
+        <node name="Sink36"></node>
+        <node name="Sink38"></node>
+        <node name="Sink40"></node>
    </node>
