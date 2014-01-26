@@ -4,7 +4,7 @@
                <arg type="s" direction="in"></arg>
           </method>
           <method name="NewTrieWithString">
-               <arg type="as" direction="in"></arg>
+               <arg type="a(is)" direction="in"></arg>
                <arg type="s" direction="in"></arg>
                <arg type="s" direction="out"></arg>
           </method>
@@ -12,9 +12,6 @@
                <arg type="s" direction="in"></arg>
                <arg type="s" direction="in"></arg>
                <arg type="ai" direction="out"></arg>
-          </method>
-          <method name="TraversalTrie">
-               <arg type="s" direction="in"></arg>
           </method>
      </interface>
 </node>
