@@ -4,14 +4,14 @@
                <arg type="s" direction="in"></arg>
           </method>
           <method name="NewTrieWithString">
-               <arg type="a(is)" direction="in"></arg>
+               <arg type="a{ss}" direction="in"></arg>
                <arg type="s" direction="in"></arg>
                <arg type="s" direction="out"></arg>
           </method>
           <method name="SearchKeys">
                <arg type="s" direction="in"></arg>
                <arg type="s" direction="in"></arg>
-               <arg type="ai" direction="out"></arg>
+               <arg type="as" direction="out"></arg>
           </method>
      </interface>
 </node>
