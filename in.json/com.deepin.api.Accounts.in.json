@@ -3,13 +3,13 @@
 		"OutputDir": ".",
 		"InputDir": "../xml",
 		"BusType": "System",
-		"DestName": "com.deepin.dde.api.Accounts"
+		"DestName": "com.deepin.api.Accounts"
 	},
 	"Interfaces": [
 		{
-			"Interface": "com.deepin.dde.api.Accounts",
+			"Interface": "com.deepin.api.Accounts",
 			"OutFile": "dbus-account-api",
-			"XMLFile": "com.deepin.dde.api.Accounts.xml",
+			"XMLFile": "com.deepin.api.Accounts.xml",
 			"ObjectName": "Accounts"
 		}
 	]

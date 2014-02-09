@@ -3,13 +3,13 @@
 		"OutputDir": ".",
 		"InputDir": "../xml",
 		"BusType": "System",
-		"DestName": "com.deepin.dde.api.SetDateTime"
+		"DestName": "com.deepin.api.SetDateTime"
 	},
 	"Interfaces": [
 		{
-			"Interface": "com.deepin.dde.api.SetDateTime",
+			"Interface": "com.deepin.api.SetDateTime",
 			"OutFile": "dbus-set-datetime",
-			"XMLFile": "com.deepin.dde.api.SetDateTime.xml",
+			"XMLFile": "com.deepin.api.SetDateTime.xml",
 			"ObjectName": "SetDateTime"
 		}
 	]

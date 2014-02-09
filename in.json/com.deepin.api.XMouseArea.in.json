@@ -3,13 +3,13 @@
 		"OutputDir": ".",
 		"InputDir": "../xml",
 		"BusType": "Session",
-		"DestName": "com.deepin.dde.api.XMouseArea"
+		"DestName": "com.deepin.api.XMouseArea"
 	},
 	"Interfaces": [
 		{
-			"Interface": "com.deepin.dde.api.XMouseArea",
+			"Interface": "com.deepin.api.XMouseArea",
 			"OutFile": "dbus-xmouse-area",
-			"XMLFile": "com.deepin.dde.api.XMouseArea.xml",
+			"XMLFile": "com.deepin.api.XMouseArea.xml",
 			"ObjectName": "XMouseArea"
 		}
 	]
