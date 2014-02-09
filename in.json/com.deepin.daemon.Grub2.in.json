@@ -17,6 +17,12 @@
 			"OutFile": "thememanager",
 			"XMLFile": "com.deepin.daemon.Grub2.ThemeManager.xml",
 			"ObjectName": "ThemeManager"
+		},
+		{
+			"Interface": "com.deepin.daemon.Grub2.Theme",
+			"OutFile": "theme",
+			"XMLFile": "com.deepin.daemon.Grub2.Theme.xml",
+			"ObjectName": "Theme"
 		}
 	]
 }

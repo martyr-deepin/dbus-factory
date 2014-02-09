@@ -1,9 +1,8 @@
 <node>
      <interface name="com.deepin.daemon.Grub2">
-          <method name="GetEntryTitles">
+          <method name="GetSimpleEntryTitles">
                <arg type="as" direction="out"></arg>
           </method>
-          <method name="Load"></method>
           <method name="Save"></method>
           <signal name="GrubConfGenerated">
                <arg type="i"></arg>
@@ -12,7 +11,6 @@
           <property name="DefaultEntry" type="s" access="readwrite"></property>
           <property name="Timeout" type="i" access="readwrite"></property>
           <property name="Gfxmode" type="s" access="readwrite"></property>
-          <property name="Background" type="s" access="readwrite"></property>
      </interface>
      <interface name="org.freedesktop.DBus.Introspectable">
           <method name="Introspect">
@@ -44,4 +42,5 @@
           </signal>
      </interface>
      <node name="ThemeManager"></node>
+     <node name="Theme0"></node>
 </node>
