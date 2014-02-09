@@ -1,0 +1,34 @@
+<node>
+     <interface name="com.deepin.api.XMouseArea">
+          <method name="RegisterArea">
+               <arg type="a(iiii)" direction="in"></arg>
+               <arg type="i" direction="out"></arg>
+          </method>
+          <method name="UnregisterArea">
+               <arg type="i" direction="in"></arg>
+          </method>
+          <signal name="MotionCoordinate">
+               <arg type="s"></arg>
+               <arg type="i"></arg>
+               <arg type="i"></arg>
+               <arg type="i"></arg>
+          </signal>
+          <signal name="ButtonCoordinate">
+               <arg type="s"></arg>
+               <arg type="i"></arg>
+               <arg type="i"></arg>
+               <arg type="i"></arg>
+          </signal>
+          <signal name="KeyboardCoordinate">
+               <arg type="s"></arg>
+               <arg type="i"></arg>
+               <arg type="i"></arg>
+               <arg type="i"></arg>
+          </signal>
+          <signal name="CancleAllArea">
+               <arg type="i"></arg>
+               <arg type="i"></arg>
+               <arg type="i"></arg>
+          </signal>
+     </interface>
+</node>

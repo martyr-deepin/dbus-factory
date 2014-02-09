@@ -1,0 +1,8 @@
+<node>
+     <interface name="com.deepin.api.HansToPinyin">
+          <method name="PinyinFromKey">
+               <arg type="s" direction="in"></arg>
+               <arg type="as" direction="out"></arg>
+          </method>
+     </interface>
+</node>
