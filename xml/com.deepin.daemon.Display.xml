@@ -8,6 +8,9 @@
                <arg type="aq" direction="out"></arg>
           </method>
           <method name="Reset"></method>
+          <method name="SetDisplayMode">
+               <arg type="y" direction="in"></arg>
+          </method>
           <method name="SetMirrorMode">
                <arg type="b" direction="in"></arg>
           </method>
@@ -29,6 +32,7 @@
           <property name="PrimaryOutput" type="o" access="read"></property>
           <property name="PrimaryRect" type="(nnqq)" access="read"></property>
           <property name="MirrorMode" type="b" access="read"></property>
+          <property name="DisplayMode" type="y" access="read"></property>
           <property name="MirrorOutput" type="o" access="read"></property>
      </interface>
      <interface name="org.freedesktop.DBus.Introspectable">
