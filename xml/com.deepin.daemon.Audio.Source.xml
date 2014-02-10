@@ -1,53 +1,53 @@
-<node name="/com/deepin/daemon/Audio/Source1">
- <interface name="com.deepin.daemon.Audio.Source">
-  <method name="SetSourceMute">
-   <arg type="b" direction="in"></arg>
-   <arg type="i" direction="out"></arg>
-  </method>
-  <method name="SetSourcePort">
-   <arg type="s" direction="in"></arg>
-   <arg type="i" direction="out"></arg>
-  </method>
-  <method name="SetSourceVolume">
-   <arg type="u" direction="in"></arg>
-   <arg type="i" direction="out"></arg>
-  </method>
-  <property name="Index" type="i" access="read"></property>
-  <property name="Name" type="s" access="read"></property>
-  <property name="Description" type="s" access="read"></property>
-  <property name="Mute" type="b" access="readwrite"></property>
-  <property name="Volume" type="u" access="readwrite"></property>
-  <property name="Balance" type="d" access="read"></property>
-  <property name="Ports" type="a(ssi)" access="read"></property>
-  <property name="ActivePort" type="i" access="read"></property>
- </interface>
- <interface name="org.freedesktop.DBus.Introspectable">
-  <method name="Introspect">
-   <arg type="s" direction="out"></arg>
-  </method>
-  <method name="String">
-   <arg type="s" direction="out"></arg>
-  </method>
- </interface>
- <interface name="org.freedesktop.DBus.Properties">
-  <method name="Get">
-   <arg type="s" direction="in"></arg>
-   <arg type="s" direction="in"></arg>
-   <arg type="v" direction="out"></arg>
-  </method>
-  <method name="GetAll">
-   <arg type="s" direction="in"></arg>
-   <arg type="a{sv}" direction="out"></arg>
-  </method>
-  <method name="Set">
-   <arg type="s" direction="in"></arg>
-   <arg type="s" direction="in"></arg>
-   <arg type="v" direction="in"></arg>
-  </method>
-  <signal name="PropertiesChanged">
-   <arg type="s"></arg>
-   <arg type="a{sv}"></arg>
-   <arg type="as"></arg>
-  </signal>
- </interface>
+<node>
+     <interface name="com.deepin.daemon.Audio.Source">
+          <method name="SetSourceMute">
+               <arg type="b" direction="in"></arg>
+               <arg type="i" direction="out"></arg>
+          </method>
+          <method name="SetSourcePort">
+               <arg type="s" direction="in"></arg>
+               <arg type="i" direction="out"></arg>
+          </method>
+          <method name="SetSourceVolume">
+               <arg type="u" direction="in"></arg>
+               <arg type="i" direction="out"></arg>
+          </method>
+          <property name="Index" type="i" access="read"></property>
+          <property name="Name" type="s" access="read"></property>
+          <property name="Description" type="s" access="read"></property>
+          <property name="Mute" type="b" access="readwrite"></property>
+          <property name="Volume" type="u" access="readwrite"></property>
+          <property name="Balance" type="d" access="read"></property>
+          <property name="Ports" type="a(ssi)" access="read"></property>
+          <property name="ActivePort" type="i" access="read"></property>
+     </interface>
+     <interface name="org.freedesktop.DBus.Introspectable">
+          <method name="Introspect">
+               <arg type="s" direction="out"></arg>
+          </method>
+          <method name="String">
+               <arg type="s" direction="out"></arg>
+          </method>
+     </interface>
+     <interface name="org.freedesktop.DBus.Properties">
+          <method name="Get">
+               <arg type="s" direction="in"></arg>
+               <arg type="s" direction="in"></arg>
+               <arg type="v" direction="out"></arg>
+          </method>
+          <method name="GetAll">
+               <arg type="s" direction="in"></arg>
+               <arg type="a{sv}" direction="out"></arg>
+          </method>
+          <method name="Set">
+               <arg type="s" direction="in"></arg>
+               <arg type="s" direction="in"></arg>
+               <arg type="v" direction="in"></arg>
+          </method>
+          <signal name="PropertiesChanged">
+               <arg type="s"></arg>
+               <arg type="a{sv}"></arg>
+               <arg type="as"></arg>
+          </signal>
+     </interface>
 </node>
