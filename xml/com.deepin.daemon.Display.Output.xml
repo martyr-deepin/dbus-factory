@@ -8,6 +8,11 @@
                <arg type="q" direction="in"></arg>
                <arg type="y" direction="in"></arg>
           </method>
+          <method name="EnsureSize2">
+               <arg type="q" direction="in"></arg>
+               <arg type="q" direction="in"></arg>
+               <arg type="y" direction="in"></arg>
+          </method>
           <method name="ListModes">
                <arg type="a(uqqd)" direction="out"></arg>
           </method>

@@ -7,13 +7,14 @@
           <method name="ListRotations">
                <arg type="aq" direction="out"></arg>
           </method>
+          <method name="Reset"></method>
           <method name="SetMirrorMode">
                <arg type="b" direction="in"></arg>
           </method>
           <method name="SetMirrorOutput">
                <arg type="o" direction="in"></arg>
           </method>
-          <method name="SetPrimary">
+          <method name="SetPrimaryOutput">
                <arg type="u" direction="in"></arg>
           </method>
           <method name="ShowInfoOnScreen"></method>
@@ -59,5 +60,4 @@
                <arg type="as"></arg>
           </signal>
      </interface>
-     <node name="Output66"></node>
 </node>
