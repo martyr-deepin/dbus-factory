@@ -1,4 +1,4 @@
-<node name="/com/deepin/daemon/Audio/Source50">
+<node name="/com/deepin/daemon/Audio/Source1">
  <interface name="com.deepin.daemon.Audio.Source">
   <method name="SetSourceMute">
    <arg type="b" direction="in"></arg>

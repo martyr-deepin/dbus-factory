@@ -64,14 +64,6 @@
              </signal>
         </interface>
         <node name="Card0"></node>
-        <node name="Sink35"></node>
-        <node name="Source45"></node>
-        <node name="Sink39"></node>
-        <node name="Source49"></node>
-        <node name="Source50"></node>
-        <node name="Sink34"></node>
-        <node name="Source42"></node>
-        <node name="Sink36"></node>
-        <node name="Sink38"></node>
-        <node name="Sink40"></node>
+        <node name="Sink0"></node>
+        <node name="Source1"></node>
    </node>

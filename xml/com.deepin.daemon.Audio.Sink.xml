@@ -1,4 +1,4 @@
-<node name="/com/deepin/daemon/Audio/Sink40">
+<node name="/com/deepin/daemon/Audio/Sink0">
  <interface name="com.deepin.daemon.Audio.Sink">
   <method name="SetSinkMute">
    <arg type="b" direction="in"></arg>
