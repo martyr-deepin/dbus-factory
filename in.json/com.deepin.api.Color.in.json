@@ -1,0 +1,16 @@
+{
+	"Config": {
+		"OutputDir": ".",
+		"InputDir": "../xml",
+		"BusType": "Session",
+		"DestName": "com.deepin.api.Color"
+	},
+	"Interfaces": [
+		{
+			"Interface": "com.deepin.api.Color",
+			"OutFile": "api_color",
+			"XMLFile": "com.deepin.api.Color.xml",
+			"ObjectName": "Color"
+		}
+	]
+}
