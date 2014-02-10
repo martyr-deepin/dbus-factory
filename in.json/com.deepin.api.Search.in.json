@@ -1,0 +1,22 @@
+{
+	"Config": {
+		"OutputDir": ".",
+		"InputDir": "../xml",
+		"BusType": "Session",
+		"DestName": "com.deepin.api.Search"
+	},
+	"Interfaces": [
+		{
+			"Interface": "com.deepin.api.Pinyin",
+			"OutFile": "dbus-pinyin",
+			"XMLFile": "com.deepin.api.Pinyin.xml",
+			"ObjectName": "Pinyin"
+		},
+		{
+			"Interface": "com.deepin.api.Search",
+			"OutFile": "dbus-search",
+			"XMLFile": "com.deepin.api.Search.xml",
+			"ObjectName": "Search"
+		}
+	]
+}

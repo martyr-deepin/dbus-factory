@@ -1,5 +1,5 @@
 <node>
-     <interface name="com.deepin.api.PinyinTrie">
+     <interface name="com.deepin.api.Search">
           <method name="DestroyTrie">
                <arg type="s" direction="in"></arg>
           </method>
