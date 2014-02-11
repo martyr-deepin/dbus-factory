@@ -8,7 +8,7 @@
 	"Interfaces": [
 		{
 			"Interface": "com.deepin.api.Image",
-			"OutFile": "api_image",
+			"OutFile": "image",
 			"XMLFile": "com.deepin.api.Image.xml",
 			"ObjectName": "Image"
 		}
