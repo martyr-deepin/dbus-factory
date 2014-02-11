@@ -1,10 +1,27 @@
 <node>
      <interface name="com.deepin.api.Image">
+          <method name="ClipPNG">
+               <arg type="s" direction="in"></arg>
+               <arg type="s" direction="in"></arg>
+               <arg type="i" direction="in"></arg>
+               <arg type="i" direction="in"></arg>
+               <arg type="i" direction="in"></arg>
+               <arg type="i" direction="in"></arg>
+          </method>
+          <method name="ConvertToPNG">
+               <arg type="s" direction="in"></arg>
+               <arg type="s" direction="in"></arg>
+          </method>
           <method name="GetDominantColorOfImage">
                <arg type="s" direction="in"></arg>
                <arg type="d" direction="out"></arg>
                <arg type="d" direction="out"></arg>
                <arg type="d" direction="out"></arg>
+          </method>
+          <method name="GetImageSize">
+               <arg type="s" direction="in"></arg>
+               <arg type="i" direction="out"></arg>
+               <arg type="i" direction="out"></arg>
           </method>
           <method name="HSV2RGB">
                <arg type="d" direction="in"></arg>
