@@ -1,5 +1,5 @@
 <node>
-     <interface name="com.deepin.dde.SessionManager">
+     <interface name="com.deepin.SessionManager">
           <method name="CanHibernate">
                <arg type="b" direction="out"></arg>
           </method>
