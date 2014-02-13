@@ -19,6 +19,9 @@
           <method name="SyncNtpTime">
                <arg type="b" direction="out"></arg>
           </method>
+          <method name="TimezoneCityList">
+               <arg type="as" direction="out"></arg>
+          </method>
           <property name="AutoSetTime" type="b" access="readwrite"></property>
           <property name="Use24HourDisplay" type="b" access="readwrite"></property>
           <property name="CurrentTimeZone" type="s" access="read"></property>
