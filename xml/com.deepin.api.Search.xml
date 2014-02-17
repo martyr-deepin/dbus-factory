@@ -13,5 +13,10 @@
                <arg type="s" direction="in"></arg>
                <arg type="as" direction="out"></arg>
           </method>
+          <method name="SearchKeysByFirstLetter">
+               <arg type="s" direction="in"></arg>
+               <arg type="s" direction="in"></arg>
+               <arg type="as" direction="out"></arg>
+          </method>
      </interface>
 </node>
