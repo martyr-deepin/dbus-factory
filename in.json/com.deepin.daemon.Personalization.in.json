@@ -1,0 +1,16 @@
+{
+	"Config": {
+		"OutputDir": ".",
+		"InputDir": "../xml",
+		"BusType": "Session",
+		"DestName": "com.deepin.daemon.Personalization"
+	},
+	"Interfaces": [
+		{
+			"Interface": "com.deepin.daemon.Personalization",
+			"OutFile": "dbus-personalization",
+			"XMLFile": "com.deepin.daemon.Personalization.xml",
+			"ObjectName": "Personalization"
+		}
+	]
+}
