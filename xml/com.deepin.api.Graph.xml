@@ -1,5 +1,10 @@
 <node>
-     <interface name="com.deepin.api.Image">
+     <interface name="com.deepin.api.Graph">
+          <method name="BackgroundBlurPictPath">
+               <arg type="s" direction="in"></arg>
+               <arg type="s" direction="in"></arg>
+               <arg type="(bs)" direction="out"></arg>
+          </method>
           <method name="ClipPNG">
                <arg type="s" direction="in"></arg>
                <arg type="s" direction="in"></arg>
@@ -39,6 +44,10 @@
                <arg type="d" direction="out"></arg>
                <arg type="d" direction="out"></arg>
           </method>
+          <signal name="BlurPictChanged">
+               <arg type="s"></arg>
+               <arg type="s"></arg>
+          </signal>
      </interface>
      <interface name="org.freedesktop.DBus.Introspectable">
           <method name="Introspect">
