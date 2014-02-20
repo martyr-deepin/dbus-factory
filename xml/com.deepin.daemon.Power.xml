@@ -7,17 +7,14 @@
           <property name="ButtonPower" type="s" access="readwrite"></property>
           <property name="ButtonSleep" type="s" access="readwrite"></property>
           <property name="ButtonSuspend" type="s" access="readwrite"></property>
-          <property name="CriticalBatteryAction" type="s" access="readwrite"></property>
+          <property name="CriticalBatteryAction" type="s" access="read"></property>
           <property name="LidCloseAcAction" type="s" access="readwrite"></property>
           <property name="LidCloseBatteryAction" type="s" access="readwrite"></property>
-          <property name="ShowTray" type="b" access="readwrite"></property>
-          <property name="SleepDisplayAc" type="i" access="readwrite"></property>
-          <property name="SleepDisplayBattery" type="i" access="readwrite"></property>
           <property name="SleepInactiveAcTimeout" type="i" access="readwrite"></property>
           <property name="SleepInactiveBatteryTimeout" type="i" access="readwrite"></property>
           <property name="SleepInactiveAcType" type="s" access="readwrite"></property>
           <property name="SleepInactiveBatteryType" type="s" access="readwrite"></property>
-          <property name="CurrentPlan" type="s" access="readwrite"></property>
+          <property name="CurrentProfile" type="s" access="readwrite"></property>
           <property name="BatteryIsPresent" type="b" access="read"></property>
           <property name="IsRechargable" type="b" access="read"></property>
           <property name="BatteryPercentage" type="d" access="read"></property>
