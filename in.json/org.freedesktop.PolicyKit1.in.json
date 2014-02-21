@@ -11,12 +11,6 @@
 			"OutFile": "dbus-authority",
 			"XMLFile": "org.freedesktop.PolicyKit1.Authority.xml",
 			"ObjectName": "Authority"
-		},
-		{
-			"Interface": "org.freedesktop.PolicyKit1.AuthenticationAgent",
-			"OutFile": "dbus-authenticationAgent",
-			"XMLFile": "org.freedesktop.PolicyKit1.AuthenticationAgent.xml",
-			"ObjectName": "AuthenticationAgent"
 		}
 	]
 }
