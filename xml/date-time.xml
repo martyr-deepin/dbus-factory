@@ -1,8 +1,10 @@
 <node>
      <interface name="com.deepin.daemon.DateAndTime">
-          <method name="SetAutoSetTime">
-               <arg type="b" direction="in"></arg>
-               <arg type="b" direction="out"></arg>
+          <method name="AddUserTimezoneList">
+               <arg type="s" direction="in"></arg>
+          </method>
+          <method name="DeleteTimezoneList">
+               <arg type="s" direction="in"></arg>
           </method>
           <method name="SetDate">
                <arg type="s" direction="in"></arg>
@@ -24,6 +26,7 @@
           </method>
           <property name="AutoSetTime" type="b" access="readwrite"></property>
           <property name="Use24HourDisplay" type="b" access="readwrite"></property>
-          <property name="CurrentTimeZone" type="s" access="read"></property>
+          <property name="CurrentTimezone" type="s" access="read"></property>
+          <property name="UserTimezoneList" type="as" access="read"></property>
      </interface>
 </node>
