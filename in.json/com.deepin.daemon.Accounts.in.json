@@ -2,7 +2,7 @@
 	"Config": {
 		"OutputDir": ".",
 		"InputDir": "../xml",
-		"BusType": "Session",
+		"BusType": "System",
 		"DestName": "com.deepin.daemon.Accounts"
 	},
 	"Interfaces": [
