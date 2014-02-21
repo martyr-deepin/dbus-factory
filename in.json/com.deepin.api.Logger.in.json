@@ -1,0 +1,16 @@
+{
+	"Config": {
+		"OutputDir": ".",
+		"InputDir": "../xml",
+		"BusType": "System",
+		"DestName": "com.deepin.api.Logger"
+	},
+	"Interfaces": [
+		{
+			"Interface": "com.deepin.api.Logger",
+			"OutFile": "logger",
+			"XMLFile": "com.deepin.api.Logger.xml",
+			"ObjectName": "Logger"
+		}
+	]
+}
