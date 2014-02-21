@@ -1,0 +1,22 @@
+{
+	"Config": {
+		"OutputDir": ".",
+		"InputDir": "../xml",
+		"BusType": "System",
+		"DestName": "org.freedesktop.PolicyKit1"
+	},
+	"Interfaces": [
+		{
+			"Interface": "org.freedesktop.PolicyKit1.Authority",
+			"OutFile": "dbus-authority",
+			"XMLFile": "org.freedesktop.PolicyKit1.Authority.xml",
+			"ObjectName": "Authority"
+		},
+		{
+			"Interface": "org.freedesktop.PolicyKit1.AuthenticationAgent",
+			"OutFile": "dbus-authenticationAgent",
+			"XMLFile": "org.freedesktop.PolicyKit1.AuthenticationAgent.xml",
+			"ObjectName": "AuthenticationAgent"
+		}
+	]
+}
