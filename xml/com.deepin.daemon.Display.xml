@@ -9,16 +9,7 @@
           </method>
           <method name="Reset"></method>
           <method name="SetDisplayMode">
-               <arg type="y" direction="in"></arg>
-          </method>
-          <method name="SetMirrorMode">
-               <arg type="b" direction="in"></arg>
-          </method>
-          <method name="SetMirrorOutput">
-               <arg type="o" direction="in"></arg>
-          </method>
-          <method name="SetPrimaryOutput">
-               <arg type="u" direction="in"></arg>
+               <arg type="n" direction="in"></arg>
           </method>
           <method name="ShowInfoOnScreen"></method>
           <signal name="PrimaryChanged">
@@ -31,9 +22,8 @@
           <property name="Reflect" type="q" access="read"></property>
           <property name="PrimaryOutput" type="o" access="read"></property>
           <property name="PrimaryRect" type="(nnqq)" access="read"></property>
-          <property name="MirrorMode" type="b" access="read"></property>
-          <property name="DisplayMode" type="y" access="read"></property>
-          <property name="MirrorOutput" type="o" access="read"></property>
+          <property name="DisplayMode" type="n" access="read"></property>
+          <property name="BuiltinOutput" type="o" access="read"></property>
      </interface>
      <interface name="org.freedesktop.DBus.Introspectable">
           <method name="Introspect">
