@@ -1,0 +1,16 @@
+{
+	"Config": {
+		"OutputDir": ".",
+		"InputDir": "../xml",
+		"BusType": "System",
+		"DestName": "com.deepin.api.Grub2"
+	},
+	"Interfaces": [
+		{
+			"Interface": "com.deepin.api.Grub2",
+			"OutFile": "grub2ext",
+			"XMLFile": "com.deepin.api.Grub2.xml",
+			"ObjectName": "Grub2Ext"
+		}
+	]
+}
