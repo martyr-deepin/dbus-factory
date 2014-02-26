@@ -3,13 +3,28 @@
           <method name="AddKeyBind">
                <arg type="s" direction="in"></arg>
                <arg type="s" direction="in"></arg>
+               <arg type="i" direction="out"></arg>
+               <arg type="b" direction="out"></arg>
+          </method>
+          <method name="AddKeyBindCheck">
                <arg type="s" direction="in"></arg>
-               <arg type="(i(bai))" direction="out"></arg>
+               <arg type="s" direction="in"></arg>
+               <arg type="s" direction="in"></arg>
+               <arg type="i" direction="out"></arg>
+               <arg type="i" direction="out"></arg>
+               <arg type="ai" direction="out"></arg>
           </method>
           <method name="ChangeShortcut">
                <arg type="i" direction="in"></arg>
                <arg type="s" direction="in"></arg>
-               <arg type="(bai)" direction="out"></arg>
+               <arg type="i" direction="out"></arg>
+               <arg type="ai" direction="out"></arg>
+          </method>
+          <method name="CheckShortcut">
+               <arg type="i" direction="in"></arg>
+               <arg type="s" direction="in"></arg>
+               <arg type="i" direction="out"></arg>
+               <arg type="ai" direction="out"></arg>
           </method>
           <method name="DeleteCustomBind">
                <arg type="i" direction="in"></arg>
