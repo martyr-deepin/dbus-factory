@@ -1,0 +1,16 @@
+{
+	"Config": {
+		"OutputDir": ".",
+		"InputDir": "../xml",
+		"BusType": "Session",
+		"DestName": "com.deepin.api.Graphic"
+	},
+	"Interfaces": [
+		{
+			"Interface": "com.deepin.api.Graphic",
+			"OutFile": "graphic",
+			"XMLFile": "com.deepin.api.Graphic.xml",
+			"ObjectName": "Graphic"
+		}
+	]
+}
