@@ -18,8 +18,12 @@
                <arg type="s" direction="in"></arg>
                <arg type="s" direction="out"></arg>
           </method>
-          <signal name="UserAdded"></signal>
-          <signal name="UserDeleted"></signal>
+          <signal name="UserAdded">
+              <arg type="s"></arg>
+          </signal>
+          <signal name="UserDeleted">
+              <arg type="s"></arg>
+          </signal>
           <property name="UserList" type="as" access="read"></property>
      </interface>
 </node>
