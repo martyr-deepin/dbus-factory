@@ -1,0 +1,37 @@
+<node>
+     <interface name="com.deepin.api.Utils">
+          <method name="ConvertPathToURI">
+               <arg type="s" direction="in"></arg>
+               <arg type="i" direction="in"></arg>
+               <arg type="s" direction="out"></arg>
+               <arg type="b" direction="out"></arg>
+          </method>
+          <method name="ConvertURIToPath">
+               <arg type="s" direction="in"></arg>
+               <arg type="i" direction="in"></arg>
+               <arg type="s" direction="out"></arg>
+               <arg type="b" direction="out"></arg>
+          </method>
+          <method name="IsContainFromStart">
+               <arg type="s" direction="in"></arg>
+               <arg type="s" direction="in"></arg>
+               <arg type="b" direction="out"></arg>
+          </method>
+          <method name="IsElementExist">
+               <arg type="o" direction="in"></arg>
+               <arg type="o" direction="in"></arg>
+               <arg type="i" direction="in"></arg>
+               <arg type="b" direction="out"></arg>
+          </method>
+          <method name="IsFileExist">
+               <arg type="s" direction="in"></arg>
+               <arg type="b" direction="out"></arg>
+          </method>
+          <method name="IsListEqual">
+               <arg type="o" direction="in"></arg>
+               <arg type="o" direction="in"></arg>
+               <arg type="i" direction="in"></arg>
+               <arg type="b" direction="out"></arg>
+          </method>
+     </interface>
+</node>

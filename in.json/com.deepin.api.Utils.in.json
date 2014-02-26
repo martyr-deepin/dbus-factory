@@ -1,0 +1,16 @@
+{
+	"Config": {
+		"OutputDir": ".",
+		"InputDir": "../xml",
+		"BusType": "Session",
+		"DestName": "com.deepin.api.Utils"
+	},
+	"Interfaces": [
+		{
+			"Interface": "com.deepin.api.Utils",
+			"OutFile": "dbus-utils",
+			"XMLFile": "com.deepin.api.Utils.xml",
+			"ObjectName": "Utils"
+		}
+	]
+}
