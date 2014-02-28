@@ -1,0 +1,16 @@
+{
+	"Config": {
+		"OutputDir": ".",
+		"InputDir": "../xml",
+		"BusType": "Session",
+		"DestName": "com.deepin.daemon.MediaKey"
+	},
+	"Interfaces": [
+		{
+			"Interface": "com.deepin.daemon.MediaKey",
+			"OutFile": "dbus-mediakey",
+			"XMLFile": "com.deepin.daemon.MediaKey.xml",
+			"ObjectName": "MediaKey"
+		}
+	]
+}
