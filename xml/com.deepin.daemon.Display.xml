@@ -1,57 +1,31 @@
 <node>
      <interface name="com.deepin.daemon.Display">
-          <method name="ApplyChanged"></method>
-          <method name="ListReflect">
-               <arg type="aq" direction="out"></arg>
+          <method name="Apply"></method>
+          <method name="JoinMonitor">
+               <arg type="s" direction="in"></arg>
+               <arg type="s" direction="in"></arg>
           </method>
-          <method name="ListRotations">
-               <arg type="aq" direction="out"></arg>
+          <method name="ResetChanged"></method>
+          <method name="SaveChanged"></method>
+          <method name="SetPrimary">
+               <arg type="s" direction="in"></arg>
           </method>
-          <method name="Reset"></method>
-          <method name="SetDisplayMode">
+          <method name="SplitMonitor">
+               <arg type="s" direction="in"></arg>
+          </method>
+          <method name="SwitchMode">
                <arg type="n" direction="in"></arg>
           </method>
-          <method name="ShowInfoOnScreen"></method>
           <signal name="PrimaryChanged">
                <arg type="(nnqq)"></arg>
           </signal>
-          <property name="Outputs" type="ao" access="read"></property>
+          <property name="Monitors" type="ao" access="read"></property>
           <property name="Width" type="q" access="read"></property>
           <property name="Height" type="q" access="read"></property>
-          <property name="Rotation" type="q" access="read"></property>
-          <property name="Reflect" type="q" access="read"></property>
           <property name="PrimaryOutput" type="o" access="read"></property>
           <property name="PrimaryRect" type="(nnqq)" access="read"></property>
           <property name="DisplayMode" type="n" access="read"></property>
           <property name="BuiltinOutput" type="o" access="read"></property>
-     </interface>
-     <interface name="org.freedesktop.DBus.Introspectable">
-          <method name="Introspect">
-               <arg type="s" direction="out"></arg>
-          </method>
-          <method name="String">
-               <arg type="s" direction="out"></arg>
-          </method>
-     </interface>
-     <interface name="org.freedesktop.DBus.Properties">
-          <method name="Get">
-               <arg type="s" direction="in"></arg>
-               <arg type="s" direction="in"></arg>
-               <arg type="v" direction="out"></arg>
-          </method>
-          <method name="GetAll">
-               <arg type="s" direction="in"></arg>
-               <arg type="a{sv}" direction="out"></arg>
-          </method>
-          <method name="Set">
-               <arg type="s" direction="in"></arg>
-               <arg type="s" direction="in"></arg>
-               <arg type="v" direction="in"></arg>
-          </method>
-          <signal name="PropertiesChanged">
-               <arg type="s"></arg>
-               <arg type="a{sv}"></arg>
-               <arg type="as"></arg>
-          </signal>
+          <property name="HasChanged" type="b" access="read"></property>
      </interface>
 </node>
