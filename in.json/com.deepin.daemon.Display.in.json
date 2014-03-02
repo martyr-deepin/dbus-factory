@@ -13,10 +13,10 @@
 			"ObjectName": "Display"
 		},
 		{
-			"Interface": "com.deepin.daemon.Display.Output",
-			"OutFile": "output",
-			"XMLFile": "com.deepin.daemon.Display.Output.xml",
-			"ObjectName": "Output"
+			"Interface": "com.deepin.daemon.Display.Monitor",
+			"OutFile": "monitor",
+			"XMLFile": "com.deepin.daemon.Display.Monitor.xml",
+			"ObjectName": "Monitor"
 		}
 	]
 }

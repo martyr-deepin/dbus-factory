@@ -20,9 +20,8 @@
                <arg type="(nnqq)"></arg>
           </signal>
           <property name="Monitors" type="ao" access="read"></property>
-          <property name="Width" type="q" access="read"></property>
-          <property name="Height" type="q" access="read"></property>
-          <property name="PrimaryOutput" type="o" access="read"></property>
+          <property name="ScreenWidth" type="q" access="read"></property>
+          <property name="ScreenHeight" type="q" access="read"></property>
           <property name="PrimaryRect" type="(nnqq)" access="read"></property>
           <property name="DisplayMode" type="n" access="read"></property>
           <property name="BuiltinOutput" type="o" access="read"></property>
