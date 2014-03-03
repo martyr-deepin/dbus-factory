@@ -9,7 +9,7 @@
           <method name="ListRotations">
                <arg type="aq" direction="out"></arg>
           </method>
-          <method name="SetBrightness">
+          <method name="ChangeBrightness">
                <arg type="d" direction="in"></arg>
           </method>
           <method name="SetMode">
