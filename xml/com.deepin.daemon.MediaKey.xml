@@ -1,20 +1,17 @@
 <node>
      <interface name="com.deepin.daemon.MediaKey">
-          <method name="ChangeMediaKey">
-               <arg type="s" direction="in"></arg>
-               <arg type="s" direction="in"></arg>
-               <arg type="b" direction="out"></arg>
-          </method>
-          <method name="RegisterAccelKey">
-               <arg type="s" direction="in"></arg>
-          </method>
-          <method name="UnregisterAccelKey">
-               <arg type="s" direction="in"></arg>
-          </method>
-          <signal name="AccelKeyChanged">
-               <arg type="s"></arg>
-               <arg type="s"></arg>
-          </signal>
-          <property name="MediaKeyList" type="as" access="read"></property>
+          <signal name="AudioMute"></signal>
+          <signal name="AudioUp"></signal>
+          <signal name="AudioDown"></signal>
+          <signal name="BrightnessUp"></signal>
+          <signal name="BrightnessDown"></signal>
+          <signal name="CapsLockOn"></signal>
+          <signal name="CapsLockOff"></signal>
+          <signal name="NumLockOn"></signal>
+          <signal name="NumLockOff"></signal>
+          <signal name="DisplaySwitch"></signal>
+          <signal name="TouchPadOn"></signal>
+          <signal name="TouchPadOff"></signal>
+          <signal name="PowerOff"></signal>
      </interface>
 </node>

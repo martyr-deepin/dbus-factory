@@ -17,6 +17,12 @@
 			"OutFile": "dbus-grab-manager",
 			"XMLFile": "com.deepin.daemon.GrabKey.xml",
 			"ObjectName": "GrabKey"
+		},
+		{
+			"Interface": "com.deepin.daemon.MediaKey",
+			"OutFile": "dbus-mediakey",
+			"XMLFile": "com.deepin.daemon.MediaKey.xml",
+			"ObjectName": "MediaKey"
 		}
 	]
 }
