@@ -1,17 +1,43 @@
 <node>
      <interface name="com.deepin.daemon.MediaKey">
-          <signal name="AudioMute"></signal>
-          <signal name="AudioUp"></signal>
-          <signal name="AudioDown"></signal>
-          <signal name="BrightnessUp"></signal>
-          <signal name="BrightnessDown"></signal>
-          <signal name="CapsLockOn"></signal>
-          <signal name="CapsLockOff"></signal>
-          <signal name="NumLockOn"></signal>
-          <signal name="NumLockOff"></signal>
-          <signal name="DisplaySwitch"></signal>
-          <signal name="TouchPadOn"></signal>
-          <signal name="TouchPadOff"></signal>
-          <signal name="PowerOff"></signal>
+          <signal name="AudioMute">
+               <arg type="b"></arg>
+          </signal>
+          <signal name="AudioUp">
+               <arg type="b"></arg>
+          </signal>
+          <signal name="AudioDown">
+               <arg type="b"></arg>
+          </signal>
+          <signal name="BrightnessUp">
+               <arg type="b"></arg>
+          </signal>
+          <signal name="BrightnessDown">
+               <arg type="b"></arg>
+          </signal>
+          <signal name="CapsLockOn">
+               <arg type="b"></arg>
+          </signal>
+          <signal name="CapsLockOff">
+               <arg type="b"></arg>
+          </signal>
+          <signal name="NumLockOn">
+               <arg type="b"></arg>
+          </signal>
+          <signal name="NumLockOff">
+               <arg type="b"></arg>
+          </signal>
+          <signal name="DisplaySwitch">
+               <arg type="b"></arg>
+          </signal>
+          <signal name="TouchPadOn">
+               <arg type="b"></arg>
+          </signal>
+          <signal name="TouchPadOff">
+               <arg type="b"></arg>
+          </signal>
+          <signal name="PowerOff">
+               <arg type="b"></arg>
+          </signal>
      </interface>
 </node>
