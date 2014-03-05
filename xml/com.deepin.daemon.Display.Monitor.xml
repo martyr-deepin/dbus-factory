@@ -1,5 +1,8 @@
 <node>
      <interface name="com.deepin.daemon.Display.Monitor">
+          <method name="ChangeBrightness">
+               <arg type="d" direction="in"></arg>
+          </method>
           <method name="ListModes">
                <arg type="a(uqqd)" direction="out"></arg>
           </method>
@@ -8,9 +11,6 @@
           </method>
           <method name="ListRotations">
                <arg type="aq" direction="out"></arg>
-          </method>
-          <method name="ChangeBrightness">
-               <arg type="d" direction="in"></arg>
           </method>
           <method name="SetMode">
                <arg type="u" direction="in"></arg>
@@ -32,11 +32,11 @@
           <method name="SwitchOn">
                <arg type="b" direction="in"></arg>
           </method>
+          <method name="WorkaroundBacklight"></method>
           <property name="BestMode" type="(uqqd)" access="read"></property>
           <property name="IsComposited" type="b" access="read"></property>
           <property name="Name" type="s" access="read"></property>
           <property name="FullName" type="s" access="read"></property>
-          <property name="IsPrimary" type="b" access="read"></property>
           <property name="X" type="n" access="read"></property>
           <property name="Y" type="n" access="read"></property>
           <property name="Opened" type="b" access="read"></property>
