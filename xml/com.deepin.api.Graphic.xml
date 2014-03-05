@@ -8,15 +8,17 @@
                <arg type="i" direction="out"></arg>
                <arg type="s" direction="out"></arg>
           </method>
-          <method name="ClipPNG">
+          <method name="ClipImage">
                <arg type="s" direction="in"></arg>
                <arg type="s" direction="in"></arg>
                <arg type="i" direction="in"></arg>
                <arg type="i" direction="in"></arg>
                <arg type="i" direction="in"></arg>
                <arg type="i" direction="in"></arg>
+               <arg type="s" direction="in"></arg>
           </method>
-          <method name="ConvertToPNG">
+          <method name="ConvertImage">
+               <arg type="s" direction="in"></arg>
                <arg type="s" direction="in"></arg>
                <arg type="s" direction="in"></arg>
           </method>
