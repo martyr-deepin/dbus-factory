@@ -1,6 +1,7 @@
 <node>
      <interface name="com.deepin.daemon.Display.Monitor">
           <method name="ChangeBrightness">
+               <arg type="s" direction="in"></arg>
                <arg type="d" direction="in"></arg>
           </method>
           <method name="ListModes">
@@ -42,7 +43,7 @@
           <property name="Opened" type="b" access="read"></property>
           <property name="Rotation" type="q" access="read"></property>
           <property name="Reflect" type="q" access="read"></property>
-          <property name="Brightness" type="d" access="read"></property>
+          <property name="Brightness" type="a{sd}" access="read"></property>
           <property name="CurrentMode" type="(uqqd)" access="read"></property>
           <property name="Width" type="q" access="read"></property>
           <property name="Height" type="q" access="read"></property>
