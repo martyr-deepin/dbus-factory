@@ -39,5 +39,8 @@
           <signal name="PowerOff">
                <arg type="b"></arg>
           </signal>
+          <signal name="PowerSleep">
+               <arg type="b"></arg>
+          </signal>
      </interface>
 </node>
