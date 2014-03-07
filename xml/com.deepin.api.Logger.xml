@@ -1,37 +1,34 @@
 <node>
      <interface name="com.deepin.api.Logger">
           <method name="Debug">
-               <arg type="t" direction="in"></arg>
+               <arg type="s" direction="in"></arg>
                <arg type="s" direction="in"></arg>
           </method>
           <method name="Error">
-               <arg type="t" direction="in"></arg>
+               <arg type="s" direction="in"></arg>
                <arg type="s" direction="in"></arg>
           </method>
           <method name="Fatal">
-               <arg type="t" direction="in"></arg>
+               <arg type="s" direction="in"></arg>
                <arg type="s" direction="in"></arg>
           </method>
+          <method name="GetLog">
+               <arg type="s" direction="in"></arg>
+               <arg type="s" direction="out"></arg>
+          </method>
           <method name="Info">
-               <arg type="t" direction="in"></arg>
+               <arg type="s" direction="in"></arg>
                <arg type="s" direction="in"></arg>
           </method>
           <method name="NewLogger">
                <arg type="s" direction="in"></arg>
-               <arg type="t" direction="out"></arg>
-          </method>
-          <method name="NotifyRestart">
-               <arg type="t" direction="in"></arg>
-               <arg type="i" direction="in"></arg>
-               <arg type="s" direction="in"></arg>
-               <arg type="as" direction="in"></arg>
-               <arg type="s" direction="in"></arg>
-               <arg type="as" direction="in"></arg>
+               <arg type="s" direction="out"></arg>
           </method>
           <method name="Warning">
-               <arg type="t" direction="in"></arg>
+               <arg type="s" direction="in"></arg>
                <arg type="s" direction="in"></arg>
           </method>
+          <property name="Names" type="a{ss}" access="read"></property>
      </interface>
      <interface name="org.freedesktop.DBus.Introspectable">
           <method name="Introspect">
@@ -61,5 +58,10 @@
                <arg type="a{sv}"></arg>
                <arg type="as"></arg>
           </signal>
+     </interface>
+     <interface name="org.freedesktop.DBus.LifeManager">
+          <method name="Ref"></method>
+          <method name="Unref"></method>
+          <signal name="onDestroy"></signal>
      </interface>
 </node>
