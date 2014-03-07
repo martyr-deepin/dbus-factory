@@ -27,7 +27,7 @@
           <signal name="NumLockOff">
                <arg type="b"></arg>
           </signal>
-          <signal name="DisplaySwitch">
+          <signal name="SwitchMonitors">
                <arg type="b"></arg>
           </signal>
           <signal name="TouchPadOn">
