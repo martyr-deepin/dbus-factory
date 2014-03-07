@@ -1,0 +1,12 @@
+<node>
+     <interface name="com.deepin.daemon.Theme">
+          <property name="Name" type="s" access="read"></property>
+          <property name="Type" type="s" access="read"></property>
+          <property name="GtkTheme" type="s" access="read"></property>
+          <property name="IconTheme" type="s" access="read"></property>
+          <property name="CursorTheme" type="s" access="read"></property>
+          <property name="FontName" type="s" access="read"></property>
+          <property name="BackgroundFile" type="s" access="read"></property>
+          <property name="BasePath" type="s" access="read"></property>
+     </interface>
+</node>

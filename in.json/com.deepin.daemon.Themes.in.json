@@ -1,0 +1,22 @@
+{
+	"Config": {
+		"OutputDir": ".",
+		"InputDir": "../xml",
+		"BusType": "Session",
+		"DestName": "com.deepin.daemon.Themes"
+	},
+	"Interfaces": [
+		{
+			"Interface": "com.deepin.daemon.Themes",
+			"OutFile": "dbus-themes",
+			"XMLFile": "com.deepin.daemon.Themes.xml",
+			"ObjectName": "Themes"
+		},
+		{
+			"Interface": "com.deepin.daemon.Theme",
+			"OutFile": "dbus-theme",
+			"XMLFile": "com.deepin.daemon.Theme.xml",
+			"ObjectName": "Theme"
+		}
+	]
+}
