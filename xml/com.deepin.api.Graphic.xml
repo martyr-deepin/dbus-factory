@@ -8,6 +8,13 @@
                <arg type="i" direction="out"></arg>
                <arg type="s" direction="out"></arg>
           </method>
+          <method name="BlurImage">
+               <arg type="s" direction="in"></arg>
+               <arg type="s" direction="in"></arg>
+               <arg type="d" direction="in"></arg>
+               <arg type="d" direction="in"></arg>
+               <arg type="s" direction="in"></arg>
+          </method>
           <method name="ClipImage">
                <arg type="s" direction="in"></arg>
                <arg type="s" direction="in"></arg>
@@ -18,6 +25,16 @@
                <arg type="s" direction="in"></arg>
           </method>
           <method name="ConvertImage">
+               <arg type="s" direction="in"></arg>
+               <arg type="s" direction="in"></arg>
+               <arg type="s" direction="in"></arg>
+          </method>
+          <method name="FlipImageHorizontal">
+               <arg type="s" direction="in"></arg>
+               <arg type="s" direction="in"></arg>
+               <arg type="s" direction="in"></arg>
+          </method>
+          <method name="FlipImageVertical">
                <arg type="s" direction="in"></arg>
                <arg type="s" direction="in"></arg>
                <arg type="s" direction="in"></arg>
@@ -48,6 +65,23 @@
                <arg type="d" direction="out"></arg>
                <arg type="d" direction="out"></arg>
                <arg type="d" direction="out"></arg>
+          </method>
+          <method name="ResizeImage">
+               <arg type="s" direction="in"></arg>
+               <arg type="s" direction="in"></arg>
+               <arg type="i" direction="in"></arg>
+               <arg type="i" direction="in"></arg>
+               <arg type="s" direction="in"></arg>
+          </method>
+          <method name="RotateImageLeft">
+               <arg type="s" direction="in"></arg>
+               <arg type="s" direction="in"></arg>
+               <arg type="s" direction="in"></arg>
+          </method>
+          <method name="RotateImageRight">
+               <arg type="s" direction="in"></arg>
+               <arg type="s" direction="in"></arg>
+               <arg type="s" direction="in"></arg>
           </method>
           <signal name="BlurPictChanged">
                <arg type="s"></arg>
@@ -82,5 +116,10 @@
                <arg type="a{sv}"></arg>
                <arg type="as"></arg>
           </signal>
+     </interface>
+     <interface name="org.freedesktop.DBus.LifeManager">
+          <method name="Ref"></method>
+          <method name="Unref"></method>
+          <signal name="onDestroy"></signal>
      </interface>
 </node>
