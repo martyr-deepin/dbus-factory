@@ -1,5 +1,8 @@
 <node>
      <interface name="com.deepin.daemon.Accounts.User">
+          <method name="DeleteHistoryIcon">
+               <arg type="s" direction="in"></arg>
+          </method>
           <method name="GetIconList">
                <arg type="as" direction="out"></arg>
           </method>
@@ -41,5 +44,6 @@
           <property name="AccountType" type="i" access="read"></property>
           <property name="Locked" type="b" access="read"></property>
           <property name="LoginTime" type="t" access="read"></property>
+          <property name="HistoryIcons" type="as" access="read"></property>
      </interface>
 </node>
