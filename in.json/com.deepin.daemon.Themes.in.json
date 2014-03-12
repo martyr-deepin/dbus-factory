@@ -7,10 +7,10 @@
 	},
 	"Interfaces": [
 		{
-			"Interface": "com.deepin.daemon.Themes",
-			"OutFile": "dbus-themes",
-			"XMLFile": "com.deepin.daemon.Themes.xml",
-			"ObjectName": "Themes"
+			"Interface": "com.deepin.daemon.ThemeManager",
+			"OutFile": "dbus-theme-manager",
+			"XMLFile": "com.deepin.daemon.ThemeManager.xml",
+			"ObjectName": "ThemeManager"
 		},
 		{
 			"Interface": "com.deepin.daemon.Theme",

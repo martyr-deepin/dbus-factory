@@ -1,18 +1,13 @@
 <node>
-     <interface name="com.deepin.daemon.Themes">
-          <method name="GetCursorBasePath">
+     <interface name="com.deepin.daemon.ThemeManager">
+          <method name="GetThumbPictPath">
                <arg type="s" direction="in"></arg>
-               <arg type="s" direction="out"></arg>
-          </method>
-          <method name="GetGtkBasePath">
                <arg type="s" direction="in"></arg>
-               <arg type="s" direction="out"></arg>
-          </method>
-          <method name="GetIconBasePath">
                <arg type="s" direction="in"></arg>
                <arg type="s" direction="out"></arg>
           </method>
           <method name="SetTheme">
+               <arg type="s" direction="in"></arg>
                <arg type="s" direction="in"></arg>
                <arg type="s" direction="in"></arg>
                <arg type="s" direction="in"></arg>
@@ -26,5 +21,4 @@
           <property name="CursorThemeList" type="as" access="read"></property>
           <property name="FontThemeList" type="as" access="read"></property>
           <property name="BackgroundList" type="as" access="read"></property>
-     </interface>
 </node>
