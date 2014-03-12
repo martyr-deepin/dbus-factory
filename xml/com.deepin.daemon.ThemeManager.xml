@@ -21,4 +21,5 @@
           <property name="CursorThemeList" type="as" access="read"></property>
           <property name="FontThemeList" type="as" access="read"></property>
           <property name="BackgroundList" type="as" access="read"></property>
+      </interface>
 </node>
