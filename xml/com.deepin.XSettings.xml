@@ -1,0 +1,32 @@
+<node>
+     <interface name="com.deepin.XSettings">
+          <method name="GetColor">
+               <arg type="s" direction="in"></arg>
+               <arg type="ay" direction="out"></arg>
+               <arg type="b" direction="out"></arg>
+          </method>
+          <method name="GetInterger">
+               <arg type="s" direction="in"></arg>
+               <arg type="u" direction="out"></arg>
+               <arg type="b" direction="out"></arg>
+          </method>
+          <method name="GetString">
+               <arg type="s" direction="in"></arg>
+               <arg type="s" direction="out"></arg>
+               <arg type="b" direction="out"></arg>
+          </method>
+          <method name="SetColor">
+               <arg type="s" direction="in"></arg>
+               <arg type="ay" direction="in"></arg>
+          </method>
+          <method name="SetInterger">
+               <arg type="s" direction="in"></arg>
+               <arg type="u" direction="in"></arg>
+          </method>
+          <method name="SetString">
+               <arg type="s" direction="in"></arg>
+               <arg type="s" direction="in"></arg>
+          </method>
+          <property name="PropList" type="as" access="read"></property>
+     </interface>
+</node>

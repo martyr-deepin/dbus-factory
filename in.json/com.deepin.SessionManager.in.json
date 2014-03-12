@@ -11,6 +11,12 @@
 			"OutFile": "dbus-sessions",
 			"XMLFile": "com.deepin.SessionManager.xml",
 			"ObjectName": "SessionManager"
+		},
+		{
+			"Interface": "com.deepin.XSettings",
+			"OutFile": "dbus-xsettings",
+			"XMLFile": "com.deepin.XSettings.xml",
+			"ObjectName": "XSettings"
 		}
 	]
 }
