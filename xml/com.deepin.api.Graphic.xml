@@ -29,6 +29,14 @@
                <arg type="s" direction="in"></arg>
                <arg type="s" direction="in"></arg>
           </method>
+          <method name="FillImage">
+               <arg type="s" direction="in"></arg>
+               <arg type="s" direction="in"></arg>
+               <arg type="i" direction="in"></arg>
+               <arg type="i" direction="in"></arg>
+               <arg type="s" direction="in"></arg>
+               <arg type="s" direction="in"></arg>
+          </method>
           <method name="FlipImageHorizontal">
                <arg type="s" direction="in"></arg>
                <arg type="s" direction="in"></arg>
