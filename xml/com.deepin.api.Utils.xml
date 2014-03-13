@@ -1,17 +1,5 @@
 <node>
      <interface name="com.deepin.api.Utils">
-          <method name="ConvertPathToURI">
-               <arg type="s" direction="in"></arg>
-               <arg type="i" direction="in"></arg>
-               <arg type="s" direction="out"></arg>
-               <arg type="b" direction="out"></arg>
-          </method>
-          <method name="ConvertURIToPath">
-               <arg type="s" direction="in"></arg>
-               <arg type="i" direction="in"></arg>
-               <arg type="s" direction="out"></arg>
-               <arg type="b" direction="out"></arg>
-          </method>
           <method name="IsContainFromStart">
                <arg type="s" direction="in"></arg>
                <arg type="s" direction="in"></arg>
@@ -20,7 +8,6 @@
           <method name="IsElementExist">
                <arg type="o" direction="in"></arg>
                <arg type="o" direction="in"></arg>
-               <arg type="i" direction="in"></arg>
                <arg type="b" direction="out"></arg>
           </method>
           <method name="IsFileExist">
@@ -30,7 +17,51 @@
           <method name="IsListEqual">
                <arg type="o" direction="in"></arg>
                <arg type="o" direction="in"></arg>
-               <arg type="i" direction="in"></arg>
+               <arg type="b" direction="out"></arg>
+          </method>
+          <method name="PathToFileURI">
+               <arg type="s" direction="in"></arg>
+               <arg type="s" direction="out"></arg>
+               <arg type="b" direction="out"></arg>
+          </method>
+          <method name="PathToFtpURI">
+               <arg type="s" direction="in"></arg>
+               <arg type="s" direction="out"></arg>
+               <arg type="b" direction="out"></arg>
+          </method>
+          <method name="PathToHttpURI">
+               <arg type="s" direction="in"></arg>
+               <arg type="s" direction="out"></arg>
+               <arg type="b" direction="out"></arg>
+          </method>
+          <method name="PathToHttpsURI">
+               <arg type="s" direction="in"></arg>
+               <arg type="s" direction="out"></arg>
+               <arg type="b" direction="out"></arg>
+          </method>
+          <method name="PathToSmbURI">
+               <arg type="s" direction="in"></arg>
+               <arg type="s" direction="out"></arg>
+               <arg type="b" direction="out"></arg>
+          </method>
+          <method name="ReadKeyFromKeyFile">
+               <arg type="s" direction="in"></arg>
+               <arg type="s" direction="in"></arg>
+               <arg type="s" direction="in"></arg>
+               <arg type="o" direction="in"></arg>
+               <arg type="o" direction="out"></arg>
+               <arg type="b" direction="out"></arg>
+          </method>
+          <method name="URIToPath">
+               <arg type="s" direction="in"></arg>
+               <arg type="s" direction="out"></arg>
+               <arg type="b" direction="out"></arg>
+          </method>
+          <method name="WriteKeyToKeyFile">
+               <arg type="s" direction="in"></arg>
+               <arg type="s" direction="in"></arg>
+               <arg type="s" direction="in"></arg>
+               <arg type="o" direction="in"></arg>
                <arg type="b" direction="out"></arg>
           </method>
      </interface>
