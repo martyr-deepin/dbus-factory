@@ -1,11 +1,5 @@
 <node>
      <interface name="com.deepin.daemon.ThemeManager">
-          <method name="GetThumbPictPath">
-               <arg type="s" direction="in"></arg>
-               <arg type="s" direction="in"></arg>
-               <arg type="s" direction="in"></arg>
-               <arg type="s" direction="out"></arg>
-          </method>
           <method name="SetTheme">
                <arg type="s" direction="in"></arg>
                <arg type="s" direction="in"></arg>
@@ -21,5 +15,33 @@
           <property name="CursorThemeList" type="as" access="read"></property>
           <property name="FontThemeList" type="as" access="read"></property>
           <property name="BackgroundList" type="as" access="read"></property>
-      </interface>
+     </interface>
+     <interface name="com.deepin.daemon.ThumbPath">
+          <method name="CursorPath">
+               <arg type="s" direction="in"></arg>
+               <arg type="s" direction="out"></arg>
+          </method>
+          <method name="GtkPath">
+               <arg type="s" direction="in"></arg>
+               <arg type="s" direction="out"></arg>
+          </method>
+          <method name="IconPath">
+               <arg type="s" direction="in"></arg>
+               <arg type="s" direction="out"></arg>
+          </method>
+     </interface>
+     <interface name="com.deepin.daemon.PreviewPath">
+          <method name="CursorPath">
+               <arg type="s" direction="in"></arg>
+               <arg type="s" direction="out"></arg>
+          </method>
+          <method name="GtkPath">
+               <arg type="s" direction="in"></arg>
+               <arg type="s" direction="out"></arg>
+          </method>
+          <method name="IconPath">
+               <arg type="s" direction="in"></arg>
+               <arg type="s" direction="out"></arg>
+          </method>
+     </interface>
 </node>
