@@ -1,12 +1,34 @@
 <node>
      <interface name="com.deepin.daemon.ThemeManager">
-          <method name="SetTheme">
-               <arg type="s" direction="in"></arg>
-               <arg type="s" direction="in"></arg>
-               <arg type="s" direction="in"></arg>
-               <arg type="s" direction="in"></arg>
+          <method name="GetPathViaName">
                <arg type="s" direction="in"></arg>
                <arg type="s" direction="out"></arg>
+               <arg type="b" direction="out"></arg>
+          </method>
+          <method name="SetBackgroundFile">
+               <arg type="s" direction="in"></arg>
+               <arg type="s" direction="out"></arg>
+               <arg type="b" direction="out"></arg>
+          </method>
+          <method name="SetGtkCursorTheme">
+               <arg type="s" direction="in"></arg>
+               <arg type="s" direction="out"></arg>
+               <arg type="b" direction="out"></arg>
+          </method>
+          <method name="SetGtkFontTheme">
+               <arg type="s" direction="in"></arg>
+               <arg type="s" direction="out"></arg>
+               <arg type="b" direction="out"></arg>
+          </method>
+          <method name="SetGtkTheme">
+               <arg type="s" direction="in"></arg>
+               <arg type="s" direction="out"></arg>
+               <arg type="b" direction="out"></arg>
+          </method>
+          <method name="SetIconTheme">
+               <arg type="s" direction="in"></arg>
+               <arg type="s" direction="out"></arg>
+               <arg type="b" direction="out"></arg>
           </method>
           <property name="ThemeList" type="as" access="read"></property>
           <property name="CurrentTheme" type="s" access="readwrite"></property>
