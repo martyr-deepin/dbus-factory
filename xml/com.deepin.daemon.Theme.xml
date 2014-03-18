@@ -4,8 +4,8 @@
           <property name="Type" type="s" access="read"></property>
           <property name="GtkTheme" type="s" access="read"></property>
           <property name="IconTheme" type="s" access="read"></property>
-          <property name="GtkCursorTheme" type="s" access="read"></property>
-          <property name="GtkFontName" type="s" access="read"></property>
+          <property name="CursorTheme" type="s" access="read"></property>
+          <property name="FontName" type="s" access="read"></property>
           <property name="BackgroundFile" type="s" access="read"></property>
           <property name="SoundThemeName" type="s" access="read"></property>
           <property name="PreviewPath" type="s" access="read"></property>

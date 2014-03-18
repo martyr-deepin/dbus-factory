@@ -10,12 +10,12 @@
                <arg type="s" direction="out"></arg>
                <arg type="b" direction="out"></arg>
           </method>
-          <method name="SetGtkCursorTheme">
+          <method name="SetCursorTheme">
                <arg type="s" direction="in"></arg>
                <arg type="s" direction="out"></arg>
                <arg type="b" direction="out"></arg>
           </method>
-          <method name="SetGtkFontTheme">
+          <method name="SetFontName">
                <arg type="s" direction="in"></arg>
                <arg type="s" direction="out"></arg>
                <arg type="b" direction="out"></arg>
