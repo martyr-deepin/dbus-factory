@@ -30,6 +30,11 @@
                <arg type="s" direction="out"></arg>
                <arg type="b" direction="out"></arg>
           </method>
+          <method name="SetSoundTheme">
+               <arg type="s" direction="in"></arg>
+               <arg type="s" direction="out"></arg>
+               <arg type="b" direction="out"></arg>
+          </method>
           <property name="ThemeList" type="as" access="read"></property>
           <property name="CurrentTheme" type="s" access="readwrite"></property>
           <property name="GtkThemeList" type="as" access="read"></property>
@@ -37,6 +42,7 @@
           <property name="CursorThemeList" type="as" access="read"></property>
           <property name="FontThemeList" type="as" access="read"></property>
           <property name="BackgroundList" type="as" access="read"></property>
+          <property name="SoundThemeList" type="as" access="read"></property>
      </interface>
      <interface name="com.deepin.daemon.ThumbPath">
           <method name="CursorPath">
