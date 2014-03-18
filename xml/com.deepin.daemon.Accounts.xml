@@ -18,12 +18,24 @@
                <arg type="s" direction="in"></arg>
                <arg type="s" direction="out"></arg>
           </method>
+          <method name="RandUserIcon">
+               <arg type="s" direction="out"></arg>
+               <arg type="b" direction="out"></arg>
+          </method>
           <signal name="UserAdded">
-              <arg type="s"></arg>
+               <arg type="s"></arg>
           </signal>
           <signal name="UserDeleted">
-              <arg type="s"></arg>
+               <arg type="s"></arg>
           </signal>
           <property name="UserList" type="as" access="read"></property>
+     </interface>
+     <interface name="org.freedesktop.DBus.Introspectable">
+          <method name="Introspect">
+               <arg type="s" direction="out"></arg>
+          </method>
+          <method name="String">
+               <arg type="s" direction="out"></arg>
+          </method>
      </interface>
 </node>
