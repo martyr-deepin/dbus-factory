@@ -13,7 +13,6 @@
                <arg type="b" direction="out"></arg>
           </method>
           <method name="DoResetThemeBackground">
-               <arg type="s" direction="in"></arg>
                <arg type="b" direction="out"></arg>
           </method>
           <method name="DoSetThemeBackgroundSourceFile">
