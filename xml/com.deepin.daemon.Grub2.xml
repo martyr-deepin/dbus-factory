@@ -3,6 +3,9 @@
           <method name="GetSimpleEntryTitles">
                <arg type="as" direction="out"></arg>
           </method>
+          <method name="Reset"></method>
+          <signal name="GenerateBegin"></signal>
+          <signal name="GenerateEnd"></signal>
           <property name="DefaultEntry" type="s" access="readwrite"></property>
           <property name="Timeout" type="i" access="readwrite"></property>
      </interface>
