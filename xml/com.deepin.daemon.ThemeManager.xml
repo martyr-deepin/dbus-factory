@@ -37,6 +37,7 @@
           </method>
           <property name="ThemeList" type="as" access="read"></property>
           <property name="CurrentTheme" type="s" access="readwrite"></property>
+          <property name="CurrentSoundTheme" type="s" access="readwrite"></property>
           <property name="GtkThemeList" type="as" access="read"></property>
           <property name="IconThemeList" type="as" access="read"></property>
           <property name="CursorThemeList" type="as" access="read"></property>

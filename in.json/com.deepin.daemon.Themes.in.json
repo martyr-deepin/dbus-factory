@@ -29,12 +29,6 @@
 			"OutFile": "dbus-preview",
 			"XMLFile": "com.deepin.daemon.ThemeManager.xml",
 			"ObjectName": "PreviewPath"
-		},
-		{
-			"Interface": "com.deepin.daemon.Sound",
-			"OutFile": "dbus-sound",
-			"XMLFile": "com.deepin.daemon.Sound.xml",
-			"ObjectName": "Sound"
 		}
 	]
 }
