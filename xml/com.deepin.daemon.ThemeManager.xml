@@ -1,80 +1,79 @@
 <node>
-     <interface name="com.deepin.daemon.ThemeManager">
-          <method name="GetPathViaName">
-               <arg type="s" direction="in"></arg>
-               <arg type="s" direction="out"></arg>
-               <arg type="b" direction="out"></arg>
-          </method>
-          <method name="SetBackgroundFile">
-               <arg type="s" direction="in"></arg>
-               <arg type="s" direction="out"></arg>
-               <arg type="b" direction="out"></arg>
-          </method>
-          <method name="SetCurrentTheme">
-               <arg type="s" direction="in"></arg>
-               <arg type="b" direction="out"></arg>
-          </method>
-          <method name="SetCursorTheme">
-               <arg type="s" direction="in"></arg>
-               <arg type="s" direction="out"></arg>
-               <arg type="b" direction="out"></arg>
-          </method>
-          <method name="SetFontName">
-               <arg type="s" direction="in"></arg>
-               <arg type="s" direction="out"></arg>
-               <arg type="b" direction="out"></arg>
-          </method>
-          <method name="SetGtkTheme">
-               <arg type="s" direction="in"></arg>
-               <arg type="s" direction="out"></arg>
-               <arg type="b" direction="out"></arg>
-          </method>
-          <method name="SetIconTheme">
-               <arg type="s" direction="in"></arg>
-               <arg type="s" direction="out"></arg>
-               <arg type="b" direction="out"></arg>
-          </method>
-          <method name="SetSoundTheme">
-               <arg type="s" direction="in"></arg>
-               <arg type="s" direction="out"></arg>
-               <arg type="b" direction="out"></arg>
-          </method>
-          <property name="ThemeList" type="as" access="read"></property>
-          <property name="CurrentTheme" type="s" access="read"></property>
-          <property name="CurrentSoundTheme" type="s" access="readwrite"></property>
-          <property name="GtkThemeList" type="as" access="read"></property>
-          <property name="IconThemeList" type="as" access="read"></property>
-          <property name="CursorThemeList" type="as" access="read"></property>
-          <property name="FontThemeList" type="as" access="read"></property>
-          <property name="BackgroundList" type="as" access="read"></property>
-          <property name="SoundThemeList" type="as" access="read"></property>
-     </interface>
-     <interface name="com.deepin.daemon.ThumbPath">
-          <method name="CursorPath">
-               <arg type="s" direction="in"></arg>
-               <arg type="s" direction="out"></arg>
-          </method>
-          <method name="GtkPath">
-               <arg type="s" direction="in"></arg>
-               <arg type="s" direction="out"></arg>
-          </method>
-          <method name="IconPath">
-               <arg type="s" direction="in"></arg>
-               <arg type="s" direction="out"></arg>
-          </method>
-     </interface>
-     <interface name="com.deepin.daemon.PreviewPath">
-          <method name="CursorPath">
-               <arg type="s" direction="in"></arg>
-               <arg type="s" direction="out"></arg>
-          </method>
-          <method name="GtkPath">
-               <arg type="s" direction="in"></arg>
-               <arg type="s" direction="out"></arg>
-          </method>
-          <method name="IconPath">
-               <arg type="s" direction="in"></arg>
-               <arg type="s" direction="out"></arg>
-          </method>
-     </interface>
+  <interface name="com.deepin.daemon.ThemeManager">
+    <method name="GetPathViaName">
+      <arg type="s" direction="in"></arg>
+      <arg type="s" direction="out"></arg>
+      <arg type="b" direction="out"></arg>
+    </method>
+    <method name="SetBackgroundFile">
+      <arg type="s" direction="in"></arg>
+      <arg type="s" direction="out"></arg>
+      <arg type="b" direction="out"></arg>
+    </method>
+    <method name="SetCurrentTheme">
+      <arg type="s" direction="in"></arg>
+      <arg type="b" direction="out"></arg>
+    </method>
+    <method name="SetCursorTheme">
+      <arg type="s" direction="in"></arg>
+      <arg type="s" direction="out"></arg>
+      <arg type="b" direction="out"></arg>
+    </method>
+    <method name="SetFontName">
+      <arg type="s" direction="in"></arg>
+      <arg type="s" direction="out"></arg>
+      <arg type="b" direction="out"></arg>
+    </method>
+    <method name="SetGtkTheme">
+      <arg type="s" direction="in"></arg>
+      <arg type="s" direction="out"></arg>
+      <arg type="b" direction="out"></arg>
+    </method>
+    <method name="SetIconTheme">
+      <arg type="s" direction="in"></arg>
+      <arg type="s" direction="out"></arg>
+      <arg type="b" direction="out"></arg>
+    </method>
+    <method name="SetSoundTheme">
+      <arg type="s" direction="in"></arg>
+      <arg type="s" direction="out"></arg>
+      <arg type="b" direction="out"></arg>
+    </method>
+    <property name="ThemeList" type="as" access="read"></property>
+    <property name="CurrentTheme" type="s" access="read"></property>
+    <property name="GtkThemeList" type="as" access="read"></property>
+    <property name="IconThemeList" type="as" access="read"></property>
+    <property name="CursorThemeList" type="as" access="read"></property>
+    <property name="FontThemeList" type="as" access="read"></property>
+    <property name="BackgroundList" type="as" access="read"></property>
+    <property name="SoundThemeList" type="as" access="read"></property>
+  </interface>
+  <interface name="com.deepin.daemon.ThumbPath">
+    <method name="CursorPath">
+      <arg type="s" direction="in"></arg>
+      <arg type="s" direction="out"></arg>
+    </method>
+    <method name="GtkPath">
+      <arg type="s" direction="in"></arg>
+      <arg type="s" direction="out"></arg>
+    </method>
+    <method name="IconPath">
+      <arg type="s" direction="in"></arg>
+      <arg type="s" direction="out"></arg>
+    </method>
+  </interface>
+  <interface name="com.deepin.daemon.PreviewPath">
+    <method name="CursorPath">
+      <arg type="s" direction="in"></arg>
+      <arg type="s" direction="out"></arg>
+    </method>
+    <method name="GtkPath">
+      <arg type="s" direction="in"></arg>
+      <arg type="s" direction="out"></arg>
+    </method>
+    <method name="IconPath">
+      <arg type="s" direction="in"></arg>
+      <arg type="s" direction="out"></arg>
+    </method>
+  </interface>
 </node>
