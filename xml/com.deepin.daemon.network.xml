@@ -1,4 +1,4 @@
-   <node>
+<node>
      <interface name="com.deepin.daemon.Network">
           <method name="ActiveAccessPoint">
                <arg type="o" direction="in"></arg>
@@ -9,6 +9,11 @@
           </method>
           <method name="DisconnectDevice">
                <arg type="o" direction="in"></arg>
+          </method>
+          <method name="FeedSecret">
+               <arg type="o" direction="in"></arg>
+               <arg type="s" direction="in"></arg>
+               <arg type="s" direction="in"></arg>
           </method>
           <method name="GetAccessPoints">
                <arg type="o" direction="in"></arg>
@@ -22,14 +27,11 @@
                <arg type="o" direction="in"></arg>
                <arg type="(a{sa{sv}}osss)" direction="out"></arg>
           </method>
-          <method name="SetKey">
-               <arg type="s" direction="in"></arg>
-               <arg type="s" direction="in"></arg>
-          </method>
           <method name="UpdateConnection">
                <arg type="a{sa{ss}}" direction="in"></arg>
           </method>
-          <signal name="NeedMoreConfigure">
+          <signal name="NeedSecrets">
+               <arg type="o"></arg>
                <arg type="s"></arg>
                <arg type="s"></arg>
           </signal>
@@ -43,34 +45,5 @@
           <property name="WiredConnections" type="a(a{sa{sv}}osss)" access="read"></property>
           <property name="WirelessConnections" type="a(a{sa{sv}}osss)" access="read"></property>
           <property name="VPNConnections" type="a(a{sa{sv}}osss)" access="read"></property>
-     </interface>
-     <interface name="org.freedesktop.DBus.Introspectable">
-          <method name="Introspect">
-               <arg type="s" direction="out"></arg>
-          </method>
-          <method name="String">
-               <arg type="s" direction="out"></arg>
-          </method>
-     </interface>
-     <interface name="org.freedesktop.DBus.Properties">
-          <method name="Get">
-               <arg type="s" direction="in"></arg>
-               <arg type="s" direction="in"></arg>
-               <arg type="v" direction="out"></arg>
-          </method>
-          <method name="GetAll">
-               <arg type="s" direction="in"></arg>
-               <arg type="a{sv}" direction="out"></arg>
-          </method>
-          <method name="Set">
-               <arg type="s" direction="in"></arg>
-               <arg type="s" direction="in"></arg>
-               <arg type="v" direction="in"></arg>
-          </method>
-          <signal name="PropertiesChanged">
-               <arg type="s"></arg>
-               <arg type="a{sv}"></arg>
-               <arg type="as"></arg>
-          </signal>
      </interface>
 </node>
