@@ -28,5 +28,6 @@
           <method name="RequestShutdown"></method>
           <method name="RequestSuspend"></method>
           <method name="Shutdown"></method>
+          <property name="CurrentUid" type="s" access="read"></property>
      </interface>
 </node>
