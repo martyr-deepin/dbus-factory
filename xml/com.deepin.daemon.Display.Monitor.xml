@@ -13,6 +13,10 @@
           <method name="ListRotations">
                <arg type="aq" direction="out"></arg>
           </method>
+          <method name="SetBrightness">
+               <arg type="s" direction="in"></arg>
+               <arg type="d" direction="in"></arg>
+          </method>
           <method name="SetMode">
                <arg type="u" direction="in"></arg>
           </method>
