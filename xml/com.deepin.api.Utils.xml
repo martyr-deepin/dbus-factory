@@ -1,5 +1,10 @@
 <node>
      <interface name="com.deepin.api.Utils">
+          <method name="CopyFile">
+               <arg type="s" direction="in"></arg>
+               <arg type="s" direction="in"></arg>
+               <arg type="b" direction="out"></arg>
+          </method>
           <method name="GetBaseName">
                <arg type="s" direction="in"></arg>
                <arg type="s" direction="out"></arg>
