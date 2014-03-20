@@ -12,8 +12,5 @@
       <arg type="as" name="interfaces"/>
     </signal>
   </interface>
-  <node name="Manager"/>
-  <node name="drives"/>
-  <node name="block_devices"/>
 </node>
 
