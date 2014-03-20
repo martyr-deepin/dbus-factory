@@ -15,6 +15,10 @@
                <arg type="s" direction="in"></arg>
                <arg type="s" direction="in"></arg>
           </method>
+          <method name="CancelSecret">
+               <arg type="o" direction="in"></arg>
+               <arg type="s" direction="in"></arg>
+          </method>
           <method name="GetAccessPoints">
                <arg type="o" direction="in"></arg>
                <arg type="a(sbyob)" direction="out"></arg>
