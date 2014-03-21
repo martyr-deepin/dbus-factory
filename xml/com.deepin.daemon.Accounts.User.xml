@@ -3,9 +3,6 @@
           <method name="DeleteHistoryIcon">
                <arg type="s" direction="in"></arg>
           </method>
-          <method name="GetIconList">
-               <arg type="as" direction="out"></arg>
-          </method>
           <method name="SetAccountType">
                <arg type="i" direction="in"></arg>
           </method>
@@ -45,5 +42,6 @@
           <property name="Locked" type="b" access="read"></property>
           <property name="LoginTime" type="t" access="read"></property>
           <property name="HistoryIcons" type="as" access="read"></property>
+          <property name="IconList" type="as" access="read"></property>
      </interface>
 </node>
