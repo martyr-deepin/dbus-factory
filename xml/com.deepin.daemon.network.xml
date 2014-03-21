@@ -11,12 +11,12 @@
                <arg type="o" direction="in"></arg>
           </method>
           <method name="FeedSecret">
-               <arg type="o" direction="in"></arg>
+               <arg type="s" direction="in"></arg>
                <arg type="s" direction="in"></arg>
                <arg type="s" direction="in"></arg>
           </method>
           <method name="CancelSecret">
-               <arg type="o" direction="in"></arg>
+               <arg type="s" direction="in"></arg>
                <arg type="s" direction="in"></arg>
           </method>
           <method name="GetAccessPoints">
@@ -35,7 +35,7 @@
                <arg type="a{sa{ss}}" direction="in"></arg>
           </method>
           <signal name="NeedSecrets">
-               <arg type="o"></arg>
+               <arg type="s"></arg>
                <arg type="s"></arg>
                <arg type="s"></arg>
           </signal>
