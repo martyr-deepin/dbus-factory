@@ -1,5 +1,11 @@
-<node name="/com/deepin/daemon/Audio/Source83">
+<node name="/com/deepin/daemon/Audio/Source1">
  <interface name="com.deepin.daemon.Audio.Source">
+  <method name="CreateStream">
+   <arg type="o" direction="out"></arg>
+  </method>
+  <method name="GetSourceOutputs">
+   <arg type="ao" direction="out"></arg>
+  </method>
   <method name="SetSourceMute">
    <arg type="b" direction="in"></arg>
    <arg type="i" direction="out"></arg>
@@ -49,5 +55,9 @@
    <arg type="a{sv}"></arg>
    <arg type="as"></arg>
   </signal>
+ </interface>
+ <interface name="org.freedesktop.DBus.LifeManager">
+  <method name="Ref"></method>
+  <method name="Unref"></method>
  </interface>
 </node>

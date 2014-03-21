@@ -47,4 +47,8 @@
    <arg type="as"></arg>
   </signal>
  </interface>
+ <interface name="org.freedesktop.DBus.LifeManager">
+  <method name="Ref"></method>
+  <method name="Unref"></method>
+ </interface>
 </node>

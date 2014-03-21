@@ -6,6 +6,9 @@
              <method name="GetClients">
                   <arg type="ao" direction="out"></arg>
              </method>
+             <method name="GetDefaultSink">
+                  <arg type="o" direction="out"></arg>
+             </method>
              <method name="GetServerInfo">
                   <arg type="o" direction="out"></arg>
              </method>
@@ -13,6 +16,9 @@
                   <arg type="ao" direction="out"></arg>
              </method>
              <method name="GetSinks">
+                  <arg type="ao" direction="out"></arg>
+             </method>
+             <method name="GetSourceOutputs">
                   <arg type="ao" direction="out"></arg>
              </method>
              <method name="GetSources">
@@ -65,8 +71,13 @@
                   <arg type="as"></arg>
              </signal>
         </interface>
+        <interface name="org.freedesktop.DBus.LifeManager">
+             <method name="Ref"></method>
+             <method name="Unref"></method>
+        </interface>
         <node name="Card0"></node>
-        <node name="Sink82"></node>
-        <node name="Source3"></node>
-        <node name="Source83"></node>
+        <node name="Sink0"></node>
+        <node name="Source0"></node>
+        <node name="Source1"></node>
+        <node name="Application1"></node>
    </node>
