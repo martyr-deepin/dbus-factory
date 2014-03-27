@@ -1,0 +1,34 @@
+<node>
+  <interface name="com.deepin.daemon.ConnectionSession">
+    <method name="Cancel"></method>
+    <method name="DebugGetSupportedConnectionTypes">
+      <arg type="as" direction="out"></arg>
+    </method>
+    <method name="DebugListFields">
+      <arg type="s" direction="in"></arg>
+      <arg type="as" direction="out"></arg>
+    </method>
+    <method name="GetAvailableValue">
+      <arg type="s" direction="in"></arg>
+      <arg type="as" direction="out"></arg>
+    </method>
+    <method name="GetKey">
+      <arg type="s" direction="in"></arg>
+      <arg type="s" direction="out"></arg>
+    </method>
+    <method name="ListPages">
+      <arg type="as" direction="out"></arg>
+    </method>
+    <method name="Save"></method>
+    <method name="SetKey">
+      <arg type="s" direction="in"></arg>
+      <arg type="s" direction="in"></arg>
+    </method>
+    <method name="SwitchPage">
+      <arg type="s" direction="in"></arg>
+    </method>
+    <property name="HasChanged" type="b" access="read"></property>
+    <property name="CurrentFields" type="as" access="read"></property>
+    <property name="CurrentErrors" type="as" access="read"></property>
+  </interface>
+</node>

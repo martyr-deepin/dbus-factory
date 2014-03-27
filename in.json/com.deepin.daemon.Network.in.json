@@ -9,8 +9,14 @@
     {
 	"Interface": "com.deepin.daemon.Network",
 	"OutFile": "network",
-	"XMLFile": "com.deepin.daemon.network.xml",
+	"XMLFile": "com.deepin.daemon.Network.xml",
 	"ObjectName": "NetworkManager"
+    },
+    {
+	"Interface": "com.deepin.daemon.ConnectionSession",
+	"OutFile": "session",
+	"XMLFile": "com.deepin.daemon.Network.ConnectionSession.xml",
+	"ObjectName": "ConnectionSession"
     }
     ]
 }
