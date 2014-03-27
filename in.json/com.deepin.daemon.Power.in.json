@@ -11,6 +11,12 @@
 			"OutFile": "dbus-power",
 			"XMLFile": "com.deepin.daemon.Power.xml",
 			"ObjectName": "Power"
-		}
+		},
+        {
+            "Interface":"org.freedesktop.ScreenSaver",
+            "OutFile":"dbus-power-ss",
+            "XMLFile":"org.freedesktop.ScreenSaver.xml",
+            "ObjectName":"ScreenSaver"
+        }
 	]
 }
