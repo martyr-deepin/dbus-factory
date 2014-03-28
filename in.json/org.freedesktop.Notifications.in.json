@@ -10,7 +10,7 @@
 			"Interface": "org.freedesktop.Notifications",
 			"OutFile": "notify",
 			"XMLFile": "org.freedesktop.Notifications.xml",
-			"ObjectName": "Notify"
+			"ObjectName": "Notifier"
 		}
 	]
 }
