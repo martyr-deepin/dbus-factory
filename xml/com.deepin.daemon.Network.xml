@@ -1,10 +1,7 @@
 <node>
   <interface name="com.deepin.daemon.Network">
-    <method name="ActiveAccessPoint">
-      <arg type="o" direction="in"></arg>
-      <arg type="o" direction="in"></arg>
-    </method>
-    <method name="ActiveWiredDevice">
+    <method name="ActivateConnection">
+      <arg type="s" direction="in"></arg>
       <arg type="o" direction="in"></arg>
     </method>
     <method name="CancelSecret">
@@ -15,11 +12,18 @@
       <arg type="s" direction="in"></arg>
       <arg type="o" direction="out"></arg>
     </method>
+    <method name="DeactivateConnection">
+      <arg type="o" direction="in"></arg>
+    </method>
     <method name="DeleteConnection">
       <arg type="s" direction="in"></arg>
     </method>
     <method name="DisconnectDevice">
       <arg type="o" direction="in"></arg>
+    </method>
+    <method name="EditConnection">
+      <arg type="s" direction="in"></arg>
+      <arg type="o" direction="out"></arg>
     </method>
     <method name="FeedSecret">
       <arg type="s" direction="in"></arg>
@@ -36,14 +40,7 @@
     </method>
     <method name="GetConnectionByAccessPoint">
       <arg type="o" direction="in"></arg>
-      <arg type="(a{sa{sv}}osss)" direction="out"></arg>
-    </method>
-    <method name="OpenConnection">
-      <arg type="s" direction="in"></arg>
-      <arg type="o" direction="out"></arg>
-    </method>
-    <method name="UpdateConnection">
-      <arg type="a{sa{ss}}" direction="in"></arg>
+      <arg type="s" direction="out"></arg>
     </method>
     <signal name="NeedSecrets">
       <arg type="s"></arg>
@@ -57,8 +54,8 @@
     <property name="WirelessDevices" type="a(ou)" access="read"></property>
     <property name="WiredDevices" type="a(ou)" access="read"></property>
     <property name="OtherDevices" type="a(ou)" access="read"></property>
-    <property name="WiredConnections" type="a(a{sa{sv}}osss)" access="read"></property>
-    <property name="WirelessConnections" type="a(a{sa{sv}}osss)" access="read"></property>
-    <property name="VPNConnections" type="a(a{sa{sv}}osss)" access="read"></property>
+    <property name="WiredConnections" type="as" access="read"></property>
+    <property name="WirelessConnections" type="as" access="read"></property>
+    <property name="VPNConnections" type="as" access="read"></property>
   </interface>
 </node>
