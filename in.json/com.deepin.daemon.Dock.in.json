@@ -3,7 +3,7 @@
 		"OutputDir": ".",
 		"InputDir": "../xml",
 		"BusType": "Session",
-		"DestName": "dde.dock.Daemon"
+		"DestName": "com.deepin.daemon.Dock"
 	},
 	"Interfaces": [
 		{
