@@ -1,0 +1,16 @@
+{
+	"Config": {
+		"OutputDir": ".",
+		"InputDir": "../xml",
+		"BusType": "Session",
+		"DestName": "org.fcitx.Fcitx"
+	},
+	"Interfaces": [
+		{
+			"Interface": "org.fcitx.Fcitx.Keyboard",
+			"OutFile": "dbus-fcitx",
+			"XMLFile": "org.fcitx.Fcitx.xml",
+			"ObjectName": "Keyboard"
+		}
+	]
+}
