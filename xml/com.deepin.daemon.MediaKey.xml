@@ -42,5 +42,8 @@
           <signal name="PowerSleep">
                <arg type="b"></arg>
           </signal>
+          <signal name="SwitchLayout">
+               <arg type="b"></arg>
+          </signal>
      </interface>
 </node>
