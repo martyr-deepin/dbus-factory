@@ -1,0 +1,17 @@
+{
+	"Config": {
+		"OutputDir": ".",
+		"InputDir": "../xml",
+		"BusType": "Session",
+		"DestName": "dde.dock.Daemon"
+	},
+	"Interfaces": [
+		{
+			"Interface": "dde.dock.DockedAppManager",
+			"OutFile": "dock",
+			"XMLFile": "com.deepin.daemon.Dock.xml",
+			"ObjectName": "DockedAppManager"
+		}
+	]
+}
+
