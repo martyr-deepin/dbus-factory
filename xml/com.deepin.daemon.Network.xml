@@ -32,7 +32,7 @@
     </method>
     <method name="GetAccessPoints">
       <arg type="o" direction="in"></arg>
-      <arg type="a(sbyob)" direction="out"></arg>
+      <arg type="a(sbyo)" direction="out"></arg>
     </method>
     <method name="GetActiveConnection">
       <arg type="o" direction="in"></arg>
@@ -57,16 +57,23 @@
     </signal>
     <signal name="AccessPointAdded">
       <arg type="o"></arg>
-      <arg type="(sbyob)"></arg>
+      <arg type="(sbyo)"></arg>
     </signal>
     <signal name="AccessPointRemoved">
       <arg type="o"></arg>
       <arg type="o"></arg>
     </signal>
+    <signal name="AccessPointPropertiesChanged">
+      <arg type="o"></arg>
+      <arg type="(sbyo)"></arg>
+    </signal>
     <property name="WiredEnabled" type="b" access="readwrite"></property>
     <property name="VPNEnabled" type="b" access="readwrite"></property>
     <property name="WirelessEnabled" type="b" access="readwrite"></property>
     <property name="NetworkingEnabled" type="b" access="readwrite"></property>
+    <property name="ActiveConnections" type="as" access="read"></property>
+    <property name="ActivatingConnection" type="s" access="read"></property>
+    <property name="State" type="u" access="read"></property>
     <property name="WirelessDevices" type="a(ou)" access="read"></property>
     <property name="WiredDevices" type="a(ou)" access="read"></property>
     <property name="OtherDevices" type="a(ou)" access="read"></property>
