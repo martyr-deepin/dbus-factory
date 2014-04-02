@@ -1,0 +1,19 @@
+<node>
+     <interface name="com.deepin.daemon.Zone">
+          <method name="EnableZoneSettings">
+               <arg type="b" direction="in"></arg>
+          </method>
+          <method name="SetBottomLeft">
+               <arg type="s" direction="in"></arg>
+          </method>
+          <method name="SetBottomRight">
+               <arg type="s" direction="in"></arg>
+          </method>
+          <method name="SetTopLeft">
+               <arg type="s" direction="in"></arg>
+          </method>
+          <method name="SetTopRight">
+               <arg type="s" direction="in"></arg>
+          </method>
+     </interface>
+</node>
