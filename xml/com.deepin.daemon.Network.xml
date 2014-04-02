@@ -51,6 +51,18 @@
       <arg type="s"></arg>
       <arg type="s"></arg>
     </signal>
+    <signal name="DeviceStateChanged">
+      <arg type="o"></arg>
+      <arg type="u"></arg>
+    </signal>
+    <signal name="AccessPointAdded">
+      <arg type="o"></arg>
+      <arg type="(sbyob)"></arg>
+    </signal>
+    <signal name="AccessPointRemoved">
+      <arg type="o"></arg>
+      <arg type="o"></arg>
+    </signal>
     <property name="WiredEnabled" type="b" access="readwrite"></property>
     <property name="VPNEnabled" type="b" access="readwrite"></property>
     <property name="WirelessEnabled" type="b" access="readwrite"></property>
