@@ -19,6 +19,9 @@
           </method>
           <signal name="Docked">
                <arg type="s"></arg>
+               <arg type="s"></arg>
+               <arg type="s"></arg>
+               <arg type="s"></arg>
           </signal>
           <signal name="Undocked">
                <arg type="s"></arg>
