@@ -12,6 +12,10 @@
       <arg type="s" direction="in"></arg>
       <arg type="o" direction="out"></arg>
     </method>
+    <method name="CreateConnectionForAccessPoint">
+      <arg type="o" direction="in"></arg>
+      <arg type="s" direction="out"></arg>
+    </method>
     <method name="DeactivateConnection">
       <arg type="o" direction="in"></arg>
     </method>
