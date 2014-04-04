@@ -10,17 +10,18 @@
           <method name="DockedAppList">
                <arg type="as" direction="out"></arg>
           </method>
-          <method name="Undock">
+          <method name="IsDocked">
                <arg type="s" direction="in"></arg>
                <arg type="b" direction="out"></arg>
           </method>
           <method name="Sort">
                <arg type="as" direction="in"></arg>
           </method>
+          <method name="Undock">
+               <arg type="s" direction="in"></arg>
+               <arg type="b" direction="out"></arg>
+          </method>
           <signal name="Docked">
-               <arg type="s"></arg>
-               <arg type="s"></arg>
-               <arg type="s"></arg>
                <arg type="s"></arg>
           </signal>
           <signal name="Undocked">
