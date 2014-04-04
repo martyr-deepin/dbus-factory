@@ -63,7 +63,15 @@
       <arg type="s"></arg>
       <arg type="u"></arg>
     </signal>
-    <signal name="AccessPointChanged">
+    <signal name="AccessPointAdded">
+      <arg type="s"></arg>
+      <arg type="s"></arg>
+    </signal>
+    <signal name="AccessPointRemoved">
+      <arg type="s"></arg>
+      <arg type="s"></arg>
+    </signal>
+    <signal name="AccessPointPropertiesChanged">
       <arg type="s"></arg>
       <arg type="s"></arg>
     </signal>
