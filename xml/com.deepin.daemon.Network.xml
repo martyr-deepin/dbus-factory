@@ -34,9 +34,13 @@
       <arg type="s" direction="in"></arg>
       <arg type="s" direction="in"></arg>
     </method>
+    <method name="GetAccessPointProperty">
+      <arg type="o" direction="in"></arg>
+      <arg type="(sbyo)" direction="out"></arg>
+    </method>
     <method name="GetAccessPoints">
       <arg type="o" direction="in"></arg>
-      <arg type="a(sbyo)" direction="out"></arg>
+      <arg type="ao" direction="out"></arg>
     </method>
     <method name="GetActiveConnection">
       <arg type="o" direction="in"></arg>
@@ -56,20 +60,12 @@
       <arg type="s"></arg>
     </signal>
     <signal name="DeviceStateChanged">
-      <arg type="o"></arg>
+      <arg type="s"></arg>
       <arg type="u"></arg>
     </signal>
-    <signal name="AccessPointAdded">
-      <arg type="o"></arg>
-      <arg type="(sbyo)"></arg>
-    </signal>
-    <signal name="AccessPointRemoved">
-      <arg type="o"></arg>
-      <arg type="o"></arg>
-    </signal>
-    <signal name="AccessPointPropertiesChanged">
-      <arg type="o"></arg>
-      <arg type="(sbyo)"></arg>
+    <signal name="AccessPointChanged">
+      <arg type="s"></arg>
+      <arg type="s"></arg>
     </signal>
     <property name="WiredEnabled" type="b" access="readwrite"></property>
     <property name="VPNEnabled" type="b" access="readwrite"></property>
