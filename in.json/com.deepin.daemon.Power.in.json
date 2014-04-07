@@ -1,22 +1,16 @@
 {
-	"Config": {
-		"OutputDir": ".",
-		"InputDir": "../xml",
-		"BusType": "Session",
-		"DestName": "com.deepin.daemon.Power"
-	},
-	"Interfaces": [
-		{
-			"Interface": "com.deepin.daemon.Power",
-			"OutFile": "dbus-power",
-			"XMLFile": "com.deepin.daemon.Power.xml",
-			"ObjectName": "Power"
-		},
-        {
-            "Interface":"org.freedesktop.ScreenSaver",
-            "OutFile":"dbus-power-ss",
-            "XMLFile":"org.freedesktop.ScreenSaver.xml",
-            "ObjectName":"ScreenSaver"
-        }
-	]
+    "Config": {
+	"OutputDir": ".",
+	"InputDir": "../xml",
+	"BusType": "Session",
+	"DestName": "com.deepin.daemon.Power"
+    },
+    "Interfaces": [
+    {
+	"Interface": "com.deepin.daemon.Power",
+	"OutFile": "dbus-power",
+	"XMLFile": "com.deepin.daemon.Power.xml",
+	"ObjectName": "Power"
+    }
+    ]
 }

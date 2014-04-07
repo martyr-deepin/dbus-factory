@@ -1,0 +1,16 @@
+{
+    "Config": {
+	"OutputDir": ".",
+	"InputDir": "../xml",
+	"BusType": "Session",
+	"DestName": "org.freedesktop.ScreenSaver"
+    },
+    "Interfaces": [
+    {
+	"Interface":"org.freedesktop.ScreenSaver",
+	"OutFile":"screen_saver",
+	"XMLFile":"org.freedesktop.ScreenSaver.xml",
+	"ObjectName":"ScreenSaver"
+    }
+    ]
+}
