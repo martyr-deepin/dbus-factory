@@ -1,0 +1,28 @@
+{
+	"Config": {
+		"OutputDir": ".",
+		"InputDir": "../xml",
+		"BusType": "Session",
+		"PkgName": "mpris"
+	},
+	"Interfaces": [
+		{
+			"Interface": "org.mpris.MediaPlayer2",
+			"OutFile": "mpris",
+			"XMLFile": "org.mpris.MediaPlayer2.xml",
+			"ObjectName": "MPRIS"
+		},
+		{
+			"Interface": "org.mpris.MediaPlayer2.Player",
+			"OutFile": "player",
+			"XMLFile": "org.mpris.MediaPlayer2.xml",
+			"ObjectName": "Player"
+		},
+		{
+			"Interface": "org.mpris.MediaPlayer2.Playlists",
+			"OutFile": "playlists",
+			"XMLFile": "org.mpris.MediaPlayer2.xml",
+			"ObjectName": "Playlists"
+		}
+	]
+}
