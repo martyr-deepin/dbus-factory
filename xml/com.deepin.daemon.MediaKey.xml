@@ -45,5 +45,29 @@
           <signal name="SwitchLayout">
                <arg type="b"></arg>
           </signal>
+          <signal name="AudioPlay">
+               <arg type="b"></arg>
+          </signal>
+          <signal name="AudioPause">
+               <arg type="b"></arg>
+          </signal>
+          <signal name="AudioStop">
+               <arg type="b"></arg>
+          </signal>
+          <signal name="AudioPrevious">
+               <arg type="b"></arg>
+          </signal>
+          <signal name="AudioNext">
+               <arg type="b"></arg>
+          </signal>
+          <signal name="AudioRewind">
+               <arg type="b"></arg>
+          </signal>
+          <signal name="AudioForward">
+               <arg type="b"></arg>
+          </signal>
+          <signal name="AudioRepeat">
+               <arg type="b"></arg>
+          </signal>
      </interface>
 </node>
