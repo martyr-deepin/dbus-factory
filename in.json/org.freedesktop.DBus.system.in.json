@@ -4,7 +4,7 @@
 		"InputDir": "../xml",
 		"BusType": "System",
 		"DestName": "org.freedesktop.DBus",
-		"PkgName": "system.org.freedesktop.DBus"
+		"PkgName": "dbus"
     },
     "Interfaces": [
 		{
