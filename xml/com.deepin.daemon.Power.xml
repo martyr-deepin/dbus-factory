@@ -1,73 +1,15 @@
 <node>
      <interface name="com.deepin.daemon.Power">
-          <method name="EnumerateDevices">
-               <arg type="ao" direction="out"></arg>
-          </method>
-          <method name="StartDim">
-               <arg type="i" direction="out"></arg>
-          </method>
-          <method name="StopDim">
-               <arg type="i" direction="out"></arg>
-          </method>
-          <property name="ButtonHibernate" type="s" access="readwrite"></property>
-          <property name="ButtonPower" type="s" access="readwrite"></property>
-          <property name="ButtonSleep" type="s" access="readwrite"></property>
-          <property name="ButtonSuspend" type="s" access="readwrite"></property>
-          <property name="CriticalBatteryAction" type="s" access="read"></property>
-          <property name="LidCloseACAction" type="s" access="readwrite"></property>
-          <property name="LidCloseBatteryAction" type="s" access="readwrite"></property>
-          <property name="IdleDelay" type="i" access="readwrite"></property>
-          <property name="SleepInactiveAcTimeout" type="i" access="readwrite"></property>
-          <property name="SleepInactiveBatteryTimeout" type="i" access="readwrite"></property>
-          <property name="SleepInactiveAcType" type="s" access="readwrite"></property>
-          <property name="SleepInactiveBatteryType" type="s" access="readwrite"></property>
-          <property name="CurrentProfile" type="s" access="readwrite"></property>
-          <property name="BatteryIsPresent" type="b" access="read"></property>
-          <property name="IsRechargable" type="b" access="read"></property>
-          <property name="BatteryPercentage" type="d" access="read"></property>
-          <property name="Model" type="s" access="read"></property>
-          <property name="Vendor" type="s" access="read"></property>
-          <property name="TimeToEmpty" type="x" access="read"></property>
-          <property name="TimeToFull" type="x" access="read"></property>
-          <property name="State" type="u" access="read"></property>
-          <property name="Type" type="u" access="read"></property>
-          <property name="LockEnabled" type="b" access="readwrite"></property>
+          <property name="PowerButtonAction" type="i" access="read"></property>
+          <property name="LidClosedAction" type="i" access="read"></property>
+          <property name="LockWhenActive" type="b" access="read"></property>
           <property name="LidIsPresent" type="b" access="read"></property>
-          <property name="LidIsClosed" type="b" access="read"></property>
-          <property name="BatteryIsLow" type="b" access="read"></property>
-     </interface>
-     <interface name="org.freedesktop.DBus.Introspectable">
-          <method name="Introspect">
-               <arg type="s" direction="out"></arg>
-          </method>
-          <method name="String">
-               <arg type="s" direction="out"></arg>
-          </method>
-     </interface>
-     <interface name="org.freedesktop.DBus.Properties">
-          <method name="Get">
-               <arg type="s" direction="in"></arg>
-               <arg type="s" direction="in"></arg>
-               <arg type="v" direction="out"></arg>
-          </method>
-          <method name="GetAll">
-               <arg type="s" direction="in"></arg>
-               <arg type="a{sv}" direction="out"></arg>
-          </method>
-          <method name="Set">
-               <arg type="s" direction="in"></arg>
-               <arg type="s" direction="in"></arg>
-               <arg type="v" direction="in"></arg>
-          </method>
-          <signal name="PropertiesChanged">
-               <arg type="s"></arg>
-               <arg type="a{sv}"></arg>
-               <arg type="as"></arg>
-          </signal>
-     </interface>
-     <interface name="org.freedesktop.DBus.LifeManager">
-          <method name="Ref"></method>
-          <method name="Unref"></method>
-          <signal name="onDestroy"></signal>
+          <property name="CurrentPlan" type="i" access="read"></property>
+          <property name="SuspendDelay" type="i" access="read"></property>
+          <property name="IdleDelay" type="i" access="read"></property>
+          <property name="BatteryPercentage" type="d" access="read"></property>
+          <property name="ChargingState" type="i" access="read"></property>
+          <property name="BatteryIsPresent" type="b" access="read"></property>
+          <property name="OnBattery" type="b" access="read"></property>
      </interface>
 </node>
