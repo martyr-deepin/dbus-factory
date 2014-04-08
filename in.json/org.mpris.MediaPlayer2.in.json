@@ -3,6 +3,7 @@
 		"OutputDir": ".",
 		"InputDir": "../xml",
 		"BusType": "Session",
+		"DestName": "org.mpris.MediaPlayer2",
 		"PkgName": "mpris"
 	},
 	"Interfaces": [
