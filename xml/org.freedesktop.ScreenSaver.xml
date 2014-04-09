@@ -5,42 +5,17 @@
                <arg type="s" direction="in"></arg>
                <arg type="u" direction="out"></arg>
           </method>
+          <method name="SetTimeout">
+               <arg type="u" direction="in"></arg>
+               <arg type="u" direction="in"></arg>
+               <arg type="b" direction="in"></arg>
+          </method>
+          <method name="SimulateUserActivity"></method>
           <method name="UnInhibit">
                <arg type="u" direction="in"></arg>
           </method>
-          <property name="IsInhibited" type="b" access="read"></property>
-     </interface>
-     <interface name="org.freedesktop.DBus.Introspectable">
-          <method name="Introspect">
-               <arg type="s" direction="out"></arg>
-          </method>
-          <method name="String">
-               <arg type="s" direction="out"></arg>
-          </method>
-     </interface>
-     <interface name="org.freedesktop.DBus.Properties">
-          <method name="Get">
-               <arg type="s" direction="in"></arg>
-               <arg type="s" direction="in"></arg>
-               <arg type="v" direction="out"></arg>
-          </method>
-          <method name="GetAll">
-               <arg type="s" direction="in"></arg>
-               <arg type="a{sv}" direction="out"></arg>
-          </method>
-          <method name="Set">
-               <arg type="s" direction="in"></arg>
-               <arg type="s" direction="in"></arg>
-               <arg type="v" direction="in"></arg>
-          </method>
-          <signal name="PropertiesChanged">
-               <arg type="s"></arg>
-               <arg type="a{sv}"></arg>
-               <arg type="as"></arg>
-          </signal>
-     </interface>
-     <interface name="org.freedesktop.DBus.LifeManager">
-          <method name="Ref"></method>
-          <method name="Unref"></method>
+          <signal name="IdleOn"></signal>
+          <signal name="CycleActive"></signal>
+          <signal name="IdleOff"></signal>
      </interface>
 </node>
