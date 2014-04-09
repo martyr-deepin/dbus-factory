@@ -15,5 +15,6 @@
           <property name="BatteryState" type="u" access="read"></property>
           <property name="BatteryIsPresent" type="b" access="read"></property>
           <property name="OnBattery" type="b" access="read"></property>
+          <property name="PlanInfo" type="s" access="read"></property>
      </interface>
 </node>
