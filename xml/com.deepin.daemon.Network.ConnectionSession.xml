@@ -1,8 +1,8 @@
 <node>
   <interface name="com.deepin.daemon.ConnectionSession">
     <method name="Close"></method>
-    <method name="DebugListSupportedConnectionTypes">
-      <arg type="as" direction="out"></arg>
+    <method name="DebugListKeyDetail">
+      <arg type="s" direction="out"></arg>
     </method>
     <method name="GetAvailableValues">
       <arg type="s" direction="in"></arg>

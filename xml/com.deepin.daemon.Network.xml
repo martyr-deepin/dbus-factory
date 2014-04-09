@@ -58,6 +58,9 @@
       <arg type="s" direction="in"></arg>
       <arg type="o" direction="out"></arg>
     </method>
+    <method name="GetSupportedConnectionTypes">
+      <arg type="as" direction="out"></arg>
+    </method>
     <signal name="NeedSecrets">
       <arg type="s"></arg>
       <arg type="s"></arg>
