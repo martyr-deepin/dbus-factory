@@ -69,5 +69,14 @@
           <signal name="AudioRepeat">
                <arg type="b"></arg>
           </signal>
+          <signal name="LaunchEmail">
+               <arg type="b"></arg>
+          </signal>
+          <signal name="LaunchBrowser">
+               <arg type="b"></arg>
+          </signal>
+          <signal name="LaunchCalculator">
+               <arg type="b"></arg>
+          </signal>
      </interface>
 </node>
