@@ -20,7 +20,7 @@
       <arg type="b" direction="out"></arg>
     </method>
     <method name="SetFontSize">
-      <arg type="s" direction="in"></arg>
+      <arg type="i" direction="in"></arg>
       <arg type="s" direction="out"></arg>
       <arg type="b" direction="out"></arg>
     </method>
