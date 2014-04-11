@@ -1,0 +1,13 @@
+<node>
+  <interface name="com.deepin.dde.launcher">
+    <method name="Show">
+    </method>
+    <method name="Hide">
+    </method>
+    <method name="Toggle">
+    </method>
+    <method name="Exit">
+    </method>
+  </interface>
+</node>
+
