@@ -1,0 +1,16 @@
+{
+	"Config": {
+		"OutputDir": ".",
+		"InputDir": "../xml",
+		"BusType": "Session",
+		"DestName": "com.deepin.dde.ControlCenter"
+	},
+	"Interfaces": [
+		{
+			"Interface": "com.deepin.dde.ControlCenter",
+			"OutFile": "deepin-dss",
+			"XMLFile": "com.deepin.dde.ControlCenter.xml",
+			"ObjectName": "ControlCenter"
+		}
+	]
+}
