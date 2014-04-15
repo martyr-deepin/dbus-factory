@@ -2,24 +2,46 @@
      <interface name="com.deepin.api.XMouseArea">
           <method name="RegisterArea">
                <arg type="a(iiii)" direction="in"></arg>
+               <arg type="i" direction="in"></arg>
                <arg type="i" direction="out"></arg>
           </method>
           <method name="UnregisterArea">
                <arg type="i" direction="in"></arg>
           </method>
-          <signal name="MotionCoordinate">
+          <signal name="MotionInto">
+               <arg type="i"></arg>
+               <arg type="i"></arg>
+               <arg type="i"></arg>
+          </signal>
+          <signal name="MotionOut">
+               <arg type="i"></arg>
+               <arg type="i"></arg>
+               <arg type="i"></arg>
+          </signal>
+          <signal name="MotionMove">
+               <arg type="i"></arg>
+               <arg type="i"></arg>
+               <arg type="i"></arg>
+          </signal>
+          <signal name="ButtonPress">
                <arg type="s"></arg>
                <arg type="i"></arg>
                <arg type="i"></arg>
                <arg type="i"></arg>
           </signal>
-          <signal name="ButtonCoordinate">
+          <signal name="ButtonRelease">
                <arg type="s"></arg>
                <arg type="i"></arg>
                <arg type="i"></arg>
                <arg type="i"></arg>
           </signal>
-          <signal name="KeyboardCoordinate">
+          <signal name="KeyPress">
+               <arg type="s"></arg>
+               <arg type="i"></arg>
+               <arg type="i"></arg>
+               <arg type="i"></arg>
+          </signal>
+          <signal name="KeyRelease">
                <arg type="s"></arg>
                <arg type="i"></arg>
                <arg type="i"></arg>

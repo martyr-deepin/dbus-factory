@@ -3,10 +3,6 @@
           <method name="AllowGuestAccount">
                <arg type="b" direction="in"></arg>
           </method>
-          <method name="AuthWithPolkit">
-               <arg type="u" direction="in"></arg>
-               <arg type="b" direction="out"></arg>
-          </method>
           <method name="CreateUser">
                <arg type="s" direction="in"></arg>
                <arg type="s" direction="in"></arg>
