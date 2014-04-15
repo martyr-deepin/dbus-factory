@@ -4,12 +4,18 @@
       <arg type="s" direction="in"></arg>
       <arg type="o" direction="in"></arg>
     </method>
+    <method name="ActivateConnectionForAccessPoint">
+      <arg type="o" direction="in"></arg>
+      <arg type="o" direction="in"></arg>
+      <arg type="s" direction="out"></arg>
+    </method>
     <method name="CancelSecret">
       <arg type="s" direction="in"></arg>
       <arg type="s" direction="in"></arg>
     </method>
     <method name="CreateConnection">
       <arg type="s" direction="in"></arg>
+      <arg type="o" direction="in"></arg>
       <arg type="o" direction="out"></arg>
     </method>
     <method name="CreateConnectionForAccessPoint">
@@ -27,6 +33,12 @@
     </method>
     <method name="EditConnection">
       <arg type="s" direction="in"></arg>
+      <arg type="o" direction="in"></arg>
+      <arg type="o" direction="out"></arg>
+    </method>
+    <method name="EditConnectionForAccessPoint">
+      <arg type="o" direction="in"></arg>
+      <arg type="o" direction="in"></arg>
       <arg type="o" direction="out"></arg>
     </method>
     <method name="FeedSecret">
@@ -36,30 +48,34 @@
     </method>
     <method name="GetAccessPointProperty">
       <arg type="o" direction="in"></arg>
-      <arg type="(sbyo)" direction="out"></arg>
+      <arg type="(sbbyo)" direction="out"></arg>
     </method>
     <method name="GetAccessPoints">
       <arg type="o" direction="in"></arg>
       <arg type="ao" direction="out"></arg>
     </method>
-    <method name="GetActiveConnection">
+    <method name="GetActiveConnectionInfo">
       <arg type="o" direction="in"></arg>
       <arg type="(ssssss)" direction="out"></arg>
     </method>
     <method name="GetActiveConnectionState">
-      <arg type="s" direction="in"></arg>
-      <arg type="u" direction="out"></arg>
-    </method>
-    <method name="GetConnectionByAccessPoint">
       <arg type="o" direction="in"></arg>
-      <arg type="s" direction="out"></arg>
+      <arg type="u" direction="out"></arg>
     </method>
     <method name="GetConnectionByUuid">
       <arg type="s" direction="in"></arg>
       <arg type="o" direction="out"></arg>
     </method>
+    <method name="GetConnectionUuidByAccessPoint">
+      <arg type="o" direction="in"></arg>
+      <arg type="s" direction="out"></arg>
+    </method>
     <method name="GetSupportedConnectionTypes">
       <arg type="as" direction="out"></arg>
+    </method>
+    <method name="GetWiredConnectionUuid">
+      <arg type="o" direction="in"></arg>
+      <arg type="s" direction="out"></arg>
     </method>
     <signal name="NeedSecrets">
       <arg type="s"></arg>
