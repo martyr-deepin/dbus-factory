@@ -10,7 +10,7 @@
 			"Interface": "com.deepin.dde.launcher",
 			"OutFile": "dde-launcher",
 			"XMLFile": "com.deepin.dde.launcher.xml",
-			"ObjectName": "launcher"
+			"ObjectName": "Launcher"
 		}
 	]
 }
