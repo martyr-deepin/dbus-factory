@@ -8,6 +8,10 @@
     </method>
     <method name="Exit">
     </method>
+    <signal name="Shown">
+    </signal>
+    <signal name="Closed">
+    </signal>
   </interface>
 </node>
 
