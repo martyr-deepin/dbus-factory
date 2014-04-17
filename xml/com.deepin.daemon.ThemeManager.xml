@@ -1,6 +1,6 @@
 <node>
   <interface name="com.deepin.daemon.ThemeManager">
-    <method name="GetPathViaName">
+    <method name="GetThemeObjectPathByName">
       <arg type="s" direction="in"></arg>
       <arg type="s" direction="out"></arg>
       <arg type="b" direction="out"></arg>
