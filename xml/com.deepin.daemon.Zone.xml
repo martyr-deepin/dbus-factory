@@ -10,7 +10,6 @@
           <method name="EnableZoneDetected">
                <arg type="b" direction="in"></arg>
           </method>
-          <method name="OnlyEnableLauncher"></method>
           <method name="SetBottomLeft">
                <arg type="s" direction="in"></arg>
           </method>
