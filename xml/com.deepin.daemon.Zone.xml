@@ -6,7 +6,6 @@
           <method name="BottomRightAction">
                <arg type="s" direction="out"></arg>
           </method>
-          <method name="EnableAllEdge"></method>
           <method name="EnableZoneDetected">
                <arg type="b" direction="in"></arg>
           </method>
