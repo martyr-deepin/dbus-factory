@@ -3,6 +3,10 @@
           <method name="AddUserLayout">
                <arg type="s" direction="in"></arg>
           </method>
+          <method name="GetDescByLayout">
+               <arg type="s" direction="in"></arg>
+               <arg type="s" direction="out"></arg>
+          </method>
           <method name="DeleteUserLayout">
                <arg type="s" direction="in"></arg>
           </method>
