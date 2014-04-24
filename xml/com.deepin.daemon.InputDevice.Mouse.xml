@@ -1,9 +1,9 @@
 <node>
      <interface name="com.deepin.daemon.InputDevice.Mouse">
           <property name="LeftHanded" type="b" access="readwrite"></property>
-          <property name="MotionAccel" type="d" access="readwrite"></property>
-          <property name="MotionThres" type="d" access="readwrite"></property>
+          <property name="MotionAcceleration" type="d" access="readwrite"></property>
+          <property name="MotionThreshold" type="d" access="readwrite"></property>
           <property name="DoubleClick" type="i" access="readwrite"></property>
-          <property name="DragThres" type="i" access="readwrite"></property>
+          <property name="DragThreshold" type="i" access="readwrite"></property>
      </interface>
 </node>
