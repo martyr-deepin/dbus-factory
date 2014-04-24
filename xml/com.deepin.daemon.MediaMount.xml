@@ -12,6 +12,9 @@
                <arg type="s" direction="in"></arg>
                <arg type="s" direction="in"></arg>
           </method>
+          <method name="Reset">
+               <arg type="b" direction="out"></arg>
+          </method>
           <signal name="MediaActionChanged"></signal>
           <property name="AutoMountOpen" type="b" access="readwrite"></property>
      </interface>

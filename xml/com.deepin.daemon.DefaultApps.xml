@@ -8,6 +8,9 @@
                <arg type="s" direction="in"></arg>
                <arg type="(sss)" direction="out"></arg>
           </method>
+          <method name="Reset">
+               <arg type="b" direction="out"></arg>
+          </method>
           <method name="SetDefaultAppViaType">
                <arg type="s" direction="in"></arg>
                <arg type="s" direction="in"></arg>

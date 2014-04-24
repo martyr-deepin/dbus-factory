@@ -15,6 +15,9 @@
           <method name="LayoutList">
                <arg type="a{ss}" direction="out"></arg>
           </method>
+          <method name="Reset">
+               <arg type="b" direction="out"></arg>
+          </method>
           <property name="RepeatEnabled" type="b" access="readwrite"></property>
           <property name="RepeatInterval" type="u" access="readwrite"></property>
           <property name="RepeatDelay" type="u" access="readwrite"></property>

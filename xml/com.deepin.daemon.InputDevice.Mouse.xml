@@ -1,5 +1,8 @@
 <node>
      <interface name="com.deepin.daemon.InputDevice.Mouse">
+          <method name="Reset">
+               <arg type="b" direction="out"></arg>
+          </method>
           <property name="LeftHanded" type="b" access="readwrite"></property>
           <property name="MotionAcceleration" type="d" access="readwrite"></property>
           <property name="MotionThreshold" type="d" access="readwrite"></property>

@@ -28,6 +28,9 @@
           <method name="DeleteCustomBind">
                <arg type="i" direction="in"></arg>
           </method>
+          <method name="Reset">
+               <arg type="b" direction="out"></arg>
+          </method>
           <property name="SystemList" type="a(iss)" access="read"></property>
           <property name="MediaList" type="a(iss)" access="read"></property>
           <property name="WindowList" type="a(iss)" access="read"></property>
