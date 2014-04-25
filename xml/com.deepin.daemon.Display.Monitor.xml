@@ -1,9 +1,5 @@
 <node>
      <interface name="com.deepin.daemon.Display.Monitor">
-          <method name="ChangeBrightness">
-               <arg type="s" direction="in"></arg>
-               <arg type="d" direction="in"></arg>
-          </method>
           <method name="ListModes">
                <arg type="a(uqqd)" direction="out"></arg>
           </method>
@@ -12,13 +8,6 @@
           </method>
           <method name="ListRotations">
                <arg type="aq" direction="out"></arg>
-          </method>
-          <method name="ResetBrightness">
-               <arg type="s" direction="in"></arg>
-          </method>
-          <method name="SetBrightness">
-               <arg type="s" direction="in"></arg>
-               <arg type="d" direction="in"></arg>
           </method>
           <method name="SetMode">
                <arg type="u" direction="in"></arg>
@@ -30,17 +19,12 @@
           <method name="SetReflect">
                <arg type="q" direction="in"></arg>
           </method>
-          <method name="SetRelativePos">
-               <arg type="s" direction="in"></arg>
-               <arg type="s" direction="in"></arg>
-          </method>
           <method name="SetRotation">
                <arg type="q" direction="in"></arg>
           </method>
           <method name="SwitchOn">
                <arg type="b" direction="in"></arg>
           </method>
-          <method name="WorkaroundBacklight"></method>
           <property name="BestMode" type="(uqqd)" access="read"></property>
           <property name="IsComposited" type="b" access="read"></property>
           <property name="Name" type="s" access="read"></property>
@@ -50,7 +34,6 @@
           <property name="Opened" type="b" access="read"></property>
           <property name="Rotation" type="q" access="read"></property>
           <property name="Reflect" type="q" access="read"></property>
-          <property name="Brightness" type="a{sd}" access="read"></property>
           <property name="CurrentMode" type="(uqqd)" access="read"></property>
           <property name="Width" type="q" access="read"></property>
           <property name="Height" type="q" access="read"></property>
