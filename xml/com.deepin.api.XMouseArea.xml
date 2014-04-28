@@ -13,6 +13,9 @@
                <arg type="i" direction="in"></arg>
                <arg type="i" direction="out"></arg>
           </method>
+          <method name="RegisterFullScreen">
+               <arg type="i" direction="out"></arg>
+          </method>
           <method name="UnregisterArea">
                <arg type="i" direction="in"></arg>
           </method>
@@ -55,10 +58,11 @@
                <arg type="i"></arg>
                <arg type="i"></arg>
           </signal>
-          <signal name="CancleAllArea">
+          <signal name="CancelAllArea">
                <arg type="i"></arg>
                <arg type="i"></arg>
                <arg type="i"></arg>
           </signal>
+          <property name="FullScreenId" type="i" access="read"></property>
      </interface>
 </node>
