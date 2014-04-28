@@ -1,21 +1,24 @@
 <node>
   <interface name="com.deepin.daemon.ConnectionSession">
     <method name="Close"></method>
+    <method name="DebugGetConnectionData">
+      <arg type="a{sa{sv}}" direction="out"></arg>
+    </method>
+    <method name="DebugGetErrors">
+      <arg type="a{sa{ss}}" direction="out"></arg>
+    </method>
     <method name="DebugListKeyDetail">
       <arg type="s" direction="out"></arg>
     </method>
     <method name="GetAvailableValues">
       <arg type="s" direction="in"></arg>
       <arg type="s" direction="in"></arg>
-      <arg type="as" direction="out"></arg>
+      <arg type="s" direction="out"></arg>
     </method>
     <method name="GetKey">
       <arg type="s" direction="in"></arg>
       <arg type="s" direction="in"></arg>
       <arg type="s" direction="out"></arg>
-    </method>
-    <method name="ListPages">
-      <arg type="as" direction="out"></arg>
     </method>
     <method name="Save">
       <arg type="b" direction="out"></arg>
@@ -27,6 +30,7 @@
     </method>
     <property name="CurrentUUID" type="s" access="read"></property>
     <property name="AllowSave" type="b" access="read"></property>
+    <property name="AvailablePages" type="as" access="read"></property>
     <property name="AvailableKeys" type="a{sas}" access="read"></property>
     <property name="Errors" type="a{sa{ss}}" access="read"></property>
   </interface>

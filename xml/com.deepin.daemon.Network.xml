@@ -71,7 +71,7 @@
       <arg type="s" direction="out"></arg>
     </method>
     <method name="GetSupportedConnectionTypes">
-      <arg type="as" direction="out"></arg>
+      <arg type="s" direction="out"></arg>
     </method>
     <method name="GetWiredConnectionUuid">
       <arg type="o" direction="in"></arg>
@@ -104,8 +104,8 @@
     <property name="NetworkingEnabled" type="b" access="readwrite"></property>
     <property name="ActiveConnections" type="as" access="read"></property>
     <property name="State" type="u" access="read"></property>
-    <property name="WirelessDevices" type="a(ou)" access="read"></property>
     <property name="WiredDevices" type="a(ou)" access="read"></property>
+    <property name="WirelessDevices" type="a(ou)" access="read"></property>
     <property name="OtherDevices" type="a(ou)" access="read"></property>
     <property name="WiredConnections" type="as" access="read"></property>
     <property name="WirelessConnections" type="as" access="read"></property>
