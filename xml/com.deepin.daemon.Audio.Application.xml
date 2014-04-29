@@ -10,6 +10,7 @@
           </method>
           <property name="Index" type="i" access="read"></property>
           <property name="Name" type="s" access="read"></property>
+          <property name="Icon" type="s" access="read"></property>
           <property name="Client" type="i" access="read"></property>
           <property name="Source" type="i" access="read"></property>
           <property name="Volume" type="u" access="read"></property>

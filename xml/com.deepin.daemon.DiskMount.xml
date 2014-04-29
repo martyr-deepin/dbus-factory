@@ -1,23 +1,24 @@
 <node>
      <interface name="com.deepin.daemon.DiskMount">
           <method name="DeviceEject">
-               <arg type="i" direction="in"></arg>
+               <arg type="s" direction="in"></arg>
                <arg type="b" direction="out"></arg>
                <arg type="s" direction="out"></arg>
           </method>
           <method name="DeviceMount">
-               <arg type="i" direction="in"></arg>
+               <arg type="s" direction="in"></arg>
                <arg type="b" direction="out"></arg>
                <arg type="s" direction="out"></arg>
           </method>
           <method name="DeviceUnmount">
-               <arg type="i" direction="in"></arg>
+               <arg type="s" direction="in"></arg>
                <arg type="b" direction="out"></arg>
                <arg type="s" direction="out"></arg>
           </method>
           <signal name="Error">
                <arg type="s"></arg>
+               <arg type="s"></arg>
           </signal>
-          <property name="DiskList" type="a(issbbxx)" access="read"></property>
+          <property name="DiskList" type="a(ssbbxxsss)" access="read"></property>
      </interface>
 </node>
