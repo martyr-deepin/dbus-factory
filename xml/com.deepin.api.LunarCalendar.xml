@@ -1,0 +1,39 @@
+<node>
+     <interface name="com.deepin.api.LunarCalendar">
+          <method name="GetLunarDateBySolar">
+               <arg type="i" direction="in"></arg>
+               <arg type="i" direction="in"></arg>
+               <arg type="i" direction="in"></arg>
+               <arg type="(iii)" direction="out"></arg>
+               <arg type="b" direction="out"></arg>
+          </method>
+          <method name="GetLunarInfoBySolar">
+               <arg type="i" direction="in"></arg>
+               <arg type="i" direction="in"></arg>
+               <arg type="i" direction="in"></arg>
+               <arg type="(iiiisssssssssi)" direction="out"></arg>
+               <arg type="b" direction="out"></arg>
+          </method>
+          <method name="GetLunarMonthCalendar">
+               <arg type="i" direction="in"></arg>
+               <arg type="i" direction="in"></arg>
+               <arg type="b" direction="in"></arg>
+               <arg type="(iia(iiiisssssssssi))" direction="out"></arg>
+               <arg type="b" direction="out"></arg>
+          </method>
+          <method name="GetSolarDateByLunar">
+               <arg type="i" direction="in"></arg>
+               <arg type="i" direction="in"></arg>
+               <arg type="i" direction="in"></arg>
+               <arg type="(iii)" direction="out"></arg>
+               <arg type="b" direction="out"></arg>
+          </method>
+          <method name="GetSolarMonthCalendar">
+               <arg type="i" direction="in"></arg>
+               <arg type="i" direction="in"></arg>
+               <arg type="b" direction="in"></arg>
+               <arg type="(iia(iii))" direction="out"></arg>
+               <arg type="b" direction="out"></arg>
+          </method>
+     </interface>
+</node>
