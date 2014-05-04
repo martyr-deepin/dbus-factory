@@ -18,10 +18,6 @@
       <arg type="o" direction="in"></arg>
       <arg type="o" direction="out"></arg>
     </method>
-    <method name="CreateConnectionForAccessPoint">
-      <arg type="o" direction="in"></arg>
-      <arg type="s" direction="out"></arg>
-    </method>
     <method name="DeleteConnection">
       <arg type="s" direction="in"></arg>
     </method>
@@ -30,11 +26,6 @@
     </method>
     <method name="EditConnection">
       <arg type="s" direction="in"></arg>
-      <arg type="o" direction="in"></arg>
-      <arg type="o" direction="out"></arg>
-    </method>
-    <method name="EditConnectionForAccessPoint">
-      <arg type="o" direction="in"></arg>
       <arg type="o" direction="in"></arg>
       <arg type="o" direction="out"></arg>
     </method>
@@ -50,18 +41,6 @@
     <method name="GetActiveConnectionInfo">
       <arg type="o" direction="in"></arg>
       <arg type="(ssssss)" direction="out"></arg>
-    </method>
-    <method name="GetActiveConnectionState">
-      <arg type="o" direction="in"></arg>
-      <arg type="u" direction="out"></arg>
-    </method>
-    <method name="GetConnectionPathByUuid">
-      <arg type="s" direction="in"></arg>
-      <arg type="o" direction="out"></arg>
-    </method>
-    <method name="GetConnectionUuidByAccessPoint">
-      <arg type="o" direction="in"></arg>
-      <arg type="s" direction="out"></arg>
     </method>
     <method name="GetSupportedConnectionTypes">
       <arg type="s" direction="out"></arg>
