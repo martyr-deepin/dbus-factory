@@ -22,9 +22,6 @@
       <arg type="o" direction="in"></arg>
       <arg type="s" direction="out"></arg>
     </method>
-    <method name="DeactivateConnection">
-      <arg type="s" direction="in"></arg>
-    </method>
     <method name="DeleteConnection">
       <arg type="s" direction="in"></arg>
     </method>
@@ -46,13 +43,9 @@
       <arg type="s" direction="in"></arg>
       <arg type="s" direction="in"></arg>
     </method>
-    <method name="GetAccessPointProperty">
-      <arg type="o" direction="in"></arg>
-      <arg type="(sbbyo)" direction="out"></arg>
-    </method>
     <method name="GetAccessPoints">
       <arg type="o" direction="in"></arg>
-      <arg type="ao" direction="out"></arg>
+      <arg type="s" direction="out"></arg>
     </method>
     <method name="GetActiveConnectionInfo">
       <arg type="o" direction="in"></arg>
@@ -62,7 +55,7 @@
       <arg type="o" direction="in"></arg>
       <arg type="u" direction="out"></arg>
     </method>
-    <method name="GetConnectionByUuid">
+    <method name="GetConnectionPathByUuid">
       <arg type="s" direction="in"></arg>
       <arg type="o" direction="out"></arg>
     </method>
@@ -102,13 +95,15 @@
     <property name="VPNEnabled" type="b" access="readwrite"></property>
     <property name="WirelessEnabled" type="b" access="readwrite"></property>
     <property name="NetworkingEnabled" type="b" access="readwrite"></property>
-    <property name="ActiveConnections" type="as" access="read"></property>
     <property name="State" type="u" access="read"></property>
-    <property name="WiredDevices" type="a(ou)" access="read"></property>
-    <property name="WirelessDevices" type="a(ou)" access="read"></property>
-    <property name="OtherDevices" type="a(ou)" access="read"></property>
+    <property name="ActiveConnections" type="s" access="read"></property>
+    <property name="ActivatingConnection" type="s" access="read"></property>
+    <property name="WiredDevices" type="a(ous)" access="read"></property>
+    <property name="WirelessDevices" type="a(ous)" access="read"></property>
+    <property name="Devices" type="s" access="read"></property>
     <property name="WiredConnections" type="as" access="read"></property>
     <property name="WirelessConnections" type="as" access="read"></property>
     <property name="VPNConnections" type="as" access="read"></property>
+    <property name="Connections" type="s" access="read"></property>
   </interface>
 </node>
