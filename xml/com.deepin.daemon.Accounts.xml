@@ -33,5 +33,6 @@
           </signal>
           <property name="UserList" type="as" access="read"></property>
           <property name="AllowGuest" type="b" access="read"></property>
+          <property name="GuestIcon" type="s" access="read"></property>
      </interface>
 </node>
