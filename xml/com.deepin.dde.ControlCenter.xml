@@ -2,17 +2,16 @@
 "http://www.freedesktop.org/standards/dbus/1.0/introspect.dtd">
 <node>
   <interface name="com.deepin.dde.ControlCenter">
-    <method name="Show">
-      <arg direction="in" type="i" name="seconds"/>
-    </method>
+    <method name="Hide"></method>
+    <method name="HideImmediately"></method>
+    <method name="Show"></method>
+    <method name="ShowImmediately"></method>
     <method name="ShowModule">
       <arg direction="in" type="s" name="moduleName"/>
     </method>
-    <method name="ClickToHide">
-      <arg direction="in" type="i" name="mouseX"/>
-      <arg direction="in" type="i" name="mouseY"/>
-    </method>
-    <method name="Hide">
+    <method name="Toggle"></method>
+    <method name="isNetworkCanShowPassword">
+      <arg direction="out" type="b" name="canShow"/>
     </method>
   </interface>
   <interface name="org.freedesktop.DBus.Properties">
