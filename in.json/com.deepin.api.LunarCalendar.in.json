@@ -1,16 +1,41 @@
-{
-	"Config": {
-		"OutputDir": ".",
-		"InputDir": "../xml",
-		"BusType": "Session",
-		"DestName": "com.deepin.api.LunarCalendar"
-	},
-	"Interfaces": [
-		{
-			"Interface": "com.deepin.api.LunarCalendar",
-			"OutFile": "dbus-calendar",
-			"XMLFile": "com.deepin.api.LunarCalendar.xml",
-			"ObjectName": "LunarCalendar"
-		}
-	]
-}
+<node>
+     <interface name="com.deepin.api.LunarCalendar">
+          <method name="GetLunarDateBySolar">
+               <arg type="i" direction="in"></arg>
+               <arg type="i" direction="in"></arg>
+               <arg type="i" direction="in"></arg>
+               <arg type="(iii)" direction="out"></arg>
+               <arg type="b" direction="out"></arg>
+               <arg type="b" direction="out"></arg>
+          </method>
+          <method name="GetLunarInfoBySolar">
+               <arg type="i" direction="in"></arg>
+               <arg type="i" direction="in"></arg>
+               <arg type="i" direction="in"></arg>
+               <arg type="(sssssissssi)" direction="out"></arg>
+               <arg type="b" direction="out"></arg>
+          </method>
+          <method name="GetLunarMonthCalendar">
+               <arg type="i" direction="in"></arg>
+               <arg type="i" direction="in"></arg>
+               <arg type="b" direction="in"></arg>
+               <arg type="(iia(sssssissssi))" direction="out"></arg>
+               <arg type="b" direction="out"></arg>
+          </method>
+          <method name="GetSolarDateByLunar">
+               <arg type="i" direction="in"></arg>
+               <arg type="i" direction="in"></arg>
+               <arg type="i" direction="in"></arg>
+               <arg type="b" direction="in"></arg>
+               <arg type="(iii)" direction="out"></arg>
+               <arg type="b" direction="out"></arg>
+          </method>
+          <method name="GetSolarMonthCalendar">
+               <arg type="i" direction="in"></arg>
+               <arg type="i" direction="in"></arg>
+               <arg type="b" direction="in"></arg>
+               <arg type="(iia(iii))" direction="out"></arg>
+               <arg type="b" direction="out"></arg>
+          </method>
+     </interface>
+</node>
