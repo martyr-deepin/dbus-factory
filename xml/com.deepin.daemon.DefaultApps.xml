@@ -17,7 +17,5 @@
                <arg type="b" direction="out"></arg>
           </method>
           <signal name="DefaultAppChanged"></signal>
-     </interface>pe="as"></arg>
-          </signal>
      </interface>
 </node>
