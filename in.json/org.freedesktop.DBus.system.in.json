@@ -12,6 +12,12 @@
 			"OutFile": "dbus",
 			"XMLFile": "org.freedesktop.DBus.xml",
 			"ObjectName": "DBusDaemon"
+		},
+        {
+			"Interface": "org.freedesktop.DBus.ObjectManager",
+			"OutFile": "dbus_objectmanager",
+			"XMLFile": "org.freedesktop.DBus.ObjectManager.xml",
+			"ObjectName": "DBusObjectManager"
 		}
 	]
 }
