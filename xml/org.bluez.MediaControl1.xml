@@ -1,0 +1,15 @@
+<!DOCTYPE node PUBLIC "-//freedesktop//DTD D-BUS Object Introspection 1.0//EN" "http://www.freedesktop.org/standards/dbus/1.0/introspect.dtd">
+<node>
+  <interface name="org.bluez.MediaControl1">
+    <method name="Play"/>
+    <method name="Pause"/>
+    <method name="Stop"/>
+    <method name="Next"/>
+    <method name="Previous"/>
+    <method name="VolumeUp"/>
+    <method name="VolumeDown"/>
+    <method name="FastForward"/>
+    <method name="Rewind"/>
+    <property name="Connected" type="b" access="read"/>
+  </interface>
+</node>

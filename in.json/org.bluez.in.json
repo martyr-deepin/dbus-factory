@@ -1,0 +1,64 @@
+ {
+    "Config": {
+		"OutputDir": ".",
+		"InputDir": "../xml",
+		"BusType": "System",
+		"DestName": "org.bluez"
+    },
+    "Interfaces": [
+        {
+            "Interface": "org.bluez.Adapter1",
+            "OutFile": "adapter1",
+            "XMLFile": "org.bluez.Adapter1.xml",
+            "ObjectName": "Adapter1"
+        },
+        {
+            "Interface": "org.bluez.AgentManager1",
+            "OutFile": "agentmanager1",
+            "XMLFile": "org.bluez.AgentManager1.xml",
+            "ObjectName": "AgentManager1"
+        },
+        {
+            "Interface": "org.bluez.Device1",
+            "OutFile": "device1",
+            "XMLFile": "org.bluez.Device1.xml",
+            "ObjectName": "Device1"
+        },
+        {
+            "Interface": "org.bluez.Input1",
+            "OutFile": "input1",
+            "XMLFile": "org.bluez.Input1.xml",
+            "ObjectName": "Input1"
+        },
+        {
+            "Interface": "org.bluez.Media1",
+            "OutFile": "media1",
+            "XMLFile": "org.bluez.Media1.xml",
+            "ObjectName": "Media1"
+        },
+        {
+            "Interface": "org.bluez.MediaControl1",
+            "OutFile": "mediacontrol1",
+            "XMLFile": "org.bluez.MediaControl1.xml",
+            "ObjectName": "MediaControl1"
+        },
+        {
+            "Interface": "org.bluez.Network1",
+            "OutFile": "network1",
+            "XMLFile": "org.bluez.Network1.xml",
+            "ObjectName": "Network1"
+        },
+        {
+            "Interface": "org.bluez.NetworkServer1",
+            "OutFile": "networkserver1",
+            "XMLFile": "org.bluez.NetworkServer1.xml",
+            "ObjectName": "NetworkServer1"
+        },
+        {
+            "Interface": "org.bluez.ProfileManager1",
+            "OutFile": "profilemanager1",
+            "XMLFile": "org.bluez.ProfileManager1.xml",
+            "ObjectName": "ProfileManager1"
+        }
+	]
+}
