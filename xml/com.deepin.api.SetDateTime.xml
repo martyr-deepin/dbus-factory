@@ -1,5 +1,8 @@
 <node>
      <interface name="com.deepin.api.SetDateTime">
+          <method name="GenLocale">
+               <arg type="s" direction="in"></arg>
+          </method>
           <method name="GetTimezone">
                <arg type="s" direction="out"></arg>
                <arg type="b" direction="out"></arg>
@@ -23,5 +26,9 @@
           <method name="SyncNtpTime">
                <arg type="b" direction="out"></arg>
           </method>
+          <signal name="GenLocaleStatus">
+               <arg type="b"></arg>
+               <arg type="s"></arg>
+          </signal>
      </interface>
 </node>
