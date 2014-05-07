@@ -1,0 +1,16 @@
+{
+	"Config":{
+		"OutputDir": ".",
+		"InputDir": "../xml",
+		"BusType": "Session",
+		"DestName": "com.deepin.daemon.Clipboard"
+	},
+	"Interfaces":[
+		{
+			"Interface": "com.deepin.daemon.Clipboard",
+			"OutFile": "dbus-clipboard",
+			"XMLFile": "com.deepin.daemon.Clipboard.xml",
+			"ObjectName": "Clipboard"
+		}
+	]
+}

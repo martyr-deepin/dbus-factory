@@ -1,0 +1,6 @@
+<node>
+     <interface name="com.deepin.daemon.Clipboard">
+          <method name="StopClipboard">
+          </method>
+     </interface>
+</node>
