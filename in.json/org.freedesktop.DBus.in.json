@@ -14,9 +14,9 @@
 		},
         {
 			"Interface": "org.freedesktop.DBus.ObjectManager",
-			"OutFile": "dbus_objectmanager",
+			"OutFile": "objectmanager",
 			"XMLFile": "org.freedesktop.DBus.ObjectManager.xml",
-			"ObjectName": "DBusObjectManager"
+			"ObjectName": "ObjectManager"
 		}
 	]
 }
