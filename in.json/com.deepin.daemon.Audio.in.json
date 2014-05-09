@@ -1,40 +1,34 @@
 {
-	"Config": {
-		"OutputDir": ".",
-		"InputDir": "../xml",
-		"BusType": "Session",
-		"DestName": "com.deepin.daemon.Audio"
-	},
-	"Interfaces": [
-		{
-			"Interface": "com.deepin.daemon.Audio",
-			"OutFile": "dbus-audio",
-			"XMLFile": "com.deepin.daemon.Audio.xml",
-			"ObjectName": "Audio"
-		},
-		{
-			"Interface":"com.deepin.daemon.Audio.Card",
-			"OutFile":"dbus-audio-card",
-			"XMLFile":"com.deepin.daemon.Audio.Card.xml",
-			"ObjectName":"AudioCard"
-		},
-		{
-			"Interface":"com.deepin.daemon.Audio.Sink",
-			"OutFile":"dbus-audio-output",
-			"XMLFile":"com.deepin.daemon.Audio.Sink.xml",
-			"Objectname":"AudioSink"
-		},
-		{
-			"Interface":"com.deepin.daemon.Audio.Source",
-			"OutFile":"dbus-audio-input",
-			"XMLFile":"com.deepin.daemon.Audio.Source.xml",
-			"ObjectName":"AudioSource"
-		},
-        {
-            "Interface":"com.deepin.daemon.Audio.Application",
-            "OutFile":"dbus-audio-application",
-            "XMLFile":"com.deepin.daemon.Audio.Application.xml",
-            "ObjectName":"AudioApplication"
-        }
+    "Config": {
+	"OutputDir": ".",
+	"InputDir": "../xml",
+	"BusType": "Session",
+	"DestName": "com.deepin.daemon.Audio"
+    },
+    "Interfaces": [
+    {
+	"Interface": "com.deepin.daemon.Audio",
+	"OutFile": "audio",
+	"XMLFile": "com.deepin.daemon.Audio.xml",
+	"ObjectName": "Audio"
+    },
+    {
+	"Interface":"com.deepin.daemon.Audio.Sink",
+	"OutFile":"sink",
+	"XMLFile":"com.deepin.daemon.Audio.Sink.xml",
+	"Objectname":"AudioSink"
+    },
+    {
+	"Interface":"com.deepin.daemon.Audio.Source",
+	"OutFile":"source",
+	"XMLFile":"com.deepin.daemon.Audio.Source.xml",
+	"ObjectName":"AudioSource"
+    },
+    {
+	"Interface":"com.deepin.daemon.Audio.SinkInput",
+	"OutFile":"sink_input",
+	"XMLFile":"com.deepin.daemon.Audio.SinkInput.xml",
+	"ObjectName":"AudioSinkInput"
+    }
     ]
 }
