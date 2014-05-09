@@ -30,6 +30,7 @@
           <property name="RepeatDelay" type="u" access="readwrite"></property>
           <property name="CurrentLayout" type="s" access="readwrite"></property>
           <property name="CursorBlink" type="i" access="readwrite"></property>
+          <property name="CapslockToggle" type="b" access="readwrite"></property>
           <property name="UserLayoutList" type="as" access="read"></property>
      </interface>
 </node>
