@@ -1,0 +1,16 @@
+{
+    "Config": {
+	    "InputDir": "../xml",
+	    "PkgName": "Bluetooth",
+	    "BusType": "Session",
+	    "DestName": "com.deepin.daemon.Bluetooth"
+    },
+    "Interfaces": [
+        {
+	        "Interface": "com.deepin.daemon.Bluetooth",
+	        "OutFile": "bluetooth",
+	        "XMLFile": "com.deepin.daemon.Bluetooth.xml",
+	        "ObjectName": "Bluetooth"
+        }
+    ]
+}
