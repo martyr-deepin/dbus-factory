@@ -1,9 +1,9 @@
 <node>
   <interface name="com.deepin.daemon.Bluetooth">
-    <method name="ConnectDeivce">
+    <method name="ConnectDevice">
       <arg type="o" direction="in"></arg>
     </method>
-    <method name="DisconnectDeivce">
+    <method name="DisconnectDevice">
       <arg type="o" direction="in"></arg>
     </method>
     <method name="FeedAuthorizeService">
@@ -18,11 +18,11 @@
     <method name="RemoveDevice">
       <arg type="o" direction="in"></arg>
     </method>
-    <method name="SetDeivceAlias">
+    <method name="SetDeviceAlias">
       <arg type="o" direction="in"></arg>
       <arg type="s" direction="in"></arg>
     </method>
-    <method name="SetDeivceTrusted">
+    <method name="SetDeviceTrusted">
       <arg type="o" direction="in"></arg>
       <arg type="b" direction="in"></arg>
     </method>
