@@ -6,6 +6,7 @@
           <method name="GetDefaultSource">
                <arg type="o" direction="out"></arg>
           </method>
+          <method name="Reset"></method>
           <method name="SetDefaultSink">
                <arg type="s" direction="in"></arg>
           </method>
