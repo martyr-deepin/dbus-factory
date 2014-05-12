@@ -29,6 +29,12 @@
 	"OutFile":"sink_input",
 	"XMLFile":"com.deepin.daemon.Audio.SinkInput.xml",
 	"ObjectName":"AudioSinkInput"
+    },
+    {
+	"Interface":"com.deepin.daemon.Audio.Meter",
+	"OutFile":"meter",
+	"XMLFile":"com.deepin.daemon.Audio.Meter.xml",
+	"ObjectName":"AudioMeter"
     }
     ]
 }
