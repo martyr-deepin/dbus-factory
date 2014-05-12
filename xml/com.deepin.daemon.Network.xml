@@ -23,6 +23,9 @@
       <arg type="o" direction="in"></arg>
       <arg type="o" direction="out"></arg>
     </method>
+    <method name="DeactivateConnection">
+      <arg type="s" direction="in"></arg>
+    </method>
     <method name="DeleteConnection">
       <arg type="s" direction="in"></arg>
     </method>
