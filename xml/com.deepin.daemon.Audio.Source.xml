@@ -9,6 +9,9 @@
           <method name="SetFade">
                <arg type="d" direction="in"></arg>
           </method>
+          <method name="SetMute">
+               <arg type="b" direction="in"></arg>
+          </method>
           <method name="SetPort">
                <arg type="s" direction="in"></arg>
           </method>
