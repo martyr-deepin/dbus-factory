@@ -10,6 +10,9 @@
                <arg type="s" direction="in"></arg>
                <arg type="b" direction="out"></arg>
           </method>
+          <method name="SetLocale">
+               <arg type="s" direction="in"></arg>
+          </method>
           <method name="SetTime">
                <arg type="s" direction="in"></arg>
                <arg type="b" direction="out"></arg>
@@ -28,5 +31,6 @@
           <property name="Use24HourDisplay" type="b" access="readwrite"></property>
           <property name="CurrentTimezone" type="s" access="read"></property>
           <property name="UserTimezoneList" type="as" access="read"></property>
+          <property name="LocaleListMap" type="a{ss}" access="read"></property>
      </interface>
 </node>
