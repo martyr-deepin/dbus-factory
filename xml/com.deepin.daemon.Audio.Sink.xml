@@ -27,7 +27,7 @@
           <property name="SupportBalance" type="b" access="read"></property>
           <property name="Fade" type="d" access="read"></property>
           <property name="SupportFade" type="b" access="read"></property>
-          <property name="Ports" type="as" access="read"></property>
-          <property name="ActivePort" type="s" access="read"></property>
+          <property name="Ports" type="a(ssy)" access="read"></property>
+          <property name="ActivePort" type="(ssy)" access="read"></property>
      </interface>
 </node>
