@@ -17,6 +17,7 @@
           </method>
           <method name="SetVolume">
                <arg type="d" direction="in"></arg>
+               <arg type="b" direction="in"></arg>
           </method>
           <property name="Name" type="s" access="read"></property>
           <property name="Description" type="s" access="read"></property>
