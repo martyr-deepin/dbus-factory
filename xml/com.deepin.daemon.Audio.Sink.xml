@@ -5,6 +5,7 @@
           </method>
           <method name="SetBalance">
                <arg type="d" direction="in"></arg>
+               <arg type="b" direction="in"></arg>
           </method>
           <method name="SetFade">
                <arg type="d" direction="in"></arg>
