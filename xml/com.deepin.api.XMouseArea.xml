@@ -35,13 +35,13 @@
                <arg type="i"></arg>
           </signal>
           <signal name="ButtonPress">
-               <arg type="s"></arg>
+               <arg type="i"></arg>
                <arg type="i"></arg>
                <arg type="i"></arg>
                <arg type="i"></arg>
           </signal>
           <signal name="ButtonRelease">
-               <arg type="s"></arg>
+               <arg type="i"></arg>
                <arg type="i"></arg>
                <arg type="i"></arg>
                <arg type="i"></arg>
@@ -58,11 +58,6 @@
                <arg type="i"></arg>
                <arg type="i"></arg>
           </signal>
-          <signal name="CancelAllArea">
-               <arg type="i"></arg>
-               <arg type="i"></arg>
-               <arg type="i"></arg>
-          </signal>
-          <property name="FullScreenId" type="i" access="read"></property>
+          <signal name="CancelAllArea"></signal>
      </interface>
 </node>
