@@ -30,6 +30,7 @@
           <property name="AutoSetTime" type="b" access="readwrite"></property>
           <property name="Use24HourDisplay" type="b" access="readwrite"></property>
           <property name="CurrentTimezone" type="s" access="read"></property>
+          <property name="CurrentLocale" type="s" access="read"></property>
           <property name="UserTimezoneList" type="as" access="read"></property>
           <property name="LocaleListMap" type="a{ss}" access="read"></property>
 	  <signal name="LocaleStatus">
