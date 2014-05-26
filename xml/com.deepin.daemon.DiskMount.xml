@@ -19,6 +19,6 @@
                <arg type="s"></arg>
                <arg type="s"></arg>
           </signal>
-          <property name="DiskList" type="a(ssbbxxsss)" access="read"></property>
+          <property name="DiskList" type="a(ssbbxxssss)" access="read"></property>
      </interface>
 </node>
