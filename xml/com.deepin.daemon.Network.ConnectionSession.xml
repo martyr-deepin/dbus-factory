@@ -28,9 +28,9 @@
       <arg type="s" direction="in"></arg>
       <arg type="s" direction="in"></arg>
     </method>
-    <property name="CurrentUUID" type="s" access="read"></property>
-    <property name="ConnectionType" type="s" access="read"></property>
-    <property name="AllowSave" type="b" access="read"></property>
+    <property name="ConnectionPath" type="o" access="read"></property>
+    <property name="Uuid" type="s" access="read"></property>
+    <property name="Type" type="s" access="read"></property>
     <property name="AvailablePages" type="as" access="read"></property>
     <property name="AvailableKeys" type="a{sas}" access="read"></property>
     <property name="Errors" type="a{sa{ss}}" access="read"></property>
