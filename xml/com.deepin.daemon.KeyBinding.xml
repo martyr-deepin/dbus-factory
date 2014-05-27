@@ -1,12 +1,12 @@
 <node>
      <interface name="com.deepin.daemon.KeyBinding">
-          <method name="AddKeyBind">
+          <method name="AddCustomShortcut">
                <arg type="s" direction="in"></arg>
                <arg type="s" direction="in"></arg>
                <arg type="i" direction="out"></arg>
                <arg type="b" direction="out"></arg>
           </method>
-          <method name="AddKeyBindCheck">
+          <method name="AddCustomShortcutCheck">
                <arg type="s" direction="in"></arg>
                <arg type="s" direction="in"></arg>
                <arg type="s" direction="in"></arg>
@@ -14,27 +14,35 @@
                <arg type="s" direction="out"></arg>
                <arg type="ai" direction="out"></arg>
           </method>
-          <method name="ChangeShortcut">
-               <arg type="i" direction="in"></arg>
+          <method name="CheckShortcutConflict">
                <arg type="s" direction="in"></arg>
                <arg type="s" direction="out"></arg>
                <arg type="ai" direction="out"></arg>
           </method>
-          <method name="CheckShortcut">
+          <method name="DeleteCustomShortcut">
+               <arg type="i" direction="in"></arg>
+          </method>
+          <method name="GrabKbdAndMouse"></method>
+          <method name="GrabSignalShortcut">
+               <arg type="s" direction="in"></arg>
+               <arg type="s" direction="in"></arg>
+               <arg type="b" direction="in"></arg>
+          </method>
+          <method name="ModifyShortcut">
+               <arg type="i" direction="in"></arg>
                <arg type="s" direction="in"></arg>
                <arg type="s" direction="out"></arg>
                <arg type="ai" direction="out"></arg>
-          </method>
-          <method name="DeleteCustomBind">
-               <arg type="i" direction="in"></arg>
           </method>
           <method name="Reset">
                <arg type="b" direction="out"></arg>
           </method>
+          <signal name="KeyReleaseEvent">
+               <arg type="s"></arg>
+          </signal>
           <property name="SystemList" type="a(iss)" access="read"></property>
-          <property name="MediaList" type="a(iss)" access="read"></property>
           <property name="WindowList" type="a(iss)" access="read"></property>
-          <property name="WorkSpaceList" type="a(iss)" access="read"></property>
+          <property name="WorkspaceList" type="a(iss)" access="read"></property>
           <property name="CustomList" type="a(iss)" access="read"></property>
           <property name="ConflictValid" type="ai" access="read"></property>
           <property name="ConflictInvalid" type="ai" access="read"></property>
