@@ -1,99 +1,131 @@
 <node>
-     <interface name="com.deepin.api.Graphic">
-          <method name="BackgroundBlurPictPath">
-               <arg type="s" direction="in"></arg>
-               <arg type="s" direction="in"></arg>
-               <arg type="d" direction="in"></arg>
-               <arg type="d" direction="in"></arg>
-               <arg type="i" direction="out"></arg>
-               <arg type="s" direction="out"></arg>
-          </method>
-          <method name="BlurImage">
-               <arg type="s" direction="in"></arg>
-               <arg type="s" direction="in"></arg>
-               <arg type="d" direction="in"></arg>
-               <arg type="d" direction="in"></arg>
-               <arg type="s" direction="in"></arg>
-          </method>
-          <method name="ClipImage">
-               <arg type="s" direction="in"></arg>
-               <arg type="s" direction="in"></arg>
-               <arg type="i" direction="in"></arg>
-               <arg type="i" direction="in"></arg>
-               <arg type="i" direction="in"></arg>
-               <arg type="i" direction="in"></arg>
-               <arg type="s" direction="in"></arg>
-          </method>
-          <method name="ConvertImage">
-               <arg type="s" direction="in"></arg>
-               <arg type="s" direction="in"></arg>
-               <arg type="s" direction="in"></arg>
-          </method>
-          <method name="FillImage">
-               <arg type="s" direction="in"></arg>
-               <arg type="s" direction="in"></arg>
-               <arg type="i" direction="in"></arg>
-               <arg type="i" direction="in"></arg>
-               <arg type="s" direction="in"></arg>
-               <arg type="s" direction="in"></arg>
-          </method>
-          <method name="FlipImageHorizontal">
-               <arg type="s" direction="in"></arg>
-               <arg type="s" direction="in"></arg>
-               <arg type="s" direction="in"></arg>
-          </method>
-          <method name="FlipImageVertical">
-               <arg type="s" direction="in"></arg>
-               <arg type="s" direction="in"></arg>
-               <arg type="s" direction="in"></arg>
-          </method>
-          <method name="GetDominantColorOfImage">
-               <arg type="s" direction="in"></arg>
-               <arg type="d" direction="out"></arg>
-               <arg type="d" direction="out"></arg>
-               <arg type="d" direction="out"></arg>
-          </method>
-          <method name="GetImageSize">
-               <arg type="s" direction="in"></arg>
-               <arg type="i" direction="out"></arg>
-               <arg type="i" direction="out"></arg>
-          </method>
-          <method name="HSV2RGB">
-               <arg type="d" direction="in"></arg>
-               <arg type="d" direction="in"></arg>
-               <arg type="d" direction="in"></arg>
-               <arg type="y" direction="out"></arg>
-               <arg type="y" direction="out"></arg>
-               <arg type="y" direction="out"></arg>
-          </method>
-          <method name="RGB2HSV">
-               <arg type="y" direction="in"></arg>
-               <arg type="y" direction="in"></arg>
-               <arg type="y" direction="in"></arg>
-               <arg type="d" direction="out"></arg>
-               <arg type="d" direction="out"></arg>
-               <arg type="d" direction="out"></arg>
-          </method>
-          <method name="ResizeImage">
-               <arg type="s" direction="in"></arg>
-               <arg type="s" direction="in"></arg>
-               <arg type="i" direction="in"></arg>
-               <arg type="i" direction="in"></arg>
-               <arg type="s" direction="in"></arg>
-          </method>
-          <method name="RotateImageLeft">
-               <arg type="s" direction="in"></arg>
-               <arg type="s" direction="in"></arg>
-               <arg type="s" direction="in"></arg>
-          </method>
-          <method name="RotateImageRight">
-               <arg type="s" direction="in"></arg>
-               <arg type="s" direction="in"></arg>
-               <arg type="s" direction="in"></arg>
-          </method>
-          <signal name="BlurPictChanged">
-               <arg type="s"></arg>
-               <arg type="s"></arg>
-          </signal>
-     </interface>
+  <interface name="com.deepin.api.Graphic">
+    <method name="BackgroundBlurPictPath">
+      <arg type="s" direction="in"></arg>
+      <arg type="s" direction="in"></arg>
+      <arg type="d" direction="in"></arg>
+      <arg type="d" direction="in"></arg>
+      <arg type="i" direction="out"></arg>
+      <arg type="s" direction="out"></arg>
+    </method>
+    <method name="BlurImage">
+      <arg type="s" direction="in"></arg>
+      <arg type="s" direction="in"></arg>
+      <arg type="d" direction="in"></arg>
+      <arg type="d" direction="in"></arg>
+      <arg type="s" direction="in"></arg>
+    </method>
+    <method name="ClipImage">
+      <arg type="s" direction="in"></arg>
+      <arg type="s" direction="in"></arg>
+      <arg type="i" direction="in"></arg>
+      <arg type="i" direction="in"></arg>
+      <arg type="i" direction="in"></arg>
+      <arg type="i" direction="in"></arg>
+      <arg type="s" direction="in"></arg>
+    </method>
+    <method name="CompositeImage">
+      <arg type="s" direction="in"></arg>
+      <arg type="s" direction="in"></arg>
+      <arg type="s" direction="in"></arg>
+      <arg type="i" direction="in"></arg>
+      <arg type="i" direction="in"></arg>
+      <arg type="s" direction="in"></arg>
+    </method>
+    <method name="CompositeImageUri">
+      <arg type="s" direction="in"></arg>
+      <arg type="s" direction="in"></arg>
+      <arg type="i" direction="in"></arg>
+      <arg type="i" direction="in"></arg>
+      <arg type="s" direction="in"></arg>
+      <arg type="s" direction="out"></arg>
+    </method>
+    <method name="ConvertDataUriToImage">
+      <arg type="s" direction="in"></arg>
+      <arg type="s" direction="in"></arg>
+      <arg type="s" direction="in"></arg>
+    </method>
+    <method name="ConvertImage">
+      <arg type="s" direction="in"></arg>
+      <arg type="s" direction="in"></arg>
+      <arg type="s" direction="in"></arg>
+    </method>
+    <method name="ConvertImageToDataUri">
+      <arg type="s" direction="in"></arg>
+      <arg type="s" direction="out"></arg>
+    </method>
+    <method name="FillImage">
+      <arg type="s" direction="in"></arg>
+      <arg type="s" direction="in"></arg>
+      <arg type="i" direction="in"></arg>
+      <arg type="i" direction="in"></arg>
+      <arg type="s" direction="in"></arg>
+      <arg type="s" direction="in"></arg>
+    </method>
+    <method name="FlipImageHorizontal">
+      <arg type="s" direction="in"></arg>
+      <arg type="s" direction="in"></arg>
+      <arg type="s" direction="in"></arg>
+    </method>
+    <method name="FlipImageVertical">
+      <arg type="s" direction="in"></arg>
+      <arg type="s" direction="in"></arg>
+      <arg type="s" direction="in"></arg>
+    </method>
+    <method name="GetDominantColorOfImage">
+      <arg type="s" direction="in"></arg>
+      <arg type="d" direction="out"></arg>
+      <arg type="d" direction="out"></arg>
+      <arg type="d" direction="out"></arg>
+    </method>
+    <method name="GetImageSize">
+      <arg type="s" direction="in"></arg>
+      <arg type="i" direction="out"></arg>
+      <arg type="i" direction="out"></arg>
+    </method>
+    <method name="HSV2RGB">
+      <arg type="d" direction="in"></arg>
+      <arg type="d" direction="in"></arg>
+      <arg type="d" direction="in"></arg>
+      <arg type="y" direction="out"></arg>
+      <arg type="y" direction="out"></arg>
+      <arg type="y" direction="out"></arg>
+    </method>
+    <method name="RGB2HSV">
+      <arg type="y" direction="in"></arg>
+      <arg type="y" direction="in"></arg>
+      <arg type="y" direction="in"></arg>
+      <arg type="d" direction="out"></arg>
+      <arg type="d" direction="out"></arg>
+      <arg type="d" direction="out"></arg>
+    </method>
+    <method name="ResizeImage">
+      <arg type="s" direction="in"></arg>
+      <arg type="s" direction="in"></arg>
+      <arg type="i" direction="in"></arg>
+      <arg type="i" direction="in"></arg>
+      <arg type="s" direction="in"></arg>
+    </method>
+    <method name="RotateImageLeft">
+      <arg type="s" direction="in"></arg>
+      <arg type="s" direction="in"></arg>
+      <arg type="s" direction="in"></arg>
+    </method>
+    <method name="RotateImageRight">
+      <arg type="s" direction="in"></arg>
+      <arg type="s" direction="in"></arg>
+      <arg type="s" direction="in"></arg>
+    </method>
+    <method name="ThumbnailImage">
+      <arg type="s" direction="in"></arg>
+      <arg type="s" direction="in"></arg>
+      <arg type="u" direction="in"></arg>
+      <arg type="u" direction="in"></arg>
+      <arg type="s" direction="in"></arg>
+    </method>
+    <signal name="BlurPictChanged">
+      <arg type="s"></arg>
+      <arg type="s"></arg>
+    </signal>
+  </interface>
 </node>
