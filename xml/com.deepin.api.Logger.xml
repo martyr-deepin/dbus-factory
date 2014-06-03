@@ -1,33 +1,37 @@
 <node>
-     <interface name="com.deepin.api.Logger">
-          <method name="Debug">
-               <arg type="s" direction="in"></arg>
-               <arg type="s" direction="in"></arg>
-          </method>
-          <method name="Error">
-               <arg type="s" direction="in"></arg>
-               <arg type="s" direction="in"></arg>
-          </method>
-          <method name="Fatal">
-               <arg type="s" direction="in"></arg>
-               <arg type="s" direction="in"></arg>
-          </method>
-          <method name="GetLog">
-               <arg type="s" direction="in"></arg>
-               <arg type="s" direction="out"></arg>
-          </method>
-          <method name="Info">
-               <arg type="s" direction="in"></arg>
-               <arg type="s" direction="in"></arg>
-          </method>
-          <method name="NewLogger">
-               <arg type="s" direction="in"></arg>
-               <arg type="s" direction="out"></arg>
-          </method>
-          <method name="Warning">
-               <arg type="s" direction="in"></arg>
-               <arg type="s" direction="in"></arg>
-          </method>
-          <property name="Names" type="a{ss}" access="read"></property>
-     </interface>
+  <interface name="com.deepin.api.Logger">
+    <method name="Debug">
+      <arg type="s" direction="in"></arg>
+      <arg type="s" direction="in"></arg>
+      <arg type="s" direction="in"></arg>
+    </method>
+    <method name="Error">
+      <arg type="s" direction="in"></arg>
+      <arg type="s" direction="in"></arg>
+      <arg type="s" direction="in"></arg>
+    </method>
+    <method name="Fatal">
+      <arg type="s" direction="in"></arg>
+      <arg type="s" direction="in"></arg>
+      <arg type="s" direction="in"></arg>
+    </method>
+    <method name="GetLog">
+      <arg type="s" direction="in"></arg>
+      <arg type="s" direction="out"></arg>
+    </method>
+    <method name="Info">
+      <arg type="s" direction="in"></arg>
+      <arg type="s" direction="in"></arg>
+      <arg type="s" direction="in"></arg>
+    </method>
+    <method name="NewLogger">
+      <arg type="s" direction="in"></arg>
+      <arg type="s" direction="out"></arg>
+    </method>
+    <method name="Warning">
+      <arg type="s" direction="in"></arg>
+      <arg type="s" direction="in"></arg>
+      <arg type="s" direction="in"></arg>
+    </method>
+  </interface>
 </node>
