@@ -1,13 +1,5 @@
 <node>
   <interface name="com.deepin.api.Graphic">
-    <method name="BackgroundBlurPictPath">
-      <arg type="s" direction="in"></arg>
-      <arg type="s" direction="in"></arg>
-      <arg type="d" direction="in"></arg>
-      <arg type="d" direction="in"></arg>
-      <arg type="i" direction="out"></arg>
-      <arg type="s" direction="out"></arg>
-    </method>
     <method name="BlurImage">
       <arg type="s" direction="in"></arg>
       <arg type="s" direction="in"></arg>
@@ -123,9 +115,5 @@
       <arg type="u" direction="in"></arg>
       <arg type="s" direction="in"></arg>
     </method>
-    <signal name="BlurPictChanged">
-      <arg type="s"></arg>
-      <arg type="s"></arg>
-    </signal>
   </interface>
 </node>
