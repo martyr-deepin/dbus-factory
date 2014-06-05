@@ -51,7 +51,7 @@
       <arg type="s" direction="out"></arg>
     </method>
     <method name="GetSupportedConnectionTypes">
-      <arg type="s" direction="out"></arg>
+      <arg type="as" direction="out"></arg>
     </method>
     <method name="GetWiredConnectionUuid">
       <arg type="o" direction="in"></arg>
