@@ -1,9 +1,9 @@
 <node>
   <interface name="com.deepin.daemon.Network">
     <method name="ActivateAccessPoint">
+      <arg type="s" direction="in"></arg>
       <arg type="o" direction="in"></arg>
       <arg type="o" direction="in"></arg>
-      <arg type="s" direction="out"></arg>
     </method>
     <method name="ActivateConnection">
       <arg type="s" direction="in"></arg>
