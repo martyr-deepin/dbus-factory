@@ -21,6 +21,10 @@
           <method name="Logout"></method>
           <method name="PowerOffChoose"></method>
           <method name="Reboot"></method>
+          <method name="Register">
+               <arg type="s" direction="in"></arg>
+               <arg type="b" direction="out"></arg>
+          </method>
           <method name="RequestHibernate"></method>
           <method name="RequestLock"></method>
           <method name="RequestLogout"></method>
