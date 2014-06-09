@@ -11,7 +11,8 @@
 	"OutFile": "nm-manager",
 	"XMLFile": "nm-manager.xml",
 	"ObjectName": "Manager",
-	"TestPath": "/org/freedesktop/NetworkManager"
+	"TestPath": "/org/freedesktop/NetworkManager",
+	"BlackMethods": ["state"]
     },
     {
 	"Interface": "org.freedesktop.NetworkManager.AccessPoint",
