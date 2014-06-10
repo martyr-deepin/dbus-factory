@@ -3,7 +3,7 @@
 		"OutputDir": ".",
 		"InputDir": "../xml",
 		"BusType": "Session",
-		"DestName": "com.deepin.daemon.Themes"
+		"DestName": "com.deepin.daemon.ThemeManager"
 	},
 	"Interfaces": [
 		{
@@ -17,18 +17,6 @@
 			"OutFile": "dbus-theme",
 			"XMLFile": "com.deepin.daemon.Theme.xml",
 			"ObjectName": "Theme"
-		},
-		{
-			"Interface": "com.deepin.daemon.ThumbPath",
-			"OutFile": "dbus-thumb",
-			"XMLFile": "com.deepin.daemon.ThemeManager.xml",
-			"ObjectName": "ThumbPath"
-		},
-		{
-			"Interface": "com.deepin.daemon.PreviewPath",
-			"OutFile": "dbus-preview",
-			"XMLFile": "com.deepin.daemon.ThemeManager.xml",
-			"ObjectName": "PreviewPath"
 		}
 	]
 }
