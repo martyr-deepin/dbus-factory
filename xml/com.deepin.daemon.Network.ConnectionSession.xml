@@ -28,10 +28,10 @@
       <arg type="s" direction="in"></arg>
       <arg type="s" direction="in"></arg>
     </method>
+    <property name="Data" type="a{sa{sv}}" access="read"></property>
     <property name="ConnectionPath" type="o" access="read"></property>
     <property name="Uuid" type="s" access="read"></property>
     <property name="Type" type="s" access="read"></property>
-    <property name="Data" type="a{sa{sv}}" access="read"></property>
     <property name="AvailableVirtualSections" type="as" access="read"></property>
     <property name="AvailableSections" type="as" access="read"></property>
     <property name="AvailableKeys" type="a{sas}" access="read"></property>
