@@ -48,6 +48,8 @@
           <property name="SoundThemeList" type="a(ssis)" access="read"></property>
           <property name="BackgroundList" type="a(sssi)" access="read"></property>
           <property name="CurrentTheme" type="s" access="read"></property>
+          <property name="CurrentSound" type="s" access="read"></property>
+          <property name="CurrentBackground" type="s" access="read"></property>
      </interface>
      <interface name="org.freedesktop.DBus.Introspectable">
           <method name="Introspect">
