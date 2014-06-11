@@ -8,5 +8,6 @@
           <property name="Background" type="s" access="read"></property>
           <property name="FontSize" type="i" access="read"></property>
           <property name="Type" type="i" access="read"></property>
+          <property name="Preview" type="as" access="read"></property>
      </interface>
 </node>
