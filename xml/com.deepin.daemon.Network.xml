@@ -50,9 +50,15 @@
       <arg type="o" direction="in"></arg>
       <arg type="s" direction="out"></arg>
     </method>
+    <method name="GetAutoProxy">
+      <arg type="s" direction="out"></arg>
+    </method>
     <method name="GetProxy">
       <arg type="s" direction="in"></arg>
       <arg type="s" direction="out"></arg>
+      <arg type="s" direction="out"></arg>
+    </method>
+    <method name="GetProxyMethod">
       <arg type="s" direction="out"></arg>
     </method>
     <method name="GetSupportedConnectionTypes">
@@ -62,9 +68,15 @@
       <arg type="o" direction="in"></arg>
       <arg type="s" direction="out"></arg>
     </method>
+    <method name="SetAutoProxy">
+      <arg type="s" direction="in"></arg>
+    </method>
     <method name="SetProxy">
       <arg type="s" direction="in"></arg>
       <arg type="s" direction="in"></arg>
+      <arg type="s" direction="in"></arg>
+    </method>
+    <method name="SetProxyMethod">
       <arg type="s" direction="in"></arg>
     </method>
     <signal name="NeedSecrets">
