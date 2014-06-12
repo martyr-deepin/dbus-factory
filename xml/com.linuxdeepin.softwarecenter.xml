@@ -96,7 +96,7 @@
       <arg direction="out" type="s" />
     </method>
     <signal name="update_signal">
-      <arg type="v" name="message" />
+      <arg type="a(sv)" name="message" />
     </signal>
     <method name="say_hello">
       <arg direction="in"  type="b" name="simulate" />
@@ -122,3 +122,4 @@
     </method>
   </interface>
 </node>
+
