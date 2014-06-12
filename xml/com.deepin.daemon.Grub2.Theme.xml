@@ -1,15 +1,11 @@
 <node>
-     <interface name="com.deepin.daemon.Grub2.Theme">
-          <method name="SetBackgroundSourceFile">
-               <arg type="s" direction="in"></arg>
-               <arg type="u" direction="out"></arg>
-          </method>
-          <signal name="BackgroundUpdated">
-               <arg type="u"></arg>
-               <arg type="b"></arg>
-          </signal>
-          <property name="Background" type="s" access="read"></property>
-          <property name="ItemColor" type="s" access="readwrite"></property>
-          <property name="SelectedItemColor" type="s" access="readwrite"></property>
-     </interface>
+  <interface name="com.deepin.daemon.Grub2.Theme">
+    <method name="SetBackgroundSourceFile">
+      <arg type="s" direction="in"></arg>
+    </method>
+    <property name="Updating" type="b" access="read"></property>
+    <property name="Background" type="s" access="read"></property>
+    <property name="ItemColor" type="s" access="readwrite"></property>
+    <property name="SelectedItemColor" type="s" access="readwrite"></property>
+  </interface>
 </node>
