@@ -17,7 +17,6 @@
           <method name="Set">
                <arg type="s" direction="in"></arg>
                <arg type="s" direction="in"></arg>
-               <arg type="s" direction="in"></arg>
           </method>
           <property name="ThemeList" type="as" access="read"></property>
           <property name="GtkThemeList" type="as" access="read"></property>
