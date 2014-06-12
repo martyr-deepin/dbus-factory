@@ -75,21 +75,13 @@
       <arg type="i" direction="out"></arg>
       <arg type="i" direction="out"></arg>
     </method>
-    <method name="HSV2RGB">
+    <method name="Hsv2Rgb">
       <arg type="d" direction="in"></arg>
       <arg type="d" direction="in"></arg>
       <arg type="d" direction="in"></arg>
       <arg type="y" direction="out"></arg>
       <arg type="y" direction="out"></arg>
       <arg type="y" direction="out"></arg>
-    </method>
-    <method name="RGB2HSV">
-      <arg type="y" direction="in"></arg>
-      <arg type="y" direction="in"></arg>
-      <arg type="y" direction="in"></arg>
-      <arg type="d" direction="out"></arg>
-      <arg type="d" direction="out"></arg>
-      <arg type="d" direction="out"></arg>
     </method>
     <method name="ResizeImage">
       <arg type="s" direction="in"></arg>
@@ -97,6 +89,14 @@
       <arg type="i" direction="in"></arg>
       <arg type="i" direction="in"></arg>
       <arg type="s" direction="in"></arg>
+    </method>
+    <method name="Rgb2Hsv">
+      <arg type="y" direction="in"></arg>
+      <arg type="y" direction="in"></arg>
+      <arg type="y" direction="in"></arg>
+      <arg type="d" direction="out"></arg>
+      <arg type="d" direction="out"></arg>
+      <arg type="d" direction="out"></arg>
     </method>
     <method name="RotateImageLeft">
       <arg type="s" direction="in"></arg>
