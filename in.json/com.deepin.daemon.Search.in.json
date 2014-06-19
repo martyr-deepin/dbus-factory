@@ -1,0 +1,16 @@
+{
+	"Config": {
+		"OutputDir": ".",
+		"InputDir": "../xml",
+		"BusType": "Session",
+		"DestName": "com.deepin.daemon.Search"
+	},
+	"Interfaces": [
+		{
+			"Interface": "com.deepin.daemon.Search",
+			"OutFile": "dbus-search",
+			"XMLFile": "com.deepin.daemon.Search.xml",
+			"ObjectName": "Search"
+		}
+	]
+}
