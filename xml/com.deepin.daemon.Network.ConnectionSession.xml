@@ -28,7 +28,7 @@
       <arg type="s" direction="in"></arg>
       <arg type="s" direction="in"></arg>
     </method>
-    <property name="Data" type="a{sa{sv}}" access="read"></property>
+    <signal name="ConnectionDataChanged"></signal>
     <property name="ConnectionPath" type="o" access="read"></property>
     <property name="Uuid" type="s" access="read"></property>
     <property name="Type" type="s" access="read"></property>

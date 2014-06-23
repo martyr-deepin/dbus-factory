@@ -100,10 +100,10 @@
       <arg type="s"></arg>
       <arg type="s"></arg>
     </signal>
+    <property name="NetworkingEnabled" type="b" access="readwrite"></property>
     <property name="WiredEnabled" type="b" access="readwrite"></property>
     <property name="VpnEnabled" type="b" access="readwrite"></property>
     <property name="WirelessEnabled" type="b" access="readwrite"></property>
-    <property name="NetworkingEnabled" type="b" access="readwrite"></property>
     <property name="State" type="u" access="read"></property>
     <property name="ActiveConnections" type="s" access="read"></property>
     <property name="Devices" type="s" access="read"></property>
