@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!--
+ ModemManager 1.0 Interface Specification
+
+   Copyright (C) 2011-2013 Red Hat, Inc.
+   Copyright (C) 2011-2013 Google, Inc.
+   Copyright (C) 2011-2013 Lanedo GmbH
+-->
+
+<node name="/" xmlns:doc="http://www.freedesktop.org/dbus/1.0/doc.dtd">
+
+  <!--
+      org.freedesktop.ModemManager1.Sim:
+      @short_description: The ModemManager SIM interface.
+
+      The SIM interface handles communication with SIM, USIM, and RUIM (CDMA
+      SIM) cards.
+  -->
+  <interface name="org.freedesktop.ModemManager1.Sim">
+
+    <!--
+        SendPin:
+        @pin: A string containing the PIN code.
+
+        Send the PIN to unlock the SIM card.
+    -->
+    <method name="SendPin">
+      <arg name="pin" type="s" direction="in" />
+    </method>
+
+    <!--
+        SendPuk:
+        @puk: A string containing the PUK code.
+        @pin: A string containing the PIN code.
+
+        Send the PUK and a new PIN to unlock the SIM card.
+    -->
+    <method name="SendPuk">
+      <arg name="puk" type="s" direction="in" />
+      <arg name="pin" type="s" direction="in" />
+    </method>
+
+    <!--
+        EnablePin:
+        @pin: A string containing the PIN code.
+        @enabled: %TRUE to enable PIN checking, %FALSE otherwise.
+
+        Enable or disable the PIN checking.
+    -->
+    <method name="EnablePin">
+      <arg name="pin"     type="s" direction="in" />
+      <arg name="enabled" type="b" direction="in" />
+    </method>
+
+    <!--
+        ChangePin:
+        @old_pin: A string containing the current PIN code.
+        @new_pin: A string containing the new PIN code.
+
+        Change the PIN code.
+    -->
+    <method name="ChangePin">
+      <arg name="old_pin" type="s" direction="in" />
+      <arg name="new_pin" type="s" direction="in" />
+    </method>
+
+    <!--
+        SimIdentifier:
+
+        An obfuscated SIM identifier based on the IMSI or the
+        ICCID.
+
+        This may be available before the PIN has been entered depending
+        on the device itself.
+    -->
+    <property name="SimIdentifier" type="s" access="read" />
+
+    <!--
+        Imsi:
+
+        The IMSI of the SIM card, if any.
+    -->
+    <property name="Imsi" type="s" access="read" />
+
+    <!--
+        OperatorId:
+
+        The ID of the network operator that issued the SIM card,
+        formatted as a 5 or 6-digit MCC/MNC code (e.g. <literal>"310410"</literal>).
+    -->
+    <property name="OperatorIdentifier" type="s" access="read" />
+
+    <!--
+        OperatorName:
+
+        The name of the network operator, as given by the SIM card, if known.
+    -->
+    <property name="OperatorName" type="s" access="read" />
+
+  </interface>
+</node>

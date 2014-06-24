@@ -1,0 +1,82 @@
+{
+    "Config": {
+	    "OutputDir": ".",
+	    "InputDir": "../xml",
+	    "BusType": "System",
+	    "DestName": "org.freedesktop.ModemManager1"
+    },
+    "Interfaces": [
+        {
+	        "Interface": "org.freedesktop.ModemManager1",
+	        "OutFile": "modemmanager1",
+	        "XMLFile": "org.freedesktop.ModemManager1.xml",
+	        "ObjectName": "ModemManager1"
+        },
+        {
+            "Interface": "org.freedesktop.ModemManager1.Sim",
+            "OutFile": "sim",
+            "XMLFile": "org.freedesktop.ModemManager1.Sim.xml",
+            "ObjectName": "Sim"
+        },
+        {
+            "Interface": "org.freedesktop.ModemManager1.Bearer",
+            "OutFile": "bearer",
+            "XMLFile": "org.freedesktop.ModemManager1.Bearer.xml",
+            "ObjectName": "Bearer"
+        },
+        {
+            "Interface": "org.freedesktop.ModemManager1.Sms",
+            "OutFile": "sms",
+            "XMLFile": "org.freedesktop.ModemManager1.Sms.xml",
+            "ObjectName": "Sms"
+        },
+        {
+            "Interface": "org.freedesktop.ModemManager1.Modem",
+            "OutFile": "modem",
+            "XMLFile": "org.freedesktop.ModemManager1.Modem.xml",
+            "ObjectName": "Modem"
+        },
+        {
+            "Interface": "org.freedesktop.ModemManager1.Modem.Modem3gpp",
+            "OutFile": "modem_modem3gpp",
+            "XMLFile": "org.freedesktop.ModemManager1.Modem.Modem3gpp.xml",
+            "ObjectName": "ModemModem3gpp"
+        },
+        {
+            "Interface": "org.freedesktop.ModemManager1.Modem.Modem3gpp.Ussd",
+            "OutFile": "modem_modem3gpp_ussd",
+            "XMLFile": "org.freedesktop.ModemManager1.Modem.Modem3gpp.Ussd.xml",
+            "ObjectName": "ModemModem3gppUssd"
+        },
+        {
+            "Interface": "org.freedesktop.ModemManager1.Modem.ModemCdma",
+            "OutFile": "modem_modemcdma",
+            "XMLFile": "org.freedesktop.ModemManager1.Modem.ModemCdma.xml",
+            "ObjectName": "ModemModemCdma"
+        },
+        {
+            "Interface": "org.freedesktop.ModemManager1.Modem.Messaging",
+            "OutFile": "modem_messaging",
+            "XMLFile": "org.freedesktop.ModemManager1.Modem.Messaging.xml",
+            "ObjectName": "ModemMessaging"
+        },
+        {
+            "Interface": "org.freedesktop.ModemManager1.Modem.Location",
+            "OutFile": "modem_location",
+            "XMLFile": "org.freedesktop.ModemManager1.Modem.Location.xml",
+            "ObjectName": "ModemLocation"
+        },
+        {
+            "Interface": "org.freedesktop.ModemManager1.Modem.Time",
+            "OutFile": "modem_time",
+            "XMLFile": "org.freedesktop.ModemManager1.Modem.Time.xml",
+            "ObjectName": "ModemTime"
+        },
+        {
+            "Interface": "org.freedesktop.ModemManager1.Modem.Firmware",
+            "OutFile": "modem_firmware",
+            "XMLFile": "org.freedesktop.ModemManager1.Modem.Firmware.xml",
+            "ObjectName": "ModemFirmware"
+        }
+    ]
+}
