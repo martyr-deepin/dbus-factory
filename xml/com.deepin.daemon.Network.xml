@@ -37,6 +37,10 @@
       <arg type="o" direction="in"></arg>
       <arg type="o" direction="out"></arg>
     </method>
+    <method name="EnableDevice">
+      <arg type="o" direction="in"></arg>
+      <arg type="b" direction="in"></arg>
+    </method>
     <method name="FeedSecret">
       <arg type="s" direction="in"></arg>
       <arg type="s" direction="in"></arg>
@@ -67,6 +71,10 @@
     <method name="GetWiredConnectionUuid">
       <arg type="o" direction="in"></arg>
       <arg type="s" direction="out"></arg>
+    </method>
+    <method name="IsDeviceEnabled">
+      <arg type="o" direction="in"></arg>
+      <arg type="b" direction="out"></arg>
     </method>
     <method name="SetAutoProxy">
       <arg type="s" direction="in"></arg>
@@ -100,12 +108,16 @@
       <arg type="s"></arg>
       <arg type="s"></arg>
     </signal>
-    <property name="NetworkingEnabled" type="b" access="readwrite"></property>
-    <property name="WiredEnabled" type="b" access="readwrite"></property>
-    <property name="VpnEnabled" type="b" access="readwrite"></property>
-    <property name="WirelessEnabled" type="b" access="readwrite"></property>
+    <signal name="DeviceEnabled">
+      <arg type="b"></arg>
+    </signal>
     <property name="State" type="u" access="read"></property>
     <property name="ActiveConnections" type="s" access="read"></property>
+    <property name="NetworkingEnabled" type="b" access="readwrite"></property>
+    <property name="WirelessEnabled" type="b" access="readwrite"></property>
+    <property name="WwanEnabled" type="b" access="readwrite"></property>
+    <property name="WiredEnabled" type="b" access="readwrite"></property>
+    <property name="VpnEnabled" type="b" access="readwrite"></property>
     <property name="Devices" type="s" access="read"></property>
     <property name="Connections" type="s" access="read"></property>
   </interface>
