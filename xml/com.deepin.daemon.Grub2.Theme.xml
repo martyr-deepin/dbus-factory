@@ -2,6 +2,7 @@
   <interface name="com.deepin.daemon.Grub2.Theme">
     <method name="SetBackgroundSourceFile">
       <arg type="s" direction="in"></arg>
+      <arg type="b" direction="out"></arg>
     </method>
     <property name="Updating" type="b" access="read"></property>
     <property name="Background" type="s" access="read"></property>
