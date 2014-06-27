@@ -37,6 +37,9 @@
           <method name="Reset">
                <arg type="b" direction="out"></arg>
           </method>
+          <signal name="KeyPressEvent">
+               <arg type="s"></arg>
+          </signal>
           <signal name="KeyReleaseEvent">
                <arg type="s"></arg>
           </signal>
