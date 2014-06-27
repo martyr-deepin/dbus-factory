@@ -109,6 +109,7 @@
       <arg type="s"></arg>
     </signal>
     <signal name="DeviceEnabled">
+      <arg type="s"></arg>
       <arg type="b"></arg>
     </signal>
     <property name="State" type="u" access="read"></property>
