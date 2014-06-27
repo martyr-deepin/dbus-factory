@@ -6,6 +6,9 @@
           <method name="DeleteTimezoneList">
                <arg type="s" direction="in"></arg>
           </method>
+          <method name="GetLocaleList">
+               <arg type="a(ss)" direction="out"></arg>
+          </method>
           <method name="SetDate">
                <arg type="s" direction="in"></arg>
                <arg type="b" direction="out"></arg>
@@ -25,17 +28,16 @@
                <arg type="b" direction="out"></arg>
           </method>
           <method name="TimezoneCityList">
-               <arg type="a{ss}" direction="out"></arg>
+               <arg type="a(ss)" direction="out"></arg>
           </method>
+          <signal name="LocaleStatus">
+               <arg type="b"></arg>
+               <arg type="s"></arg>
+          </signal>
           <property name="AutoSetTime" type="b" access="readwrite"></property>
           <property name="Use24HourDisplay" type="b" access="readwrite"></property>
           <property name="CurrentTimezone" type="s" access="read"></property>
-          <property name="CurrentLocale" type="s" access="read"></property>
           <property name="UserTimezoneList" type="as" access="read"></property>
-          <property name="LocaleListMap" type="a{ss}" access="read"></property>
-	  <signal name="LocaleStatus">
-		  <arg type="b"></arg>
-		  <arg type="s"></arg>
-	  </signal>
+          <property name="CurrentLocale" type="s" access="read"></property>
      </interface>
 </node>
