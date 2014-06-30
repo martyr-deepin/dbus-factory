@@ -1,0 +1,17 @@
+{
+	"Config": {
+		"OutputDir": ".",
+		"InputDir": "../xml",
+		"BusType": "Session",
+		"DestName": "dde.dock.entry.AppletManager"
+	},
+	"Interfaces": [
+		{
+			"Interface": "dde.dock.entry.AppletManager",
+			"OutFile": "dock-applet-manager",
+			"XMLFile": "dde.dock.entry.AppletManager.xml",
+			"ObjectName": "AppletManager"
+		}
+	]
+}
+

@@ -1,0 +1,12 @@
+<node>
+     <interface name="dde.dock.entry.AppletManager">
+          <method name="ShowApplet">
+               <arg type="s" direction="in"></arg>
+          </method>
+          <method name="HideApplet">
+               <arg type="s" direction="in"></arg>
+          </method>
+          <property name="appletInfoList" type="s" access="read"></property>
+          <signal name="appletInfosChanged"></signal>
+     </interface>
+</node>
