@@ -6,6 +6,9 @@
           <method name="HideApplet">
                <arg type="s" direction="in"></arg>
           </method>
+          <method name="ToggleApplet">
+               <arg type="s" direction="in"></arg>
+          </method>
           <property name="appletInfoList" type="s" access="read"></property>
           <signal name="appletInfosChanged"></signal>
      </interface>
