@@ -1,0 +1,16 @@
+<node>
+     <interface name="com.deepin.api.GreeterUtils">
+          <method name="SetGreeterTheme">
+               <arg type="s" direction="in"></arg>
+               <arg type="s" direction="in"></arg>
+          </method>
+          <method name="SetKbdLayout">
+               <arg type="s" direction="in"></arg>
+               <arg type="s" direction="in"></arg>
+          </method>
+          <method name="SetKbdLayoutList">
+               <arg type="s" direction="in"></arg>
+               <arg type="as" direction="in"></arg>
+          </method>
+     </interface>
+</node>

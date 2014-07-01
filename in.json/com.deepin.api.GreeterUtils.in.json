@@ -1,0 +1,16 @@
+{
+	"Config": {
+		"OutputDir": ".",
+		"InputDir": "../xml",
+		"BusType": "System",
+		"DestName": "com.deepin.api.GreeterUtils"
+	},
+	"Interfaces": [
+		{
+			"Interface": "com.deepin.api.GreeterUtils",
+			"OutFile": "dbus-greeter-utils",
+			"XMLFile": "com.deepin.api.GreeterUtils.xml",
+			"ObjectName": "GreeterUtils"
+		}
+	]
+}
