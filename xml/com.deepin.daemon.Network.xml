@@ -51,7 +51,6 @@
       <arg type="s" direction="out"></arg>
     </method>
     <method name="GetActiveConnectionInfo">
-      <arg type="o" direction="in"></arg>
       <arg type="s" direction="out"></arg>
     </method>
     <method name="GetAutoProxy">
