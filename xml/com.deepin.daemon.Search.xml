@@ -1,19 +1,21 @@
 <node>
      <interface name="com.deepin.daemon.Search">
-          <method name="DestroyTrie">
-               <arg type="s" direction="in"></arg>
-          </method>
-          <method name="NewTrieWithString">
+          <method name="NewSearchWithDict">
                <arg type="a{ss}" direction="in"></arg>
-               <arg type="s" direction="in"></arg>
                <arg type="s" direction="out"></arg>
+               <arg type="b" direction="out"></arg>
           </method>
-          <method name="SearchKeys">
+          <method name="NewSearchWithStrList">
+               <arg type="as" direction="in"></arg>
+               <arg type="s" direction="out"></arg>
+               <arg type="b" direction="out"></arg>
+          </method>
+          <method name="SearchStartWithString">
                <arg type="s" direction="in"></arg>
                <arg type="s" direction="in"></arg>
                <arg type="as" direction="out"></arg>
           </method>
-          <method name="SearchKeysByFirstLetter">
+          <method name="SearchString">
                <arg type="s" direction="in"></arg>
                <arg type="s" direction="in"></arg>
                <arg type="as" direction="out"></arg>
