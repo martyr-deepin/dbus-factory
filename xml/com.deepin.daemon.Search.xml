@@ -1,6 +1,6 @@
 <node>
      <interface name="com.deepin.daemon.Search">
-          <method name="NewSearchWithDict">
+          <method name="NewSearchWithStrDict">
                <arg type="a{ss}" direction="in"></arg>
                <arg type="s" direction="out"></arg>
                <arg type="b" direction="out"></arg>
