@@ -1,5 +1,8 @@
 <node>
   <interface name="com.deepin.daemon.Grub2">
+    <method name="GetAvailableResolutions">
+      <arg type="s" direction="out"></arg>
+    </method>
     <method name="GetSimpleEntryTitles">
       <arg type="as" direction="out"></arg>
     </method>
@@ -10,8 +13,11 @@
     <method name="SetupTheme">
       <arg type="s" direction="in"></arg>
     </method>
+    <property name="FixSettingsAlways" type="b" access="readwrite"></property>
+    <property name="EnableTheme" type="b" access="readwrite"></property>
     <property name="DefaultEntry" type="s" access="readwrite"></property>
     <property name="Timeout" type="i" access="readwrite"></property>
+    <property name="Resolution" type="s" access="readwrite"></property>
     <property name="Updating" type="b" access="read"></property>
   </interface>
 </node>
