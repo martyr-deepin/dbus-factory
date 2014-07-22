@@ -1,0 +1,16 @@
+{
+	"Config": {
+		"OutputDir": ".",
+		"InputDir": "../xml",
+		"BusType": "System",
+		"DestName": "com.deepin.daemon.helper.Backlight"
+	},
+	"Interfaces": [
+		{
+			"Interface": "com.deepin.daemon.helper.Backlight",
+			"OutFile": "backlight",
+			"XMLFile": "com.deepin.daemon.helper.Backlight.xml",
+			"ObjectName": "Backlight"
+		}
+	]
+}

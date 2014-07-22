@@ -23,7 +23,7 @@ func run_golang(name string) {
 	tmp := strings.Split(config.Config.DestName, ".")
 	out := tmp[len(tmp)-1] + "_golang"
 
-	stdout, err := exec.Command("dbus-proxyer-gen", "-in", name, "-out", out, "-target", "golang").Output()
+	stdout, err := exec.Command("dbus-generator", "-in", name, "-out", out, "-target", "golang").Output()
 	if err != nil {
 		fmt.Println(err)
 		fmt.Println("Generate " + name + " to golang failed!")
@@ -55,7 +55,7 @@ func run_qml(name string) {
 	tmp := strings.Split(config.Config.DestName, ".")
 	out := tmp[len(tmp)-1] + "_qml"
 
-	stdout, err := exec.Command("dbus-proxyer-gen", "-in", name, "-out", out, "-target", "qml").Output()
+	stdout, err := exec.Command("dbus-generator", "-in", name, "-out", out, "-target", "qml").Output()
 	if err != nil {
 		fmt.Println(err)
 		fmt.Println("Generate " + name + " to QML failed!")
