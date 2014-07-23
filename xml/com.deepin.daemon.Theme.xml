@@ -1,7 +1,7 @@
 <node>
      <interface name="com.deepin.daemon.Theme">
-          <property name="Id" type="s" access="read"></property>
           <property name="Name" type="s" access="read"></property>
+          <property name="DisplayName" type="s" access="read"></property>
           <property name="GtkTheme" type="s" access="read"></property>
           <property name="IconTheme" type="s" access="read"></property>
           <property name="SoundTheme" type="s" access="read"></property>
