@@ -3,13 +3,13 @@
 		"OutputDir": ".",
 		"InputDir": "../xml",
 		"BusType": "System",
-		"DestName": "com.deepin.api.Grub2"
+		"DestName": "com.deepin.daemon.Grub2Ext"
 	},
 	"Interfaces": [
 		{
-			"Interface": "com.deepin.api.Grub2",
+			"Interface": "com.deepin.daemon.Grub2Ext",
 			"OutFile": "grub2ext",
-			"XMLFile": "com.deepin.api.Grub2.xml",
+			"XMLFile": "com.deepin.daemon.Grub2Ext.xml",
 			"ObjectName": "Grub2Ext"
 		}
 	]
