@@ -1,10 +1,6 @@
 <node>
      <interface name="com.deepin.daemon.Grub2Ext">
-          <method name="DoCustomTheme">
-               <arg type="s" direction="in"></arg>
-               <arg type="b" direction="out"></arg>
-          </method>
-          <method name="DoGenerateGrubConfig">
+          <method name="DoGenerateGrubMenu">
                <arg type="b" direction="out"></arg>
           </method>
           <method name="DoGenerateThemeBackground">
@@ -21,15 +17,19 @@
                <arg type="q" direction="in"></arg>
                <arg type="b" direction="out"></arg>
           </method>
-          <method name="DoWriteCacheConfig">
+          <method name="DoWriteConfig">
                <arg type="s" direction="in"></arg>
                <arg type="b" direction="out"></arg>
           </method>
-          <method name="DoWriteSettings">
+          <method name="DoWriteGrubSettings">
                <arg type="s" direction="in"></arg>
                <arg type="b" direction="out"></arg>
           </method>
-          <method name="DoWriteThemeJSON">
+          <method name="DoWriteThemeMainFile">
+               <arg type="s" direction="in"></arg>
+               <arg type="b" direction="out"></arg>
+          </method>
+          <method name="DoWriteThemeTplFile">
                <arg type="s" direction="in"></arg>
                <arg type="b" direction="out"></arg>
           </method>
