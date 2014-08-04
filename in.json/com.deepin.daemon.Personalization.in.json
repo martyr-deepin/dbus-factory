@@ -7,10 +7,10 @@
 	},
 	"Interfaces": [
 		{
-			"Interface": "com.deepin.daemon.Personalization",
-			"OutFile": "dbus-personalization",
-			"XMLFile": "com.deepin.daemon.Personalization.xml",
-			"ObjectName": "Personalization"
+			"Interface": "com.deepin.daemon.FontSettings",
+			"OutFile": "font-settings",
+			"XMLFile": "com.deepin.daemon.FontSettings.xml",
+			"ObjectName": "FontSettings"
 		}
 	]
 }
