@@ -2,33 +2,51 @@
      <interface name="com.deepin.daemon.Accounts.User">
           <method name="DeleteHistoryIcon">
                <arg type="s" direction="in"></arg>
+               <arg type="b" direction="out"></arg>
+          </method>
+          <method name="DeleteIconFile">
+               <arg type="s" direction="in"></arg>
+               <arg type="b" direction="out"></arg>
+          </method>
+          <method name="IsIconDeletable">
+               <arg type="s" direction="in"></arg>
+               <arg type="b" direction="out"></arg>
           </method>
           <method name="SetAccountType">
                <arg type="i" direction="in"></arg>
+               <arg type="b" direction="out"></arg>
           </method>
           <method name="SetAutomaticLogin">
                <arg type="b" direction="in"></arg>
+               <arg type="b" direction="out"></arg>
           </method>
           <method name="SetBackgroundFile">
                <arg type="s" direction="in"></arg>
+               <arg type="b" direction="out"></arg>
           </method>
           <method name="SetHomeDir">
                <arg type="s" direction="in"></arg>
+               <arg type="b" direction="out"></arg>
           </method>
           <method name="SetIconFile">
                <arg type="s" direction="in"></arg>
+               <arg type="b" direction="out"></arg>
           </method>
           <method name="SetLocked">
                <arg type="b" direction="in"></arg>
+               <arg type="b" direction="out"></arg>
           </method>
           <method name="SetPassword">
                <arg type="s" direction="in"></arg>
+               <arg type="b" direction="out"></arg>
           </method>
           <method name="SetShell">
                <arg type="s" direction="in"></arg>
+               <arg type="b" direction="out"></arg>
           </method>
           <method name="SetUserName">
                <arg type="s" direction="in"></arg>
+               <arg type="b" direction="out"></arg>
           </method>
           <property name="Uid" type="s" access="read"></property>
           <property name="Gid" type="s" access="read"></property>
