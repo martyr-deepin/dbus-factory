@@ -1,0 +1,14 @@
+#!/bin/bash
+# fix install problem in Makefile.
+ARCH=`dpkg-architecture -qDEB_HOST_MULTIARCH`
+INSTALL_DIR="debian/dde-qml-dbus-factory/usr/lib/${ARCH}/qt5/qml"
+[ -d ${INSTALL_DIR} ] || mkdir -p ${INSTALL_DIR}
+for i in `find in.json -name "qmldir"`;do 
+	module=`cat $i | grep module` 
+	module=${module##module } 
+	echo $module
+	dir=${module//./\/} 
+	mkdir -p ${INSTALL_DIR}/${dir} 
+	cp ${i%%\/qmldir}/* ${INSTALL_DIR}/${dir}; 
+	
+done
