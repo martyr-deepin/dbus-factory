@@ -1,0 +1,38 @@
+<node>
+     <interface name="com.deepin.api.Transfer">
+          <method name="Cancel">
+               <arg type="i" direction="in"></arg>
+               <arg type="i" direction="out"></arg>
+          </method>
+          <method name="Download">
+               <arg type="s" direction="in"></arg>
+               <arg type="s" direction="in"></arg>
+               <arg type="s" direction="in"></arg>
+               <arg type="i" direction="in"></arg>
+               <arg type="i" direction="out"></arg>
+               <arg type="i" direction="out"></arg>
+          </method>
+          <method name="Pause">
+               <arg type="i" direction="in"></arg>
+               <arg type="i" direction="out"></arg>
+          </method>
+          <method name="QuerySize">
+               <arg type="s" direction="in"></arg>
+               <arg type="x" direction="out"></arg>
+          </method>
+          <method name="Resume">
+               <arg type="i" direction="in"></arg>
+               <arg type="i" direction="out"></arg>
+          </method>
+          <signal name="ProcessReport">
+               <arg type="i"></arg>
+               <arg type="x"></arg>
+               <arg type="x"></arg>
+               <arg type="x"></arg>
+          </signal>
+          <signal name="FinishReport">
+               <arg type="i"></arg>
+               <arg type="i"></arg>
+          </signal>
+     </interface>
+</node>

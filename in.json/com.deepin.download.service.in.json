@@ -1,0 +1,16 @@
+{
+	"Config": {
+		"OutputDir": ".",
+		"InputDir": "../xml",
+		"BusType": "System",
+		"DestName": "com.deepin.download.service"
+	},
+	"Interfaces": [
+		{
+			"Interface": "com.deepin.download.service",
+			"OutFile": "service",
+			"XMLFile": "com.deepin.download.service.xml",
+			"ObjectName": "Service"
+		}
+	]
+}

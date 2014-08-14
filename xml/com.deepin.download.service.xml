@@ -1,0 +1,50 @@
+<node>
+     <interface name="com.deepin.download.service">
+          <method name="AddTask">
+               <arg type="s" direction="in"></arg>
+               <arg type="as" direction="in"></arg>
+               <arg type="ax" direction="in"></arg>
+               <arg type="as" direction="in"></arg>
+               <arg type="s" direction="in"></arg>
+               <arg type="s" direction="out"></arg>
+          </method>
+          <method name="PauseTask">
+               <arg type="s" direction="in"></arg>
+          </method>
+          <method name="ResumeTask">
+               <arg type="s" direction="in"></arg>
+          </method>
+          <method name="StopTask">
+               <arg type="s" direction="in"></arg>
+          </method>
+          <signal name="Start">
+               <arg type="s"></arg>
+          </signal>
+          <signal name="Update">
+               <arg type="s"></arg>
+               <arg type="i"></arg>
+               <arg type="i"></arg>
+               <arg type="i"></arg>
+               <arg type="i"></arg>
+               <arg type="x"></arg>
+               <arg type="x"></arg>
+          </signal>
+          <signal name="Finish">
+               <arg type="s"></arg>
+          </signal>
+          <signal name="Pause">
+               <arg type="s"></arg>
+          </signal>
+          <signal name="Stop">
+               <arg type="s"></arg>
+          </signal>
+          <signal name="Error">
+               <arg type="s"></arg>
+               <arg type="i"></arg>
+               <arg type="s"></arg>
+          </signal>
+          <signal name="Resume">
+               <arg type="s"></arg>
+          </signal>
+     </interface>
+</node>
