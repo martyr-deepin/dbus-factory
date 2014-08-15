@@ -1,0 +1,55 @@
+<node>
+  <interface name="dde.dock.Entry">
+    <property name="Id" type="s" access="read"/>
+    <property name="Type" type="s" access="read"/>
+    <property name="Data" type="a{ss}" access="read">
+      <annotation name="org.qtproject.QtDBus.QtTypeName" value="StringMap"/>
+    </property>
+    <signal name="DataChanged">
+      <arg type="s" direction="out"/>
+      <arg type="s" direction="out"/>
+    </signal>
+    <method name="ShowQuickWindow">
+    </method>
+    <method name="Activate">
+      <arg name="x" type="i" direction="in"/>
+      <arg name="y" type="i" direction="in"/>
+    </method>
+    <method name="SecondaryActivate">
+      <arg name="x" type="i" direction="in"/>
+      <arg name="y" type="i" direction="in"/>
+    </method>
+    <method name="ContextMenu">
+      <arg name="x" type="i" direction="in"/>
+      <arg name="y" type="i" direction="in"/>
+    </method>
+    <method name="HandleMenuItem">
+      <arg name="id" type="s" direction="in"/>
+    </method>
+    <method name="HandleDragDrop">
+      <arg name="x" type="i" direction="in"/>
+      <arg name="y" type="i" direction="in"/>
+      <arg name="data" type="s" direction="in"/>
+    </method>
+    <method name="HandleDragEnter">
+      <arg name="x" type="i" direction="in"/>
+      <arg name="y" type="i" direction="in"/>
+      <arg name="data" type="s" direction="in"/>
+    </method>
+    <method name="HandleDragLeave">
+      <arg name="x" type="i" direction="in"/>
+      <arg name="y" type="i" direction="in"/>
+      <arg name="data" type="s" direction="in"/>
+    </method>
+    <method name="HandleDragOver">
+      <arg name="x" type="i" direction="in"/>
+      <arg name="y" type="i" direction="in"/>
+      <arg name="data" type="s" direction="in"/>
+    </method>
+    <method name="HandleMouseWheel">
+      <arg name="x" type="i" direction="in"/>
+      <arg name="y" type="i" direction="in"/>
+      <arg name="angleDelta" type="i" direction="in"/>
+    </method>
+  </interface>
+</node>

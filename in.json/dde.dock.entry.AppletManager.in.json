@@ -11,7 +11,12 @@
 			"OutFile": "dock-applet-manager",
 			"XMLFile": "dde.dock.entry.AppletManager.xml",
 			"ObjectName": "AppletManager"
+		},
+		{
+			"Interface": "dde.dock.Entry",
+			"OutFile": "dock-entry",
+			"XMLFile": "dde.dock.Entry.xml",
+			"ObjectName": "Entry"
 		}
 	]
 }
-
