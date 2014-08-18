@@ -21,6 +21,9 @@ QML=usr/lib/$(QML_ARCH)/qt5/qml/
 override_dh_auto_build:
 	cd in.json && python $(CURDIR)/debian/json_build.py && cd ..
 
+override_dh_auto_clean:
+	rm -rf in.json/go in.json/qml
+
 override_dh_auto_install:
 	dh_auto_install 
 	mkdir -p debian/dde-go-dbus-factory
