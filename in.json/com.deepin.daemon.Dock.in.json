@@ -11,6 +11,12 @@
 			"OutFile": "dock",
 			"XMLFile": "com.deepin.daemon.Dock.xml",
 			"ObjectName": "DockedAppManager"
+		},
+		{
+			"Interface": "dde.dock.DockSetting",
+			"OutFile": "dock-setting",
+			"XMLFile": "dde.dock.DockSetting.xml",
+			"ObjectName": "DockSetting"
 		}
 	]
 }

@@ -1,0 +1,24 @@
+<node>
+     <interface name="dde.dock.DockSetting">
+          <method name="GetDisplayMode">
+               <arg type="i" direction="out"></arg>
+          </method>
+          <method name="SetDisplayMode">
+               <arg type="i" direction="in"></arg>
+               <arg type="b" direction="out"></arg>
+          </method>
+          <method name="GetHideMode">
+               <arg type="i" direction="out"></arg>
+          </method>
+          <method name="SetHideMode">
+               <arg type="i" direction="in"></arg>
+               <arg type="b" direction="out"></arg>
+          </method>
+          <signal name="DisplayModeChanged">
+               <arg type="i"></arg>
+          </signal>
+          <signal name="HideModeChanged">
+               <arg type="i"></arg>
+          </signal>
+     </interface>
+</node>
