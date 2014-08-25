@@ -1,7 +1,7 @@
 <node>
      <interface name="com.deepin.api.Transfer">
           <method name="Cancel">
-               <arg type="i" direction="in"></arg>
+               <arg type="s" direction="in"></arg>
                <arg type="i" direction="out"></arg>
           </method>
           <method name="Download">
@@ -10,10 +10,10 @@
                <arg type="s" direction="in"></arg>
                <arg type="i" direction="in"></arg>
                <arg type="i" direction="out"></arg>
-               <arg type="i" direction="out"></arg>
+               <arg type="s" direction="out"></arg>
           </method>
           <method name="Pause">
-               <arg type="i" direction="in"></arg>
+               <arg type="s" direction="in"></arg>
                <arg type="i" direction="out"></arg>
           </method>
           <method name="QuerySize">
@@ -21,18 +21,19 @@
                <arg type="x" direction="out"></arg>
           </method>
           <method name="Resume">
-               <arg type="i" direction="in"></arg>
+               <arg type="s" direction="in"></arg>
                <arg type="i" direction="out"></arg>
           </method>
           <signal name="ProcessReport">
-               <arg type="i"></arg>
+               <arg type="s"></arg>
                <arg type="x"></arg>
                <arg type="x"></arg>
                <arg type="x"></arg>
           </signal>
           <signal name="FinishReport">
-               <arg type="i"></arg>
+               <arg type="s"></arg>
                <arg type="i"></arg>
           </signal>
+          <property name="MaxTransferNumber" type="i" access="read"></property>
      </interface>
 </node>
