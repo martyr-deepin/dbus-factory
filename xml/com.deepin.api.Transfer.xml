@@ -20,6 +20,10 @@
                <arg type="s" direction="in"></arg>
                <arg type="x" direction="out"></arg>
           </method>
+          <method name="QueryTaskStatus">
+               <arg type="s" direction="in"></arg>
+               <arg type="i" direction="out"></arg>
+          </method>
           <method name="Resume">
                <arg type="s" direction="in"></arg>
                <arg type="i" direction="out"></arg>
