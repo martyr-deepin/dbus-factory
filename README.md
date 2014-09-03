@@ -2,7 +2,7 @@
 
 This repository is only used for saving the dbus.in.json configure xml data files
 
-Use [dbus-generator](https://github.com/linuxdeepin/go-lib/tree/master/dbus/proxyer) to generate target code (supported QML/PyQT/GoLang).
+Use [dbus-generator](https://gitcafe.com/Deepin/go-dbus-generator) to generate target code (supported QML/PyQT/GoLang).
 go get pkg.linuxdeepin.com/dbus-generator
 
 
