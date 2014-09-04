@@ -1,18 +1,7 @@
 #!/usr/bin/make -f
-# -*- makefile -*-
-# Sample debian/rules that uses debhelper.
-# This file was originally written by Joey Hess and Craig Small.
-# As a special exception, when this file is copied by dh-make into a
-# dh-make output file, you may use that output file without restriction.
-# This special exception was added by Craig Small in version 0.37 of dh-make.
 
-# Uncomment this to turn on verbose mode.
-#export DH_VERBOSE=1
+export GOPATH := /usr/share/gocode
 
-ARCH = linux_amd64
-ifneq ($(DEB_HOST_ARCH),amd64)
-	ARCH = linux_386
-endif
 QML_ARCH = $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
 QML=usr/lib/$(QML_ARCH)/qt5/qml/
 
@@ -27,10 +16,8 @@ override_dh_auto_clean:
 override_dh_auto_install:
 	dh_auto_install
 	mkdir -p debian/dde-go-dbus-factory
-	mkdir -p debian/dde-go-dbus-factory/usr/lib/go/pkg/$(ARCH)/dbus
-	mkdir -p debian/dde-go-dbus-factory/usr/share/go/src/pkg/dbus
-	cp in.json/go/src/* -r debian/dde-go-dbus-factory/usr/share/go/src/pkg/dbus
-	cp in.json/go/pkg/*/* -r debian/dde-go-dbus-factory/usr/lib/go/pkg/$(ARCH)/dbus
+	mkdir -p debian/dde-go-dbus-factory/usr/share/gocode/src/dbus
+	cp in.json/go/src/* -r debian/dde-go-dbus-factory/usr/share/gocode/src/dbus
 # Build qml daemon
 	debian/qml_install
 
