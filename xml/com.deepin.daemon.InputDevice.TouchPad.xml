@@ -15,5 +15,8 @@
           <property name="MotionThreshold" type="d" access="readwrite"></property>
           <property name="DoubleClick" type="i" access="readwrite"></property>
           <property name="DragThreshold" type="i" access="readwrite"></property>
+          <property name="DeltaScroll" type="i" access="readwrite"></property>
+          <property name="Exist" type="b" access="read"></property>
+          <property name="DeviceList" type="a(sib)" access="read"></property>
      </interface>
 </node>

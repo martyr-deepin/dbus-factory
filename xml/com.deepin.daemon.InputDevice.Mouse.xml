@@ -5,10 +5,12 @@
           </method>
           <property name="LeftHanded" type="b" access="readwrite"></property>
           <property name="DisableTpad" type="b" access="readwrite"></property>
+          <property name="NaturalScroll" type="b" access="readwrite"></property>
           <property name="MotionAcceleration" type="d" access="readwrite"></property>
           <property name="MotionThreshold" type="d" access="readwrite"></property>
           <property name="DoubleClick" type="i" access="readwrite"></property>
           <property name="DragThreshold" type="i" access="readwrite"></property>
+          <property name="DeviceList" type="a(sib)" access="read"></property>
           <property name="Exist" type="b" access="read"></property>
      </interface>
 </node>
