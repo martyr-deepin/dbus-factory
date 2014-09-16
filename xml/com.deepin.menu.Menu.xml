@@ -1,0 +1,24 @@
+<node>
+  <interface name="com.deepin.menu.Menu">
+    <method name="ShowMenu">
+      <arg direction="in" type="s" name="menuJsonContent"/>
+    </method>
+    <method name="SetItemActivity">
+      <arg direction="in" type="s" name="itemId"/>
+      <arg direction="in" type="b" name="isActive"/>
+    </method>
+    <method name="SetItemChecked">
+      <arg direction="in" type="s" name="itemId"/>
+      <arg direction="in" type="b" name="checked"/>
+    </method>
+    <method name="SetItemText">
+      <arg direction="in" type="s" name="itemId"/>
+      <arg direction="in" type="s" name="text"/>
+    </method>
+    <signal name="ItemInvoked">
+      <arg direction="out" type="s" name="itemId"/>
+      <arg direction="out" type="b" name="checked"/>
+    </signal>
+    <signal name="MenuUnregistered"/>
+  </interface>
+</node>

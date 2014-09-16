@@ -1,0 +1,16 @@
+{
+    "Config": {
+	"OutputDir": ".",
+	"InputDir": "../xml",
+	"BusType": "Session",
+	"DestName": "com.deepin.menu"
+    },
+    "Interfaces": [
+    {
+	"Interface": "com.deepin.menu.Menu",
+	"OutFile": "deepin-menu-menu",
+	"XMLFile": "com.deepin.menu.Menu.xml",
+	"ObjectName": "MenuObject"
+    }
+    ]
+}
