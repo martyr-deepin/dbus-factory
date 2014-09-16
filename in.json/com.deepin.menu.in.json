@@ -11,6 +11,12 @@
 	"OutFile": "deepin-menu-manager",
 	"XMLFile": "com.deepin.menu.Manager.xml",
 	"ObjectName": "MenuManager"
+    },
+    {
+	"Interface": "com.deepin.menu.Menu",
+	"OutFile": "deepin-menu-menu",
+	"XMLFile": "com.deepin.menu.Menu.xml",
+	"ObjectName": "MenuObject"
     }
     ]
 }
