@@ -29,6 +29,12 @@
 			"OutFile": "dbus-ext-tpad",
 			"XMLFile": "com.deepin.daemon.InputDevice.TouchPad.xml",
 			"ObjectName": "TouchPad"
+		},
+		{
+			"Interface": "com.deepin.daemon.InputDevice.Wacom",
+			"OutFile": "dbus-ext-wacom",
+			"XMLFile": "com.deepin.daemon.InputDevice.Wacom.xml",
+			"ObjectName": "Wacom"
 		}
 	]
 }

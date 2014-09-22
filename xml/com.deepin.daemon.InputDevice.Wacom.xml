@@ -1,0 +1,12 @@
+<node>
+     <interface name="com.deepin.daemon.InputDevice.Wacom">
+          <property name="LeftHanded" type="b" access="readwrite"></property>
+          <property name="CursorMode" type="b" access="readwrite"></property>
+          <property name="KeyUpAction" type="s" access="readwrite"></property>
+          <property name="KeyDownAction" type="s" access="readwrite"></property>
+          <property name="DoubleDelta" type="u" access="readwrite"></property>
+          <property name="PressureSensitive" type="u" access="readwrite"></property>
+          <property name="DeviceList" type="a(sib)" access="read"></property>
+          <property name="Exist" type="b" access="read"></property>
+     </interface>
+</node>
