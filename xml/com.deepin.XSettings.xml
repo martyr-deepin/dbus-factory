@@ -5,7 +5,7 @@
                <arg type="ay" direction="out"></arg>
                <arg type="b" direction="out"></arg>
           </method>
-          <method name="GetInterger">
+          <method name="GetInteger">
                <arg type="s" direction="in"></arg>
                <arg type="u" direction="out"></arg>
                <arg type="b" direction="out"></arg>
@@ -19,7 +19,7 @@
                <arg type="s" direction="in"></arg>
                <arg type="ay" direction="in"></arg>
           </method>
-          <method name="SetInterger">
+          <method name="SetInteger">
                <arg type="s" direction="in"></arg>
                <arg type="u" direction="in"></arg>
           </method>
