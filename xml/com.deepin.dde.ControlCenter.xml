@@ -2,6 +2,7 @@
 "http://www.freedesktop.org/standards/dbus/1.0/introspect.dtd">
 <node>
   <interface name="com.deepin.dde.ControlCenter">
+    <property name="X" type="i" access="read"></property>
     <method name="Hide"></method>
     <method name="HideImmediately"></method>
     <method name="Show"></method>
