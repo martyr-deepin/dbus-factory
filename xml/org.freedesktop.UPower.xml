@@ -1,69 +1,23 @@
-   <node>
-        <interface name="org.freedesktop.DBus.Introspectable">
-             <method name="Introspect">
-                  <arg name="data" type="s" direction="out"></arg>
-             </method>
-        </interface>
-        <interface name="org.freedesktop.DBus.Properties">
-             <method name="Get">
-                  <arg name="interface" type="s" direction="in"></arg>
-                  <arg name="propname" type="s" direction="in"></arg>
-                  <arg name="value" type="v" direction="out"></arg>
-             </method>
-             <method name="Set">
-                  <arg name="interface" type="s" direction="in"></arg>
-                  <arg name="propname" type="s" direction="in"></arg>
-                  <arg name="value" type="v" direction="in"></arg>
-             </method>
-             <method name="GetAll">
-                  <arg name="interface" type="s" direction="in"></arg>
-                  <arg name="props" type="a{sv}" direction="out"></arg>
-             </method>
-        </interface>
-        <interface name="org.freedesktop.UPower">
-             <method name="HibernateAllowed">
-                  <arg name="allowed" type="b" direction="out"></arg>
-             </method>
-             <method name="Hibernate"></method>
-             <method name="SuspendAllowed">
-                  <arg name="allowed" type="b" direction="out"></arg>
-             </method>
-             <method name="Suspend"></method>
-             <method name="AboutToSleep">
-                  <arg name="action" type="s" direction="in"></arg>
-             </method>
-             <method name="EnumerateDevices">
-                  <arg name="devices" type="ao" direction="out"></arg>
-             </method>
-             <signal name="NotifyResume">
-                  <arg type="s"></arg>
-             </signal>
-             <signal name="Resuming"></signal>
-             <signal name="NotifySleep">
-                  <arg type="s"></arg>
-             </signal>
-             <signal name="Sleeping"></signal>
-             <signal name="Changed"></signal>
-             <signal name="DeviceChanged">
-                  <arg type="s"></arg>
-             </signal>
-             <signal name="DeviceRemoved">
-                  <arg type="s"></arg>
-             </signal>
-             <signal name="DeviceAdded">
-                  <arg type="s"></arg>
-             </signal>
-             <property name="IsDocked" type="b" access="read"></property>
-             <property name="LidForceSleep" type="b" access="read"></property>
-             <property name="LidIsPresent" type="b" access="read"></property>
-             <property name="LidIsClosed" type="b" access="read"></property>
-             <property name="OnLowBattery" type="b" access="read"></property>
-             <property name="OnBattery" type="b" access="read"></property>
-             <property name="CanHibernate" type="b" access="read"></property>
-             <property name="CanSuspend" type="b" access="read"></property>
-             <property name="DaemonVersion" type="s" access="read"></property>
-        </interface>
-        <node name="Policy"></node>
-        <node name="Wakeups"></node>
-        <node name="devices"></node>
-   </node>
+<node>
+  <interface name="org.freedesktop.UPower">
+    <method name="GetCriticalAction">
+      <arg name="action" type="s" direction="out"/>
+    </method>
+    <method name="GetDisplayDevice">
+      <arg name="device" type="o" direction="out"/>
+    </method>
+    <method name="EnumerateDevices">
+      <arg name="devices" type="ao" direction="out"/>
+    </method>
+    <signal name="DeviceRemoved">
+      <arg type="o"/>
+    </signal>
+    <signal name="DeviceAdded">
+      <arg type="o"/>
+    </signal>
+    <property name="LidIsPresent" type="b" access="read"/>
+    <property name="LidIsClosed" type="b" access="read"/>
+    <property name="OnBattery" type="b" access="read"/>
+    <property name="DaemonVersion" type="s" access="read"/>
+  </interface>
+</node>
