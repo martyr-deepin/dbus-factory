@@ -1,0 +1,16 @@
+{
+	"Config": {
+		"OutputDir": ".",
+		"InputDir": "../xml",
+		"BusType": "Session",
+		"DestName": "com.deepin.daemon.LangSelector"
+	},
+	"Interfaces": [
+		{
+			"Interface": "com.deepin.daemon.LangSelector",
+			"OutFile": "dbus-langselector",
+			"XMLFile": "com.deepin.daemon.LangSelector.xml",
+			"ObjectName": "LangSelector"
+		}
+	]
+}
