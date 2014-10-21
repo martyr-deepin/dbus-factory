@@ -7,6 +7,8 @@
           <property name="SoundTheme" type="s" access="read"></property>
           <property name="CursorTheme" type="s" access="read"></property>
           <property name="Background" type="s" access="read"></property>
+          <property name="FontName" type="s" access="read"></property>
+          <property name="FontMono" type="s" access="read"></property>
           <property name="FontSize" type="i" access="read"></property>
           <property name="Type" type="i" access="read"></property>
           <property name="Preview" type="as" access="read"></property>
