@@ -1,5 +1,6 @@
 <node>
      <interface name="com.deepin.daemon.InputDevice.Wacom">
+          <method name="Reset"></method>
           <property name="LeftHanded" type="b" access="readwrite"></property>
           <property name="CursorMode" type="b" access="readwrite"></property>
           <property name="KeyUpAction" type="s" access="readwrite"></property>
