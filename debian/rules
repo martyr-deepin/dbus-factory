@@ -1,24 +1,11 @@
 #!/usr/bin/make -f
 
-export GOPATH := /usr/share/gocode
-
-QML_ARCH = $(shell dpkg-architecture -qDEB_HOST_MULTIARCH)
-QML=usr/lib/$(QML_ARCH)/qt5/qml/
+export GOPATH     := /usr/share/gocode
+export QT5_LIBDIR := /usr/lib/$(shell dpkg-architecture -qDEB_HOST_MULTIARCH)/qt5
 
 %:
-	dh $@
-override_dh_auto_build:
-	cd in.json && python $(CURDIR)/debian/json_build.py && cd ..
-
-override_dh_auto_clean:
-	rm -rf in.json/go in.json/qml
+	dh $@ --parallel
 
 override_dh_auto_install:
-	dh_auto_install
-	mkdir -p debian/dde-go-dbus-factory
-	mkdir -p debian/dde-go-dbus-factory/usr/share/gocode/src/dbus
-	cp in.json/go/src/* -r debian/dde-go-dbus-factory/usr/share/gocode/src/dbus
-# Build qml daemon
-	debian/qml_install
-
-override_dh_strip:
+	make DESTDIR=$(CURDIR)/debian/dde-go-dbus-factory  install-golang
+	make DESTDIR=$(CURDIR)/debian/dde-qml-dbus-factory install-qml
