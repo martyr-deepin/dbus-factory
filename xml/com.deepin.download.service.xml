@@ -17,6 +17,9 @@
           <method name="StopTask">
                <arg type="s" direction="in"></arg>
           </method>
+          <signal name="Wait">
+                <arg type="s"></arg>
+          </signal>
           <signal name="Start">
                <arg type="s"></arg>
           </signal>
