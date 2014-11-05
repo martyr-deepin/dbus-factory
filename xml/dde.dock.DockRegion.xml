@@ -1,0 +1,7 @@
+<node>
+	<interface name="dde.dock.DockRegion">
+		<method name="GetDockRegion">
+			<arg type="(nnqq)" direction="out"></arg>
+		</method>
+	</interface>
+</node>

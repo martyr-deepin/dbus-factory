@@ -17,6 +17,12 @@
 			"OutFile": "dock-setting",
 			"XMLFile": "dde.dock.DockSetting.xml",
 			"ObjectName": "DockSetting"
+		},
+		{
+			"Interface": "dde.dock.DockRegion",
+			"OutFile": "dock-region",
+			"XMLFile": "dde.dock.DockRegion.xml",
+			"ObjectName": "DockRegion"
 		}
 	]
 }
