@@ -5,7 +5,6 @@
           </method>
           <method name="AddUserLayout">
                <arg type="s" direction="in"></arg>
-               <arg type="b" direction="out"></arg>
           </method>
           <method name="ClearLayoutOption"></method>
           <method name="DeleteLayoutOption">
@@ -13,18 +12,15 @@
           </method>
           <method name="DeleteUserLayout">
                <arg type="s" direction="in"></arg>
-               <arg type="b" direction="out"></arg>
           </method>
-          <method name="GetLayoutLocale">
+          <method name="GetLayoutDesc">
                <arg type="s" direction="in"></arg>
                <arg type="s" direction="out"></arg>
           </method>
           <method name="LayoutList">
                <arg type="a{ss}" direction="out"></arg>
           </method>
-          <method name="Reset">
-               <arg type="b" direction="out"></arg>
-          </method>
+          <method name="Reset"></method>
           <property name="RepeatEnabled" type="b" access="readwrite"></property>
           <property name="CapslockToggle" type="b" access="readwrite"></property>
           <property name="CursorBlink" type="i" access="readwrite"></property>

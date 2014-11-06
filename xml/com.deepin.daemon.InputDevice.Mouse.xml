@@ -1,8 +1,6 @@
 <node>
      <interface name="com.deepin.daemon.InputDevice.Mouse">
-          <method name="Reset">
-               <arg type="b" direction="out"></arg>
-          </method>
+          <method name="Reset"></method>
           <property name="LeftHanded" type="b" access="readwrite"></property>
           <property name="DisableTpad" type="b" access="readwrite"></property>
           <property name="NaturalScroll" type="b" access="readwrite"></property>
