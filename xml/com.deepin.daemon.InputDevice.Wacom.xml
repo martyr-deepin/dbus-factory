@@ -7,6 +7,7 @@
           <property name="KeyDownAction" type="s" access="readwrite"></property>
           <property name="DoubleDelta" type="u" access="readwrite"></property>
           <property name="PressureSensitive" type="u" access="readwrite"></property>
+	  <property name="ActionInfos" type="a(ss)" access="read"></property>
           <property name="DeviceList" type="a(sib)" access="read"></property>
           <property name="Exist" type="b" access="read"></property>
      </interface>
