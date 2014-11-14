@@ -30,10 +30,13 @@
           <signal name="SwitchMonitors">
                <arg type="b"></arg>
           </signal>
-          <signal name="TouchPadOn">
+          <signal name="TouchpadToggle">
                <arg type="b"></arg>
           </signal>
-          <signal name="TouchPadOff">
+          <signal name="TouchpadOn">
+               <arg type="b"></arg>
+          </signal>
+          <signal name="TouchpadOff">
                <arg type="b"></arg>
           </signal>
           <signal name="PowerOff">
