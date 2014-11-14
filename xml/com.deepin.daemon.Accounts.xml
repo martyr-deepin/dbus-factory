@@ -37,6 +37,7 @@
 	       <arg type="s" direction="out">
 		   <annotation name="com.deepin.DBus.I18n.Domain" value="dde-daemon"/>
 	       </arg>
+               <arg type="i" direction="out"></arg>
           </method>
           <method name="RandUserIcon">
                <arg type="s" direction="out"></arg>
