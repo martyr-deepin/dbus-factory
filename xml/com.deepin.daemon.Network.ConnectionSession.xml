@@ -20,6 +20,10 @@
       <arg type="s" direction="in"></arg>
       <arg type="s" direction="out"></arg>
     </method>
+    <method name="IsDefaultExpandedSection">
+      <arg type="s" direction="in"></arg>
+      <arg type="b" direction="out"></arg>
+    </method>
     <method name="Save">
       <arg type="b" direction="out"></arg>
     </method>
