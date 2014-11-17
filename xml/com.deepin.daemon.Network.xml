@@ -4,10 +4,12 @@
       <arg type="s" direction="in"></arg>
       <arg type="o" direction="in"></arg>
       <arg type="o" direction="in"></arg>
+      <arg type="o" direction="out"></arg>
     </method>
     <method name="ActivateConnection">
       <arg type="s" direction="in"></arg>
       <arg type="o" direction="in"></arg>
+      <arg type="o" direction="out"></arg>
     </method>
     <method name="CancelSecret">
       <arg type="s" direction="in"></arg>
