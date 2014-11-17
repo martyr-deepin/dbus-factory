@@ -48,6 +48,9 @@
                <arg type="s" direction="in"></arg>
                <arg type="b" direction="out"></arg>
           </method>
+          <method name="GetLargeIcon">
+               <arg type="s" direction="out"></arg>
+          </method>
           <property name="Uid" type="s" access="read"></property>
           <property name="Gid" type="s" access="read"></property>
           <property name="UserName" type="s" access="read"></property>
