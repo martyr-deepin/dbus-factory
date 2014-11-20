@@ -12,11 +12,35 @@
     <method name="FeedPinCode">
       <arg type="s" direction="in"></arg>
     </method>
+    <method name="GetAdapters">
+      <arg type="s" direction="out"></arg>
+    </method>
     <method name="GetDevices">
+      <arg type="o" direction="in"></arg>
       <arg type="s" direction="out"></arg>
     </method>
     <method name="RemoveDevice">
       <arg type="o" direction="in"></arg>
+      <arg type="o" direction="in"></arg>
+    </method>
+    <method name="RequestDiscovery">
+      <arg type="o" direction="in"></arg>
+    </method>
+    <method name="SetAdapterAlias">
+      <arg type="o" direction="in"></arg>
+      <arg type="s" direction="in"></arg>
+    </method>
+    <method name="SetAdapterDiscoverable">
+      <arg type="o" direction="in"></arg>
+      <arg type="b" direction="in"></arg>
+    </method>
+    <method name="SetAdapterDiscoverableTimeout">
+      <arg type="o" direction="in"></arg>
+      <arg type="u" direction="in"></arg>
+    </method>
+    <method name="SetAdapterPowered">
+      <arg type="o" direction="in"></arg>
+      <arg type="b" direction="in"></arg>
     </method>
     <method name="SetDeviceAlias">
       <arg type="o" direction="in"></arg>
@@ -26,10 +50,22 @@
       <arg type="o" direction="in"></arg>
       <arg type="b" direction="in"></arg>
     </method>
+    <signal name="AdapterAdded">
+      <arg type="s"></arg>
+    </signal>
+    <signal name="AdapterRemoved">
+      <arg type="s"></arg>
+    </signal>
+    <signal name="AdapterPropertiesChanged">
+      <arg type="s"></arg>
+    </signal>
     <signal name="DeviceAdded">
       <arg type="s"></arg>
     </signal>
     <signal name="DeviceRemoved">
+      <arg type="s"></arg>
+    </signal>
+    <signal name="DevicePropertiesChanged">
       <arg type="s"></arg>
     </signal>
     <signal name="RequestPinCode">
@@ -39,12 +75,7 @@
       <arg type="s"></arg>
       <arg type="s"></arg>
     </signal>
-    <property name="PrimaryAdapter" type="s" access="readwrite"></property>
     <property name="Adapters" type="s" access="read"></property>
     <property name="Devices" type="s" access="read"></property>
-    <property name="Alias" type="s" access="readwrite"></property>
-    <property name="Powered" type="b" access="readwrite"></property>
-    <property name="Discoverable" type="b" access="readwrite"></property>
-    <property name="DiscoverableTimeout" type="u" access="readwrite"></property>
   </interface>
 </node>
