@@ -77,5 +77,6 @@
     </signal>
     <property name="Adapters" type="s" access="read"></property>
     <property name="Devices" type="s" access="read"></property>
+    <property name="State" type="u" access="read"></property>
   </interface>
 </node>
