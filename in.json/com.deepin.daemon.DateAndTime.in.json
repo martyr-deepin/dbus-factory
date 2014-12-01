@@ -9,7 +9,7 @@
 		{
 			"Interface": "com.deepin.daemon.DateAndTime",
 			"OutFile": "dbus-datetime",
-			"XMLFile": "date-time.xml",
+			"XMLFile": "com.deepin.daemon.DateAndTime.xml",
 			"ObjectName": "DateAndTime"
 		}
 	]

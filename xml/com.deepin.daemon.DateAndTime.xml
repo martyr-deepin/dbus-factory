@@ -7,12 +7,12 @@
                <arg type="s" direction="in"></arg>
           </method>
           <method name="Destroy"></method>
-          <method name="GetAllZoneSummary">
-               <arg type="a(ssi)" direction="out"></arg>
+          <method name="GetAllZoneInfo">
+               <arg type="a(ssi(xxi))" direction="out"></arg>
           </method>
           <method name="GetZoneInfo">
                <arg type="s" direction="in"></arg>
-               <arg type="((ssi)(xxi))" direction="out"></arg>
+               <arg type="(ssi(xxi))" direction="out"></arg>
           </method>
           <method name="SetDate">
                <arg type="i" direction="in"></arg>
