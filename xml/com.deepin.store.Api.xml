@@ -1,0 +1,22 @@
+<node>
+     <interface name="com.deepin.store.Api">
+          <method name="Scan"></method>
+          <method name="MarkLaunched">
+               <arg type="s" direction="in"></arg>
+               <arg type="b" direction="out"></arg>
+          </method>
+          <method name="MarkAll">
+               <arg type="b" direction="out"></arg>
+          </method>
+          <method name="GetNewDesktops">
+               <arg type="s" direction="out"></arg>
+          </method>
+          <method name="GetAllDesktops">
+               <arg type="s" direction="out"></arg>
+          </method>
+          <signal name="NewDesktopAdded">
+               <arg type="s"></arg>
+               <arg type="i"></arg>
+          </signal>
+     </interface>
+</node>
