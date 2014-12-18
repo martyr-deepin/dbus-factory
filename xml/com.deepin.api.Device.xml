@@ -1,0 +1,10 @@
+<node>
+  <interface name="com.deepin.api.Device">
+    <method name="BlockDevice">
+      <arg type="s" direction="in"></arg>
+    </method>
+    <method name="UnblockDevice">
+      <arg type="s" direction="in"></arg>
+    </method>
+  </interface>
+</node>
