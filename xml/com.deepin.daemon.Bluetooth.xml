@@ -3,6 +3,9 @@
     <method name="ConnectDevice">
       <arg type="o" direction="in"></arg>
     </method>
+    <method name="DebugInfo">
+      <arg type="s" direction="out"></arg>
+    </method>
     <method name="DisconnectDevice">
       <arg type="o" direction="in"></arg>
     </method>
