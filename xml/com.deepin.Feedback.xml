@@ -10,7 +10,7 @@
     </method>
     <signal name="GenerateReportFinished">
       <arg type="t"></arg>
-      <arg type="as"></arg>
+      <arg type="s"></arg>
     </signal>
     <property name="WorkingSet" type="a{tb}" access="read"></property>
   </interface>
