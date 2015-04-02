@@ -1,0 +1,14 @@
+<node>
+	<interface name="com.deepin.api.LocaleHelper">
+		<method name="SetLocale">
+			<arg type="s" direction="in"></arg>
+		</method>
+		<method name="GenerateLocale">
+			<arg type="s" direction="in"></arg>
+		</method>
+		<signal name="Success">
+			<arg type="b"></arg>
+			<arg type="s"></arg>
+		</signal>
+	</interface>
+</node>

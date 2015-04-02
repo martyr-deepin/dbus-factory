@@ -1,0 +1,16 @@
+{
+	"Config": {
+		"OutputDir": ".",
+		"InputDir": "../xml",
+		"BusType": "System",
+		"DestName": "com.deepin.api.LocaleHelper"
+	},
+	"Interfaces": [
+		{
+			"Interface": "com.deepin.api.LocaleHelper",
+			"OutFile": "locale_helper",
+			"XMLFile": "com.deepin.api.LocaleHelper.xml",
+			"ObjectName": "LocaleHelper"
+		}
+	]
+}
