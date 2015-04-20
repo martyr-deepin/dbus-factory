@@ -10,7 +10,7 @@
 			"Interface": "org.freedesktop.timedate1",
 			"OutFile": "timedate1",
 			"XMLFile": "org.freedesktop.timedate1.xml",
-			"ObjectName": "timedate1"
+			"ObjectName": "Timedate1"
 		}
 	]
 }
