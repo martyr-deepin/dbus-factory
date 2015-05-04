@@ -1,0 +1,16 @@
+{
+	"Config": {
+		"OutputDir": ".",
+		"InputDir": "../xml",
+		"BusType": "Session",
+		"DestName": "com.deepin.daemon.Timedate"
+	},
+	"Interfaces": [
+		{
+			"Interface": "com.deepin.daemon.Timedate",
+			"OutFile": "dbus-timedate",
+			"XMLFile": "com.deepin.daemon.Timedate.xml",
+			"ObjectName": "Timedate"
+		}
+	]
+}
