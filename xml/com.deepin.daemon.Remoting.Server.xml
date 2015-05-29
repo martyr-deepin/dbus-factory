@@ -2,6 +2,7 @@
      <interface name="com.deepin.daemon.Remoting.Server">
           <method name="Start"></method>
           <method name="Stop"></method>
+          <method name="StopNotify"></method>
           <method name="GetPeerId">
             <arg direction="out" type="s"/>
           </method>
