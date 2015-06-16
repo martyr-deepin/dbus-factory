@@ -1,0 +1,11 @@
+<node>
+     <interface name="com.deepin.daemon.Remoting.Manager">
+          <method name="CheckNetworkConnectivity">
+            <arg direction="out" type="i"/>
+          </method>
+          <method name="GetStatus">
+            <arg direction="out" type="i"/>
+          </method>
+     </interface>
+</node>
+
