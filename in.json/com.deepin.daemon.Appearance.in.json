@@ -1,0 +1,16 @@
+{
+	"Config": {
+		"OutputDir": ".",
+		"InputDir": "../xml",
+		"BusType": "Session",
+		"DestName": "com.deepin.daemon.Appearance"
+	},
+	"Interfaces": [
+		{
+			"Interface": "com.deepin.daemon.Appearance",
+			"OutFile": "appearance",
+			"XMLFile": "com.deepin.daemon.Appearance.xml",
+			"ObjectName": "Appearance"
+		}
+	]
+}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<node>
+  <interface name="com.deepin.api.Manager">
+    <method name="GetDefaultApp">
+      <arg type="s" direction="in"/>
+      <arg type="s" direction="out"/>
+    </method>
+    <method name="ListApps">
+      <arg type="s" direction="in"/>
+      <arg type="s" direction="out"/>
+    </method>
+    <method name="Reset"/>
+    <method name="SetDefaultApp">
+      <arg type="s" direction="in"/>
+      <arg type="s" direction="in"/>
+    </method>
+  </interface>
+</node>
+

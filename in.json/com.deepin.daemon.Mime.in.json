@@ -3,20 +3,20 @@
 		"OutputDir": ".",
 		"InputDir": "../xml",
 		"BusType": "Session",
-		"DestName": "com.deepin.daemon.Mime"
+		"DestName": "com.deepin.api.Mime"
 	},
 	"Interfaces":[
 		{
-			"Interface": "com.deepin.daemon.DefaultApps",
-			"OutFile": "dbus-default-apps",
-			"XMLFile": "com.deepin.daemon.DefaultApps.xml",
-			"ObjectName": "DefaultApps"
+			"Interface": "com.deepin.api.Manager",
+			"OutFile": "dbus-apps",
+			"XMLFile": "com.deepin.api.Mime.Manager.xml",
+			"ObjectName": "Manager"
 		},
 		{
-			"Interface": "com.deepin.daemon.MediaMount",
-			"OutFile": "dbus-media-mount",
-			"XMLFile": "com.deepin.daemon.MediaMount.xml",
-			"ObjectName": "MediaMount"
+			"Interface": "com.deepin.api.Media",
+			"OutFile": "dbus-media",
+			"XMLFile": "com.deepin.api.Mime.Media.xml",
+			"ObjectName": "Media"
 		}
 	]
 }
