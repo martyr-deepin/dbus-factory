@@ -1,0 +1,16 @@
+{
+	"Config":{
+		"OutputDir": ".",
+		"InputDir": "../xml",
+		"BusType": "Session",
+		"DestName": "com.deepin.api.CursorHelper"
+	},
+	"Interfaces":[
+		{
+			"Interface": "com.deepin.api.CursorHelper",
+			"OutFile": "cursor-helper",
+			"XMLFile": "com.deepin.api.CursorHelper.xml",
+			"ObjectName": "CursorHelper"
+		}
+	]
+}

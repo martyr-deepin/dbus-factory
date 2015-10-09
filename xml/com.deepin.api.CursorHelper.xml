@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<node>
+  <interface name="com.deepin.api.CursorHelper">
+    <method name="Set">
+      <arg type="s" direction="in"/>
+    </method>
+  </interface>
+</node>
