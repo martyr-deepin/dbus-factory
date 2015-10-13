@@ -8,7 +8,7 @@
     </method>
     <method name="List">
       <arg type="s" direction="in"/>
-      <arg type="as" direction="out"/>
+      <arg type="s" direction="out"/>
     </method>
     <method name="Set">
       <arg type="s" direction="in"/>
