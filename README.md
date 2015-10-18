@@ -1,13 +1,50 @@
-#dbus-factory#
+# DBus Factory
 
-This repository is only used for saving the dbus.in.json configure xml data files
+**Description**: DBus Factory is a project which generates static dbus bindings for Golang and QML at build-time.
 
-Use [dbus-generator](https://gitcafe.com/Deepin/go-dbus-generator) to generate target code (supported QML/PyQT/GoLang).
-go get pkg.deepin.io/dbus-generator
+## Dependencies
 
+### Build Dependencies
 
-NOTE:
-1. ObjectName 不要和这个dbus接口提供的函数名相同，否则QML/CPP版本无法生成正确的代码
-2. 尽量不要有 函数名称=Set属性名、函数名称=Get属性名  这种情况，否则golang版本会添加一个_后缀。  (QML版本无次问题)
+- [dbus-generator](https://gitcafe.com/Deepin/go-dbus-generator) to generate the static dbus bindings
 
-3. golang中使用interface{}作为structure的类型(任何包含structure的类型都会直接使用interface{},也就是无法做到编译器类型检测)
+### Runtime Dependencies
+
+#### Golang Target
+
+-  [pkg.deepin.io/lib/dbus](https://github.com/linuxdeepin/go-lib/tree/master/dbus)
+
+#### QML Target
+
+- Qt5DBus
+- Qt5Core
+- Qt5Gui
+- Qt5Qml
+- libstdc++6
+
+## Getting help
+
+Any usage issues can ask for help via
+
+* [Gitter](https://gitter.im/orgs/linuxdeepin/rooms)
+* [IRC channel](https://webchat.freenode.net/?channels=deepin)
+* [Forum](https://bbs.deepin.org)
+* [WiKi](http://wiki.deepin.org/)
+
+## Getting involved
+
+We encourage you to report issues and contribute changes
+
+* [Contirubtion guide for users](http://wiki.deepin.org/index.php?title=Contribution_Guidelines_for_Users)
+* [Contribution guide for developers](http://wiki.deepin.org/index.php?title=Contribution_Guidelines_for_Developers).
+
+## Notice
+
+1. If ObjectName was same as the method name supported by dbus service,
+   QML/Cpp target can't be generated correctly.
+
+2. Don't name your method in form like Set*$PropertyName*, Get*$PropertyName*. Otherwise the generated code will append a \_ suffix.
+
+## License
+
+DBus Factory is licensed under [GPLv3](LICENSE).
