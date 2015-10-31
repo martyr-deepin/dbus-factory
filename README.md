@@ -4,11 +4,11 @@
 
 ## Dependencies
 
-### Build Dependencies
+### Build dependencies
 
 - [dbus-generator](https://gitcafe.com/Deepin/go-dbus-generator) to generate the static dbus bindings
 
-### Runtime Dependencies
+### Runtime dependencies
 
 #### Golang Target
 
@@ -35,7 +35,7 @@ Any usage issues can ask for help via
 
 We encourage you to report issues and contribute changes
 
-* [Contirubtion guide for users](http://wiki.deepin.org/index.php?title=Contribution_Guidelines_for_Users)
+* [Contribution guide for users](http://wiki.deepin.org/index.php?title=Contribution_Guidelines_for_Users)
 * [Contribution guide for developers](http://wiki.deepin.org/index.php?title=Contribution_Guidelines_for_Developers).
 
 ## Notice
