@@ -10,11 +10,18 @@
           <method name="PlaySystemSound">
                <arg type="s" direction="in"></arg>
           </method>
+          <method name="PlaySystemSoundSync">
+               <arg type="s" direction="in"></arg>
+          </method>
           <method name="PlaySystemSoundWithDevice">
                <arg type="s" direction="in"></arg>
                <arg type="s" direction="in"></arg>
           </method>
           <method name="PlayThemeSound">
+               <arg type="s" direction="in"></arg>
+               <arg type="s" direction="in"></arg>
+          </method>
+          <method name="PlayThemeSoundSync">
                <arg type="s" direction="in"></arg>
                <arg type="s" direction="in"></arg>
           </method>

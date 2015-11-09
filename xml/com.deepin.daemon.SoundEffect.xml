@@ -5,7 +5,14 @@
     <method name="PlaySystemSound">
       <arg type="s" direction="in"/>
     </method>
+    <method name="PlaySystemSoundSync">
+      <arg type="s" direction="in"/>
+    </method>
     <method name="PlayThemeSound">
+      <arg type="s" direction="in"/>
+      <arg type="s" direction="in"/>
+    </method>
+    <method name="PlayThemeSoundSync">
       <arg type="s" direction="in"/>
       <arg type="s" direction="in"/>
     </method>
