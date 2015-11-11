@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <node name="/" xmlns:tp="http://telepathy.freedesktop.org/wiki/DbusSpec#extensions-v0">
-  <interface name="org.freedesktop.NetworkManager.Device.Vlan">
+  <interface name="org.freedesktop.NetworkManager.Device.Generic">
 
     <property name="HwAddress" type="s" access="read">
       <tp:docstring>
@@ -9,21 +9,9 @@
       </tp:docstring>
     </property>
 
-    <property name="Carrier" type="b" access="read">
+    <property name="TypeDescription" type="s" access="read">
       <tp:docstring>
-        Indicates whether the physical carrier is found (e.g. whether a cable is plugged in or not).
-      </tp:docstring>
-    </property>
-
-    <property name="Parent" type="o" access="read">
-      <tp:docstring>
-        Object path of the parent device of this VLAN device.
-      </tp:docstring>
-    </property>
-
-    <property name="VlanId" type="u" access="read">
-      <tp:docstring>
-        The VLAN ID of this VLAN interface.
+        A (non-localized) description of the interface type, if known.
       </tp:docstring>
     </property>
 
