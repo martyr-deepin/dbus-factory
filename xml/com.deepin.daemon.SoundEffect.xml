@@ -2,10 +2,32 @@
 
 <node>
   <interface name="com.deepin.daemon.SoundEffect">
+    <method name="PlaySoundFile">
+      <arg type="s" direction="in"/>
+    </method>
+    <method name="PlaySoundFileSync">
+      <arg type="s" direction="in"/>
+    </method>
+    <method name="PlaySoundFileWithDevice">
+      <arg type="s" direction="in"/>
+      <arg type="s" direction="in"/>
+    </method>
+    <method name="PlaySoundFileWithDeviceSync">
+      <arg type="s" direction="in"/>
+      <arg type="s" direction="in"/>
+    </method>
     <method name="PlaySystemSound">
       <arg type="s" direction="in"/>
     </method>
     <method name="PlaySystemSoundSync">
+      <arg type="s" direction="in"/>
+    </method>
+    <method name="PlaySystemSoundWithDevice">
+      <arg type="s" direction="in"/>
+      <arg type="s" direction="in"/>
+    </method>
+    <method name="PlaySystemSoundWithDeviceSync">
+      <arg type="s" direction="in"/>
       <arg type="s" direction="in"/>
     </method>
     <method name="PlayThemeSound">
@@ -13,6 +35,16 @@
       <arg type="s" direction="in"/>
     </method>
     <method name="PlayThemeSoundSync">
+      <arg type="s" direction="in"/>
+      <arg type="s" direction="in"/>
+    </method>
+    <method name="PlayThemeSoundWithDevice">
+      <arg type="s" direction="in"/>
+      <arg type="s" direction="in"/>
+      <arg type="s" direction="in"/>
+    </method>
+    <method name="PlayThemeSoundWithDeviceSync">
+      <arg type="s" direction="in"/>
       <arg type="s" direction="in"/>
       <arg type="s" direction="in"/>
     </method>
