@@ -77,6 +77,24 @@
             "OutFile": "modem_firmware",
             "XMLFile": "org.freedesktop.ModemManager1.Modem.Firmware.xml",
             "ObjectName": "ModemFirmware"
+        },
+        {
+            "Interface": "org.freedesktop.ModemManager1.Modem.Oma",
+            "OutFile": "modem_oma",
+            "XMLFile": "org.freedesktop.ModemManager1.Modem.Oma.xml",
+            "ObjectName": "ModemOma"
+        },
+        {
+            "Interface": "org.freedesktop.ModemManager1.Modem.Signal",
+            "OutFile": "modem_signal",
+            "XMLFile": "org.freedesktop.ModemManager1.Modem.Signal.xml",
+            "ObjectName": "ModemSignal"
+        },
+        {
+            "Interface": "org.freedesktop.ModemManager1.Modem.Contacts",
+            "OutFile": "modem_contacts",
+            "XMLFile": "wip-org.freedesktop.ModemManager1.Modem.Contacts.xml",
+            "ObjectName": "ModemContacts"
         }
     ]
 }
