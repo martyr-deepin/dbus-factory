@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<node>
+  <interface name="com.deepin.dde.Desktop">
+    <method name="exit"/>
+    <method name="show"/>
+    <method name="hide"/>
+    <method name="toggle"/>
+    <signal name="closed"/>
+    <signal name="shown"/>
+  </interface>
+</node>

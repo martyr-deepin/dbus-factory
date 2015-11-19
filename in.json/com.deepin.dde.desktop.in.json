@@ -1,0 +1,16 @@
+{
+	"Config":{
+		"OutputDir": ".",
+		"InputDir": "../xml",
+		"BusType": "Session",
+		"DestName": "com.deepin.dde.desktop"
+	},
+	"Interfaces":[
+		{
+			"Interface": "com.deepin.dde.Desktop",
+			"OutFile": "desktop",
+			"XMLFile": "com.deepin.dde.desktop.xml",
+			"ObjectName": "Desktop"
+		}
+	]
+}
