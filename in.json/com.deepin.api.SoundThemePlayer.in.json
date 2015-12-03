@@ -1,0 +1,16 @@
+{
+	"Config": {
+		"OutputDir": ".",
+		"InputDir": "../xml",
+		"BusType": "System",
+		"DestName": "com.deepin.api.SoundThemePlayer"
+	},
+	"Interfaces": [
+		{
+			"Interface": "com.deepin.api.SoundThemePlayer",
+			"OutFile": "sound_theme_player",
+			"XMLFile": "com.deepin.api.SoundThemePlayer.xml",
+			"ObjectName": "SoundThemePlayer"
+		}
+	]
+}
