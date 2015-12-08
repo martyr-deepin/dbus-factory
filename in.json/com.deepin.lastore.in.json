@@ -1,0 +1,29 @@
+{
+	"Config": {
+		"OutputDir": ".",
+		"InputDir": "../xml",
+		"BusType": "System",
+		"DestName": "com.deepin.lastore"
+	},
+	"Interfaces": [
+		{
+			"Interface": "com.deepin.lastore.Manager",
+			"OutFile": "manager",
+			"XMLFile": "com.deepin.lastore.xml",
+			"ObjectName": "Manager"
+		},
+		{
+			"Interface": "com.deepin.lastore.Updater",
+			"OutFile": "manager",
+			"XMLFile": "com.deepin.lastore.xml",
+			"ObjectName": "Updater"
+		},
+		{
+			"Interface": "com.deepin.lastore.Job",
+			"OutFile": "manager",
+			"XMLFile": "com.deepin.lastore.Job.xml",
+			"ObjectName": "Job"
+		}
+	]
+}
+
