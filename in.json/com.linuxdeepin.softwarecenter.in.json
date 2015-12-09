@@ -1,0 +1,17 @@
+{
+	"Config": {
+		"OutputDir": ".",
+		"InputDir": "../xml",
+		"BusType": "System",
+		"DestName": "com.linuxdeepin.softwarecenter"
+	},
+	"Interfaces": [
+		{
+			"Interface": "com.linuxdeepin.softwarecenter",
+			"OutFile": "softwarecenter",
+			"XMLFile": "com.linuxdeepin.softwarecenter.xml",
+			"ObjectName": "SoftwareCenter"
+		}
+	]
+}
+
