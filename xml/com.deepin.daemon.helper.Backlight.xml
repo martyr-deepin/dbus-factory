@@ -1,10 +1,12 @@
 <node>
      <interface name="com.deepin.daemon.helper.Backlight">
           <method name="GetBrightness">
+               <arg type="s" direction="in"></arg>
                <arg type="d" direction="out"></arg>
           </method>
           <method name="SetBrightness">
                <arg type="d" direction="in"></arg>
+               <arg type="s" direction="in"></arg>
           </method>
           <property name="SysPath" type="s" access="read"></property>
      </interface>
