@@ -1,0 +1,16 @@
+{
+	"Config": {
+		"OutputDir": ".",
+		"InputDir": "../xml",
+		"BusType": "System",
+		"DestName": "org.freedesktop.locale1"
+	},
+	"Interfaces": [
+		{
+			"Interface": "org.freedesktop.locale1",
+			"OutFile": "locale1",
+			"XMLFile": "org.freedesktop.locale1.xml",
+			"ObjectName": "Locale1"
+		}
+	]
+}
