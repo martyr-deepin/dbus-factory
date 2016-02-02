@@ -47,6 +47,9 @@
     <signal name="PowerSleep">
       <arg type="b"/>
     </signal>
+    <signal name="PowerSuspend">
+      <arg type="b"/>
+    </signal>
     <signal name="SwitchLayout">
       <arg type="b"/>
     </signal>
@@ -81,6 +84,12 @@
       <arg type="b"/>
     </signal>
     <signal name="LaunchCalculator">
+      <arg type="b"/>
+    </signal>
+    <signal name="Eject">
+      <arg type="b"/>
+    </signal>
+    <signal name="AudioMedia">
       <arg type="b"/>
     </signal>
   </interface>
