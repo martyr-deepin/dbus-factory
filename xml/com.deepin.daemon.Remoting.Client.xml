@@ -1,0 +1,17 @@
+<node>
+     <interface name="com.deepin.daemon.Remoting.Client">
+          <method name="Start"></method>
+          <method name="Stop"></method>
+          <method name="Connect">
+            <arg direction="in" type="s" name="remote_peer_id"/>
+          </method>
+          <method name="GetStatus">
+            <arg direction="out" type="i"/>
+          </method>
+          <property name="Status" type="s" access="read"></property>
+          <signal name="StatusChanged">
+            <arg name="status" type="i"/>
+          </signal>
+     </interface>
+</node>
+

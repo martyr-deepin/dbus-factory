@@ -28,6 +28,10 @@
                <arg type="s" direction="in"></arg>
                <arg type="b" direction="out"></arg>
           </method>
+          <method name="SetLanguage">
+               <arg type="s" direction="in"></arg>
+               <arg type="b" direction="out"></arg>
+          </method>
           <method name="SetIconFile">
                <arg type="s" direction="in"></arg>
                <arg type="b" direction="out"></arg>
@@ -56,6 +60,7 @@
           <property name="UserName" type="s" access="read"></property>
           <property name="HomeDir" type="s" access="read"></property>
           <property name="Shell" type="s" access="read"></property>
+          <property name="Language" type="s" access="read"></property>
           <property name="IconFile" type="s" access="read"></property>
           <property name="BackgroundFile" type="s" access="read"></property>
           <property name="AutomaticLogin" type="b" access="read"></property>

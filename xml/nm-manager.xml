@@ -2,6 +2,8 @@
 
 <node name="/org/freedesktop/NetworkManager" xmlns:tp="http://telepathy.freedesktop.org/wiki/DbusSpec#extensions-v0">
   <interface name="org.freedesktop.NetworkManager">
+    <annotation name="org.gtk.GDBus.C.Name" value="Manager"/>
+
     <method name="GetDevices">
       <tp:docstring>
         Get the list of network devices.
@@ -41,12 +43,17 @@
       </tp:docstring>
       <arg name="connection" type="o" direction="in">
         <tp:docstring>
-          The connection to activate the devices with.
+          The connection to activate.  If "/" is given, a valid device path must
+          be given, and NetworkManager picks the best connection to activate for
+          the given device.  VPN connections must always pass a valid connection
+          path.
         </tp:docstring>
       </arg>
       <arg name="device" type="o" direction="in">
         <tp:docstring>
-          The object path of device to be activated for physical connections.  This parameter is ignored for VPN connections, because the specific_object (if provided) specifies the device to use.
+          The object path of device to be activated for physical connections.
+          This parameter is ignored for VPN connections, because the
+          specific_object (if provided) specifies the device to use.
         </tp:docstring>
       </arg>
       <arg name="specific_object" type="o" direction="in">
@@ -55,7 +62,7 @@
           This parameter is currently ignored for wired and mobile broadband connections,
           and the value of "/" should be used (ie, no specific object).  For WiFi
           connections, pass the object path of a specific AP from the card's scan
-          list, or "/" to pick and AP automatically.  For VPN connections, pass
+          list, or "/" to pick an AP automatically.  For VPN connections, pass
           the object path of an ActiveConnection object that should serve as the
           "base" connection (to which the VPN connections lifetime will be tied),
           or pass "/" and NM will automatically use the current default device.
@@ -66,16 +73,6 @@
           The path of the active connection object representing this active connection.
         </tp:docstring>
       </arg>
-      <tp:possible-errors>
-        <tp:error name="org.freedesktop.NetworkManager.Error.UnknownConnection"/>
-        <tp:error name="org.freedesktop.NetworkManager.Error.UnknownDevice"/>
-        <tp:error name="org.freedesktop.NetworkManager.Error.ConnectionActivating">
-          <tp:docstring>Another connection is already activating or the same connection is already active.  FIXME: check if the error name is correct.  FIXME: split into 2 errors?</tp:docstring>
-        </tp:error>
-        <tp:error name="org.freedesktop.NetworkManager.Error.ConnectionInvalid">
-          <tp:docstring>The connection is invalid for this device.</tp:docstring>
-        </tp:error>
-      </tp:possible-errors>
     </method>
 
     <method name="AddAndActivateConnection">
@@ -118,13 +115,6 @@
           The path of the active connection object representing this active connection.
         </tp:docstring>
       </arg>
-      <tp:possible-errors>
-        <tp:error name="org.freedesktop.NetworkManager.Error.UnknownConnection"/>
-        <tp:error name="org.freedesktop.NetworkManager.Error.UnknownDevice"/>
-        <tp:error name="org.freedesktop.NetworkManager.Error.ConnectionInvalid">
-          <tp:docstring>The connection is invalid for this device.</tp:docstring>
-        </tp:error>
-      </tp:possible-errors>
     </method>
 
     <method name="DeactivateConnection">
@@ -204,25 +194,30 @@
 
     <method name="SetLogging">
       <annotation name="org.freedesktop.DBus.GLib.CSymbol" value="impl_manager_set_logging"/>
+      <annotation name="org.freedesktop.DBus.GLib.Async" value=""/>
       <tp:docstring>
         Set logging verbosity and which operations are logged.
       </tp:docstring>
       <arg name="level" type="s" direction="in">
         <tp:docstring>
-          One of [ERR, WARN, INFO, DEBUG].
+          One of [ERR, WARN, INFO, DEBUG, TRACE].
         </tp:docstring>
       </arg>
       <arg name="domains" type="s" direction="in">
         <tp:docstring>
           A combination of logging domains separated by commas (','), or "NONE"
           to disable logging.  Each domain enables logging for operations
-          related to that domain.  Available domains are: [HW, RFKILL, ETHER,
+          related to that domain.  Available domains are: [PLATFORM, RFKILL, ETHER,
           WIFI, BT, MB, DHCP4, DHCP6, PPP, WIFI_SCAN, IP4, IP6, AUTOIP4, DNS,
           VPN, SHARING, SUPPLICANT, AGENTS, SETTINGS, SUSPEND, CORE, DEVICE,
-          OLPC, WIMAX, INFINIBAND, FIREWALL, ADSL, BOND, VLAN].  In addition to
-          these domains, the following special domains can be used: [NONE, ALL,
-          DEFAULT, DHCP, IP].  If an empty string is given, the log level is
-          changed but the current set of log domains remains unchanged.
+          OLPC, WIMAX, INFINIBAND, FIREWALL, ADSL, BOND, VLAN, BRIDGE, DBUS_PROPS,
+          TEAM, CONCHECK, DCB, DISPATCH].
+          In addition to these domains, the following special domains can be used:
+          [NONE, ALL, DEFAULT, DHCP, IP].  You can also specify that some domains
+          should log at a different level from the default by appending a colon (':')
+          and a log level (eg, 'WIFI:DEBUG').  If an empty string is given, the
+          log level is changed but the current set of log domains remains
+          unchanged.
         </tp:docstring>
       </arg>
     </method>
@@ -234,12 +229,25 @@
       </tp:docstring>
       <arg name="level" type="s" direction="out">
         <tp:docstring>
-          One of [ERR, WARN, INFO, DEBUG].
+          One of [ERR, WARN, INFO, DEBUG, TRACE].
         </tp:docstring>
       </arg>
       <arg name="domains" type="s" direction="out">
         <tp:docstring>
           For available domains see SetLogging() call.
+        </tp:docstring>
+      </arg>
+    </method>
+
+    <method name="CheckConnectivity">
+      <annotation name="org.freedesktop.DBus.GLib.CSymbol" value="impl_manager_check_connectivity"/>
+      <annotation name="org.freedesktop.DBus.GLib.Async" value=""/>
+      <tp:docstring>
+	Re-check the network connectivity state.
+      </tp:docstring>
+      <arg name="connectivity" type="u" tp:type="NM_CONNECTIVITY" direction="out">
+        <tp:docstring>
+          The current connectivity state.
         </tp:docstring>
       </arg>
     </method>
@@ -252,6 +260,12 @@
       <annotation name="org.freedesktop.DBus.GLib.CSymbol" value="impl_manager_get_state"/>
       <arg name="state" type="u" direction="out" tp:type="NM_STATE"/>
     </method>
+
+    <property name="Devices" type="ao" access="read">
+      <tp:docstring>
+        The list of network devices/interfaces NetworkManager knows about.
+      </tp:docstring>
+    </property>
 
     <property name="NetworkingEnabled" type="b" access="read">
       <tp:docstring>
@@ -302,6 +316,49 @@
       </tp:docstring>
     </property>
 
+    <property name="PrimaryConnection" type="o" access="read">
+      <tp:docstring>
+        The object path of the "primary" active connection being used
+        to access the network. In particular, if there is no VPN
+        active, or the VPN does not have the default route, then this
+        indicates the connection that has the default route. If there
+        is a VPN active with the default route, then this indicates
+        the connection that contains the route to the VPN endpoint.
+      </tp:docstring>
+    </property>
+
+    <property name="PrimaryConnectionType" type="s" access="read">
+      <tp:docstring>
+        The connection type of the "primary" active connection being
+        used to access the network. This is the same as the Type
+        property on the object indicated by PrimaryConnection.
+      </tp:docstring>
+    </property>
+
+    <property name="Metered" type="u" access="read" tp:type="NM_METERED">
+      <tp:docstring>
+        Wheter the connectivity is metered. This is equivalent to the
+        metered property of the device associated with the primary
+        connection.
+      </tp:docstring>
+    </property>
+
+    <property name="ActivatingConnection" type="o" access="read">
+      <tp:docstring>
+        The object path of an active connection that is currently
+        being activated and which is expected to become the new
+        PrimaryConnection when it finishes activating.
+      </tp:docstring>
+    </property>
+
+    <property name="Startup" type="b" access="read">
+      <tp:docstring>
+        Indicates whether NM is still starting up; this becomes FALSE
+        when NM has finished attempting to activate every connection
+        that it might be able to activate at startup.
+      </tp:docstring>
+    </property>
+
     <property name="Version" type="s" access="read">
       <tp:docstring>
         NetworkManager version.
@@ -324,6 +381,12 @@
         </tp:docstring>
       </arg>
     </signal>
+
+    <property name="Connectivity" type="u" access="read" tp:type="NM_CONNECTIVITY">
+      <tp:docstring>
+        The network connectivity state.
+      </tp:docstring>
+    </property>
 
     <signal name="PropertiesChanged">
       <tp:docstring>
@@ -401,6 +464,40 @@
       <tp:enumvalue suffix="CONNECTED_GLOBAL" value="70">
         <tp:docstring>
           A network device is connected, with global network connectivity.
+        </tp:docstring>
+      </tp:enumvalue>
+    </tp:enum>
+
+    <tp:enum name="NM_CONNECTIVITY" type="u">
+      <tp:docstring>
+        Describes the network-connectivity state.
+      </tp:docstring>
+      <tp:enumvalue suffix="UNKNOWN" value="0">
+        <tp:docstring>
+          Network connectivity is unknown.
+        </tp:docstring>
+      </tp:enumvalue>
+      <tp:enumvalue suffix="NONE" value="1">
+        <tp:docstring>
+          The host is not connected to any network.
+        </tp:docstring>
+      </tp:enumvalue>
+      <tp:enumvalue suffix="PORTAL" value="2">
+        <tp:docstring>
+          The host is behind a captive portal and cannot reach the
+          full Internet.
+        </tp:docstring>
+      </tp:enumvalue>
+      <tp:enumvalue suffix="LIMITED" value="3">
+        <tp:docstring>
+          The host is connected to a network, but does not appear to
+	  be able to reach the full Internet.
+        </tp:docstring>
+      </tp:enumvalue>
+      <tp:enumvalue suffix="FULL" value="4">
+        <tp:docstring>
+	  The host is connected to a network, and appears to be able
+	  to reach the full Internet
         </tp:docstring>
       </tp:enumvalue>
     </tp:enum>

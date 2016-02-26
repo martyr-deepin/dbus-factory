@@ -1,0 +1,15 @@
+{
+  "Config": {
+    "OutputDir": ".",
+    "InputDir": "../xml",
+    "BusType": "Session",
+    "DestName": "com.deepin.daemon.Remoting.Manager"
+  },
+  "Interfaces": [{
+      "Interface": "com.deepin.daemon.Remoting.Manager",
+      "OutFile": "remoting_manager",
+      "XMLFile": "com.deepin.daemon.Remoting.Manager.xml",
+      "ObjectName": "RemotingManager"
+    }
+  ]
+}

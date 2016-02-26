@@ -1,0 +1,16 @@
+{
+	"Config":{
+		"OutputDir": ".",
+		"InputDir": "../xml",
+		"BusType": "Session",
+		"DestName": "com.deepin.api.GtkThumbnailer"
+	},
+	"Interfaces":[
+		{
+			"Interface": "com.deepin.api.GtkThumbnailer",
+			"OutFile": "gtk-thumbnailer",
+			"XMLFile": "com.deepin.api.GtkThumbnailer.xml",
+			"ObjectName": "GtkThumbnailer"
+		}
+	]
+}

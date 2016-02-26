@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<node>\n 
+  <interface name="com.deepin.api.Media">\n 
+    <method name="EnableAutoOpen">\n 
+      <arg type="b" direction="in"/>\n
+    </method>\n 
+    <method name="GetDefaultApp">\n 
+      <arg type="s" direction="in"/>\n 
+      <arg type="s" direction="out"/>\n
+    </method>\n 
+    <method name="ListApps">\n 
+      <arg type="s" direction="in"/>\n 
+      <arg type="s" direction="out"/>\n
+    </method>\n 
+    <method name="Reset"/>\n 
+    <method name="SetDefaultApp">\n 
+      <arg type="s" direction="in"/>\n 
+      <arg type="s" direction="in"/>\n
+    </method>\n 
+    <property name="AutoOpen" type="b" access="read"/>\n
+  </interface>
+</node>

@@ -1,0 +1,22 @@
+{
+	"Config": {
+		"OutputDir": ".",
+		"InputDir": "../xml",
+		"BusType": "Session",
+		"DestName": "com.deepin.daemon.Keybinding"
+	},
+	"Interfaces": [
+		{
+			"Interface": "com.deepin.daemon.Keybinding",
+			"OutFile": "dbus-bind-manager",
+			"XMLFile": "com.deepin.daemon.Keybinding.xml",
+			"ObjectName": "Keybinding"
+		},
+		{
+			"Interface": "com.deepin.daemon.Keybinding.Mediakey",
+			"OutFile": "dbus-mediakey",
+			"XMLFile": "com.deepin.daemon.Keybinding.Mediakey.xml",
+			"ObjectName": "Mediakey"
+		}
+	]
+}

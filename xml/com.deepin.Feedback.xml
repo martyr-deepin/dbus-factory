@@ -1,0 +1,17 @@
+<node>
+  <interface name="com.deepin.Feedback">
+    <method name="GenerateReport">
+      <arg type="s" direction="in"></arg>
+      <arg type="b" direction="in"></arg>
+      <arg type="t" direction="out"></arg>
+    </method>
+    <method name="GetCategories">
+      <arg type="s" direction="out"></arg>
+    </method>
+    <signal name="GenerateReportFinished">
+      <arg type="t"></arg>
+      <arg type="s"></arg>
+    </signal>
+    <property name="WorkingSet" type="a{tb}" access="read"></property>
+  </interface>
+</node>

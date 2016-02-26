@@ -1,0 +1,16 @@
+{
+	"Config": {
+		"OutputDir": ".",
+		"InputDir": "../xml",
+		"BusType": "System",
+		"DestName": "org.freedesktop.timedate1"
+	},
+	"Interfaces": [
+		{
+			"Interface": "org.freedesktop.timedate1",
+			"OutFile": "timedate1",
+			"XMLFile": "org.freedesktop.timedate1.xml",
+			"ObjectName": "Timedate1"
+		}
+	]
+}

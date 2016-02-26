@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<node> 
+  <interface name="com.deepin.api.GreeterHelper"> 
+    <method name="SetLayout"> 
+      <arg type="s" direction="in"/> 
+      <arg type="s" direction="in"/>
+    </method> 
+    <method name="SetLayoutList"> 
+      <arg type="s" direction="in"/> 
+      <arg type="as" direction="in"/>
+    </method> 
+    <method name="SetTheme"> 
+      <arg type="s" direction="in"/> 
+      <arg type="s" direction="in"/>
+    </method>
+  </interface>
+</node>

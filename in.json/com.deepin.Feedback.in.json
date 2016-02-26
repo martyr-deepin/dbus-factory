@@ -1,0 +1,16 @@
+{
+	"Config": {
+		"OutputDir": ".",
+		"InputDir": "../xml",
+		"BusType": "System",
+		"DestName": "com.deepin.Feedback"
+	},
+	"Interfaces": [
+		{
+			"Interface": "com.deepin.Feedback",
+			"OutFile": "feedback",
+			"XMLFile": "com.deepin.Feedback.xml",
+			"ObjectName": "Feedback"
+		}
+	]
+}

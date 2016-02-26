@@ -150,41 +150,6 @@
     </doc:doc>
   </method>
 
-  <method name="SetFormatsLocale">
-    <annotation name="org.freedesktop.DBus.GLib.Async" value=""/>
-    <arg name="formats_locale" direction="in" type="s">
-      <doc:doc>
-        <doc:summary>
-          The new regional formats, as a locale specification like "de_DE.UTF-8".
-        </doc:summary>
-      </doc:doc>
-    </arg>
-    <doc:doc>
-      <doc:description>
-        <doc:para>
-          Sets the users regional formats.
-        </doc:para>
-      </doc:description>
-      <doc:permission>
-        The caller needs one of the following PolicyKit authorizations:
-        <doc:list>
-          <doc:item>
-            <doc:term>org.freedesktop.accounts.change-own-user-data</doc:term>
-            <doc:definition>To change his own language</doc:definition>
-          </doc:item>
-          <doc:item>
-            <doc:term>org.freedesktop.accounts.user-administration</doc:term>
-            <doc:definition>To change the language of another user</doc:definition>
-          </doc:item>
-        </doc:list>
-      </doc:permission>
-      <doc:errors>
-        <doc:error name="org.freedesktop.Accounts.Error.PermissionDenied">if the caller lacks the appropriate PolicyKit authorization</doc:error>
-        <doc:error name="org.freedesktop.Accounts.Error.Failed">if the operation failed</doc:error>
-      </doc:errors>
-    </doc:doc>
-  </method>
-
   <method name="SetXSession">
     <annotation name="org.freedesktop.DBus.GLib.Async" value=""/>
     <annotation name="org.freedesktop.DBus.GLib.CSymbol" value="user_set_x_session"/>
@@ -321,111 +286,6 @@
           <doc:item>
             <doc:term>org.freedesktop.accounts.user-administration</doc:term>
             <doc:definition>To change the shell of a user</doc:definition>
-          </doc:item>
-        </doc:list>
-      </doc:permission>
-      <doc:errors>
-        <doc:error name="org.freedesktop.Accounts.Error.PermissionDenied">if the caller lacks the appropriate PolicyKit authorization</doc:error>
-        <doc:error name="org.freedesktop.Accounts.Error.Failed">if the operation failed</doc:error>
-      </doc:errors>
-    </doc:doc>
-  </method>
-
-  <method name="SetXHasMessages">
-    <annotation name="org.freedesktop.DBus.GLib.Async" value=""/>
-    <arg name="has_messages" direction="in" type="b">
-      <doc:doc>
-        <doc:summary>
-          Whether the user has messages waiting for them.
-        </doc:summary>
-      </doc:doc>
-    </arg>
-    <doc:doc>
-      <doc:description>
-        <doc:para>
-          Sets whether the user has messages waiting for them.
-        </doc:para>
-      </doc:description>
-      <doc:permission>
-        The caller needs one of the following PolicyKit authorizations:
-        <doc:list>
-          <doc:item>
-            <doc:term>org.freedesktop.accounts.change-own-user-data</doc:term>
-            <doc:definition>To change his or her own status</doc:definition>
-          </doc:item>
-          <doc:item>
-            <doc:term>org.freedesktop.accounts.user-administration</doc:term>
-            <doc:definition>To change the status of another user</doc:definition>
-          </doc:item>
-        </doc:list>
-      </doc:permission>
-      <doc:errors>
-        <doc:error name="org.freedesktop.Accounts.Error.PermissionDenied">if the caller lacks the appropriate PolicyKit authorization</doc:error>
-        <doc:error name="org.freedesktop.Accounts.Error.Failed">if the operation failed</doc:error>
-      </doc:errors>
-    </doc:doc>
-  </method>
-
-  <method name="SetXKeyboardLayouts">
-    <annotation name="org.freedesktop.DBus.GLib.Async" value=""/>
-    <arg name="layouts" direction="in" type="as">
-      <doc:doc>
-        <doc:summary>
-          The name of the keyboard layouts to use as the user's keyboard layout.  The first is the default.
-        </doc:summary>
-      </doc:doc>
-    </arg>
-    <doc:doc>
-      <doc:description>
-        <doc:para>
-          Sets the user's keyboard layouts.
-        </doc:para>
-      </doc:description>
-      <doc:permission>
-        The caller needs one of the following PolicyKit authorizations:
-        <doc:list>
-          <doc:item>
-            <doc:term>org.freedesktop.accounts.change-own-user-data</doc:term>
-            <doc:definition>To change his or her own keyboard layouts</doc:definition>
-          </doc:item>
-          <doc:item>
-            <doc:term>org.freedesktop.accounts.user-administration</doc:term>
-            <doc:definition>To change the keyboard layouts of another user</doc:definition>
-          </doc:item>
-        </doc:list>
-      </doc:permission>
-      <doc:errors>
-        <doc:error name="org.freedesktop.Accounts.Error.PermissionDenied">if the caller lacks the appropriate PolicyKit authorization</doc:error>
-        <doc:error name="org.freedesktop.Accounts.Error.Failed">if the operation failed</doc:error>
-      </doc:errors>
-    </doc:doc>
-  </method>
-
-  <method name="SetBackgroundFile">
-    <annotation name="org.freedesktop.DBus.GLib.Async" value=""/>
-    <arg name="filename" direction="in" type="s">
-      <doc:doc>
-        <doc:summary>
-          The absolute filename of a png file to use as the users background.
-        </doc:summary>
-      </doc:doc>
-    </arg>
-    <doc:doc>
-      <doc:description>
-        <doc:para>
-          Sets the users background.
-        </doc:para>
-      </doc:description>
-      <doc:permission>
-        The caller needs one of the following PolicyKit authorizations:
-        <doc:list>
-          <doc:item>
-            <doc:term>org.freedesktop.accounts.change-own-user-data</doc:term>
-            <doc:definition>To change his own background</doc:definition>
-          </doc:item>
-          <doc:item>
-            <doc:term>org.freedesktop.accounts.user-administration</doc:term>
-            <doc:definition>To change the background of another user</doc:definition>
           </doc:item>
         </doc:list>
       </doc:permission>
@@ -637,6 +497,41 @@
     </doc:doc>
   </method>
 
+  <method name="SetPasswordHint">
+    <annotation name="org.freedesktop.DBus.GLib.Async" value=""/>
+    <arg name="hint" direction="in" type="s">
+      <doc:doc>
+        <doc:summary>
+          The password hint.
+        </doc:summary>
+      </doc:doc>
+    </arg>
+    <doc:doc>
+      <doc:description>
+        <doc:para>
+          Sets the users password hint.
+        </doc:para>
+      </doc:description>
+      <doc:permission>
+        The caller needs one of the following PolicyKit authorizations:
+        <doc:list>
+          <doc:item>
+            <doc:term>org.freedesktop.accounts.change-own-user-data</doc:term>
+            <doc:definition>To change his own language</doc:definition>
+          </doc:item>
+          <doc:item>
+            <doc:term>org.freedesktop.accounts.user-administration</doc:term>
+            <doc:definition>To change the language of another user</doc:definition>
+          </doc:item>
+        </doc:list>
+      </doc:permission>
+      <doc:errors>
+        <doc:error name="org.freedesktop.Accounts.Error.PermissionDenied">if the caller lacks the appropriate PolicyKit authorization</doc:error>
+        <doc:error name="org.freedesktop.Accounts.Error.Failed">if the operation failed</doc:error>
+      </doc:errors>
+    </doc:doc>
+  </method>
+
   <method name="SetAutomaticLogin">
     <annotation name="org.freedesktop.DBus.GLib.Async" value=""/>
     <arg name="enabled" direction="in" type="b">
@@ -763,16 +658,6 @@
     </doc:doc>
   </property>
 
-  <property name="FormatsLocale" type="s" access="read">
-    <doc:doc>
-      <doc:description>
-        <doc:para>
-          The users regional formats, as a locale specification like "de_DE.UTF-8".
-        </doc:para>
-      </doc:description>
-    </doc:doc>
-  </property>
-
   <property name="XSession" type="s" access="read">
     <doc:doc>
       <doc:description>
@@ -825,36 +710,6 @@
         <doc:para>
           The a{sv} member is a dictionary containing additional information
           about the session. Possible members include 'type' (with values like ':0', 'tty0', 'pts/0' etc).
-        </doc:para>
-      </doc:description>
-    </doc:doc>
-  </property>
-
-  <property name="XHasMessages" type="b" access="read">
-    <doc:doc>
-      <doc:description>
-        <doc:para>
-           Whether the user has messages waiting for them.
-        </doc:para>
-      </doc:description>
-    </doc:doc>
-  </property>
-
-  <property name="XKeyboardLayouts" type="as" access="read">
-    <doc:doc>
-      <doc:description>
-        <doc:para>
-           The names of the user's keyboard layouts.
-        </doc:para>
-      </doc:description>
-    </doc:doc>
-  </property>
-
-  <property name="BackgroundFile" type="s" access="read">
-    <doc:doc>
-      <doc:description>
-        <doc:para>
-           The filename of a png file containing the users background.
         </doc:para>
       </doc:description>
     </doc:doc>

@@ -32,7 +32,7 @@
 
     <!--
         Scan:
-        @results: Array of dictionaries wih the found networks.
+        @results: Array of dictionaries with the found networks.
 
         Scan for available networks.
 
@@ -135,6 +135,15 @@
         for which PIN locking is enabled.
     -->
     <property name="EnabledFacilityLocks" type="u" access="read" />
+
+    <!--
+        SubscriptionState:
+
+        A <link linkend="MMModem3gppSubscriptionState">MMModem3gppSubscriptionState</link>
+        value representing the subscription status of the account and whether there
+        is any data remaining, given as an unsigned integer (signature <literal>"u"</literal>).
+    -->
+    <property name="SubscriptionState" type="u" access="read" />
 
   </interface>
 </node>
