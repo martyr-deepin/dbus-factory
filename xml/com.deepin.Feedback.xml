@@ -8,6 +8,10 @@
     <method name="GetCategories">
       <arg type="s" direction="out"></arg>
     </method>
+    <method name="GetDistroInfo">
+      <arg type="s" direction="out"></arg>
+      <arg type="s" direction="out"></arg>
+    </method>
     <signal name="GenerateReportFinished">
       <arg type="t"></arg>
       <arg type="s"></arg>
