@@ -1,0 +1,16 @@
+{
+	"Config": {
+		"OutputDir": ".",
+		"InputDir": "../xml",
+		"BusType": "Session",
+		"DestName": "com.deepin.dde.lockFront"
+	},
+	"Interfaces": [
+		{
+			"Interface": "com.deepin.dde.lockFront",
+			"OutFile": "lock-front",
+			"XMLFile": "com.deepin.dde.lockFront.xml",
+			"ObjectName": "LockFront"
+		}
+	]
+}
