@@ -24,11 +24,23 @@
                <arg type="s" direction="in"></arg>
                <arg type="b" direction="out"></arg>
           </method>
+          <method name="SetGreeterBackground">
+               <arg type="s" direction="in"></arg>
+               <arg type="b" direction="out"></arg>
+          </method>
+          <method name="SetHistoryLayout">
+               <arg type="as" direction="in"></arg>
+               <arg type="b" direction="out"></arg>
+          </method>
           <method name="SetHomeDir">
                <arg type="s" direction="in"></arg>
                <arg type="b" direction="out"></arg>
           </method>
-          <method name="SetLanguage">
+          <method name="SetLayout">
+               <arg type="s" direction="in"></arg>
+               <arg type="b" direction="out"></arg>
+          </method>
+          <method name="SetLocale">
                <arg type="s" direction="in"></arg>
                <arg type="b" direction="out"></arg>
           </method>
@@ -60,13 +72,16 @@
           <property name="UserName" type="s" access="read"></property>
           <property name="HomeDir" type="s" access="read"></property>
           <property name="Shell" type="s" access="read"></property>
-          <property name="Language" type="s" access="read"></property>
+          <property name="Layout" type="s" access="read"></property>
+          <property name="Locale" type="s" access="read"></property>
           <property name="IconFile" type="s" access="read"></property>
+          <property name="GreeterBackground" type="s" access="read"></property>
           <property name="BackgroundFile" type="s" access="read"></property>
           <property name="AutomaticLogin" type="b" access="read"></property>
           <property name="AccountType" type="i" access="read"></property>
           <property name="Locked" type="b" access="read"></property>
           <property name="LoginTime" type="t" access="read"></property>
+          <property name="HistoryLayout" type="as" access="read"></property>
           <property name="HistoryIcons" type="as" access="read"></property>
           <property name="IconList" type="as" access="read"></property>
      </interface>
