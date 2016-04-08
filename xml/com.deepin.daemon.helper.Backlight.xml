@@ -1,13 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
 <node>
-     <interface name="com.deepin.daemon.helper.Backlight">
-          <method name="GetBrightness">
-               <arg type="s" direction="in"></arg>
-               <arg type="d" direction="out"></arg>
-          </method>
-          <method name="SetBrightness">
-               <arg type="d" direction="in"></arg>
-               <arg type="s" direction="in"></arg>
-          </method>
-          <property name="SysPath" type="s" access="read"></property>
-     </interface>
+  <interface name="com.deepin.daemon.helper.Backlight">
+    <method name="GetBrightness">
+      <arg type="s" direction="in"/>
+      <arg type="i" direction="out"/>
+    </method>
+    <method name="GetMaxBrightness">
+      <arg type="s" direction="in"/>
+      <arg type="i" direction="out"/>
+    </method>
+    <method name="GetSysPathByType">
+      <arg type="s" direction="in"/>
+      <arg type="s" direction="out"/>
+    </method>
+    <method name="ListSysPath">
+      <arg type="as" direction="out"/>
+    </method>
+    <method name="SetBrightness">
+      <arg type="s" direction="in"/>
+      <arg type="i" direction="in"/>
+    </method>
+  </interface>
 </node>
