@@ -1,0 +1,16 @@
+{
+	"Config": {
+		"OutputDir": ".",
+		"InputDir": "../xml",
+		"BusType": "Session",
+		"DestName": "com.deepin.daemon.SessionWatcher"
+	},
+	"Interfaces": [
+		{
+			"Interface": "com.deepin.daemon.SessionWatcher",
+			"OutFile": "sessionwatcher",
+			"XMLFile": "com.deepin.daemon.SessionWatcher.xml",
+			"ObjectName": "SessionWatcher"
+		}
+	]
+}
