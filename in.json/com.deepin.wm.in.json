@@ -1,0 +1,16 @@
+{
+   "Config" : {
+      "BusType" : "Session",
+      "DestName" : "com.deepin.wm",
+      "InputDir" : "../xml",
+      "OutputDir" : "."
+   },
+   "Interfaces" : [
+      {
+         "Interface" : "com.deepin.wm",
+         "ObjectName" : "Wm",
+         "OutFile" : "wm-0",
+         "XMLFile" : "com.deepin.wm.xml"
+      }
+   ]
+}
