@@ -17,6 +17,12 @@
     <signal name="BrightnessDown">
       <arg type="b"/>
     </signal>
+    <signal name="KbdBrightnessUp">
+      <arg type="b"/>
+    </signal>
+    <signal name="KbdBrightnessDown">
+      <arg type="b"/>
+    </signal>
     <signal name="CapsLockOn">
       <arg type="b"/>
     </signal>

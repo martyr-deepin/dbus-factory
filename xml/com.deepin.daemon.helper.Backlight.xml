@@ -21,5 +21,14 @@
       <arg type="s" direction="in"/>
       <arg type="i" direction="in"/>
     </method>
+    <method name="GetKbdBrightness">
+      <arg type="i" direction="out"/>
+    </method>
+    <method name="GetKbdMaxBrightness">
+      <arg type="i" direction="out"/>
+    </method>
+    <method name="SetKbdBrightness">
+      <arg type="i" direction="in"/>
+    </method>
   </interface>
 </node>
