@@ -1,0 +1,16 @@
+{
+   "Config" : {
+      "BusType" : "System",
+      "DestName" : "com.deepin.system.Power",
+      "InputDir" : "../xml",
+      "OutputDir" : "."
+   },
+   "Interfaces" : [
+      {
+         "Interface" : "com.deepin.system.Power",
+         "ObjectName" : "Power",
+         "OutFile" : "power-0",
+         "XMLFile" : "com.deepin.system.Power.xml"
+      }
+   ]
+}

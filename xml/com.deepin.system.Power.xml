@@ -1,0 +1,29 @@
+<node>
+  <interface name="com.deepin.system.Power">
+    <method name="Debug">
+      <arg direction="in" type="s"></arg>
+    </method>
+    <method name="GetBatteries">
+      <arg direction="out" type="ao"></arg>
+    </method>
+    <method name="RefreshBatteries"></method>
+    <signal name="BatteryDisplayUpdate">
+      <arg type="x"></arg>
+    </signal>
+    <signal name="BatteryAdded">
+      <arg type="s"></arg>
+    </signal>
+    <signal name="BatteryRemoved">
+      <arg type="s"></arg>
+    </signal>
+    <signal name="LidClosed"></signal>
+    <signal name="LidOpened"></signal>
+    <property access="read" name="OnBattery" type="b"></property>
+    <property access="read" name="HasBattery" type="b"></property>
+    <property access="read" name="BatteryPercentage" type="d"></property>
+    <property access="read" name="BatteryStatus" type="u"></property>
+    <property access="read" name="BatteryTimeToEmpty" type="t"></property>
+    <property access="read" name="BatteryTimeToFull" type="t"></property>
+    <property access="read" name="HasLidSwitch" type="b"></property>
+  </interface>
+</node>
