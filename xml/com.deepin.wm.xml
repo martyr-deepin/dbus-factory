@@ -1,5 +1,5 @@
 <!DOCTYPE node PUBLIC "-//freedesktop//DTD D-BUS Object Introspection 1.0//EN" "http://www.freedesktop.org/standards/dbus/1.0/introspect.dtd">
-<!-- GDBus 2.46.2 --><node>
+<!-- GDBus 2.48.1 --><node>
   <interface name="com.deepin.wm">
     <method name="PerformAction">
       <arg direction="in" name="type" type="i"/>
@@ -10,14 +10,11 @@
     </method>
     <method name="RequestHideWindows"></method>
     <method name="CancelHideWindows"></method>
-    <method name="GetBackgroundColorInformation">
-      <arg direction="in" name="monitor" type="i"/>
-      <arg direction="in" name="reference_x" type="i"/>
-      <arg direction="in" name="reference_y" type="i"/>
-      <arg direction="in" name="reference_width" type="i"/>
-      <arg direction="in" name="reference_height" type="i"/>
-      <arg direction="out" name="result" type="(ddddd)"/>
-    </method>
-    <signal name="BackgroundChanged"></signal>
+    <signal name="WorkspaceRemoved">
+      <arg name="index" type="i"/>
+    </signal>
+    <signal name="WorkspaceAdded">
+      <arg name="index" type="i"/>
+    </signal>
   </interface>
 </node>
