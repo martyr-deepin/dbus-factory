@@ -10,6 +10,9 @@
     </method>
     <method name="RequestHideWindows"></method>
     <method name="CancelHideWindows"></method>
+    <method name="ChangeWorkspaceBackground">
+      <arg direction="in" name="uri" type="s"/>
+    </method>
     <signal name="WorkspaceRemoved">
       <arg name="index" type="i"/>
     </signal>
