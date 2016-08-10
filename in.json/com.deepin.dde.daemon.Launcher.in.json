@@ -1,0 +1,22 @@
+{
+   "Config" : {
+      "BusType" : "Session",
+      "DestName" : "com.deepin.dde.daemon.Launcher",
+      "InputDir" : "../xml",
+      "OutputDir" : "."
+   },
+   "Interfaces" : [
+      {
+         "Interface" : "com.deepin.dde.daemon.Launcher",
+         "ObjectName" : "Launcher",
+         "OutFile" : "launcher-0",
+         "XMLFile" : "com.deepin.dde.daemon.Launcher.xml"
+      },
+      {
+         "Interface" : "com.deepin.dde.daemon.launcher.Setting",
+         "ObjectName" : "Setting",
+         "OutFile" : "setting-1",
+         "XMLFile" : "com.deepin.dde.daemon.Launcher.xml"
+      }
+   ]
+}

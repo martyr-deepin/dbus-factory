@@ -1,0 +1,115 @@
+<node>
+  <interface name="com.deepin.dde.daemon.launcher.Setting">
+    <method name="Destroy"></method>
+    <method name="GetCategoryDisplayMode">
+      <arg direction="out" type="x"></arg>
+    </method>
+    <method name="GetSortMethod">
+      <arg direction="out" type="x"></arg>
+    </method>
+    <method name="SetCategoryDisplayMode">
+      <arg direction="in" type="x"></arg>
+    </method>
+    <method name="SetSortMethod">
+      <arg direction="in" type="x"></arg>
+    </method>
+    <signal name="CategoryDisplayModeChanged">
+      <arg type="x"></arg>
+    </signal>
+    <signal name="SortMethodChanged">
+      <arg type="x"></arg>
+    </signal>
+  </interface>
+  <interface name="com.deepin.dde.daemon.Launcher">
+    <method name="GetAllCategoryInfos">
+      <arg direction="out" type="a(sxas)"></arg>
+    </method>
+    <method name="GetAllFrequency">
+      <arg direction="out" type="a(st)"></arg>
+    </method>
+    <method name="GetAllItemInfos">
+      <arg direction="out" type="a(ssssxx)"></arg>
+    </method>
+    <method name="GetAllNewInstalledApps">
+      <arg direction="out" type="as"></arg>
+    </method>
+    <method name="GetAllTimeInstalled">
+      <arg direction="out" type="a(sx)"></arg>
+    </method>
+    <method name="GetCategoryInfo">
+      <arg direction="in" type="x"></arg>
+      <arg direction="out" type="(sxas)"></arg>
+    </method>
+    <method name="GetItemInfo">
+      <arg direction="in" type="s"></arg>
+      <arg direction="out" type="(ssssxx)"></arg>
+    </method>
+    <method name="IsItemOnDesktop">
+      <arg direction="in" type="s"></arg>
+      <arg direction="out" type="b"></arg>
+    </method>
+    <method name="MarkLaunched">
+      <arg direction="in" type="s"></arg>
+    </method>
+    <method name="RecordFrequency">
+      <arg direction="in" type="s"></arg>
+    </method>
+    <method name="RecordRate">
+      <arg direction="in" type="s"></arg>
+    </method>
+    <method name="RefreshItem">
+      <arg direction="in" type="s"></arg>
+      <arg direction="out" type="(ssssxx)"></arg>
+    </method>
+    <method name="RequestRemoveFromDesktop">
+      <arg direction="in" type="s"></arg>
+      <arg direction="out" type="b"></arg>
+    </method>
+    <method name="RequestSendToDesktop">
+      <arg direction="in" type="s"></arg>
+      <arg direction="out" type="b"></arg>
+    </method>
+    <method name="RequestUninstall">
+      <arg direction="in" type="s"></arg>
+      <arg direction="in" type="b"></arg>
+    </method>
+    <method name="Search">
+      <arg direction="in" type="s"></arg>
+    </method>
+    <signal name="ItemChanged">
+      <arg type="s"></arg>
+      <arg type="(ssssxx)"></arg>
+      <arg type="x"></arg>
+    </signal>
+    <signal name="UninstallSuccess">
+      <arg type="s"></arg>
+    </signal>
+    <signal name="UninstallFailed">
+      <arg type="s"></arg>
+      <arg type="s"></arg>
+    </signal>
+    <signal name="SendToDesktopSuccess">
+      <arg type="s"></arg>
+    </signal>
+    <signal name="SendToDesktopFailed">
+      <arg type="s"></arg>
+      <arg type="s"></arg>
+    </signal>
+    <signal name="RemoveFromDesktopSuccess">
+      <arg type="s"></arg>
+    </signal>
+    <signal name="RemoveFromDesktopFailed">
+      <arg type="s"></arg>
+      <arg type="s"></arg>
+    </signal>
+    <signal name="SearchDone">
+      <arg type="as"></arg>
+    </signal>
+    <signal name="NewAppLaunched">
+      <arg type="s"></arg>
+    </signal>
+    <signal name="NewAppMarkedAsLaunched">
+      <arg type="s"></arg>
+    </signal>
+  </interface>
+</node>
