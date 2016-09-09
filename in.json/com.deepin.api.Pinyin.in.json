@@ -1,0 +1,16 @@
+{
+   "Config" : {
+      "BusType" : "Session",
+      "DestName" : "com.deepin.api.Pinyin",
+      "InputDir" : "../xml",
+      "OutputDir" : "."
+   },
+   "Interfaces" : [
+      {
+         "Interface" : "com.deepin.api.Pinyin",
+         "ObjectName" : "Pinyin",
+         "OutFile" : "pinyin-0",
+         "XMLFile" : "com.deepin.api.Pinyin.xml"
+      }
+   ]
+}

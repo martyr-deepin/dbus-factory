@@ -1,8 +1,12 @@
 <node>
-     <interface name="com.deepin.api.Pinyin">
-          <method name="PinyinFromKey">
-               <arg type="s" direction="in"></arg>
-               <arg type="as" direction="out"></arg>
-          </method>
-     </interface>
+  <interface name="com.deepin.api.Pinyin">
+    <method name="Query">
+      <arg direction="in" type="s"></arg>
+      <arg direction="out" type="as"></arg>
+    </method>
+    <method name="QueryList">
+      <arg direction="in" type="as"></arg>
+      <arg direction="out" type="s"></arg>
+    </method>
+  </interface>
 </node>
