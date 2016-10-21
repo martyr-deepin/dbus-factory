@@ -1,0 +1,22 @@
+{
+   "Config" : {
+      "BusType" : "System",
+      "DestName" : "com.deepin.daemon.Apps",
+      "InputDir" : "../xml",
+      "OutputDir" : "."
+   },
+   "Interfaces" : [
+      {
+         "Interface" : "com.deepin.daemon.Apps.DesktopFileWatcher",
+         "ObjectName" : "DesktopFileWatcher",
+         "OutFile" : "desktopfilewatcher-0",
+         "XMLFile" : "com.deepin.daemon.Apps.xml"
+      },
+      {
+         "Interface" : "com.deepin.daemon.Apps.LaunchedRecorder",
+         "ObjectName" : "LaunchedRecorder",
+         "OutFile" : "launchedrecorder-1",
+         "XMLFile" : "com.deepin.daemon.Apps.xml"
+      }
+   ]
+}
