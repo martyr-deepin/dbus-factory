@@ -1,21 +1,20 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-
-<node name="/" xmlns:tp="http://telepathy.freedesktop.org/wiki/DbusSpec#extensions-v0">
+<?xml version="1.0" encoding="UTF-8"?>
+<node name="/">
   <interface name="org.freedesktop.NetworkManager.Device.Adsl">
 
+    <!--
+        PropertiesChanged:
+        @properties: A dictionary mapping property names to variant boxed values
+    -->
     <signal name="PropertiesChanged">
-        <arg name="properties" type="a{sv}" tp:type="String_Variant_Map">
-            <tp:docstring>
-                A dictionary mapping property names to variant boxed values
-            </tp:docstring>
-        </arg>
+      <arg name="properties" type="a{sv}"/>
     </signal>
 
-    <property name="Carrier" type="b" access="read">
-      <tp:docstring>
-        Indicates whether the physical carrier is found.
-      </tp:docstring>
-    </property>
+    <!--
+        Carrier:
 
+        Indicates whether the physical carrier is found.
+    -->
+    <property name="Carrier" type="b" access="read"/>
   </interface>
 </node>

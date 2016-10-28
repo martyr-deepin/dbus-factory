@@ -1,110 +1,112 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-
-<node name="/" xmlns:tp="http://telepathy.freedesktop.org/wiki/DbusSpec#extensions-v0">
+<?xml version="1.0" encoding="UTF-8"?>
+<node name="/">
   <interface name="org.freedesktop.NetworkManager.Device.WiMax">
-    <method name="GetNspList">
-      <annotation name="org.freedesktop.DBus.GLib.CSymbol" value="impl_device_get_nsp_list"/>
-      <arg name="nsps" type="ao" direction="out">
-        <tp:docstring>
-          List of NSP object paths
-        </tp:docstring>
-      </arg>
-      <tp:docstring>
-        Get the list of NSPs visible to this device.
-      </tp:docstring>
-    </method>
 
-    <property name="Nsps" type="ao" access="read">
-      <tp:docstring>
+    <!--
+        GetNspList:
+        @nsps: List of NSP object paths
+
+        Get the list of NSPs visible to this device.
+    -->
+    <method name="GetNspList">
+      <arg name="nsps" type="ao" direction="out"/>
+      </method>
+
+    <!--
+        Nsps:
+
         List of object paths of Network Service Providers (NSPs) visible to this
         WiMAX device.
-      </tp:docstring>
-    </property>
+    -->
+    <property name="Nsps" type="ao" access="read"/>
 
-    <property name="HwAddress" type="s" access="read">
-      <tp:docstring>
+    <!--
+        HwAddress:
+
         Hardware address of the device.
-      </tp:docstring>
-    </property>
+    -->
+    <property name="HwAddress" type="s" access="read"/>
 
-    <property name="CenterFrequency" type="u" access="read">
-      <tp:docstring>
+    <!--
+        CenterFrequency:
+
         Center frequency (in KHz) of the radio channel the device is using to
-        communicate with the network when connected.  Has no meaning when the
+        communicate with the network when connected. Has no meaning when the
         device is not connected.
-      </tp:docstring>
-    </property>
+    -->
+    <property name="CenterFrequency" type="u" access="read"/>
 
-    <property name="Rssi" type="i" access="read">
-      <tp:docstring>
-        RSSI of the current radio link in dBm.  This value indicates how strong
-        the raw received RF signal from the base station is, but does not
-        indicate the overall quality of the radio link.  Has no meaning when the
-        device is not connected.
-      </tp:docstring>
-    </property>
+    <!--
+        Rssi:
 
-    <property name="Cinr" type="i" access="read">
-      <tp:docstring>
-        CINR (Carrier to Interference + Noise Ratio) of the current radio link
-        in dB.  CINR is a more accurate measure of radio link quality.  Has no
+        RSSI of the current radio link in dBm. This value indicates how strong the
+        raw received RF signal from the base station is, but does not indicate the
+        overall quality of the radio link. Has no meaning when the device is not
+        connected.
+    -->
+    <property name="Rssi" type="i" access="read"/>
+
+    <!--
+        Cinr:
+
+        CINR (Carrier to Interference + Noise Ratio) of the current radio link in
+        dB. CINR is a more accurate measure of radio link quality. Has no meaning
+        when the device is not connected.
+    -->
+    <property name="Cinr" type="i" access="read"/>
+
+    <!--
+        TxPower:
+
+        Average power of the last burst transmitted by the device, in units of 0.5
+        dBm. i.e. a TxPower of -11 represents an actual device TX power of -5.5
+        dBm. Has no meaning when the device is not connected.
+    -->
+    <property name="TxPower" type="i" access="read"/>
+
+    <!--
+        Bsid:
+
+        The ID of the serving base station as received from the network. Has no
         meaning when the device is not connected.
-      </tp:docstring>
-    </property>
+    -->
+    <property name="Bsid" type="s" access="read"/>
 
-    <property name="TxPower" type="i" access="read">
-      <tp:docstring>
-        Average power of the last burst transmitted by the device, in units of
-        0.5 dBm.  i.e. a TxPower of -11 represents an actual device TX power of
-        -5.5 dBm.  Has no meaning when the device is not connected.
-      </tp:docstring>
-    </property>
+    <!--
+        ActiveNsp:
 
-    <property name="Bsid" type="s" access="read">
-      <tp:docstring>
-        The ID of the serving base station as received from the network.  Has
-        no meaning when the device is not connected.
-      </tp:docstring>
-    </property>
-
-    <property name="ActiveNsp" type="o" access="read">
-      <tp:docstring>
         Object path of the NSP currently used by the WiMax device.
-      </tp:docstring>
-    </property>
+    -->
+    <property name="ActiveNsp" type="o" access="read"/>
 
+    <!--
+        PropertiesChanged:
+        @properties: A dictionary mapping property names to variant boxed values.
+
+        Emitted when the WiMax device's properties changed.
+    -->
     <signal name="PropertiesChanged">
-        <arg name="properties" type="a{sv}" tp:type="String_Variant_Map">
-            <tp:docstring>
-                A dictionary mapping property names to variant boxed values.
-            </tp:docstring>
-        </arg>
-        <tp:docstring>
-            Emitted when the WiMax device's properties changed.
-        </tp:docstring>
-    </signal>
+        <arg name="properties" type="a{sv}"/>
+        </signal>
 
+    <!--
+        NspAdded:
+        @nsp: The object path of the newly found NSP.
+
+        Emitted when a new NSP is found by the device.
+    -->
     <signal name="NspAdded">
-        <arg name="nsp" type="o">
-            <tp:docstring>
-                The object path of the newly found NSP.
-            </tp:docstring>
-        </arg>
-        <tp:docstring>
-            Emitted when a new NSP is found by the device.
-        </tp:docstring>
-    </signal>
+        <arg name="nsp" type="o"/>
+        </signal>
 
+    <!--
+        NspRemoved:
+        @nsp: The object path of the NSP that has disappeared.
+
+        Emitted when an NSP disappears from view of the device.
+    -->
     <signal name="NspRemoved">
-      <arg name="nsp" type="o">
-            <tp:docstring>
-                The object path of the NSP that has disappeared.
-            </tp:docstring>
-        </arg>
-        <tp:docstring>
-            Emitted when an NSP disappears from view of the device.
-        </tp:docstring>
+      <arg name="nsp" type="o"/>
     </signal>
-
   </interface>
 </node>

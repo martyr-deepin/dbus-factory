@@ -207,6 +207,13 @@
 	        "OutFile": "nm-device-vxlan",
 	        "XMLFile": "nm-device-vxlan.xml",
 	        "ObjectName": "DeviceVxlan"
+        },
+        {
+	        "Interface":"org.freedesktop.NetworkManager.Device.IPTunnel",
+	        "OutFile": "nm-device-ip-tunnel",
+	        "XMLFile": "nm-device-ip-tunnel.xml",
+	        "ObjectName": "DeviceIPTunnel"
         }
+
     ]
 }

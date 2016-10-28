@@ -1,33 +1,41 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-
-<node name="/" xmlns:tp="http://telepathy.freedesktop.org/wiki/DbusSpec#extensions-v0">
+<?xml version="1.0" encoding="UTF-8"?>
+<node name="/">
   <interface name="org.freedesktop.NetworkManager.Device.Macvlan">
 
-    <property name="Parent" type="o" access="read">
-      <tp:docstring>
+    <!--
+        Parent:
+
         The object path of the parent device.
-      </tp:docstring>
-    </property>
+    -->
+    <property name="Parent" type="o" access="read"/>
 
-    <property name="Mode" type="s" access="read">
-      <tp:docstring>
+    <!--
+        Mode:
+
         The macvlan mode, one of "private", "vepa", "bridge", or "passthru".
-      </tp:docstring>
-    </property>
+    -->
+    <property name="Mode" type="s" access="read"/>
 
-    <property name="NoPromisc" type="b" access="read">
-      <tp:docstring>
+    <!--
+        NoPromisc:
+
         Whether the device is blocked from going into promiscuous mode.
-      </tp:docstring>
-    </property>
+    -->
+    <property name="NoPromisc" type="b" access="read"/>
 
+    <!--
+        Tap:
+
+        Whether the device is a macvtap.
+    -->
+    <property name="Tap" type="b" access="read"/>
+
+    <!--
+        PropertiesChanged:
+        @properties: A dictionary mapping property names to variant boxed values
+    -->
     <signal name="PropertiesChanged">
-        <arg name="properties" type="a{sv}" tp:type="String_Variant_Map">
-            <tp:docstring>
-                A dictionary mapping property names to variant boxed values
-            </tp:docstring>
-        </arg>
+      <arg name="properties" type="a{sv}"/>
     </signal>
-
   </interface>
 </node>
