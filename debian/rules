@@ -1,0 +1,10 @@
+#!/usr/bin/make -f
+
+export GOPATH     := /usr/share/gocode
+
+%:
+	dh $@ --parallel
+
+override_dh_auto_install:
+	make DESTDIR=$(CURDIR)/debian/dde-go-dbus-factory  install-golang
+
