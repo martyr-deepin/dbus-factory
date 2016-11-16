@@ -1,0 +1,9 @@
+<node>
+     <interface name="com.deepin.daemon.Gesture">
+          <signal name="Event">
+               <arg type="s"></arg>
+               <arg type="s"></arg>
+               <arg type="i"></arg>
+          </signal>
+     </interface>
+</node>
