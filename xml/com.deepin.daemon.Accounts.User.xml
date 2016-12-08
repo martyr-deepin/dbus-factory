@@ -1,88 +1,73 @@
 <node>
-     <interface name="com.deepin.daemon.Accounts.User">
-          <method name="DeleteHistoryIcon">
-               <arg type="s" direction="in"></arg>
-               <arg type="b" direction="out"></arg>
-          </method>
-          <method name="DeleteIconFile">
-               <arg type="s" direction="in"></arg>
-               <arg type="b" direction="out"></arg>
-          </method>
-          <method name="IsIconDeletable">
-               <arg type="s" direction="in"></arg>
-               <arg type="b" direction="out"></arg>
-          </method>
-          <method name="SetAccountType">
-               <arg type="i" direction="in"></arg>
-               <arg type="b" direction="out"></arg>
-          </method>
-          <method name="SetAutomaticLogin">
-               <arg type="b" direction="in"></arg>
-               <arg type="b" direction="out"></arg>
-          </method>
-          <method name="SetBackgroundFile">
-               <arg type="s" direction="in"></arg>
-               <arg type="b" direction="out"></arg>
-          </method>
-          <method name="SetGreeterBackground">
-               <arg type="s" direction="in"></arg>
-               <arg type="b" direction="out"></arg>
-          </method>
-          <method name="SetHistoryLayout">
-               <arg type="as" direction="in"></arg>
-               <arg type="b" direction="out"></arg>
-          </method>
-          <method name="SetHomeDir">
-               <arg type="s" direction="in"></arg>
-               <arg type="b" direction="out"></arg>
-          </method>
-          <method name="SetLayout">
-               <arg type="s" direction="in"></arg>
-               <arg type="b" direction="out"></arg>
-          </method>
-          <method name="SetLocale">
-               <arg type="s" direction="in"></arg>
-               <arg type="b" direction="out"></arg>
-          </method>
-          <method name="SetIconFile">
-               <arg type="s" direction="in"></arg>
-               <arg type="b" direction="out"></arg>
-          </method>
-          <method name="SetLocked">
-               <arg type="b" direction="in"></arg>
-               <arg type="b" direction="out"></arg>
-          </method>
-          <method name="SetPassword">
-               <arg type="s" direction="in"></arg>
-               <arg type="b" direction="out"></arg>
-          </method>
-          <method name="SetShell">
-               <arg type="s" direction="in"></arg>
-               <arg type="b" direction="out"></arg>
-          </method>
-          <method name="SetUserName">
-               <arg type="s" direction="in"></arg>
-               <arg type="b" direction="out"></arg>
-          </method>
-          <method name="GetLargeIcon">
-               <arg type="s" direction="out"></arg>
-          </method>
-          <property name="Uid" type="s" access="read"></property>
-          <property name="Gid" type="s" access="read"></property>
-          <property name="UserName" type="s" access="read"></property>
-          <property name="HomeDir" type="s" access="read"></property>
-          <property name="Shell" type="s" access="read"></property>
-          <property name="Layout" type="s" access="read"></property>
-          <property name="Locale" type="s" access="read"></property>
-          <property name="IconFile" type="s" access="read"></property>
-          <property name="GreeterBackground" type="s" access="read"></property>
-          <property name="BackgroundFile" type="s" access="read"></property>
-          <property name="AutomaticLogin" type="b" access="read"></property>
-          <property name="AccountType" type="i" access="read"></property>
-          <property name="Locked" type="b" access="read"></property>
-          <property name="LoginTime" type="t" access="read"></property>
-          <property name="HistoryLayout" type="as" access="read"></property>
-          <property name="HistoryIcons" type="as" access="read"></property>
-          <property name="IconList" type="as" access="read"></property>
-     </interface>
+  <interface name="com.deepin.daemon.Accounts.User">
+    <method name="DeleteHistoryIcon">
+      <arg direction="in" type="s"></arg>
+    </method>
+    <method name="DeleteIconFile">
+      <arg direction="in" type="s"></arg>
+    </method>
+    <method name="GetLargeIcon">
+      <arg direction="out" type="s"></arg>
+    </method>
+    <method name="IsIconDeletable">
+      <arg direction="in" type="s"></arg>
+      <arg direction="out" type="b"></arg>
+    </method>
+    <method name="SetAccountType">
+      <arg direction="in" type="i"></arg>
+    </method>
+    <method name="SetAutomaticLogin">
+      <arg direction="in" type="b"></arg>
+    </method>
+    <method name="SetBackgroundFile">
+      <arg direction="in" type="s"></arg>
+    </method>
+    <method name="SetGreeterBackground">
+      <arg direction="in" type="s"></arg>
+    </method>
+    <method name="SetHistoryLayout">
+      <arg direction="in" type="as"></arg>
+    </method>
+    <method name="SetHomeDir">
+      <arg direction="in" type="s"></arg>
+    </method>
+    <method name="SetIconFile">
+      <arg direction="in" type="s"></arg>
+    </method>
+    <method name="SetLayout">
+      <arg direction="in" type="s"></arg>
+    </method>
+    <method name="SetLocale">
+      <arg direction="in" type="s"></arg>
+    </method>
+    <method name="SetLocked">
+      <arg direction="in" type="b"></arg>
+    </method>
+    <method name="SetPassword">
+      <arg direction="in" type="s"></arg>
+    </method>
+    <method name="SetShell">
+      <arg direction="in" type="s"></arg>
+    </method>
+    <method name="SetUserName">
+      <arg direction="in" type="s"></arg>
+    </method>
+    <property access="read" name="UserName" type="s"></property>
+    <property access="read" name="Uid" type="s"></property>
+    <property access="read" name="Gid" type="s"></property>
+    <property access="read" name="HomeDir" type="s"></property>
+    <property access="read" name="Shell" type="s"></property>
+    <property access="read" name="Locale" type="s"></property>
+    <property access="read" name="Layout" type="s"></property>
+    <property access="read" name="IconFile" type="s"></property>
+    <property access="read" name="BackgroundFile" type="s"></property>
+    <property access="read" name="GreeterBackground" type="s"></property>
+    <property access="read" name="Locked" type="b"></property>
+    <property access="read" name="AutomaticLogin" type="b"></property>
+    <property access="read" name="AccountType" type="i"></property>
+    <property access="read" name="LoginTime" type="t"></property>
+    <property access="read" name="IconList" type="as"></property>
+    <property access="read" name="HistoryLayout" type="as"></property>
+    <property access="read" name="HistoryIcons" type="as"></property>
+  </interface>
 </node>
