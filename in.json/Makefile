@@ -10,12 +10,7 @@ $(shell basename $(1) .in.json | tr A-Z a-z | tr '.' '/')
 endef
 
 define golang_rule
-GO_PKG_$(1) := $(call go_pkg,$(1))
-GO_SRC_$(1) := $(addprefix go/src/dbus/,$$(GO_PKG_$(1)))
-
-$$(GO_SRC_$(1)):$(1)
-	@echo [GOLANG] $$(notdir $$@)
-	@$(DBUS_GENERATOR) -in $$^ -out $$@ -target golang
+$(shell $(DBUS_GENERATOR) -in $(1) -out $(addprefix go/src/dbus/,$(call go_pkg,$(1))) -target golang)
 endef
 
 GO_PKGS  := $(foreach i,$(JSONS),$(call go_pkg,$(i)))
