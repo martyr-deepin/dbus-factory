@@ -1,0 +1,9 @@
+<!DOCTYPE node PUBLIC "-//freedesktop//DTD D-BUS Object Introspection 1.0//EN"
+"http://www.freedesktop.org/standards/dbus/1.0/introspect.dtd">
+<node>
+  <interface name="com.deepin.dde.Dock">
+    <property access="read" type="(iiii)" name="geometry"/>
+    <signal name="geometryChanged"><arg name="geometry" type="(iiii)"/></signal>
+  </interface>
+</node>
+

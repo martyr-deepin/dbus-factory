@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-
-<node> 
-  <interface name="com.deepin.dde.dock"> 
-    <method name="Xid"> 
-      <arg type="t" direction="out"/>
-    </method>
-  </interface>
-</node>

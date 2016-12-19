@@ -3,13 +3,13 @@
 		"OutputDir": ".",
 		"InputDir": "../xml",
 		"BusType": "Session",
-		"DestName": "com.deepin.dde.dock"
+		"DestName": "com.deepin.dde.Dock"
 	},
 	"Interfaces":[
 		{
-			"Interface": "com.deepin.dde.dock",
+			"Interface": "com.deepin.dde.Dock",
 			"OutFile": "dock",
-			"XMLFile": "com.deepin.dde.dock.xml",
+			"XMLFile": "com.deepin.dde.Dock.xml",
 			"ObjectName": "Dock"
 		}
 	]
