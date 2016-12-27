@@ -1,60 +1,46 @@
 <node>
-    <interface name="com.deepin.daemon.Display">
-        <method name="Apply"></method>
-        <method name="AssociateTouchScreen">
-            <arg type="s" direction="in"></arg>
-            <arg type="s" direction="in"></arg>
-        </method>
-        <method name="ChangeBrightness">
-            <arg type="s" direction="in"></arg>
-            <arg type="d" direction="in"></arg>
-        </method>
-        <method name="JoinMonitor">
-            <arg type="s" direction="in"></arg>
-            <arg type="s" direction="in"></arg>
-        </method>
-        <method name="ListOutputNames">
-            <arg type="as" direction="out"></arg>
-        </method>
-        <method name="QueryCurrentPlanName">
-            <arg type="s" direction="out"></arg>
-        </method>
-        <method name="QueryOutputFeature">
-            <arg type="s" direction="in"></arg>
-            <arg type="i" direction="out"></arg>
-        </method>
-        <method name="RefreshBrightness"></method>
-        <method name="Reset"></method>
-        <method name="ResetBrightness">
-            <arg type="s" direction="in"></arg>
-        </method>
-        <method name="ResetChanges"></method>
-        <method name="SaveChanges"></method>
-        <method name="SetBrightness">
-            <arg type="s" direction="in"></arg>
-            <arg type="d" direction="in"></arg>
-        </method>
-        <method name="SetPrimary">
-            <arg type="s" direction="in"></arg>
-        </method>
-        <method name="SplitMonitor">
-            <arg type="s" direction="in"></arg>
-        </method>
-        <method name="SwitchMode">
-            <arg type="n" direction="in"></arg>
-            <arg type="s" direction="in"></arg>
-        </method>
-        <signal name="PrimaryChanged">
-            <arg type="(nnqq)"></arg>
-        </signal>
-        <property name="Monitors" type="ao" access="read"></property>
-        <property name="ScreenWidth" type="q" access="read"></property>
-        <property name="ScreenHeight" type="q" access="read"></property>
-        <property name="Primary" type="s" access="read"></property>
-        <property name="PrimaryRect" type="(nnqq)" access="read"></property>
-        <property name="DisplayMode" type="n" access="read"></property>
-        <property name="BuiltinOutput" type="o" access="read"></property>
-        <property name="HasChanged" type="b" access="read"></property>
-        <property name="Brightness" type="a{sd}" access="read"></property>
-    </interface>
+  <interface name="com.deepin.daemon.Display">
+    <method name="ApplyChanges"></method>
+    <method name="AssociateTouch">
+      <arg direction="in" type="s"></arg>
+      <arg direction="in" type="s"></arg>
+    </method>
+    <method name="DeleteCustomConfig"></method>
+    <method name="ListOutputNames">
+      <arg direction="out" type="as"></arg>
+    </method>
+    <method name="ListOutputsCommonModes">
+      <arg direction="out" type="a(uqqd)"></arg>
+    </method>
+    <method name="RefreshBrightness"></method>
+    <method name="Reset"></method>
+    <method name="ResetChanges"></method>
+    <method name="Save"></method>
+    <method name="SaveBrightness"></method>
+    <method name="SetBrightness">
+      <arg direction="in" type="s"></arg>
+      <arg direction="in" type="d"></arg>
+    </method>
+    <method name="SetPrimary">
+      <arg direction="in" type="s"></arg>
+    </method>
+    <method name="SupportedBacklight">
+      <arg direction="in" type="s"></arg>
+      <arg direction="out" type="b"></arg>
+    </method>
+    <method name="SwitchMode">
+      <arg direction="in" type="y"></arg>
+      <arg direction="in" type="s"></arg>
+    </method>
+    <property access="read" name="HasChanged" type="b"></property>
+    <property access="read" name="HasCustomConfig" type="b"></property>
+    <property access="read" name="DisplayMode" type="y"></property>
+    <property access="read" name="ScreenWidth" type="q"></property>
+    <property access="read" name="ScreenHeight" type="q"></property>
+    <property access="read" name="Primary" type="s"></property>
+    <property access="read" name="PrimaryRect" type="(nnqq)"></property>
+    <property access="read" name="Monitors" type="ao"></property>
+    <property access="read" name="Brightness" type="a{sd}"></property>
+    <property access="read" name="TouchMap" type="a{ss}"></property>
+  </interface>
 </node>

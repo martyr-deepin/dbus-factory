@@ -1,42 +1,39 @@
 <node>
-     <interface name="com.deepin.daemon.Display.Monitor">
-          <method name="ListModes">
-               <arg type="a(uqqd)" direction="out"></arg>
-          </method>
-          <method name="ListReflect">
-               <arg type="aq" direction="out"></arg>
-          </method>
-          <method name="ListRotations">
-               <arg type="aq" direction="out"></arg>
-          </method>
-          <method name="SetMode">
-               <arg type="u" direction="in"></arg>
-          </method>
-          <method name="SetPos">
-               <arg type="n" direction="in"></arg>
-               <arg type="n" direction="in"></arg>
-          </method>
-          <method name="SetReflect">
-               <arg type="q" direction="in"></arg>
-          </method>
-          <method name="SetRotation">
-               <arg type="q" direction="in"></arg>
-          </method>
-          <method name="SwitchOn">
-               <arg type="b" direction="in"></arg>
-          </method>
-          <property name="Outputs" type="as" access="read"></property>
-          <property name="BestMode" type="(uqqd)" access="read"></property>
-          <property name="IsComposited" type="b" access="read"></property>
-          <property name="Name" type="s" access="read"></property>
-          <property name="FullName" type="s" access="read"></property>
-          <property name="X" type="n" access="read"></property>
-          <property name="Y" type="n" access="read"></property>
-          <property name="Opened" type="b" access="read"></property>
-          <property name="Rotation" type="q" access="read"></property>
-          <property name="Reflect" type="q" access="read"></property>
-          <property name="CurrentMode" type="(uqqd)" access="read"></property>
-          <property name="Width" type="q" access="read"></property>
-          <property name="Height" type="q" access="read"></property>
-     </interface>
+  <interface name="com.deepin.daemon.Display.Monitor">
+    <method name="Enable">
+      <arg direction="in" type="b"></arg>
+    </method>
+    <method name="SetMode">
+      <arg direction="in" type="u"></arg>
+    </method>
+    <method name="SetModeBySize">
+      <arg direction="in" type="q"></arg>
+      <arg direction="in" type="q"></arg>
+    </method>
+    <method name="SetPosition">
+      <arg direction="in" type="n"></arg>
+      <arg direction="in" type="n"></arg>
+    </method>
+    <method name="SetReflect">
+      <arg direction="in" type="q"></arg>
+    </method>
+    <method name="SetRotation">
+      <arg direction="in" type="q"></arg>
+    </method>
+    <property access="read" name="Name" type="s"></property>
+    <property access="read" name="Enabled" type="b"></property>
+    <property access="read" name="Connected" type="b"></property>
+    <property access="read" name="X" type="n"></property>
+    <property access="read" name="Y" type="n"></property>
+    <property access="read" name="Width" type="q"></property>
+    <property access="read" name="Height" type="q"></property>
+    <property access="read" name="Rotation" type="q"></property>
+    <property access="read" name="Reflect" type="q"></property>
+    <property access="read" name="RefreshRate" type="d"></property>
+    <property access="read" name="Rotations" type="aq"></property>
+    <property access="read" name="Reflects" type="aq"></property>
+    <property access="read" name="BestMode" type="(uqqd)"></property>
+    <property access="read" name="CurrentMode" type="(uqqd)"></property>
+    <property access="read" name="Modes" type="a(uqqd)"></property>
+  </interface>
 </node>
