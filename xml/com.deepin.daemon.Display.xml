@@ -5,6 +5,9 @@
       <arg direction="in" type="s"></arg>
       <arg direction="in" type="s"></arg>
     </method>
+    <method name="ChangeBrightness">
+      <arg direction="in" type="b"></arg>
+    </method>
     <method name="DeleteCustomConfig"></method>
     <method name="ListOutputNames">
       <arg direction="out" type="as"></arg>
@@ -23,10 +26,6 @@
     </method>
     <method name="SetPrimary">
       <arg direction="in" type="s"></arg>
-    </method>
-    <method name="SupportedBacklight">
-      <arg direction="in" type="s"></arg>
-      <arg direction="out" type="b"></arg>
     </method>
     <method name="SwitchMode">
       <arg direction="in" type="y"></arg>
