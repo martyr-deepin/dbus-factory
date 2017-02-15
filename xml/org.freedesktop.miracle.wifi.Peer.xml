@@ -1,0 +1,38 @@
+<node>
+<interface name="org.freedesktop.miracle.wifi.Peer">
+  <method name="Connect">
+   <arg type="s" direction="in"/>
+   <arg type="s" direction="in"/>
+   <annotation name="org.freedesktop.systemd1.Privileged" value="true"/>
+  </method>
+  <method name="Disconnect">
+   <annotation name="org.freedesktop.systemd1.Privileged" value="true"/>
+  </method>
+  <property name="Link" type="o" access="read">
+   <annotation name="org.freedesktop.DBus.Property.EmitsChangedSignal" value="const"/>
+  </property>
+  <property name="P2PMac" type="s" access="read">
+   <annotation name="org.freedesktop.DBus.Property.EmitsChangedSignal" value="const"/>
+  </property>
+  <property name="FriendlyName" type="s" access="read">
+  </property>
+  <property name="Connected" type="b" access="read">
+  </property>
+  <property name="Interface" type="s" access="read">
+  </property>
+  <property name="LocalAddress" type="s" access="read">
+  </property>
+  <property name="RemoteAddress" type="s" access="read">
+  </property>
+  <property name="WfdSubelements" type="s" access="read">
+  </property>
+  <signal name="ProvisionDiscovery">
+   <arg type="s"/>
+   <arg type="s"/>
+  </signal>
+  <signal name="GoNegRequest">
+   <arg type="s"/>
+   <arg type="s"/>
+  </signal>
+ </interface>
+</node>

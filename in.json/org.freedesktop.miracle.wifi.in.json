@@ -1,0 +1,28 @@
+{
+	"Config": {
+	"OutputDir": ".",
+	"InputDir": "../xml",
+	"BusType": "System",
+	"DestName": "org.freedesktop.miracle.wifi"
+	},
+	"Interfaces": [
+		{
+		"Interface": "org.freedesktop.DBus.ObjectManager",
+		"OutFile": "object-manager",
+		"XMLFile": "org.freedesktop.DBus.ObjectManager.xml",
+		"ObjectName": "ObjectManager"
+		},
+		{
+		"Interface": "org.freedesktop.miracle.wifi.Link",
+		"OutFile": "link",
+		"XMLFile": "org.freedesktop.miracle.wifi.Link.xml",
+		"ObjectName": "Link"
+		},
+		{
+		"Interface": "org.freedesktop.miracle.wifi.Peer",
+		"OutFile": "peer",
+		"XMLFile": "org.freedesktop.miracle.wifi.Peer.xml",
+		"ObjectName": "Peer"
+		}
+	]
+}

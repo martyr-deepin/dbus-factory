@@ -1,0 +1,24 @@
+<node>
+<interface name="org.freedesktop.miracle.wifi.Link">
+  <property name="InterfaceIndex" type="u" access="read">
+   <annotation name="org.freedesktop.DBus.Property.EmitsChangedSignal" value="const"/>
+  </property>
+  <property name="MACAddress" type="s" access="read">
+   <annotation name="org.freedesktop.DBus.Property.EmitsChangedSignal" value="const"/>
+  </property>
+  <property name="InterfaceName" type="s" access="read">
+  </property>
+  <property name="FriendlyName" type="s" access="readwrite">
+   <annotation name="org.freedesktop.systemd1.Privileged" value="true"/>
+  </property>
+  <property name="Managed" type="b" access="readwrite">
+   <annotation name="org.freedesktop.systemd1.Privileged" value="true"/>
+  </property>
+  <property name="P2PScanning" type="b" access="readwrite">
+   <annotation name="org.freedesktop.systemd1.Privileged" value="true"/>
+  </property>
+  <property name="WfdSubelements" type="s" access="readwrite">
+   <annotation name="org.freedesktop.systemd1.Privileged" value="true"/>
+  </property>
+ </interface>
+</node>
