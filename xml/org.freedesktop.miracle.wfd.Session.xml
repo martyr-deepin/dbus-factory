@@ -1,0 +1,17 @@
+<node>
+ <interface name="org.freedesktop.miracle.wfd.Session">
+  <method name="Resume">
+  </method>
+  <method name="Pause">
+  </method>
+  <method name="Teardown">
+  </method>
+  <property name="Sink" type="o" access="read">
+   <annotation name="org.freedesktop.DBus.Property.EmitsChangedSignal" value="const"/>
+  </property>
+  <property name="Url" type="s" access="read">
+  </property>
+  <property name="State" type="i" access="read">
+  </property>
+ </interface>
+</node>

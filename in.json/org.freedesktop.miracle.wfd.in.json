@@ -1,0 +1,28 @@
+{
+	"Config": {
+	"OutputDir": ".",
+	"InputDir": "../xml",
+	"BusType": "System",
+	"DestName": "org.freedesktop.miracle.wfd"
+	},
+	"Interfaces": [
+		{
+		"Interface": "org.freedesktop.DBus.ObjectManager",
+		"OutFile": "object-manager",
+		"XMLFile": "org.freedesktop.DBus.ObjectManager.xml",
+		"ObjectName": "ObjectManager"
+		},
+		{
+		"Interface": "org.freedesktop.miracle.wfd.Sink",
+		"OutFile": "sink",
+		"XMLFile": "org.freedesktop.miracle.wfd.Sink.xml",
+		"ObjectName": "Sink"
+		},
+		{
+		"Interface": "org.freedesktop.miracle.wfd.Session",
+		"OutFile": "session",
+		"XMLFile": "org.freedesktop.miracle.wfd.Session.xml",
+		"ObjectName": "Session"
+		}
+	]
+}

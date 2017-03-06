@@ -3,10 +3,8 @@
   <method name="Connect">
    <arg type="s" direction="in"/>
    <arg type="s" direction="in"/>
-   <annotation name="org.freedesktop.systemd1.Privileged" value="true"/>
   </method>
   <method name="Disconnect">
-   <annotation name="org.freedesktop.systemd1.Privileged" value="true"/>
   </method>
   <property name="Link" type="o" access="read">
    <annotation name="org.freedesktop.DBus.Property.EmitsChangedSignal" value="const"/>
