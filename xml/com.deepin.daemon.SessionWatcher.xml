@@ -1,5 +1,8 @@
 <node>
-     <interface name="com.deepin.daemon.SessionWatcher">
-         <property name="IsActive" type="b" access="read"></property>
-     </interface>
+  <interface name="com.deepin.daemon.SessionWatcher">
+    <method name="IsX11SessionActive">
+      <arg direction="out" type="b"></arg>
+    </method>
+    <property access="read" name="IsActive" type="b"></property>
+  </interface>
 </node>
