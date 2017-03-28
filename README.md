@@ -6,7 +6,7 @@
 
 ### Build dependencies
 
-- [dbus-generator](https://gitcafe.com/Deepin/go-dbus-generator) to generate the static dbus bindings
+- [dbus-generator](https://github.com/linuxdeepin/go-dbus-generator) to generate the static dbus bindings
 
 ### Runtime dependencies
 
