@@ -16,6 +16,8 @@
   </property>
   <property name="Managed" type="b" access="readwrite">
   </property>
+  <property name="P2PState" type="i" access="read">
+  </property>
   <property name="P2PScanning" type="b" access="readwrite">
   </property>
   <property name="WfdSubelements" type="s" access="readwrite">

@@ -32,5 +32,8 @@
    <arg type="s"/>
    <arg type="s"/>
   </signal>
+  <signal name="FormationFailure">
+   <arg type="s"/>
+  </signal>
  </interface>
 </node>
