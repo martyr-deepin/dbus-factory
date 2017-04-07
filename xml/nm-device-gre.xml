@@ -70,7 +70,7 @@
     </property>
 
     <signal name="PropertiesChanged">
-        <arg name="properties" type="a{sv}" tp:type="String_Variant_Map">
+        <arg name="properties" type="a{sv}">
             <tp:docstring>
                 A dictionary mapping property names to variant boxed values
             </tp:docstring>
