@@ -5,6 +5,7 @@
     <method name="Play">
       <arg type="s" direction="in"/>
       <arg type="s" direction="in"/>
+      <arg type="s" direction="in"/>
     </method>
     <method name="Quit"></method>
   </interface>
