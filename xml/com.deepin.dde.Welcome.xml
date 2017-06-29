@@ -1,0 +1,6 @@
+<node>
+  <interface name="com.deepin.dde.Welcome">
+    <method name="Show"/>
+    <method name="Exit"/>
+  </interface>
+</node>)

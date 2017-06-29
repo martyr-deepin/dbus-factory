@@ -1,0 +1,16 @@
+{
+	"Config":{
+		"OutputDir": ".",
+		"InputDir": "../xml",
+		"BusType": "Session",
+		"DestName": "com.deepin.dde.Welcome"
+	},
+	"Interfaces":[
+		{
+			"Interface": "com.deepin.dde.Welcome",
+			"OutFile": "welcome",
+			"XMLFile": "com.deepin.dde.Welcome.xml",
+			"ObjectName": "Welcome"
+		}
+	]
+}
