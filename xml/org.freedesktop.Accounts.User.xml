@@ -568,6 +568,16 @@
     </doc:doc>
   </method>
 
+  <method name="GetPasswordExpirationPolicy">
+    <annotation name="org.freedesktop.DBus.GLib.Async" value=""/>
+    <arg name="expiration_time" direction="out" type="x"/>
+    <arg name="last_change_time" direction="out" type="x"/>
+    <arg name="min_days_between_changes" direction="out" type="x"/>
+    <arg name="max_days_between_changes" direction="out" type="x"/>
+    <arg name="days_to_warn" direction="out" type="x"/>
+    <arg name="days_after_expiration_until_lock" direction="out" type="x"/>
+  </method>
+
   <property name="Uid" type="t" access="read">
     <doc:doc>
       <doc:description>
