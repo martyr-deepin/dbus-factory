@@ -6,9 +6,18 @@
     <method name="MarkLaunched">
       <arg direction="in" type="s"></arg>
     </method>
+    <method name="WatchDirs">
+      <arg direction="in" type="as"></arg>
+    </method>
     <signal name="Launched">
       <arg type="s"></arg>
     </signal>
+    <signal name="StatusSaved">
+      <arg type="s"></arg>
+      <arg type="s"></arg>
+      <arg type="b"></arg>
+    </signal>
+    <signal name="ServiceRestarted"></signal>
   </interface>
   <interface name="com.deepin.daemon.Apps.DesktopFileWatcher">
     <signal name="Event">
