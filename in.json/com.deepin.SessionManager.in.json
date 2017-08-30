@@ -1,22 +1,28 @@
 {
-	"Config": {
-		"OutputDir": ".",
-		"InputDir": "../xml",
-		"BusType": "Session",
-		"DestName": "com.deepin.SessionManager"
-	},
-	"Interfaces": [
-		{
-			"Interface": "com.deepin.SessionManager",
-			"OutFile": "dbus-sessions",
-			"XMLFile": "com.deepin.SessionManager.xml",
-			"ObjectName": "SessionManager"
-		},
-		{
-			"Interface": "com.deepin.XSettings",
-			"OutFile": "dbus-xsettings",
-			"XMLFile": "com.deepin.XSettings.xml",
-			"ObjectName": "XSettings"
-		}
-	]
+   "Config" : {
+      "BusType" : "Session",
+      "DestName" : "com.deepin.SessionManager",
+      "InputDir" : "../xml",
+      "OutputDir" : "."
+   },
+   "Interfaces" : [
+      {
+         "Interface" : "com.deepin.SessionManager",
+         "ObjectName" : "SessionManager",
+         "OutFile" : "sessionmanager-0",
+         "XMLFile" : "com.deepin.SessionManager.xml"
+      },
+      {
+         "Interface" : "com.deepin.StartManager",
+         "ObjectName" : "StartManager",
+         "OutFile" : "startmanager-1",
+         "XMLFile" : "com.deepin.StartManager.xml"
+      },
+      {
+         "Interface" : "com.deepin.XSettings",
+         "ObjectName" : "XSettings",
+         "OutFile" : "xsettings-2",
+         "XMLFile" : "com.deepin.XSettings.xml"
+      }
+   ]
 }
