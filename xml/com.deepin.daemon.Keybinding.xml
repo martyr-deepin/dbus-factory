@@ -1,70 +1,108 @@
-<?xml version="1.0" encoding="utf-8"?>
-
 <node>
   <interface name="com.deepin.daemon.Keybinding">
     <method name="Add">
-      <arg type="s" direction="in"/>
-      <arg type="s" direction="in"/>
-      <arg type="s" direction="in"/>
-      <arg type="s" direction="out"/>
-      <arg type="b" direction="out"/>
+      <arg direction="in" type="s"></arg>
+      <arg direction="in" type="s"></arg>
+      <arg direction="in" type="s"></arg>
+      <arg direction="out" type="s"></arg>
+      <arg direction="out" type="b"></arg>
+    </method>
+    <method name="AddCustomShortcut">
+      <arg direction="in" type="s"></arg>
+      <arg direction="in" type="s"></arg>
+      <arg direction="in" type="s"></arg>
+    </method>
+    <method name="AddShortcutKeystroke">
+      <arg direction="in" type="s"></arg>
+      <arg direction="in" type="i"></arg>
+      <arg direction="in" type="s"></arg>
     </method>
     <method name="CheckAvaliable">
-      <arg type="s" direction="in"/>
-      <arg type="b" direction="out"/>
-      <arg type="s" direction="out"/>
+      <arg direction="in" type="s"></arg>
+      <arg direction="out" type="b"></arg>
+      <arg direction="out" type="s"></arg>
+    </method>
+    <method name="ClearShortcutKeystrokes">
+      <arg direction="in" type="s"></arg>
+      <arg direction="in" type="i"></arg>
     </method>
     <method name="Delete">
-      <arg type="s" direction="in"/>
-      <arg type="i" direction="in"/>
+      <arg direction="in" type="s"></arg>
+      <arg direction="in" type="i"></arg>
+    </method>
+    <method name="DeleteCustomShortcut">
+      <arg direction="in" type="s"></arg>
+    </method>
+    <method name="DeleteShortcutKeystroke">
+      <arg direction="in" type="s"></arg>
+      <arg direction="in" type="i"></arg>
+      <arg direction="in" type="s"></arg>
     </method>
     <method name="Disable">
-      <arg type="s" direction="in"/>
-      <arg type="i" direction="in"/>
+      <arg direction="in" type="s"></arg>
+      <arg direction="in" type="i"></arg>
     </method>
-    <method name="GrabScreen"/>
+    <method name="GetShortcut">
+      <arg direction="in" type="s"></arg>
+      <arg direction="in" type="i"></arg>
+      <arg direction="out" type="s"></arg>
+    </method>
+    <method name="GrabScreen"></method>
     <method name="List">
-      <arg type="s" direction="out"/>
+      <arg direction="out" type="s"></arg>
+    </method>
+    <method name="ListAllShortcuts">
+      <arg direction="out" type="s"></arg>
+    </method>
+    <method name="ListShortcutsByType">
+      <arg direction="in" type="i"></arg>
+      <arg direction="out" type="s"></arg>
+    </method>
+    <method name="LookupConflictingShortcut">
+      <arg direction="in" type="s"></arg>
+      <arg direction="out" type="s"></arg>
     </method>
     <method name="ModifiedAccel">
-      <arg type="s" direction="in"/>
-      <arg type="i" direction="in"/>
-      <arg type="s" direction="in"/>
-      <arg type="b" direction="in"/>
-      <arg type="b" direction="out"/>
-      <arg type="s" direction="out"/>
+      <arg direction="in" type="s"></arg>
+      <arg direction="in" type="i"></arg>
+      <arg direction="in" type="s"></arg>
+      <arg direction="in" type="b"></arg>
+      <arg direction="out" type="b"></arg>
+      <arg direction="out" type="s"></arg>
     </method>
-    <method name="ModifiedAction">
-      <arg type="s" direction="in"/>
-      <arg type="i" direction="in"/>
-      <arg type="s" direction="in"/>
-    </method>
-    <method name="ModifiedName">
-      <arg type="s" direction="in"/>
-      <arg type="i" direction="in"/>
-      <arg type="s" direction="in"/>
+    <method name="ModifyCustomShortcut">
+      <arg direction="in" type="s"></arg>
+      <arg direction="in" type="s"></arg>
+      <arg direction="in" type="s"></arg>
+      <arg direction="in" type="s"></arg>
     </method>
     <method name="Query">
-      <arg type="s" direction="in"/>
-      <arg type="i" direction="in"/>
-      <arg type="s" direction="out"/>
+      <arg direction="in" type="s"></arg>
+      <arg direction="in" type="i"></arg>
+      <arg direction="out" type="s"></arg>
     </method>
-    <method name="Reset"/>
+    <method name="Reset"></method>
+    <method name="SelectKeystroke"></method>
+    <method name="SetNumLockState">
+      <arg direction="in" type="i"></arg>
+    </method>
     <signal name="Added">
-      <arg type="s"/>
-      <arg type="i"/>
+      <arg type="s"></arg>
+      <arg type="i"></arg>
     </signal>
     <signal name="Deleted">
-      <arg type="s"/>
-      <arg type="i"/>
+      <arg type="s"></arg>
+      <arg type="i"></arg>
     </signal>
     <signal name="Changed">
-      <arg type="s"/>
-      <arg type="i"/>
+      <arg type="s"></arg>
+      <arg type="i"></arg>
     </signal>
     <signal name="KeyEvent">
-      <arg type="b"/>
-      <arg type="s"/>
+      <arg type="b"></arg>
+      <arg type="s"></arg>
     </signal>
+    <property access="read" name="NumLockState" type="i"></property>
+    <property access="readwrite" name="ShortcutSwitchLayout" type="u"></property>
   </interface>
 </node>
