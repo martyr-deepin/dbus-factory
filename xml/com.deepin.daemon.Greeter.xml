@@ -1,0 +1,10 @@
+<node>
+     <interface name="com.deepin.daemon.Greeter">
+          <method name="GetScaleFactor">
+               <arg type="d" direction="out"></arg>
+          </method>
+          <method name="SetScaleFactor">
+               <arg type="d" direction="in"></arg>
+          </method>
+     </interface>
+</node>
