@@ -1,0 +1,22 @@
+{
+	"Config": {
+		"OutputDir": ".",
+		"InputDir": "../xml",
+		"BusType": "System",
+		"DestName": "net.reactivated.Fprint"
+	},
+	"Interfaces": [
+		{
+			"Interface": "net.reactivated.Fprint.Manager",
+			"OutFile": "dbus-manager",
+			"XMLFile": "net.reactivated.Fprint.Manager.xml",
+			"ObjectName": "Manager"
+		},
+		{
+			"Interface": "net.reactivated.Fprint.Device",
+			"OutFile": "dbus-device",
+			"XMLFile": "net.reactivated.Fprint.Device.xml",
+			"ObjectName": "Device"
+		}
+	]
+}

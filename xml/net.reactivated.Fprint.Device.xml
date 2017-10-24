@@ -1,0 +1,40 @@
+<node>
+  <interface name="net.reactivated.Fprint.Device">
+    <method name="EnrollStop">
+    </method>
+    <method name="EnrollStart">
+      <arg name="finger_name" type="s" direction="in"/>
+    </method>
+    <method name="VerifyStop">
+    </method>
+    <method name="VerifyStart">
+      <arg name="finger_name" type="s" direction="in"/>
+    </method>
+    <method name="Release">
+    </method>
+    <method name="Claim">
+      <arg name="username" type="s" direction="in"/>
+    </method>
+    <method name="DeleteEnrolledFingers">
+      <arg name="username" type="s" direction="in"/>
+    </method>
+    <method name="ListEnrolledFingers">
+      <arg name="username" type="s" direction="in"/>
+      <arg name="enrolled_fingers" type="as" direction="out"/>
+    </method>
+    <signal name="EnrollStatus">
+      <arg type="s"/>
+      <arg type="b"/>
+    </signal>
+    <signal name="VerifyStatus">
+      <arg type="s"/>
+      <arg type="b"/>
+    </signal>
+    <signal name="VerifyFingerSelected">
+      <arg type="s"/>
+    </signal>
+    <property name="scan-type" type="s" access="read"/>
+    <property name="num-enroll-stages" type="i" access="read"/>
+    <property name="name" type="s" access="read"/>
+  </interface>
+</node>
