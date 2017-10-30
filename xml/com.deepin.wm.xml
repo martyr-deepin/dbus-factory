@@ -35,6 +35,11 @@
     <method name="SwitchToWorkspace">
       <arg type="b" name="backward" direction="in"/>
     </method>
+    <method name="TileActiveWindow">
+      <arg type="u" name="side" direction="in"/>
+    </method>
+    <method name="BeginToMoveActiveWindow">
+    </method>
     <signal name="WorkspaceRemoved">
       <arg type="i" name="index"/>
     </signal>
