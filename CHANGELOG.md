@@ -1,5 +1,9 @@
 ## [Unreleased]
 
+## [3.1.10] - 2017-11-3
+- Update deepin wm interfaces
+
+
 ## [3.1.9] - 2017-10-25
 - Add 'fprintd'
 - Add deepin system 'Daemon'
