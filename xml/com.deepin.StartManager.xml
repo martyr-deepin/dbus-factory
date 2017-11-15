@@ -15,6 +15,16 @@
       <arg direction="in" type="s"></arg>
       <arg direction="out" type="b"></arg>
     </method>
+    <method name="LaunchApp">
+      <arg direction="in" type="s"></arg>
+      <arg direction="in" type="u"></arg>
+      <arg direction="in" type="as"></arg>
+    </method>
+    <method name="LaunchAppAction">
+      <arg direction="in" type="s"></arg>
+      <arg direction="in" type="s"></arg>
+      <arg direction="in" type="u"></arg>
+    </method>
     <method name="LaunchWithTimestamp">
       <arg direction="in" type="s"></arg>
       <arg direction="in" type="u"></arg>
@@ -23,6 +33,10 @@
     <method name="RemoveAutostart">
       <arg direction="in" type="s"></arg>
       <arg direction="out" type="b"></arg>
+    </method>
+    <method name="RunCommand">
+      <arg direction="in" type="s"></arg>
+      <arg direction="in" type="as"></arg>
     </method>
     <signal name="AutostartChanged">
       <arg type="s"></arg>
