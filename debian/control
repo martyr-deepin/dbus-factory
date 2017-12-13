@@ -1,15 +1,15 @@
 Source: dbus-factory
 Section: devel
 Priority: extra
-Maintainer: Deepin Sysdev <sysdev@deepin.com>
+Maintainer: Deepin Packages Builder <packages@deepin.com>
 Build-Depends: debhelper (>= 9), golang-go, golang-dlib-dev(>= 0.4.2), dbus-generator(>= 0.6.2), python,
  jq, libxml2-utils
 Standards-Version: 3.9.5
-Homepage: http://www.deepin.com
+Homepage: http://www.deepin.org/
 
 Package: dde-go-dbus-factory
 Architecture: all
 Depends: ${shlibs:Depends}, ${misc:Depends}
 Description: Go-lang dbus gen for dlib
- Go-lang dubs gen for dlib
+ Deepin Go-lang dubs gen for dlib.
 
