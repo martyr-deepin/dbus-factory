@@ -1,5 +1,9 @@
 ## [Unreleased]
 
+## [3.1.11] - 2017-12-13
+- update com.deepin.StartManager
+- doc: update links in README
+
 ## [3.1.10] - 2017-11-3
 - Update deepin wm interfaces
 
