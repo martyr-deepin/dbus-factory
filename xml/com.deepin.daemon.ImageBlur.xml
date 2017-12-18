@@ -1,0 +1,13 @@
+<node>
+  <interface name="com.deepin.daemon.ImageBlur">
+    <method name="Get">
+      <arg direction="in" type="s"></arg>
+      <arg direction="out" type="s"></arg>
+    </method>
+    <signal name="BlurDone">
+      <arg type="s"></arg>
+      <arg type="s"></arg>
+      <arg type="b"></arg>
+    </signal>
+  </interface>
+</node>

@@ -1,10 +1,10 @@
 <node>
   <interface name="com.deepin.daemon.Accounts.User">
-    <method name="DeleteHistoryIcon">
-      <arg direction="in" type="s"></arg>
-    </method>
     <method name="DeleteIconFile">
       <arg direction="in" type="s"></arg>
+    </method>
+    <method name="EnableNoPasswdLogin">
+      <arg direction="in" type="b"></arg>
     </method>
     <method name="GetLargeIcon">
       <arg direction="out" type="s"></arg>
@@ -19,7 +19,10 @@
     <method name="SetAutomaticLogin">
       <arg direction="in" type="b"></arg>
     </method>
-    <method name="SetBackgroundFile">
+    <method name="SetDesktopBackgrounds">
+      <arg direction="in" type="as"></arg>
+    </method>
+    <method name="SetFullName">
       <arg direction="in" type="s"></arg>
     </method>
     <method name="SetGreeterBackground">
@@ -49,10 +52,8 @@
     <method name="SetShell">
       <arg direction="in" type="s"></arg>
     </method>
-    <method name="SetUserName">
-      <arg direction="in" type="s"></arg>
-    </method>
     <property access="read" name="UserName" type="s"></property>
+    <property access="read" name="FullName" type="s"></property>
     <property access="read" name="Uid" type="s"></property>
     <property access="read" name="Gid" type="s"></property>
     <property access="read" name="HomeDir" type="s"></property>
@@ -60,14 +61,16 @@
     <property access="read" name="Locale" type="s"></property>
     <property access="read" name="Layout" type="s"></property>
     <property access="read" name="IconFile" type="s"></property>
-    <property access="read" name="BackgroundFile" type="s"></property>
+    <property access="read" name="DesktopBackgrounds" type="as"></property>
     <property access="read" name="GreeterBackground" type="s"></property>
+    <property access="read" name="XSession" type="s"></property>
     <property access="read" name="Locked" type="b"></property>
     <property access="read" name="AutomaticLogin" type="b"></property>
+    <property access="read" name="SystemAccount" type="b"></property>
+    <property access="read" name="NoPasswdLogin" type="b"></property>
     <property access="read" name="AccountType" type="i"></property>
     <property access="read" name="LoginTime" type="t"></property>
     <property access="read" name="IconList" type="as"></property>
     <property access="read" name="HistoryLayout" type="as"></property>
-    <property access="read" name="HistoryIcons" type="as"></property>
   </interface>
 </node>

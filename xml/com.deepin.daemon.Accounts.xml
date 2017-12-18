@@ -10,6 +10,7 @@
       <arg direction="in" type="s"></arg>
       <arg direction="in" type="s"></arg>
       <arg direction="in" type="i"></arg>
+      <arg direction="out" type="o"></arg>
     </method>
     <method name="DeleteUser">
       <arg direction="in" type="s"></arg>

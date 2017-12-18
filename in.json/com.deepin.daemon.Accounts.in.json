@@ -1,22 +1,28 @@
 {
-	"Config": {
-		"OutputDir": ".",
-		"InputDir": "../xml",
-		"BusType": "System",
-		"DestName": "com.deepin.daemon.Accounts"
-	},
-	"Interfaces": [
-		{
-			"Interface": "com.deepin.daemon.Accounts",
-			"OutFile": "dbus-accounts",
-			"XMLFile": "com.deepin.daemon.Accounts.xml",
-			"ObjectName": "Accounts"
-		},
-		{
-			"Interface": "com.deepin.daemon.Accounts.User",
-			"OutFile": "dbus-account-users",
-			"XMLFile": "com.deepin.daemon.Accounts.User.xml",
-			"ObjectName": "User"
-		}
-	]
+   "Config" : {
+      "BusType" : "System",
+      "DestName" : "com.deepin.daemon.Accounts",
+      "InputDir" : "../xml",
+      "OutputDir" : "."
+   },
+   "Interfaces" : [
+      {
+         "Interface" : "com.deepin.daemon.Accounts.User",
+         "ObjectName" : "User",
+         "OutFile" : "user-0",
+         "XMLFile" : "com.deepin.daemon.Accounts.User.xml"
+      },
+      {
+         "Interface" : "com.deepin.daemon.Accounts",
+         "ObjectName" : "Accounts",
+         "OutFile" : "accounts-1",
+         "XMLFile" : "com.deepin.daemon.Accounts.xml"
+      },
+      {
+         "Interface" : "com.deepin.daemon.ImageBlur",
+         "ObjectName" : "ImageBlur",
+         "OutFile" : "imageblur-2",
+         "XMLFile" : "com.deepin.daemon.ImageBlur.xml"
+      }
+   ]
 }
