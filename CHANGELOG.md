@@ -1,5 +1,10 @@
 ## [Unreleased]
 
+## [3.1.12] - 2017-12-19
+- fix adapt lintian
+- update com.deepin.lastore
+- update com.deepin.daemon.Accounts
+
 ## [3.1.11] - 2017-12-13
 - update com.deepin.StartManager
 - doc: update links in README
