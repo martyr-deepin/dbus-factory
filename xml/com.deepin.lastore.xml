@@ -85,6 +85,7 @@
       <arg direction="in" type="s"></arg>
       <arg direction="out" type="a(sss)"></arg>
     </method>
+    <method name="RestoreSystemSource"></method>
     <method name="SetAutoCheckUpdates">
       <arg direction="in" type="b"></arg>
     </method>
