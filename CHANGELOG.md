@@ -1,5 +1,9 @@
 ## [Unreleased]
 
+## [3.1.13] - 2018-01-24
+- update com.deepin.lastore
+- update com.deepin.daemon.ImageBlur
+
 ## [3.1.12] - 2017-12-19
 - fix adapt lintian
 - update com.deepin.lastore
