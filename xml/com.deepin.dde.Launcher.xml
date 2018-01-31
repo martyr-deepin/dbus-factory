@@ -1,12 +1,24 @@
-<?xml version="1.0" encoding="utf-8"?>
-
+<!DOCTYPE node PUBLIC "-//freedesktop//DTD D-BUS Object Introspection 1.0//EN" "http://www.freedesktop.org/standards/dbus/1.0/introspect.dtd">
 <node>
   <interface name="com.deepin.dde.Launcher">
-    <method name="Exit"/>
-    <method name="Show"/>
-    <method name="Hide"/>
-    <method name="Toggle"/>
-    <signal name="Closed"/>
-    <signal name="Shown"/>
+    <property access="read" name="Visible" type="b"/>
+    <signal name="Closed"></signal>
+    <signal name="Shown"></signal>
+    <signal name="VisibleChanged">
+      <arg direction="out" name="visible" type="b"/>
+    </signal>
+    <method name="Exit"></method>
+    <method name="Hide"></method>
+    <method name="Show"></method>
+    <method name="ShowByMode">
+      <arg direction="in" name="in0" type="x"/>
+    </method>
+    <method name="UninstallApp">
+      <arg direction="in" name="appKey" type="s"/>
+    </method>
+    <method name="Toggle"></method>
+    <method name="IsVisible">
+      <arg direction="out" type="b"/>
+    </method>
   </interface>
 </node>
