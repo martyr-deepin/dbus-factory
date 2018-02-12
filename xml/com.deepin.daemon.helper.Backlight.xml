@@ -1,9 +1,10 @@
+<!DOCTYPE node PUBLIC "-//freedesktop//DTD D-BUS Object Introspection 1.0//EN" "http://www.freedesktop.org/standards/dbus/1.0/introspect.dtd">
 <node>
   <interface name="com.deepin.daemon.helper.Backlight">
     <method name="SetBrightness">
-      <arg direction="in" type="y"></arg>
-      <arg direction="in" type="s"></arg>
-      <arg direction="in" type="i"></arg>
+      <arg direction="in" name="type" type="y"></arg>
+      <arg direction="in" name="name" type="s"></arg>
+      <arg direction="in" name="value" type="i"></arg>
     </method>
   </interface>
 </node>
