@@ -3,15 +3,19 @@
           <method name="SetLocalRTC">
                <arg type="b" direction="in"></arg>
                <arg type="b" direction="in"></arg>
+               <arg type="s" direction="in"></arg>
           </method>
           <method name="SetNTP">
                <arg type="b" direction="in"></arg>
+               <arg type="s" direction="in"></arg>
           </method>
           <method name="SetTime">
                <arg type="x" direction="in"></arg>
                <arg type="b" direction="in"></arg>
+               <arg type="s" direction="in"></arg>
           </method>
           <method name="SetTimezone">
+               <arg type="s" direction="in"></arg>
                <arg type="s" direction="in"></arg>
           </method>
      </interface>
