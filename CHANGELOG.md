@@ -1,5 +1,10 @@
 ## [Unreleased]
 
+## [3.1.14] - 2018-03-07
+- update timedated xml
+- update com.deepin.daemon.helper.Backlight
+- update com.deepin.dde.Launcher
+
 ## [3.1.13] - 2018-01-24
 - update com.deepin.lastore
 - update com.deepin.daemon.ImageBlur
