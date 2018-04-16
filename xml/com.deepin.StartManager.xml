@@ -1,46 +1,66 @@
+<?xml version="1.0"?>
 <node>
-  <interface name="com.deepin.StartManager">
-    <method name="AddAutostart">
-      <arg direction="in" type="s"></arg>
-      <arg direction="out" type="b"></arg>
-    </method>
-    <method name="AutostartList">
-      <arg direction="out" type="as"></arg>
-    </method>
-    <method name="IsAutostart">
-      <arg direction="in" type="s"></arg>
-      <arg direction="out" type="b"></arg>
-    </method>
-    <method name="Launch">
-      <arg direction="in" type="s"></arg>
-      <arg direction="out" type="b"></arg>
-    </method>
-    <method name="LaunchApp">
-      <arg direction="in" type="s"></arg>
-      <arg direction="in" type="u"></arg>
-      <arg direction="in" type="as"></arg>
-    </method>
-    <method name="LaunchAppAction">
-      <arg direction="in" type="s"></arg>
-      <arg direction="in" type="s"></arg>
-      <arg direction="in" type="u"></arg>
-    </method>
-    <method name="LaunchWithTimestamp">
-      <arg direction="in" type="s"></arg>
-      <arg direction="in" type="u"></arg>
-      <arg direction="out" type="b"></arg>
-    </method>
-    <method name="RemoveAutostart">
-      <arg direction="in" type="s"></arg>
-      <arg direction="out" type="b"></arg>
-    </method>
-    <method name="RunCommand">
-      <arg direction="in" type="s"></arg>
-      <arg direction="in" type="as"></arg>
-    </method>
-    <signal name="AutostartChanged">
-      <arg type="s"></arg>
-      <arg type="s"></arg>
-    </signal>
-  </interface>
+	<interface name="com.deepin.StartManager">
+		<method name="AddAutostart">
+			<arg type="s" direction="in"/>
+			<arg type="b" direction="out"/>
+		</method>
+		<method name="AutostartList">
+			<arg type="as" direction="out"/>
+		</method>
+		<method name="DumpMemRecord">
+			<arg type="s" direction="out"/>
+		</method>
+		<method name="GetApps">
+			<arg type="a{us}" direction="out"/>
+		</method>
+		<method name="IsAutostart">
+			<arg type="s" direction="in"/>
+			<arg type="b" direction="out"/>
+		</method>
+		<method name="IsMemSufficient">
+			<arg type="b" direction="out"/>
+		</method>
+		<method name="Launch">
+			<arg type="s" direction="in"/>
+			<arg type="b" direction="out"/>
+		</method>
+		<method name="LaunchApp">
+			<arg type="s" direction="in"/>
+			<arg type="u" direction="in"/>
+			<arg type="as" direction="in"/>
+		</method>
+		<method name="LaunchAppAction">
+			<arg type="s" direction="in"/>
+			<arg type="s" direction="in"/>
+			<arg type="u" direction="in"/>
+		</method>
+		<method name="LaunchAppWithOptions">
+			<arg type="s" direction="in"/>
+			<arg type="u" direction="in"/>
+			<arg type="as" direction="in"/>
+			<arg type="a{sv}" direction="in"/>
+		</method>
+		<method name="LaunchWithTimestamp">
+			<arg type="s" direction="in"/>
+			<arg type="u" direction="in"/>
+			<arg type="b" direction="out"/>
+		</method>
+		<method name="RemoveAutostart">
+			<arg type="s" direction="in"/>
+			<arg type="b" direction="out"/>
+		</method>
+		<method name="RunCommand">
+			<arg type="s" direction="in"/>
+			<arg type="as" direction="in"/>
+		</method>
+		<method name="TryAgain">
+			<arg type="b" direction="in"/>
+		</method>
+		<signal name="AutostartChanged">
+			<arg type="s"/>
+			<arg type="s"/>
+		</signal>
+		<property name="NeededMemory" type="t" access="read"/>
+	</interface>
 </node>
