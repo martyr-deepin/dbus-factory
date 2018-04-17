@@ -1,5 +1,8 @@
 ## [Unreleased]
 
+## [3.1.15] - 2018-04-17
+- update com.deepin.StartManager
+
 ## [3.1.14] - 2018-03-07
 - update timedated xml
 - update com.deepin.daemon.helper.Backlight
