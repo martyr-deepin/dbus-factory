@@ -1,52 +1,54 @@
+<?xml version="1.0"?>
+<!DOCTYPE node PUBLIC "-//freedesktop//DTD D-BUS Object Introspection 1.0//EN" "http://www.freedesktop.org/standards/dbus/1.0/introspect.dtd">
 <node>
-  <interface name="com.deepin.daemon.Accounts">
-    <method name="AllowGuestAccount">
-      <arg direction="in" type="b"></arg>
-    </method>
-    <method name="CreateGuestAccount">
-      <arg direction="out" type="s"></arg>
-    </method>
-    <method name="CreateUser">
-      <arg direction="in" type="s"></arg>
-      <arg direction="in" type="s"></arg>
-      <arg direction="in" type="i"></arg>
-      <arg direction="out" type="o"></arg>
-    </method>
-    <method name="DeleteUser">
-      <arg direction="in" type="s"></arg>
-      <arg direction="in" type="b"></arg>
-    </method>
-    <method name="FindUserById">
-      <arg direction="in" type="s"></arg>
-      <arg direction="out" type="s"></arg>
-    </method>
-    <method name="FindUserByName">
-      <arg direction="in" type="s"></arg>
-      <arg direction="out" type="s"></arg>
-    </method>
-    <method name="IsPasswordValid">
-      <arg direction="in" type="s"></arg>
-      <arg direction="out" type="b"></arg>
-      <arg direction="out" type="s"></arg>
-      <arg direction="out" type="i"></arg>
-    </method>
-    <method name="IsUsernameValid">
-      <arg direction="in" type="s"></arg>
-      <arg direction="out" type="b"></arg>
-      <arg direction="out" type="s"></arg>
-      <arg direction="out" type="i"></arg>
-    </method>
-    <method name="RandUserIcon">
-      <arg direction="out" type="s"></arg>
-    </method>
-    <signal name="UserAdded">
-      <arg type="s"></arg>
-    </signal>
-    <signal name="UserDeleted">
-      <arg type="s"></arg>
-    </signal>
-    <property access="read" name="UserList" type="as"></property>
-    <property access="read" name="GuestIcon" type="s"></property>
-    <property access="read" name="AllowGuest" type="b"></property>
-  </interface>
+	<interface name="com.deepin.daemon.Accounts">
+		<method name="AllowGuestAccount">
+			<arg name="allow" type="b" direction="in"/>
+		</method>
+		<method name="CreateGuestAccount">
+			<arg name="user" type="s" direction="out"/>
+		</method>
+		<method name="CreateUser">
+			<arg name="name" type="s" direction="in"/>
+			<arg name="fullName" type="s" direction="in"/>
+			<arg name="type" type="i" direction="in"/>
+			<arg name="user" type="o" direction="out"/>
+		</method>
+		<method name="DeleteUser">
+			<arg name="name" type="s" direction="in"/>
+			<arg name="rmFiles" type="b" direction="in"/>
+		</method>
+		<method name="FindUserById">
+			<arg name="uid" type="s" direction="in"/>
+			<arg name="user" type="s" direction="out"/>
+		</method>
+		<method name="FindUserByName">
+			<arg name="name" type="s" direction="in"/>
+			<arg name="user" type="s" direction="out"/>
+		</method>
+		<method name="IsPasswordValid">
+			<arg name="password" type="s" direction="in"/>
+			<arg name="ok" type="b" direction="out"/>
+			<arg name="errReason" type="s" direction="out"/>
+			<arg name="errCode" type="i" direction="out"/>
+		</method>
+		<method name="IsUsernameValid">
+			<arg name="name" type="s" direction="in"/>
+			<arg name="ok" type="b" direction="out"/>
+			<arg name="errReason" type="s" direction="out"/>
+			<arg name="errCode" type="i" direction="out"/>
+		</method>
+		<method name="RandUserIcon">
+			<arg name="iconFile" type="s" direction="out"/>
+		</method>
+		<signal name="UserAdded">
+			<arg name="objPath" type="s"/>
+		</signal>
+		<signal name="UserDeleted">
+			<arg name="objPath" type="s"/>
+		</signal>
+		<property name="UserList" type="as" access="read"/>
+		<property name="GuestIcon" type="s" access="read"/>
+		<property name="AllowGuest" type="b" access="read"/>
+	</interface>
 </node>
