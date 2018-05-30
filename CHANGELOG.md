@@ -1,5 +1,9 @@
 ## [Unreleased]
 
+## [3.1.16] - 2018-05-30
+- update com.deepin.wm
+- update com.deepin.daemon.Accounts
+
 ## [3.1.15] - 2018-04-17
 - update com.deepin.StartManager
 
