@@ -2,7 +2,7 @@
 	"Config":{
 		"OutputDir": ".",
 		"InputDir": "../xml",
-		"BusType": "Session",
+		"BusType": "System",
 		"DestName": "net.hadess.SensorProxy"
 	},
 	"Interfaces":[
