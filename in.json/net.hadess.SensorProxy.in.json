@@ -1,0 +1,16 @@
+{
+	"Config":{
+		"OutputDir": ".",
+		"InputDir": "../xml",
+		"BusType": "Session",
+		"DestName": "net.hadess.SensorProxy"
+	},
+	"Interfaces":[
+		{
+			"Interface": "net.hadess.SensorProxy",
+			"OutFile": "sensor-proxy",
+			"XMLFile": "net.hadess.SensorProxy.xml",
+			"ObjectName": "SensorProxy"
+		}
+	]
+}
