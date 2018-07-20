@@ -1,5 +1,8 @@
 ## [Unreleased]
 
+## [3.1.17] 2018-07-20
+*   add net.hadess.SensorProxy
+
 ## [3.1.16] - 2018-05-30
 - update com.deepin.wm
 - update com.deepin.daemon.Accounts
